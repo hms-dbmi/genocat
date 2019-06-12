@@ -27,6 +27,15 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+defaults:
+  - scope:
+      path: "_posts/linear" #some folder you want this to apply to
+      type:
+  - values:
+      linear: true
+      layout:
+      title:
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
