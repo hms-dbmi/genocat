@@ -8,6 +8,6 @@ categories: tools
 insert Linear image
 insert Linear description
 
-{% for post in site.posts %}
+{% for post in site.posts.linear %}
   <li><a href ="{{ post.url}}">{{post.title}}</a></li>
 {% endfor %}
