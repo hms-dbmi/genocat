@@ -3,6 +3,7 @@ layout: page
 title:  NCBI Genome Data Viewer
 date:   2019-06-12 13:10:25 -0400
 categories: tools
+linear: true
 ---
 
 <h4>Abstract</h4>

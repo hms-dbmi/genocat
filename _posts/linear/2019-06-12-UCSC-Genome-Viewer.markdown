@@ -3,6 +3,7 @@ layout: page
 title:  UCSC Genome Browser
 date:   2019-06-12 13:10:25 -0400
 categories: tools
+linear: true
 ---
 <kbd><img src = "/assets/UCSC Genome Browser Gateway .png" width="400">
 

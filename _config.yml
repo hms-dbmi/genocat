@@ -29,9 +29,9 @@ plugins:
   - jekyll-feed
 defaults:
   - scope:
-      path: "_posts/linear" #some folder you want this to apply to
+      path: "posts/linear" #some folder you want this to apply to
       type:
-  - values:
+    values:
       linear: true
       layout:
       title:
