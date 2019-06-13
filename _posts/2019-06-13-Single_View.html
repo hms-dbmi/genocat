@@ -1,0 +1,13 @@
+---
+layout: page
+title:  Single View
+date:   2019-06-12 13:10:25 -0400
+categories: tools
+type: view
+---
+
+{% for post in site.posts %}
+  {% if post.singlev %}
+    <li><a href ="{{ post.url}}">{{post.title}}</a></li>
+  {% endif %}
+{% endfor %}

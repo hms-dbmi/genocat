@@ -1,0 +1,13 @@
+---
+layout: page
+title:  Single Scale
+date:   2019-06-12 13:10:25 -0400
+categories: tools
+type: scale
+---
+
+{% for post in site.posts %}
+  {% if post.singles %}
+    <li><a href ="{{ post.url}}">{{post.title}}</a></li>
+  {% endif %}
+{% endfor %}

@@ -12,16 +12,32 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Attributes" }}</h2><br>
     <ul class="post-list">
+
       {% assign layout_attr = site.posts | where: "type","layout" %}
       {% assign focus_attr = site.posts | where: "type","focus" %}
+      {% assign view_attr = site.posts | where: "type","view" %}
+      {% assign scale_attr = site.posts | where: "type","scale" %}
+
       <h3>LAYOUT</h3>
       {%- for post in layout_attr -%}
           <li><h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4></li>
       {%- endfor -%}
+
       <h3>FOCUS</h3>
       {%- for post in focus_attr -%}
         <li><h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4></li>
       {%- endfor -%}
+
+      <h3>VIEW</h3>
+      {%- for post in view_attr -%}
+        <li><h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4></li>
+      {%- endfor -%}
+
+      <h3>SCALE</h3>
+      {%- for post in scale_attr -%}
+        <li><h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4></li>
+      {%- endfor -%}
+      
     </ul>
 
   {%- endif -%}
