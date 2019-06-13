@@ -22,4 +22,8 @@ The genome browser can be accessed [here.][browser]
 [browser]: https://genome.ucsc.edu/cgi-bin/hgGateway
 
 <h4>Attributes</h4>
-Layout format: Linear
+Layout
+  - Linear
+
+Foci
+  - 1
