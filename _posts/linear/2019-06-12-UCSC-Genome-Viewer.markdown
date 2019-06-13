@@ -12,3 +12,21 @@ browser: https://genome.ucsc.edu/cgi-bin/hgGateway
 As vertebrate genome sequences near completion and research refocuses to their analysis, the issue of effective genome annotation display becomes critical. A mature web tool for rapid and reliable display of any requested portion of the genome at any scale, together with several dozen aligned annotation tracks, is provided at http://genome.ucsc.edu. This browser displays assembly contigs and gaps, mRNA and expressed sequence tag alignments, multiple gene predictions, cross-species homologies, single nucleotide polymorphisms, sequence-tagged sites, radiation hybrid data, transposon repeats, and more as a stack of coregistered tracks. Text and sequence-based searches provide quick and precise access to any region of specific interest. Secondary links from individual features lead to sequence details and supplementary off-site databases. One-half of the annotation tracks are computed at the University of California, Santa Cruz from publicly available sequence data; collaborators worldwide provide the rest. Users can stably add their own custom tracks to the browser for educational or research purposes. The conceptual and technical framework of the browser, its underlying MYSQL database, and overall use are described. The web site currently serves over 50,000 pages per day to over 3000 different users.
 
 Kent WJ, Sugnet CW, Furey TS, Roskin KM, Pringle TH, Zahler AM, et al. The human genome browser at UCSC. Genome Res. 2002;12: 996–1006.
+<<<<<<< HEAD
+=======
+
+The paper can be found [here.][paper]
+
+The genome browser can be accessed [here.][browser]
+
+
+[paper]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC186604/
+[browser]: https://genome.ucsc.edu/cgi-bin/hgGateway
+
+<h4>Attributes</h4>
+Layout
+  - Linear
+
+Foci
+  - 1
+>>>>>>> a5f3d67817833b176c75f56232fc9a4ad7d4b8ca

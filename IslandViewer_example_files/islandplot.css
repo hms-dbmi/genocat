@@ -1,0 +1,196 @@
+.circularIslander {
+    fill: turquoise;
+    color: turquoise;
+}
+.circularIslander:hover {
+    fill: skyblue;
+}
+.circularIslandpick {
+	fill: green;
+    color: green;
+}
+.circularIslandpick:hover {
+	fill: lightgreen;
+}
+.circularSigi {
+	fill: darkorange;
+    color: darkorange;
+}
+.circularSigi:hover {
+	fill: yellow;
+}
+.circularDimob {
+	fill: royalblue;
+    color: royalblue;
+}
+.circularDimob:hover {
+	fill: skyblue;
+}
+.circularIntegrated {
+	fill: firebrick;
+    color: firebrick;
+}
+.circularIntegrated:hover {
+	fill: lightsalmon;
+}
+.circularContig_Gap {
+    stroke: black;
+    fill: none;
+    opacity: 0.5;
+}
+
+.circularContig_Gap.linearplot {
+    fill: lightgrey;
+}
+
+.circularAlignment.aligned {
+    fill: #336600;
+    opacity: 0.5;
+}
+
+.circularAlignment.unaligned {
+    fill: gray;
+    opacity: 0.5;
+}
+
+.circularGCPlot {
+	stroke: gray;
+}
+.circularGCPlot_circle {
+	stroke: lightblue !important;
+}
+
+.circularVirulence_VFDB, .circularVirulence_Victors, .circularVirulence_PATRIC_VF {
+	stroke: black;
+	fill: #460b80;
+	color:#460b80;
+#	font-size:14px;
+#	font-weight:bold;
+}
+
+.circularVirulence_ARDB, .circularVirulence_CARD {
+	stroke: black;
+	fill: #d6235f;
+	color:#d6235f;
+#	font-size:14px;
+#	font-weight:bold;
+}
+
+.circularVirulence_PAG {
+	stroke: black;
+	fill: #ffc616;
+	color: #ffc616;
+#	font-size:14px;
+#	font-weight:bold;
+	
+}
+
+.circularVirulence_BLAST {
+	stroke: black;
+	fill: #a684ea;
+	color: #a684ea;
+#	font-size:14px;
+#	font-weight:bold;
+}
+
+.circularVirulence_RGI {
+	stroke: black;
+	fill: #ff9cc1;
+	color: #ff9cc1;
+#	font-size:14px;
+#	font-weight:bold;
+}
+
+.circularGenes_pos {
+    fill: darksalmon;
+    stroke-width: 1;	
+}
+.circularGenes_pos:hover {
+	fill:  #d1876d;
+}
+.circularGenes_pos_group:hover rect {
+		fill:  #d1876d;
+}
+
+.circularGenes_neg {
+    fill: darkolivegreen;
+    fill-opacity: .7;
+    stroke-width: 1;	
+}
+
+.circularGenes_pos_zoomed {
+	stroke: #ffffff;
+    stroke-opacity: 0.8;
+    stroke-width: 1;	
+}
+.circularGenes_neg:hover {
+	fill: #4c602a;
+}
+.circularGenes_neg_group:hover rect {
+	fill: #4c602a;
+}
+.circularGenes_neg_zoomed {
+    fill-opacity: .7;
+    stroke-width: 1;
+    stroke: #fff;
+}
+.circularGenes_text {
+    fill: white;
+    font-weight: bold;
+    font: 12px arial;
+    pointer-events: none;
+}
+
+.polarbrush {
+    fill: lightgrey;
+    opacity: 0.5;
+}
+.brushEnd {
+    fill: "red";
+}
+
+.brushStart {
+    fill: "green";
+}
+
+.linear_hidden {
+	visibility: hidden;
+}
+
+.xaxislinear text {
+	font:12px arial;
+}
+
+.xaxislinear path {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;    
+}
+
+.xaxislinear line {
+    shape-rendering: crispEdges;
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+
+.dragbar-line {
+    stroke-width: 1;	
+    stroke: lightgrey;
+}
+
+.dragbar-shadow {
+    stroke-width: 1;	
+    stroke: lightgrey;
+    fill: transparent;
+}
+
+.move-cross {
+    stroke-width: 1;
+    stroke: lightgrey;
+    fill: lightgrey;
+    cursor:move;
+}
+
+.move-shadow {
+    cursor:move !important;
+}

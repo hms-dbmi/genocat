@@ -1,0 +1,679 @@
+html {
+	height: 100%;
+}
+
+body { 
+	padding-top: 0px;
+	height: 100%;
+}
+
+.header {
+	padding-top: 15px;
+	padding-left: 10px;
+    color: #003800;
+	background-color: #ffffff;
+	font: 22px Helvetica;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+
+.subheader {
+	font: 13px Helvetica;
+    font-weight:bold;
+	color: #003800;
+	letter-spacing: 0.01em;
+}
+
+.navbar-iv {
+	background-color: #003800;
+}
+
+.navbar {
+	min-height:30px !important;
+	margin-bottom: 1px;
+}
+
+.navbar-nav > li > a {padding-top:10px !important; padding-bottom:5px !important;}
+
+.navbar-iv .nav > li > a {
+	color: #ffffff;
+	font: 10px Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+	padding-top:7px; padding-bottom:7px;
+}
+
+.navbar-iv .nav > li > a:hover {
+	color: #f8ecdb;
+}
+
+.mainbody {
+	height: 100%;
+	min-height: 100%;
+	background-color: #fff;
+	
+}
+
+@media (min-width: 768px) {
+  .mainbody {
+    padding-right: 25px;
+    padding-left: 15px;
+  }
+}
+
+.mainrow {
+	margin-left: 0px;
+}
+
+.sidebar {
+	padding-top: 15px;
+	height: 100%;
+	background-color: #f8ecdb;
+}
+
+.content {
+	padding-top: 5px;
+}
+
+@media (min-width: 860px) {
+  .same_height{
+      margin-bottom: -99999px;
+      padding-bottom: 99999px;
+  }
+
+  .equal_height {
+      overflow-y: hidden; 
+  }
+}
+
+.headertext {
+    font:16px Garamond;
+    color: #555555;
+    line-height:22px;
+    font-weight:bold;
+}
+
+.islandpickTable {
+	padding: 10px;
+}
+
+input#gene_search_input{
+    width:100%;
+}
+
+.chkLabel input { float: left; margin-top:0.5em;}
+.chkLabel span { display: block; margin-left: 1.5em;}
+
+.subHeader {
+	font:14px Garamond;
+	color: #003800;
+	font-weight:bold;
+	line-height:20px;
+	letter-spacing:0.1em;
+	}
+.sectionHeader {
+	font:14px Garamond;
+	font-weight:bold;
+	line-height:20px;
+}
+
+.smalltext {
+    font:14px Garamond;
+    color: #555555;
+    line-height:18px;
+}
+.largetext {
+    font:18px Garamond;
+    color: #555555;
+    line-height:18px;
+    font-weight: bold;
+}
+.errortext {
+    font:14px Garamond;
+    color: red;
+    line-height:18px;
+}
+
+.bodyText {
+	font:12px arial;
+	color:#333333;
+	line-height:24px;
+}
+
+.bodyText_heavy {
+	font-weight:bold;
+
+}
+.bodyText a {
+	color: #3939C6;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.faq-q {
+	font:12px Arial;
+	color: #003800;
+	font-weight:bold;
+	line-height:20px;
+	letter-spacing:0.05em;
+}
+
+.toolbox_item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.closeimg {
+    vertical-align: top !important;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.loadingimg {
+		margin-left: 250px;
+		margin-top: 250px; 
+}
+	
+a:hover {
+	color: #003366;
+/*text-decoration:underline; */
+	}
+
+/* Drop down menu override*/
+.iv-dropdown-menu>li>a {
+	padding: 6px 44px;
+	color: #ffffff;
+}
+
+.dropdown-menu {
+	border: none;
+}
+
+div.outline {
+  border: 1px solid #808080;
+  padding: 5px;
+  background: white;
+}
+
+.red {color:firebrick;
+	font-size:14px;
+	font-weight:bold;
+} 
+.green {color: #003800;
+	font-size:14px;
+	font-weight:bold;
+}
+.orange {color:orange;
+	font-size:14px;
+	font-weight:bold;
+	}
+.blue {color:blue;
+	font-size:14px;
+	font-weight:bold;
+	}   
+.alignment_label {
+        color: #336600;
+	font-size:12px;
+}
+.contig_label {
+	color: #848484;
+	font-size:12px;
+}
+
+.pageName {
+	font:17px Helvetica;
+    font-variant: small-caps;
+    font-weight:bold;
+	color: #003800;
+	letter-spacing:0.05em;
+	line-height:26px;
+    display: inline-block;
+    white-space: normal;
+    width: 500px;
+}
+
+.linearLabel {
+	font:0.9em Helvetica;
+	color: #1F1A80;
+}
+
+/* Upload page */
+
+input[type=file] {
+	display: inline;
+}
+
+#id_format_type {
+    height: 22px;
+}
+
+.upload_input_span {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+/* Tool tip for linear plot */
+
+.d3-tip {
+  line-height: 1;
+  font: 12px arial;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* Gene popup window section */
+
+.ui-widget-header {
+	background: #003800 !important;
+	font:12px arial;
+	font-weight:bold;
+	color: white !important;
+}
+
+.genespopup {
+	font:12px arial;
+}
+
+.genespopup td, 
+.genespopup th {
+	padding: 5px;
+}
+
+.islandbox {
+	width: 15px;
+	height: 15px;
+}
+
+.virulencecircle {
+	width: 8px;
+	height: 8px;
+	stroke: black;
+	border-radius: 50%;
+	display: inline-block;
+	margin-left: 1px;
+	margin-right: 1px;
+	border: 1px solid #000;
+}
+
+.darkorangeislandbox {
+	background: darkorange;
+}
+
+.greenislandbox {
+	background: green;
+}
+
+.royalblueislandbox {
+	background: royalblue;
+}
+
+.turquoiseislandbox {
+    background: turquoise;
+}
+
+.virulencecircle_VFDB, .virulencecircle_Victors, .virulencecircle_PATRIC_VF {
+	stroke: none;
+	background: #460b80;
+}
+
+.virulencecircle_ARDB, .virulencecircle_CARD {
+	stroke: none;
+	background: #d6235f;
+}
+
+.virulencecircle_PAG {
+	stroke: none;
+	background: #ffc616;
+}
+
+.virulencecircle_BLAST {
+        stroke: none;
+        background: #a684ea;
+}
+
+.virulencecircle_RGI {
+        stroke: none;
+        background: #ff9cc1;
+}
+
+.highlight_row {
+	background-color: #cccccc;
+}
+
+.highlight_plot {
+	background-color: #ffff99;
+	opacity: 0.5;
+}
+
+.outline_plot {
+    border: 1px solid #808080;
+}
+
+#outer_circular{
+    white-space: nowrap;
+}
+
+/* Section for GI tables */
+.gitable_fullwidth {
+  max-width: 100%;
+}
+
+.gitable_halfwidth {
+  max-width: 600px;
+}
+
+.gitable .highlightrow {
+    outline: thin solid black;
+}
+
+.gitable .odd.method0 {
+	background-color: #E8606A !important;	
+}
+.gitable .even.method0 {
+	background-color: #ED8088;	
+}
+.gitable .method0:hover {
+	opacity:.75;
+}
+.gitable a {
+		font-weight:bold;
+		color: #3939C6;
+}
+.gitable .method1 {
+	background-color: #9FF793;
+}
+.gitable .method1:hover {
+		opacity:.75;
+}
+.gitable .method2 {
+	background-color: #FFB76F;
+}
+.gitable .method2:hover {
+		opacity:.75;
+}
+.gitable .method3 {
+	background-color: #A6C5F9;
+}
+.gitable .method3:hover {
+		opacity:.75;
+}
+.gitable .method4 {
+    background-color: #A2DDDF;
+}
+.gitable .method4:hover {
+    opacity:.75;
+}
+
+/* Section for popup list of genes */
+.hidden>div {
+	display: none;
+}
+.visible>div {
+	display:block;
+}
+.visinline {
+    display:inline-block;
+}
+
+/* Section for download expand/collapse */
+
+#download_container {
+  border: 1px solid #808080;
+  padding: 5px;
+}
+.toggle {
+    padding-left: 25px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url("../img/details_open.png");
+}
+
+.toggle.expanded {
+    padding-left: 25px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url("../img/details_close.png");
+}
+
+.download-select { width: 150px !important; }
+
+.downloadtable {
+    vertical-align: top;
+    padding: 7px;
+}
+
+/* Section for the run summary table */
+
+.summarytable .Complete {
+	color: green;
+}
+.summarytable .Error {
+	color: red;
+}
+.summarytable .Pending {
+	color: yellow;
+}
+.summarytable .Running {
+	color: orange;
+}
+
+/* Section for pipeline graph */
+
+
+
+.node rect {
+  stroke: #999;
+  stroke-width: 1px;
+  fill: #fff;
+}
+
+.node.Complete rect {
+  stroke: #999;
+  stroke-width: 1px;
+  fill: lightblue;
+}
+.legend.Complete {
+	font-size:15px; 
+	padding-left:15px; 
+	border:1px solid lightblue;
+	background-color: lightblue; 
+	overflow:hidden;
+}
+.node.Error rect {
+  stroke: #999;
+  stroke-width: 1px;
+  fill: red;
+}
+.legend.Error {
+	font-size:15px; 
+	padding-left:15px; 
+	border:1px solid red;
+	background-color: red; 
+	overflow:hidden;
+}
+.node.Running rect {
+  stroke: #999;
+  stroke-width: 1px;
+  fill: lightgreen;
+}
+.legend.Running {
+	font-size:15px; 
+	padding-left:15px; 
+	border:1px solid lightgreen;
+	background-color: lightgreen; 
+	overflow:hidden;
+}
+.node.Pending rect {
+  stroke: #999;
+  stroke-width: 1px;
+  fill: lightyellow;
+}
+.legend.Pending {
+	font-size:15px; 
+	padding-left:15px; 
+	border:1px solid black;
+	background-color: lightyellow; 
+	overflow:hidden;
+}
+
+.edgeLabel rect {
+  fill: #fff;
+}
+
+.edgePath path {
+  stroke: #333;
+  stroke-width: 1.5px;
+/*  fill: none;*/
+}
+
+/* Spinner for loading ranking page*/
+/* Absolute Center CSS Spinner */
+.loading {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Transparent Overlay */
+.loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+
+.ui-autocomplete-loading { background:url('../img/loading.gif') no-repeat right center; background-size: 20px; }
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.linearchart {
+    width: 100%;
+}
+
+/* END Spinner for loading ranking page*/
