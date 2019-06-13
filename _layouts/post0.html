@@ -1,0 +1,22 @@
+---
+layout: "wrapper"
+author: Claudia
+---
+
+{% if page.title == "2nd post!"%}
+  This is the 2nd post!
+{% elsif page.title == "yo" or page.title == "hi"%}
+  Not gonna show up
+{% else %}
+  This is not the 2nd post :(
+{% endif %}
+
+{% for post in site.posts %}
+  <li><a style = "{% if page.url == post.url%} color:red; {% endif %}" href="{{ post.url }}">{{post.title}}</a></li>
+{% endfor %}
+
+<h2>{{ page.title }}</h2>
+<h3>{{ layout.author }}</h3>
+<hr>
+
+{{ content }}
