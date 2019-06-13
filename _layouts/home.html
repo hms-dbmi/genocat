@@ -10,12 +10,17 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Attributes" }}</h2>
+    <h2 class="post-list-heading">{{ page.list_title | default: "Attributes" }}</h2><br>
     <ul class="post-list">
-      {%- for post in site.posts -%}
-        {% if post.attribute %}
-          <li><h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3></li>
-        {% endif %}
+      {% assign layout_attr = site.posts | where: "type","layout" %}
+      {% assign focus_attr = site.posts | where: "type","focus" %}
+      <h3>LAYOUT</h3>
+      {%- for post in layout_attr -%}
+          <li><h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4></li>
+      {%- endfor -%}
+      <h3>FOCUS</h3>
+      {%- for post in focus_attr -%}
+        <li><h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4></li>
       {%- endfor -%}
     </ul>
 
