@@ -4,7 +4,7 @@ title:  UCSC Genome Browser
 date:   2019-06-12 13:10:25 -0400
 categories: tools
 linear: true
-single: true
+singlef: true
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC186604/
 browser: https://genome.ucsc.edu/cgi-bin/hgGateway
 image: ../../../../assets/UCSC Genome Browser Gateway .png

@@ -4,7 +4,7 @@ title:  CGView - Circular Genome Viewer
 date:   2019-06-13
 categories: tools
 circular: true
-single: true
+singlef: true
 paper: https://www.ncbi.nlm.nih.gov/pubmed/25910699
 browser: http://wishart.biology.ualberta.ca/cgview/
 image: ../../../../assets/CGView.png

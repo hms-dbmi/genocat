@@ -4,7 +4,7 @@ title:  Island Viewer
 date:   2019-06-13
 categories: tools
 circular: true
-multiple: true
+multiplef: true
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4489224/
 browser: https://www.pathogenomics.sfu.ca/islandviewer/
 image: ../../../../assets/IslandViewer_example.png

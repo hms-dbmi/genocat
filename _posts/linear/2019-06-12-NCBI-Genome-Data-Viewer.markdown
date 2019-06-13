@@ -4,7 +4,7 @@ title:  NCBI Genome Data Viewer
 date:   2019-06-12 13:10:25 -0400
 categories: tools
 linear: true
-single: true
+singlef: true
 paper: https://doi.org/10.1093/nar/gkw1071
 browser: https://www.ncbi.nlm.nih.gov/genome/gdv/
 image: ../../../../assets/ncbi-genome-viewer.jpeg
