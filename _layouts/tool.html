@@ -11,10 +11,39 @@ layout: default
     <img src = "{{ page.image }}" width="500"> <br><br>
     <h3>Abstract</h3>
     {{ content }}
-    <br>
     The paper can be found <a href="{{ page.paper }}">here</a>. <br>
     The genome browser can be accessed <a href="{{ page.browser }}">here</a>. <br><br>
+
+
     <h3>Attributes</h3>
+    {%- if page.linear -%}
+      <li><a href= "../12/Linear.html">Linear</a></li>
+    {%- endif -%}
+    {%- if page.circular -%}
+      <li><a href= "../12/Circular.html">Circular</a></li>
+    {%- endif -%}
+    {%- if page.spacefilling -%}
+      <li><a href= "../14/Space-Filling.html">Space Filling</a></li>
+    {%- endif -%}
+    {%- if page.singlef -%}
+      <li><a href= "../12/Single_Focus.html">Single Focus</a></li>
+    {%- endif -%}
+    {%- if page.multiplef -%}
+      <li><a href= "../12/Multiple_Foci.html">Multiple Foci</a></li>
+    {%- endif -%}
+    {%- if page.singles -%}
+      <li><a href= "../12/Single_Scale.html">Single Scale</a></li>
+    {%- endif -%}
+    {%- if page.multiples -%}
+      <li><a href= "../12/Multiple-Scales.html">Multiple Scales</a></li>
+    {%- endif -%}
+    {%- if page.singlev -%}
+      <li><a href= "../12/Single_View.html">Single View</a></li>
+    {%- endif -%}
+    {%- if page.multiplev -%}
+      <li><a href= "../12/Multiple-View.html">Multiple Views</a></li>
+    {%- endif -%}
+
   </div>
 
   {%- if site.disqus.shortname -%}
