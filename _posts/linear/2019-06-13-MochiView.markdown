@@ -5,6 +5,8 @@ date:   2019-06-13
 categories: tools
 linear: true
 singlef: true
+multiples: true
+multiplev: true
 paper: https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-8-49
 browser: http://www.johnsonlab.ucsf.edu/mochi
 image: ../../../../assets/MochiView.png

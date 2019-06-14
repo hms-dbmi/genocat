@@ -5,6 +5,8 @@ date:   2019-06-12 13:10:25 -0400
 categories: tools
 linear: true
 singlef: true
+singles: true
+singlev: true
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC186604/
 browser: https://genome.ucsc.edu/cgi-bin/hgGateway
 image: ../../../../assets/UCSC_Genome_Viewer.png

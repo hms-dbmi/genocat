@@ -5,6 +5,8 @@ date:   2019-06-13
 categories: tools
 circular: true
 singlef: true
+singles: true
+singlev: true
 paper: https://www.ncbi.nlm.nih.gov/pubmed/25910699
 browser: http://wishart.biology.ualberta.ca/cgview/
 image: ../../../../assets/CGView.png
