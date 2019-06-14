@@ -1,0 +1,12 @@
+---
+layout: page
+title:  Layout
+date:   2019-06-12 13:10:25 -0400
+categories: tools
+type: attribute
+---
+
+{% assign layout_attr = site.posts | where: "type","layout" %}
+{%- for post in layout_attr -%}
+    <h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
+{%- endfor -%}
