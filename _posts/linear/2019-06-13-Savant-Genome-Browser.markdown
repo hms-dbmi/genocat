@@ -8,6 +8,7 @@ singlef: true
 paper: https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-8-49
 browser: http://www.johnsonlab.ucsf.edu/mochi
 image: ../../../../assets/MochiView.png
+type: tool
 ---
 <h4>Background</h4>
 As high-throughput technologies rapidly generate genome-scale data, it becomes increasingly important to visually integrate these data so that specific hypotheses can be formulated and tested.
