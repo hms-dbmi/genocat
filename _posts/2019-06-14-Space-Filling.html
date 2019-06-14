@@ -1,0 +1,21 @@
+---
+layout: page
+title:  Space-Filling Curve
+date:   2019-06-14
+categories: tools
+type: layout
+---
+
+<kbd><img src = "/assets/spacefilling_example.png" width="200" align = "left">
+</kbd> <br>
+
+The space-filling curve is more space efficient than a circular layout and are often used to display a global overview of the genome while maintaining the spatial distribution of features. However, space-filling curves can only show one
+feature set, and it's hard to visually estimate the distances between two positions in a sequence.
+<br><br>
+
+
+{% for post in site.posts %}
+  {% if post.spacefilling %}
+    <li><a href ="{{ post.url}}">{{post.title}}</a></li>
+  {% endif %}
+{% endfor %}
