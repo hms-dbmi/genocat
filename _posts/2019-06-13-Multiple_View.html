@@ -6,6 +6,18 @@ categories: tools
 type: view
 ---
 
+<img src = "/assets/Multiple View.png" width="200" align = "left">
+
+<p> Multiple views allow for visualizations with multiple scales and foci.
+Multiple views can be (i) independent, (ii) weakly linked, (iii) medium linked or (iv)
+strongly linked. While independent views are not connected in
+any way, weakly linked views are linked by brushing and linking.
+Medium linked views share navigation, for example two views are
+at different scales, but zooming always affects both. Strongly linked
+views share genomic coordinates at one axis and can also share
+tracks that are aligned to the axis.</p>
+
+<br>
 {% for post in site.posts %}
   {% if post.multiplev %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
