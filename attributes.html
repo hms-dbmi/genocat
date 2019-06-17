@@ -4,21 +4,105 @@ permalink: /attributes/
 ---
 
 <div>
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Attributes" }}</h2><br>
-    <ul class="post-list">
-      {% assign attributes = site.posts | where: "type","attribute"%}
 
-      {%- for post in attributes -%}
-          <li><h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4></li>
-      {%- endfor -%}
+  <div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:lightsteelblue;">Layout</div>
+  <div class="column" onclick="openTab('b2');" style="background:steelblue;">Focus</div>
+  <div class="column" onclick="openTab('b3');" style="background:cadetblue;">View</div>
+  <div class="column" onclick="openTab('b4');" style="background:lightblue;">Scale</div>
+</div>
+<br>
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:lightsteelblue">
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Layout</h2>
+  <p>
+    Info about layout!<br><br>
+    {% assign layout_attr = site.posts | where: "type","layout" %}
+    {%- for post in layout_attr -%}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &emsp;
+    {%- endfor -%}
+  </p>
+</div>
 
-    </ul>
+<div id="b2" class="containerTab" style="display:none;background:steelblue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Focus</h2>
+  <p>Info about focus!<br><br>
+  {% assign focus_attr = site.posts | where: "type","focus" %}
+  {%- for post in focus_attr -%}
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &emsp;
+  {%- endfor -%}
+  </p>
+</div>
 
-  {%- endif -%}
+<div id="b3" class="containerTab" style="display:none;background:cadetblue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>View</h2>
+  <p>Info about view!<br><br>
+  {% assign view_attr = site.posts | where: "type","view" %}
+  {%- for post in view_attr -%}
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &emsp;
+  {%- endfor -%}
+  </p>
+</div>
+
+<div id="b4" class="containerTab" style="display:none;background:lightblue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Scale</h2>
+  <p>Info about scale!<br><br>
+    {% assign scale_attr = site.posts | where: "type","scale" %}
+    {%- for post in scale_attr -%}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &emsp;
+    {%- endfor -%}
+  </p>
+</div>
+
+<style>
+.column {
+  float: left;
+  width: 25%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  float: left;
+  width: 71.6%;
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
 
 </div>
