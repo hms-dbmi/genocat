@@ -7,22 +7,16 @@
 
     {%- include header.html -%}
 
-    <style>
-    .indented {
-      padding-left: 250pt;
-    }
-    </style>
+    <div class="wrapper">
 
-    <div class="indented">
-      <br>
-      <a class = "tab-link" href="{{site.baseurl}}/index.html"><font size="5">Home</font></a> &emsp;
-      <a class="tab-link" href="{{site.baseurl}}/attributes"><font size="5">Attributes</font></a> &emsp;
-      <a class = "tab-link" href="{{site.baseurl}}/search"><font size="5">Search</font></a> &emsp;
-      <br>
     </div>
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+        <h2><a class = "tab-link" href="{{site.baseurl}}/index.html">Home</a> &emsp;
+        <a class="tab-link" href="{{site.baseurl}}/attributes">Attributes</a> &emsp;
+        <a class = "tab-link" href="{{site.baseurl}}/search">Search</a> &emsp;</h2>
+        <br>
         {{ content }}
       </div>
     </main>
