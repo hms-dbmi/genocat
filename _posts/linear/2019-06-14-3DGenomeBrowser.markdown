@@ -3,7 +3,7 @@ layout: tool
 title:  3D Genome Browser
 date:   2019-06-14
 categories: tools
-linear: true
+spatial: true
 singlef: true
 singles: true
 singlev: true
