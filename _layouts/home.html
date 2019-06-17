@@ -3,28 +3,15 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-<<<<<<< HEAD
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Attributes" }}</h2><br>
-    <ul class="post-list">
-      {% assign attributes = site.posts | where: "type","attribute"%}
-
-      {%- for post in attributes -%}
-          <li><h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4></li>
-      {%- endfor -%}
-
-    </ul>
-
-  {%- endif -%}
-
-  <a href="main.html">Main Page</a>
-
-=======
->>>>>>> e7eb8cf5b4af4bc7c9727244cf89f4dfef86b062
+  <div class="row">
+    <div class="column">
+      <h2>Layout</h2>
+      <a href="../tools/2019/06/12/Circular.html"><img src="/assets/circular.png" style="width:120px; height:142.5px" title="Circular" alt="Circular"></a>
+      <a href="../tools/2019/06/12/Linear.html"><img src="/assets/linear.png" style="width:120px; height:142.5px" title="Linear" alt="Linear"></a>
+    </div>
+    <div class="column">
+      <h2>Partition</h2>
+      <img src="/assets/Partition.png"style="width:120px; height:142.5px" >
+    </div>
+  </div>
 </div>
