@@ -28,8 +28,10 @@ theme: minima
 plugins:
   - jekyll-feed
 collections:
-  - tools
-  - attributes
+  tools:
+      output: true
+  attributes:
+      output: true
 
 
 # Exclude from processing.
