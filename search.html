@@ -2,3 +2,9 @@
 layout: page
 permalink: /search/
 ---
+
+{% for post in site.posts %}
+  {% if post.type == "tool" %}
+    <a href ="{{ post.url}}">{{post.title}}</a> <br>
+  {% endif %}
+{% endfor %}
