@@ -11,7 +11,7 @@ A multiple scale visualization allows for visualizing data from multiple perspec
 This can be useful for something as large as a genome, particularly being able to view
 individual genes as well as the geneome on a whole, as scaling would allow.
 <br><br><br><br><br>
-{% for post in site.posts %}
+{% for post in site.tools %}
   {% if post.scale == "multiple" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
