@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  Multiple Scales
-date:   2019-06-12 13:10:25 -0400
 categories: tools
 type: scale
 ---
@@ -13,7 +12,7 @@ This can be useful for something as large as a genome, particularly being able t
 individual genes as well as the geneome on a whole, as scaling would allow.
 <br><br><br><br><br>
 {% for post in site.posts %}
-  {% if post.multiples %}
+  {% if post.scale == "multiple" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}

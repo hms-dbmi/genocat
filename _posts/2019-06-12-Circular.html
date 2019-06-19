@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  Circular
-date:   2019-06-12 13:10:25 -0400
 categories: tools
 type: layout
 ---
@@ -13,7 +12,7 @@ Circular layouts are mainly used (1) if the displayed sequence itself is circula
 <br><br><br>
 
 {% for post in site.posts %}
-  {% if post.circular %}
+  {% if post.lay == "circular" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}

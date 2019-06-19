@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  Single Focus
-date:   2019-06-12 13:10:25 -0400
 categories: tools
 type: focus
 ---
@@ -14,7 +13,7 @@ genome. Only the region in this window can be analyzed.
 <br><br><br>
 
 {% for post in site.posts %}
-  {% if post.singlef %}
+  {% if post.focus == "single" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}

@@ -1,16 +1,15 @@
 ---
 layout: tool
 title:  HilbertVis
-date:   2019-06-14
 categories: tools
-spacefilling: true
-singlef: true
-single: true
-singlev: true
+type: tool
+lay: spacefilling
+focus: single
+scale: single
+view: single
 paper: https://academic.oup.com/bioinformatics/article/25/10/1231/270493
 browser: https://bioconductor.riken.jp/packages/3.5/bioc/html/HilbertVis.html
 image: ../../../../assets/HilbertVis.png
-type: tool
 ---
 
 
