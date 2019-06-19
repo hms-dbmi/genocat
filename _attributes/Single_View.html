@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Single View
-categories: tools
+categories: attributes
 type: view
 ---
 
@@ -14,7 +14,7 @@ multiple scales and foci.</p>
 
 <br><br><br>
 
-{% for post in site.posts %}
+{% for post in site.tools %}
   {% if post.view == "single" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}

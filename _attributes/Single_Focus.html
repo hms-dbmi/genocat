@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Single Focus
-categories: tools
+categories: attributes
 type: focus
 ---
 <img src = "/assets/Single Focus.png" width="200" align = "left">
@@ -12,7 +12,7 @@ genome. Only the region in this window can be analyzed.
 
 <br><br><br>
 
-{% for post in site.posts %}
+{% for post in site.tools %}
   {% if post.focus == "single" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}

@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /attributes/
+permalink: /attribute_page/
 ---
 
 <div>
@@ -20,7 +20,7 @@ permalink: /attributes/
   <h2>Layout</h2>
   <p>
     Info about layout!<br><br>
-    {% assign layout_attr = site.posts | where: "type","layout" %}
+    {% assign layout_attr = site.attributes | where: "type","layout" %}
     {%- for post in layout_attr -%}
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &emsp;
     {%- endfor -%}
@@ -31,7 +31,7 @@ permalink: /attributes/
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
   <h2>Focus</h2>
   <p>Info about focus!<br><br>
-  {% assign focus_attr = site.posts | where: "type","focus" %}
+  {% assign focus_attr = site.attributes | where: "type","focus" %}
   {%- for post in focus_attr -%}
       <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &emsp;
   {%- endfor -%}
@@ -42,7 +42,7 @@ permalink: /attributes/
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
   <h2>View</h2>
   <p>Info about view!<br><br>
-  {% assign view_attr = site.posts | where: "type","view" %}
+  {% assign view_attr = site.attributes | where: "type","view" %}
   {%- for post in view_attr -%}
       <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &emsp;
   {%- endfor -%}
@@ -53,7 +53,7 @@ permalink: /attributes/
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
   <h2>Scale</h2>
   <p>Info about scale!<br><br>
-    {% assign scale_attr = site.posts | where: "type","scale" %}
+    {% assign scale_attr = site.attributes | where: "type","scale" %}
     {%- for post in scale_attr -%}
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> &emsp;
     {%- endfor -%}

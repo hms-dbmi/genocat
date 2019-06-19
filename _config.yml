@@ -27,14 +27,11 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-defaults:
-  - scope:
-      path: "posts/linear" #some folder you want this to apply to
-      type:
-    values:
-      linear: true
-      layout:
-      title:
+collections:
+  tools:
+      output: true
+  attributes:
+      output: true
 
 
 # Exclude from processing.

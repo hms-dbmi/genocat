@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /search/
+permalink: /search_page/
 ---
 
-{% for post in site.posts %}
+{% for post in site.tools %}
   {% if post.type == "tool" %}
     <a href ="{{ post.url}}">{{post.title}}</a> <br>
   {% endif %}

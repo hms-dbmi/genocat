@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Multiple View
-categories: tools
+categories: attributes
 type: view
 ---
 
@@ -17,7 +17,7 @@ views share genomic coordinates at one axis and can also share
 tracks that are aligned to the axis.</p>
 
 <br>
-{% for post in site.posts %}
+{% for post in site.tools %}
   {% if post.view == "multiple"%}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}

@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Spatial
-categories: tools
+categories: attributes
 type: layout
 ---
 
@@ -12,7 +12,7 @@ Spatial layouts display sequences in a 3-dimensional structure.
 <br><br><br><br><br>
 
 
-{% for post in site.posts %}
+{% for post in site.tools %}
   {% if post.lay == "spatial" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
