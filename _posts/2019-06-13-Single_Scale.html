@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  Single Scale
-date:   2019-06-12 13:10:25 -0400
 categories: tools
 type: scale
 ---
@@ -13,7 +12,7 @@ However, some single scale visualizations provide a zooming interaction, which a
 the user to expand or shrink the genome view.
 <br><br><br><br><br>
 {% for post in site.posts %}
-  {% if post.singles %}
+  {% if post.scale == "single" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}

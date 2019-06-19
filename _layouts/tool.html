@@ -16,31 +16,31 @@ layout: default
 
 
     <h3>Attributes</h3>
-    {%- if page.linear -%}
+    {%- if page.lay == "linear" -%}
       <li><a href= "../12/Linear.html">Linear</a></li>
     {%- endif -%}
-    {%- if page.circular -%}
+    {%- if page.lay == "circular" -%}
       <li><a href= "../12/Circular.html">Circular</a></li>
     {%- endif -%}
-    {%- if page.spacefilling -%}
+    {%- if page.lay == "spacefilling" -%}
       <li><a href= "../14/Space-Filling.html">Space Filling</a></li>
     {%- endif -%}
-    {%- if page.singlef -%}
+    {%- if page.focus == "single" -%}
       <li><a href= "../12/Single_Focus.html">Single Focus</a></li>
     {%- endif -%}
-    {%- if page.multiplef -%}
+    {%- if page.focus == "multiple" -%}
       <li><a href= "../12/Multiple_Foci.html">Multiple Foci</a></li>
     {%- endif -%}
-    {%- if page.singles -%}
+    {%- if page.scale == "single" -%}
       <li><a href= "../12/Single_Scale.html">Single Scale</a></li>
     {%- endif -%}
-    {%- if page.multiples -%}
+    {%- if page.scale == "multiple" -%}
       <li><a href= "../12/Multiple-Scales.html">Multiple Scales</a></li>
     {%- endif -%}
-    {%- if page.singlev -%}
+    {%- if page.view == "single" -%}
       <li><a href= "../12/Single_View.html">Single View</a></li>
     {%- endif -%}
-    {%- if page.multiplev -%}
+    {%- if page.view == "multiple" -%}
       <li><a href= "../12/Multiple-View.html">Multiple Views</a></li>
     {%- endif -%}
 

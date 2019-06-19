@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  Multiple View
-date:   2019-06-12 13:10:25 -0400
 categories: tools
 type: view
 ---
@@ -19,7 +18,7 @@ tracks that are aligned to the axis.</p>
 
 <br>
 {% for post in site.posts %}
-  {% if post.multiplev %}
+  {% if post.view == "multiple"%}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}

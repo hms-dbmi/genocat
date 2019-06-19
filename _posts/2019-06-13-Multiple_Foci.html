@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  Multiple Foci
-date:   2019-06-12 13:10:25 -0400
 categories: tools
 type: focus
 ---
@@ -14,7 +13,7 @@ and compare features that are dispersed across the genome.
 <br><br><br>
 
 {% for post in site.posts %}
-  {% if post.multiplef %}
+  {% if post.focus == "multiple" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}

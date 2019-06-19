@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  Space-Filling Curve
-date:   2019-06-14
 categories: tools
 type: layout
 ---
@@ -15,7 +14,7 @@ feature set, and it's hard to visually estimate the distances between two positi
 
 
 {% for post in site.posts %}
-  {% if post.spacefilling %}
+  {% if post.lay == "spacefilling" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}

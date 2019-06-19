@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  Linear
-date:   2019-06-12 13:10:25 -0400
 categories: tools
 type: layout
 ---
@@ -14,7 +13,7 @@ Linear layouts are more intuitive and easy to read, but may be extremely long an
 
 
 {% for post in site.posts %}
-  {% if post.linear %}
+  {% if post.lay == "linear" %}
     <li><a href ="{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}
