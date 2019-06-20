@@ -2,69 +2,63 @@
 layout: page
 permalink: /search_page/
 ---
-<!-- Control buttons -->
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('linear')"> Linear</button>
-  <button class="btn" onclick="filterSelection('circular')"> Circular</button>
-  <button class="btn" onclick="filterSelection('spacefilling')">Space-Filling</button>
-  <button class="btn" onclick="filterSelection('spatial')"> Spatial</button>
-  <button class="btn" onclick="filterSelection('single-view')"> Single View</button>
-  <button class="btn" onclick="filterSelection('multiple-view')"> Multiple View</button>
-  <button class="btn" onclick="filterSelection('single-focus')"> Single Focus</button>
-  <button class="btn" onclick="filterSelection('multiple-focus')"> Multiple Focus</button>
-  <button class="btn" onclick="filterSelection('single-scale')">Single Scale</button>
-  <button class="btn" onclick="filterSelection('multiple-scale')"> Multiple Scale</button>
-</div>
+<html>
+<head>
+  <style>
+  .column {
+    float: left;
+    width: 40%;
+  }
+  </style>
+</head>
 
+<div class="column">
+<h2>Attributes</h2>
+<details>
+<summary>Layout</summary>
+<input type="checkbox" onclick="filterSelection('circular')"> <small>Circular</small>
+<input type="checkbox" onclick="filterSelection('linear')"> <small>Linear</small>
+<br>
+<input type="checkbox" onclick="filterSelection('spacefilling')"> <small>Space Filling</small>
+<input type="checkbox" onclick="filterSelection('spatial')"> <small>Spatial</small>
+</details>
+<details>
+<summary>Views</summary>
+<input type="checkbox" onclick="filterSelection('single-view')"> <small>Single View</small>
+<input type="checkbox" onclick="filterSelection('multiple-view')"> <small>Multiple View</small>
+</details>
+<details>
+<summary>Scale</summary>
+</details>
+<details>
+<summary>Views</summary>
+</details>
+</div>
+<div class="column">
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-<div class="container">
-  {% for post in site.tools %}
-    <div class="filterDiv {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
-    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></div>
-  {% endfor %}
+{% for post in site.tools %}
+      <div class="filterDiv {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></div>
+{% endfor %}
 </div>
-
 <style>
-.container {
-  overflow: hidden;
-}
 
 .filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 50px;
-  text-align: center;
-  margin: 2px;
-  display: none; /* Hidden by default */
-}
+         float: left;
+         background-color: #f1f1f1;
+         line-height: 50px;
+         text-align: center;
+         margin: 5px;
+         display: none; /* Hidden by default */
+       }
+
 
 /* The "show" class is added to the filtered elements */
 .show {
-  display: block;
-}
+         display: block;
+       }
 
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
 
-/* Add a light grey background on mouse-over */
-.btn:hover {
-  background-color: #ddd;
-}
-
-/* Add a dark background to the active button */
-.btn.active {
-  background-color: #666;
-  color: white;
-}
 </style>
-
 <script src = "/scripts/filter.js"></script>
+</html>
