@@ -7,14 +7,21 @@ permalink: /search_page/
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
   <button class="btn" onclick="filterSelection('linear')"> Linear</button>
   <button class="btn" onclick="filterSelection('circular')"> Circular</button>
+  <button class="btn" onclick="filterSelection('spacefilling')">Space-Filling</button>
+  <button class="btn" onclick="filterSelection('spatial')"> Spatial</button>
   <button class="btn" onclick="filterSelection('single-view')"> Single View</button>
+  <button class="btn" onclick="filterSelection('multiple-view')"> Multiple View</button>
   <button class="btn" onclick="filterSelection('single-focus')"> Single Focus</button>
+  <button class="btn" onclick="filterSelection('multiple-focus')"> Multiple Focus</button>
+  <button class="btn" onclick="filterSelection('single-scale')">Single Scale</button>
+  <button class="btn" onclick="filterSelection('multiple-scale')"> Multiple Scale</button>
 </div>
 
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 <div class="container">
   {% for post in site.tools %}
-    <div class="filterDiv {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view">{{post.title}}</div>
+    <div class="filterDiv {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></div>
   {% endfor %}
 </div>
 
