@@ -13,16 +13,9 @@ permalink: /search_page/
 
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 <div class="container">
-  <div class="filterDiv linear single-view single-focus">linear-sv-sf tool</div>
-  <div class="filterDiv circular single-view single-focus">circular-sv-sf tool</div>
-  <div class="filterDiv linear">linear tool</div>
-  <div class="filterDiv circular">circular tool</div>
-  <div class="filterDiv single-view">sv tool</div>
-  <div class="filterDiv single-focus">sf tool</div>
-  <div class="filterDiv single-view single-focus">sv-sf tool</div>
-  <div class="filterDiv circular single-focus">circular-sf tool</div>
-  <div class="filterDiv linear single-view">linear-sv tool</div>
-  <div class="filterDiv linear single-focus">linear-sf tool</div>
+  {% for post in site.tools %}
+    <div class="filterDiv {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view">{{post.title}}</div>
+  {% endfor %}
 </div>
 
 <style>
