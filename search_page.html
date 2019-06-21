@@ -14,26 +14,35 @@ permalink: /search_page/
 
 <div class="column">
 <h2>Attributes</h2>
+<!-- <p id="demo"></p> -->
+<!-- <input type="radio" id="linear" name="linear"/>linear testing!
+<input type="radio" id="circular" name="circular"/>circular testing!
+<input type="radio" id="single-view" name="single-view"/>single-view testing! -->
+
 <form action = "" method = "post">
   <details>
     <summary>Layout</summary>
-    <input type="radio" onclick="filterSelection('circular')" name = "layout"/> <small>Circular</small>
-    <input type="radio" onclick="filterSelection('linear')" name = "layout"/> <small>Linear</small>
+    <input type="radio" id="circular" name = "layout"/> <small>Circular</small>
+    <input type="radio" id="linear" name = "layout"/> <small>Linear</small>
     <br>
-    <input type="radio" onclick="filterSelection('spacefilling')" name = "layout"/> <small>Space Filling</small>
-    <input type="radio" onclick="filterSelection('spatial')" name = "layout"/> <small>Spatial</small>
+    <input type="radio" id="spacefilling" name = "layout"/> <small>Space Filling</small>
+    <input type="radio" id="spatial" name = "layout"/> <small>Spatial</small>
     </form>
   </details>
   <details>
-    <summary>Views</summary>
-    <input type="radio" onclick="filterSelection('single-view')" name = "view"/> <small>Single View</small>
-    <input type="radio" onclick="filterSelection('multiple-view')" name = "view"/> <small>Multiple View</small>
+    <summary>View</summary>
+    <input type="radio" id="single-view" name = "view"/> <small>Single View</small>
+    <input type="radio" id="multiple-view" name = "view"/> <small>Multiple View</small>
   </details>
   <details>
     <summary>Scale</summary>
+    <input type="radio" id="single-scale" name = "scale"/> <small>Single Scale</small>
+    <input type="radio" id="multiple-scale" name = "scale"/> <small>Multiple Scale</small>
   </details>
   <details>
-    <summary>Views</summary>
+    <summary>Focus</summary>
+    <input type="radio" id="single-focus" name = "focus"/> <small>Single Focus</small>
+    <input type="radio" id="multiple-focus" name = "focus"/> <small>Multiple Focus</small>
   </details>
 </div>
 <div class="column">
@@ -62,5 +71,6 @@ permalink: /search_page/
 
 
 </style>
+<script src="/scripts/onClick.js"></script>
 <script src = "/scripts/filter.js"></script>
 </html>
