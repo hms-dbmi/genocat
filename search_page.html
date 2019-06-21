@@ -14,25 +14,27 @@ permalink: /search_page/
 
 <div class="column">
 <h2>Attributes</h2>
-<details>
-<summary>Layout</summary>
-<input type="checkbox" onclick="filterSelection('circular')"> <small>Circular</small>
-<input type="checkbox" onclick="filterSelection('linear')"> <small>Linear</small>
-<br>
-<input type="checkbox" onclick="filterSelection('spacefilling')"> <small>Space Filling</small>
-<input type="checkbox" onclick="filterSelection('spatial')"> <small>Spatial</small>
-</details>
-<details>
-<summary>Views</summary>
-<input type="checkbox" onclick="filterSelection('single-view')"> <small>Single View</small>
-<input type="checkbox" onclick="filterSelection('multiple-view')"> <small>Multiple View</small>
-</details>
-<details>
-<summary>Scale</summary>
-</details>
-<details>
-<summary>Views</summary>
-</details>
+<form action = "" method = "post">
+  <details>
+    <summary>Layout</summary>
+    <input type="radio" onclick="filterSelection('circular')" name = "layout"/> <small>Circular</small>
+    <input type="radio" onclick="filterSelection('linear')" name = "layout"/> <small>Linear</small>
+    <br>
+    <input type="radio" onclick="filterSelection('spacefilling')" name = "layout"/> <small>Space Filling</small>
+    <input type="radio" onclick="filterSelection('spatial')" name = "layout"/> <small>Spatial</small>
+    </form>
+  </details>
+  <details>
+    <summary>Views</summary>
+    <input type="radio" onclick="filterSelection('single-view')" name = "view"/> <small>Single View</small>
+    <input type="radio" onclick="filterSelection('multiple-view')" name = "view"/> <small>Multiple View</small>
+  </details>
+  <details>
+    <summary>Scale</summary>
+  </details>
+  <details>
+    <summary>Views</summary>
+  </details>
 </div>
 <div class="column">
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
