@@ -7,6 +7,7 @@ lay: circular
 focus: single
 scale: single
 view: single
+paper_title: 'CiVi: circular genome visualization with unique features to analyze sequence elements'
 paper: https://www.ncbi.nlm.nih.gov/pubmed/25910699
 browser: http://wishart.biology.ualberta.ca/cgview/
 image: ../../../../assets/CGView.png

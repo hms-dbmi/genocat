@@ -7,6 +7,7 @@ lay: spatial
 focus: single
 scale: single
 view: single
+paper_title: 'A low-latency, big database system and browser for storage, querying and visualization of 3D genomic data'
 paper: https://www.ncbi.nlm.nih.gov/pubmed/25990738
 browser: http://3dgb.cs.mcgill.ca/
 image: ../../../../assets/3D_Genome_Browser.jpg

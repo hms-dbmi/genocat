@@ -7,6 +7,7 @@ lay: spacefilling
 focus: single
 scale: single
 view: single
+paper_title: 'Visualization of genomic data with the Hilbert curve'
 paper: https://academic.oup.com/bioinformatics/article/25/10/1231/270493
 browser: https://bioconductor.riken.jp/packages/3.5/bioc/html/HilbertVis.html
 image: ../../../../assets/HilbertVis.png

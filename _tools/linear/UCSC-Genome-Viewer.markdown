@@ -7,6 +7,7 @@ lay: linear
 focus: single
 scale: single
 view: single
+paper_title: The human genome browser at UCSC
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC186604/
 browser: https://genome.ucsc.edu/cgi-bin/hgGateway
 image: ../../../../assets/UCSC_Genome_Viewer.png

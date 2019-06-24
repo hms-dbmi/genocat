@@ -7,6 +7,7 @@ lay: linear
 focus: single
 scale: multiple
 view: multiple
+paper_title: 'MochiView: versatile software for genome browsing and DNA motif analysis'
 paper: https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-8-49
 browser: http://www.johnsonlab.ucsf.edu/mochi
 image: ../../../../assets/MochiView.png

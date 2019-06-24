@@ -1,0 +1,12 @@
+- title: 'CGView - Circular Genome Viewer'
+  {'_filled': False,
+ 'bib': {u'abstract': u'We have developed CiVi, a user-friendly web-based tool to create custom circular maps to aid the analysis of microbial genomes and sequence elements. Sequence related data such as gene-name, COG class, PFAM domain, GC%, and subcellular location can be comprehensively viewed. Quantitative gene-related data (eg expression ratios or read counts) as well as predicted sequence elements (eg regulatory sequences) can be uploaded and visualized. CiVi accommodates the analysis of genomic elements by allowing \u2026',
+         u'author': u'L Overmars and SAFT van Hijum and RJ Siezen\u2026',
+         u'eprint': u'https://academic.oup.com/bioinformatics/article/31/17/2867/183091',
+         u'title': u'CiVi: circular genome visualization with unique features to analyze sequence elements',
+         u'url': u'https://academic.oup.com/bioinformatics/article-abstract/31/17/2867/183091'},
+ 'citedby': 17,
+ 'id_scholarcitedby': u'14354539190896705628',
+ 'source': u'scholar',
+ 'url_scholarbib': u'https://scholar.googleusercontent.com/scholar.bib?q=info:XEDSK1eRNccJ:scholar.google.com/&output=citation&scisdr=CgUH0OHFGAA:AAGBfm0AAAAAXRERhTIpyZK-2e4FZICc_oz7dzRu4bdS&scisig=AAGBfm0AAAAAXRERhc1yl51Fu9xcklrVpQ94uh_QHJ2s&scisf=4&ct=citation&cd=0&hl=en'}
+

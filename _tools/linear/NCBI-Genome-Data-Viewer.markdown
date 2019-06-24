@@ -7,6 +7,7 @@ lay: linear
 focus: single
 scale: single
 view: single
+paper_title: 'Database Resources of the National Center for Biotechnology Information'
 paper: https://doi.org/10.1093/nar/gkw1071
 browser: https://www.ncbi.nlm.nih.gov/genome/gdv/
 image: ../../../../assets/NCBIGenomeBrowser.png

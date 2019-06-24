@@ -7,6 +7,7 @@ lay: circular
 focus: single
 scale: single
 view: single
+paper_title: 'Circos: an information aesthetic for comparative genomics'
 paper: https://www.ncbi.nlm.nih.gov/pubmed/19541911
 browser: http://circos.ca/
 image: ../../../../assets/Circos.png
