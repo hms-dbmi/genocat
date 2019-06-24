@@ -10,7 +10,7 @@ view: multiple
 paper_title: 'MochiView: versatile software for genome browsing and DNA motif analysis'
 paper: https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-8-49
 browser: http://www.johnsonlab.ucsf.edu/mochi
-image: ../../../../assets/MochiView.png
+image: /assets/MochiView.png
 ---
 <h4>Background</h4>
 As high-throughput technologies rapidly generate genome-scale data, it becomes increasingly important to visually integrate these data so that specific hypotheses can be formulated and tested.

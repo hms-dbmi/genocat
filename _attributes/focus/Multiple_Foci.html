@@ -4,7 +4,7 @@ title:  Multiple Foci
 categories: attributes
 type: focus
 ---
-<kbd><img src = "/assets/Multiple Foci.png" width="200" align = "left">
+<kbd><img src = "{{site.baseurl}}/assets/Multiple Foci.png" width="200" align = "left">
 </kbd> <br><br>
 
 Multiple foci enable users to look at distinct segments of a genome in parallel
@@ -14,6 +14,6 @@ and compare features that are dispersed across the genome.
 
 {% for post in site.tools %}
   {% if post.focus == "multiple" %}
-    <li><a href ="{{ post.url}}">{{post.title}}</a></li>
+    <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}

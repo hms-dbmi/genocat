@@ -5,7 +5,7 @@ categories: attributes
 type: view
 ---
 
-<img src = "/assets/Single View.png" width="200" align = "left">
+<img src = "{{site.baseurl}}/assets/Single View.png" width="200" align = "left">
 <br><br>
 
 <p align="left">We characterize a view as a set of one or multiple aligned tracks,
@@ -16,6 +16,6 @@ multiple scales and foci.</p>
 
 {% for post in site.tools %}
   {% if post.view == "single" %}
-    <li><a href ="{{ post.url}}">{{post.title}}</a></li>
+    <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}

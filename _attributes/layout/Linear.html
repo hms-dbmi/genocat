@@ -5,7 +5,7 @@ categories: attributes
 type: layout
 ---
 
-<kbd><img src = "/assets/linear_example.png" width="200" align = "left">
+<kbd><img src = "{{site.baseurl}}/assets/linear_example.png" width="200" align = "left">
 </kbd> <br><br>
 
 Linear layouts are more intuitive and easy to read, but may be extremely long and require zooming and panning.
@@ -14,6 +14,6 @@ Linear layouts are more intuitive and easy to read, but may be extremely long an
 
 {% for post in site.tools %}
   {% if post.lay == "linear" %}
-    <li><a href ="{{ post.url}}">{{post.title}}</a></li>
+    <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}
