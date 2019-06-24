@@ -5,7 +5,7 @@ categories: attributes
 type: view
 ---
 
-<img src = "/assets/Multiple View.png" width="200" align = "left">
+<img src = "{{site.baseurl}}/assets/Multiple View.png" width="200" align = "left">
 
 <p> Multiple views allow for visualizations with multiple scales and foci.
 Multiple views can be (i) independent, (ii) weakly linked, (iii) medium linked or (iv)
@@ -19,6 +19,6 @@ tracks that are aligned to the axis.</p>
 <br>
 {% for post in site.tools %}
   {% if post.view == "multiple"%}
-    <li><a href ="{{ post.url}}">{{post.title}}</a></li>
+    <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
   {% endif %}
 {% endfor %}
