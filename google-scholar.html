@@ -1,0 +1,12 @@
+
+
+<script>
+  'use strict'
+
+let scholar = require('google-scholar')
+
+scholar.all('chairmouse')
+  .then(resultsObj => {
+    console.log(resultsObj) // this will have all ~112 results
+  })
+</script>
