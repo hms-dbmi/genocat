@@ -48,8 +48,8 @@ permalink: /search_page/
 <div class="column">
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 {% for post in site.tools %}
-      <div class="filterDiv {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
-      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></div>
+      <div class="filterDiv {{site.baseurl}} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+      <a href="{{site.baseurl}} {{ post.url | relative_url }}">{{ post.title | escape }}</a></div>
 {% endfor %}
 </div>
 <style>

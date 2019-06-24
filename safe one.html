@@ -106,7 +106,7 @@ permalink: /search_page/
     <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
     <div class="container">
       {% for post in site.tools %}
-        <div class="filterDiv {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+        <div class="filterDiv {{site.baseurl}} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></div>
       {% endfor %}
     </div>
