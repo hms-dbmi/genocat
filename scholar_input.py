@@ -2,7 +2,7 @@ import scholarly
 import frontmatter
 import os
 
-f = open('_data/scholar_data.txt', 'w')
+f = open('_data/raw_scholar.txt', 'w')
 for file in os.listdir('_tools'):
     filepath = os.path.join('_tools', file)
     post = frontmatter.load(filepath)
