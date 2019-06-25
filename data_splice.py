@@ -1,4 +1,4 @@
-f1 = open('_data/raw_scholar.txt', 'r')
+f1 = open('_data/raw_scholarly.txt', 'r')
 f2 = open('_data/scholar_data.yml', 'w')
 for line in f1:
     if line[0:9] == "- title: ":
