@@ -11,10 +11,17 @@ layout: default
     <img src = "{{site.baseurl}}{{ page.image }}" width="500"> <br><br>
     <h3>Abstract</h3>
     {{ content }}
+
+    Cited by:
+    {% for tool in site.data.scholar_data %}
+      {% if tool.title == page.title %}
+        {{ tool.citedby }}
+      {% endif %}
+    {% endfor %}
+    <br>
+    
     The paper can be found <a href="{{ page.paper }}">here</a>. <br>
     The genome browser can be accessed <a href="{{ page.browser }}">here</a>. <br><br>
-
-
     <h3>Attributes</h3>
     {%- if page.lay == "linear" -%}
       <li><a href= "../../attributes/layout/Linear.html">Linear</a></li>
