@@ -1,0 +1,40 @@
+---
+layout: page
+title:  Focus
+categories: attributes
+---
+
+<div>
+  <h1><a id="Single Focus"></a>Single Focus</h1>
+
+    <img src = "{{site.baseurl}}/assets/Single Focus.png" width="200" align = "left">
+
+    <br>
+    A focus is similar to sliding a window across the
+    genome. Only the region in this window can be analyzed.
+
+    <br><br><br>
+
+    {% for post in site.tools %}
+      {% if post.focus == "single" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+</div>
+<br><br>
+<div>
+  <h1><a id="Multiple Foci"></a>Multiple Foci</h1>
+    <kbd><img src = "{{site.baseurl}}/assets/Multiple Foci.png" width="200" align = "left">
+    </kbd> <br><br>
+
+    Multiple foci enable users to look at distinct segments of a genome in parallel
+    and compare features that are dispersed across the genome.
+
+    <br><br><br>
+
+    {% for post in site.tools %}
+      {% if post.focus == "multiple" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+</div>
