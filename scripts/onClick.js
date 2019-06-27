@@ -22,7 +22,6 @@ document.getElementById("circular").onclick=function() {
   arr = uncheck("spacefilling", arr);
   arr = uncheck("spatial", arr);
   arr = uncheck("show-all-layouts", arr);
-  //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
 
@@ -35,7 +34,6 @@ document.getElementById("spacefilling").onclick=function() {
   arr = uncheck("circular", arr);
   arr = uncheck("spatial", arr);
   arr = uncheck("show-all-layouts", arr);
-  //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
 
@@ -48,7 +46,6 @@ document.getElementById("spatial").onclick=function() {
   arr = uncheck("circular", arr);
   arr = uncheck("spacefilling", arr);
   arr = uncheck("show-all-layouts", arr);
-  //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
 
@@ -59,7 +56,6 @@ document.getElementById("single-view").onclick=function() {
   }
   arr = uncheck("multiple-view", arr);
   arr = uncheck("show-all-views", arr);
-  //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
 
@@ -70,7 +66,6 @@ document.getElementById("multiple-view").onclick=function() {
   }
   arr = uncheck("single-view", arr);
   arr = uncheck("show-all-views", arr);
-  //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
 
@@ -81,7 +76,6 @@ document.getElementById("single-scale").onclick=function() {
   }
   arr = uncheck("multiple-scale", arr);
   arr = uncheck("show-all-scales", arr);
-  //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
 
@@ -92,7 +86,6 @@ document.getElementById("multiple-scale").onclick=function() {
   }
   arr = uncheck("single-scale", arr);
   arr = uncheck("show-all-scales", arr);
-  //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
 
@@ -103,7 +96,6 @@ document.getElementById("single-focus").onclick=function() {
   }
   arr = uncheck("multiple-focus", arr);
   arr = uncheck("show-all-foci", arr);
-  //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
 
@@ -114,7 +106,6 @@ document.getElementById("multiple-focus").onclick=function() {
   }
   arr = uncheck("single-focus", arr);
   arr = uncheck("show-all-foci", arr);
-  //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
 

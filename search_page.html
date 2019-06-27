@@ -13,11 +13,9 @@ permalink: /search_page/
 </head>
 
 <div class="column">
-<h2>Attributes</h2>
 
-<!-- <form action = "" method = "post"> -->
-<!-- <details> -->
-  <!-- <summary>Attributes </summary> -->
+<input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
+  <br><br>
   User Preferences
   <details>
     <summary>Format</summary>
@@ -82,6 +80,8 @@ permalink: /search_page/
   </details>
 </details>
 </div>
+
+
 <div class="column">
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 {% for post in site.tools %}
@@ -110,5 +110,6 @@ permalink: /search_page/
 
 <script src="{{site.baseurl}}/scripts/onClick.js"></script>
 <script src = "{{site.baseurl}}/scripts/filter.js"></script>
+<script src="{{site.baseurl}}/scripts/search_bar.js"></script>
 
 </html>
