@@ -20,18 +20,17 @@ function filterFunction() {
   }
 }
 
-//filterMultSelection(["all"]);
+filterMultSelection([]);
 
 function filterMultSelection(c) {
   var x, i, j;
   x = document.getElementsByClassName("filterDiv");
-  //if (c == ["all"]) c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     j=0;
     w3AddClass(x[i], "show");
     while (j<c.length) {
-      if (x[i].className.indexOf(c[j]) == -1) {
+      if (x[i].className.indexOf(c[j]) == -1 && c.length>0) {
         w3RemoveClass(x[i], "show");
       }
       j++;

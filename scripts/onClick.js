@@ -8,6 +8,7 @@ document.getElementById("linear").onclick=function() {
   arr = uncheck("circular", arr);
   arr = uncheck("spacefilling", arr);
   arr = uncheck("spatial", arr);
+  arr = uncheck("show-all-layouts", arr);
   //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
@@ -20,6 +21,7 @@ document.getElementById("circular").onclick=function() {
   arr = uncheck("linear", arr);
   arr = uncheck("spacefilling", arr);
   arr = uncheck("spatial", arr);
+  arr = uncheck("show-all-layouts", arr);
   //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
@@ -32,6 +34,7 @@ document.getElementById("spacefilling").onclick=function() {
   arr = uncheck("linear", arr);
   arr = uncheck("circular", arr);
   arr = uncheck("spatial", arr);
+  arr = uncheck("show-all-layouts", arr);
   //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
@@ -44,6 +47,7 @@ document.getElementById("spatial").onclick=function() {
   arr = uncheck("linear", arr);
   arr = uncheck("circular", arr);
   arr = uncheck("spacefilling", arr);
+  arr = uncheck("show-all-layouts", arr);
   //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
@@ -54,6 +58,7 @@ document.getElementById("single-view").onclick=function() {
     arr.push("single-view");
   }
   arr = uncheck("multiple-view", arr);
+  arr = uncheck("show-all-views", arr);
   //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
@@ -64,6 +69,7 @@ document.getElementById("multiple-view").onclick=function() {
     arr.push("multiple-view");
   }
   arr = uncheck("single-view", arr);
+  arr = uncheck("show-all-views", arr);
   //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
@@ -74,6 +80,7 @@ document.getElementById("single-scale").onclick=function() {
     arr.push("single-scale");
   }
   arr = uncheck("multiple-scale", arr);
+  arr = uncheck("show-all-scales", arr);
   //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
@@ -84,6 +91,7 @@ document.getElementById("multiple-scale").onclick=function() {
     arr.push("multiple-scale");
   }
   arr = uncheck("single-scale", arr);
+  arr = uncheck("show-all-scales", arr);
   //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
@@ -94,6 +102,7 @@ document.getElementById("single-focus").onclick=function() {
     arr.push("single-focus");
   }
   arr = uncheck("multiple-focus", arr);
+  arr = uncheck("show-all-foci", arr);
   //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
@@ -104,9 +113,41 @@ document.getElementById("multiple-focus").onclick=function() {
     arr.push("multiple-focus");
   }
   arr = uncheck("single-focus", arr);
+  arr = uncheck("show-all-foci", arr);
   //document.getElementById("demo").innerHTML = arr;
   filterMultSelection(arr);
 }
+
+//show all layouts
+document.getElementById("show-all-layouts").onclick=function() {
+  arr = uncheck("linear", arr);
+  arr = uncheck("circular", arr);
+  arr = uncheck("spacefilling", arr);
+  arr = uncheck("spatial", arr);
+  filterMultSelection(arr);
+}
+
+//show all views
+document.getElementById("show-all-views").onclick=function() {
+  arr = uncheck("single-view", arr);
+  arr = uncheck("multiple-view", arr);
+  filterMultSelection(arr);
+}
+
+//show all scales
+document.getElementById("show-all-scales").onclick=function() {
+  arr = uncheck("single-scale", arr);
+  arr = uncheck("multiple-scale", arr);
+  filterMultSelection(arr);
+}
+
+//show all foci
+document.getElementById("show-all-foci").onclick=function() {
+  arr = uncheck("single-focus", arr);
+  arr = uncheck("multiple-focus", arr);
+  filterMultSelection(arr);
+}
+
 
 function uncheck(other, arr) {
   for( var i = 0; i < arr.length; i++){

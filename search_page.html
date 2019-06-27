@@ -14,12 +14,10 @@ permalink: /search_page/
 
 <div class="column">
 <h2>Attributes</h2>
-<!-- <p id="demo"></p> -->
-<!-- <input type="radio" id="linear" name="linear"/>linear testing!
-<input type="radio" id="circular" name="circular"/>circular testing!
-<input type="radio" id="single-view" name="single-view"/>single-view testing! -->
 
-<form action = "" method = "post">
+<!-- <form action = "" method = "post"> -->
+<!-- <details> -->
+  <!-- <summary>Attributes </summary> -->
   User Preferences
   <details>
     <summary>Format</summary>
@@ -47,7 +45,8 @@ permalink: /search_page/
     <br>
     <input type="radio" id="spacefilling" name = "layout"/> <small>Space Filling </small><img src="{{site.baseurl}}/assets/spacefilling_example.png"style="width:45px; height:35px">
     <input type="radio" id="spatial" name = "layout"/> <small>Spatial </small><img src="{{site.baseurl}}/assets/spatial_example.png"style="width:40px; height:30px">
-    </form>
+    <br>
+    <input type="radio" id="show-all-layouts" name="layout"/> <small>Show All</small>
   </details>
   <details>
     <summary>Partition</summary>
@@ -64,17 +63,24 @@ permalink: /search_page/
     <summary>View</summary>
     <input type="radio" id="single-view" name = "view"/> <small>Single View </small><img src="{{site.baseurl}}/assets/Single View.png"style="width:32px; height:30px">
     <input type="radio" id="multiple-view" name = "view"/> <small>Multiple View</small><img src="{{site.baseurl}}/assets/Multiple View.png"style="width:32px; height:30px">
+    <br>
+    <input type="radio" id="show-all-views" name="view"/> <small>Show All</small>
   </details>
   <details>
     <summary>Scale</summary>
     <input type="radio" id="single-scale" name = "scale"/> <small>Single Scale </small><img src="{{site.baseurl}}/assets/Single Scale.png"style="width:32px; height:30px">
     <input type="radio" id="multiple-scale" name = "scale"/> <small>Multiple Scale </small><img src="{{site.baseurl}}/assets/Multiple Scale.png"style="width:32px; height:30px">
+    <br>
+    <input type="radio" id="show-all-scales" name="scale"/> <small>Show All</small>
   </details>
   <details>
     <summary>Focus</summary>
     <input type="radio" id="single-focus" name = "focus"/> <small>Single Focus </small><img src="{{site.baseurl}}/assets/Single Focus.png"style="width:35px; height:25px">
     <input type="radio" id="multiple-focus" name = "focus"/> <small>Multiple Focus </small><img src="{{site.baseurl}}/assets/Multiple Foci.png"style="width:35px; height:25px">
+    <br>
+    <input type="radio" id="show-all-foci" name="focus"/> <small>Show All</small>
   </details>
+</details>
 </div>
 <div class="column">
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
@@ -100,8 +106,9 @@ permalink: /search_page/
          display: block;
        }
 
-
 </style>
+
 <script src="{{site.baseurl}}/scripts/onClick.js"></script>
 <script src = "{{site.baseurl}}/scripts/filter.js"></script>
+
 </html>
