@@ -6,7 +6,7 @@ layout: default
   <div class="column" onclick="openTab('b1');" style="background:white">Introduction</div>
   <div class="column" onclick="openTab('b2');" style="background:white;">Browse for a Tool</div>
   <div class="column" onclick="openTab('b3');" style="background:white;">Submit a New Tool</div>
-  <div class="column" onclick="openTab('b4');" style="background:white;">Link to Review Article</div>
+  <div class="column" onclick="openTab('b4');" style="background:white;">Attribute Terminology</div>
 </div>
 <!-- The expanding grid (hidden by default) -->
 <div id="b1" class="containerTab" style="display:none;background:lightslategray">
@@ -14,14 +14,19 @@ layout: default
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
   <h2>Introduction</h2>
   <p>
-    About the website <br><br>
+    In this site, you will find a database of genomic visualization tools. The tools have been sorted and grouped based on various attributes, and this website has been designed to help you sort through different tools.  <br><br>
+
+    Below, you can find the review article on genomic visualization tools.
+
+    <p><u><a href ="{{site.baseurl}}/assets/Paper.pdf" style="color: white">Tasks, Techniques, and Tools for Genomic Data Visualization</a></u> <br>
+    <small>Sabrina Nusrat, Theresa Harbig, and Nils Gehlenborg</small>
   </p>
 </div>
 <div id="b2" class="containerTab" style="display:none;background:lightslategray">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
   <h2>Browse for a Tool</h2>
   <p>We want to help you find a genome visualization tool that will fit your needs!<br><br>
-    Navigate to the <a href = "{{site.baseurl}}/search_page"style="color: white">Browser</a> tab. All tools in our database will be displayed initially, and you can filter through the different characteristics to find a tool you need. Further descriptions on the listed attributes can be found in the <a href = "{{site.baseurl}}/attribute_page"style="color: white">Attributes</a> tab.
+    Navigate to the <u><a href = "{{site.baseurl}}/search_page"style="color: white">Browser</a></u> tab. All tools in our database will be displayed initially, and you can filter through the different characteristics to find a tool you need. Further descriptions on the listed attributes can be found in the <u><a href = "{{site.baseurl}}/attribute_page"style="color: white">Attributes</a></u> tab.
   </p>
 </div>
 <div id="b3" class="containerTab" style="display:none;background:lightslategray">
@@ -32,9 +37,9 @@ layout: default
 </div>
 <div id="b4" class="containerTab" style="display:none;background:lightslategray">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  <h2>Link to Review Article</h2>
-  <p><u><a href ="{{site.baseurl}}/assets/Paper.pdf" style="color: white">Tasks, Techniques, and Tools for Genomic Data Visualization</a></u> <br>
-  <small>Sabrina Nusrat, Theresa Harbig, and Nils Gehlenborg</small>
+  <h2>Attribute Terminology</h2>
+  <p>
+  For more, please visit the  <u><a href = "{{site.baseurl}}/attribute_page"style="color: white">Attributes</a></u> tab.
   </p>
 </div>
 
