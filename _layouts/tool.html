@@ -2,6 +2,108 @@
 layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  .sidenav {
+    height:100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    background: #eee;
+    overflow-x: hidden;
+    padding-top: 85px;
+    padding-left: 30px;
+  }
+
+  .sidenav a {
+    text-decoration: none;
+    color: #2196F3;
+  }
+
+  .sidenav a:hover {
+    color: #064579;
+  }
+
+  .main {
+    margin-left: 190px; /* Same width as the sidebar + left position in px */
+    padding: 0px 10px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+  </style>
+  </head>
+  <body>
+
+  <div class="sidenav">
+    <p> Tool can be found <a href="{{ page.paper }}">here</a> </p>
+    <p> Paper can be found<a href="{{ page.browser }}"> here</a> </p>
+    <p> Cited by:
+      {% for tool in site.data.scholar_data %}
+        {% if tool.title == page.title %}
+          {{ tool.citedby }}
+        {% endif %}
+      {% endfor %}
+    </p>
+    <p> Attributes:
+      {%- if page.lay == "linear" -%}
+        <li><a href= "{{site.baseurl}}/attributes/layout/Linear.html">Linear</a></li>
+      {%- elsif page.lay == "circular" -%}
+        <li><a href= "{{site.baseurl}}/attributes/layout/Circular.html">Circular</a></li>
+      {%- elsif page.lay == "spacefilling" -%}
+        <li><a href= "{{site.baseurl}}/attributes/layout/Space-Filling.html">Space Filling</a></li>
+      {%- elsif page.lay == "spatial" -%}
+        <li><a href= "{{site.baseurl}}/attributes/layout/Spatial.html">Spatial</a></li>
+      {%- endif -%}
+
+      {%- if page.focus == "single" -%}
+        <li><a href= "{{site.baseurl}}/attributes/focus/Single_Focus.html">Single Focus</a></li>
+      {%- elsif page.focus == "multiple" -%}
+        <li><a href= "{{site.baseurl}}/attributes/focus/Multiple_Foci.html">Multiple Foci</a></li>
+      {%- endif -%}
+
+      {%- if page.scale == "single" -%}
+        <li><a href= "{{site.baseurl}}/attributes/scale/Single_Scale.html">Single Scale</a></li>
+      {%- elsif page.scale == "multiple" -%}
+        <li><a href= "{{site.baseurl}}/attributes/scale/Multiple-Scales.html">Multiple Scales</a></li>
+      {%- endif -%}
+
+      {%- if page.view == "single" -%}
+        <li><a href= "{{site.baseurl}}/attributes/view/Single_View.html">Single View</a></li>
+      {%- elsif page.view == "multiple" -%}
+        <li><a href= "{{site.baseurl}}/attributes/view/Multiple-View.html">Multiple Views</a></li>
+      {%- endif -%}
+
+    </p>
+
+  </div>
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -11,45 +113,6 @@ layout: default
     <img src = "{{site.baseurl}}{{ page.image }}" width="500"> <br><br>
     <h3>Abstract</h3>
     {{ content }}
-
-    Cited by:
-    {% for tool in site.data.scholar_data %}
-      {% if tool.title == page.title %}
-        {{ tool.citedby }}
-      {% endif %}
-    {% endfor %}
-    <br>
-    
-    The paper can be found <a href="{{ page.paper }}">here</a>. <br>
-    The genome browser can be accessed <a href="{{ page.browser }}">here</a>. <br><br>
-    <h3>Attributes</h3>
-    {%- if page.lay == "linear" -%}
-      <li><a href= "{{site.baseurl}}/attributes/layout/Linear.html">Linear</a></li>
-    {%- elsif page.lay == "circular" -%}
-      <li><a href= "{{site.baseurl}}/attributes/layout/Circular.html">Circular</a></li>
-    {%- elsif page.lay == "spacefilling" -%}
-      <li><a href= "{{site.baseurl}}/attributes/layout/Space-Filling.html">Space Filling</a></li>
-    {%- elsif page.lay == "spatial" -%}
-      <li><a href= "{{site.baseurl}}/attributes/layout/Spatial.html">Spatial</a></li>
-    {%- endif -%}
-
-    {%- if page.focus == "single" -%}
-      <li><a href= "{{site.baseurl}}/attributes/focus/Single_Focus.html">Single Focus</a></li>
-    {%- elsif page.focus == "multiple" -%}
-      <li><a href= "{{site.baseurl}}/attributes/focus/Multiple_Foci.html">Multiple Foci</a></li>
-    {%- endif -%}
-
-    {%- if page.scale == "single" -%}
-      <li><a href= "{{site.baseurl}}/attributes/scale/Single_Scale.html">Single Scale</a></li>
-    {%- elsif page.scale == "multiple" -%}
-      <li><a href= "{{site.baseurl}}/attributes/scale/Multiple-Scales.html">Multiple Scales</a></li>
-    {%- endif -%}
-
-    {%- if page.view == "single" -%}
-      <li><a href= "{{site.baseurl}}/attributes/view/Single_View.html">Single View</a></li>
-    {%- elsif page.view == "multiple" -%}
-      <li><a href= "{{site.baseurl}}/attributes/view/Multiple-View.html">Multiple Views</a></li>
-    {%- endif -%}
 
   </div>
 
