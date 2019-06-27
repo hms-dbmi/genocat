@@ -1,113 +1,91 @@
 ---
 layout: default
 ---
-
-<html>
-  <head>
-    <style>
-    .column {
-      float: left;
-      width: 14.28%;
-    }
-    .first-column {
-    width: 57%;
-    float: left;
-  }
-
-  .second-column {
-    width: 43%;
-    float: right;
-  }
-    </style>
-  </head>
-<h1>Data Taxonomy</h1>
-<div class="first-column">
-  <h4>Type</h4>
-</div>
-<div class="second-column">
-  <h4>Interconnection</h4>
-</div>
-<br>
-<div class="column">
-  <img src="{{site.baseurl}}/assets/Sparse I I.png" style="width:80px; height:95px" title="Sparse" alt="Sparse"></a>
-</div>
-<div class="column">
-  <img src="{{site.baseurl}}/assets/SparseII.png" style="width:80px; height:95px" title="Sparse" alt="Sparse"></a>
-</div>
-<div class="column">
-  <img src="{{site.baseurl}}/assets/Contiguous I I.png" style="width:80px; height:95px" title="Contiguous" alt="Contiguous"></a>
-</div>
-<div class="column">
-  <img src="{{site.baseurl}}/assets/ContiguousII.png" style="width:80px; height:100px" title="Contiguous" alt="Contiguous"></a>
-</div>
-<div class="column">
-  <img src="{{site.baseurl}}/assets/NoneI.png" style="width:80px; height:95px" title="None" alt="None"></a>
-</div>
-<div class="column">
-  <img src="{{site.baseurl}}/assets/Within.png" style="width:80px; height:95px" title="Within" alt="Within"></a>
-</div>
-<div class="column">
-  <img src="{{site.baseurl}}/assets/Between.png" style="width:80px; height:95px" title="Between" alt="Between"></a>
-</div>
-
-<br><br><br><br><br><br><br>
-<h1>Visualization Taxonomy</h1>
-<div class="home">
+<div>
   <div class="row">
-    <div class="column">
-      <a href = "{{site.baseurl}}/attributes/layout.html"><h4>Layout</h4>
-      <a href="{{site.baseurl}}/attributes/layout.html#Circular"><img src="{{site.baseurl}}/assets/circular.png" style="width:80px; height:95px" title="Circular" alt="Circular"></a>
-      <br><br>
-      <a href="{{site.baseurl}}/attributes/layout.html#Linear"><img src="{{site.baseurl}}/assets/linear.png" style="width:80px; height:95px" title="Linear" alt="Linear"></a>
-      <br><br>
-      <a href="{{site.baseurl}}/attributes/layout.html#Space Filling"><img src="{{site.baseurl}}/assets/space.png" style="width:80px; height:95px" title="Linear" alt="Linear"></a>
-      <br><br>
-      <a href="{{site.baseurl}}/attributes/layout.html#Spatial"><img src="{{site.baseurl}}/assets/spatial.png" style="width:80px; height:95px" title="Linear" alt="Linear"></a>
-    </div>
-    <div class="column">
-      <h4>Partition</h4>
-      <img src="{{site.baseurl}}/assets/Contiguous.png"style="width:80px; height:95px" >
-      <br><br>
-      <img src="{{site.baseurl}}/assets/Segregated.png"style="width:80px; height:95px" >
-    </div>
-    <div class="column">
-      <h4>Abstraction</h4>
-      <img src="{{site.baseurl}}/assets/None.png"style="width:80px; height:95px" >
-      <br><br>
-      <img src="{{site.baseurl}}/assets/Partial.png"style="width:80px; height:95px" >
-      <br><br>
-      <img src="{{site.baseurl}}/assets/Complete.png"style="width:80px; height:95px" >
-    </div>
-    <div class="column">
-      <h4>Arrangement</h4>
-      <a href="{{site.baseurl}}/attributes/arrangement/linear_parallel.html"><img src="{{site.baseurl}}/assets/Linear Parallel.png" style="width:80px; height:95px" title="Linear" alt="Linear"></a>
-      <br><br>
-      <img src="{{site.baseurl}}/assets/Linear Serial.png"style="width:80px; height:95px" >
-      <br><br>
-      <img src="{{site.baseurl}}/assets/Linear Orthogonal.png"style="width:80px; height:95px" >
-      <br><br>
-      <img src="{{site.baseurl}}/assets/Circular Parallel.png"style="width:80px; height:95px" >
-      <br><br>
-      <img src="{{site.baseurl}}/assets/Circular Serial.png"style="width:80px; height:95px" >
-    </div>
-    <div class="column">
-      <a href = "{{site.baseurl}}/attributes/views.html"><h4>Views</h4>
-      <a href="{{site.baseurl}}/attributes/views.html#Single View"><img src="{{site.baseurl}}/assets/One View.png" style="width:80px; height:95px" title="Linear" alt="Linear"></a>
-      <br><br>
-      <a href="{{site.baseurl}}/attributes/views.html#Multiple Views"><img src="{{site.baseurl}}/assets/Multiple Views.png" style="width:80px; height:95px" title="Linear" alt="Linear"></a>
-    </div>
-    <div class="column">
-      <a href = "{{site.baseurl}}/attributes/scales.html"><h4>Scales</h4>
-      <a href="{{site.baseurl}}/attributes/scales.html#Single Scale"><img src="{{site.baseurl}}/assets/One Scale.png" style="width:80px; height:95px" title="Linear" alt="Linear"></a>
-      <br><br>
-      <a href="{{site.baseurl}}/attributes/scales.html#Multiple Scales"><img src="{{site.baseurl}}/assets/Multiple Scales.png" style="width:80px; height:95px"></a>
-    </div>
-    <div class="column">
-      <a href = "{{site.baseurl}}/attributes/focus.html"><h4>Foci</h4>
-      <a href="{{site.baseurl}}/attributes/focus.html#Single Focus"><img src="{{site.baseurl}}/assets/One Focus.png" style="width:80px; height:95px"></a>
-      <br><br>
-      <a href="{{site.baseurl}}/attributes/focus.html#Multiple Foci"><img src="{{site.baseurl}}/assets/Multiple Focus.png" style="width:80px; height:95px"></a>
-    </div>
-  </div>
+  <div class="column" onclick="openTab('b1');" style="background:white">Introduction</div>
+  <div class="column" onclick="openTab('b2');" style="background:white;">Browse for a Tool</div>
+  <div class="column" onclick="openTab('b3');" style="background:white;">Submit a New Tool</div>
+  <div class="column" onclick="openTab('b4');" style="background:white;">Link to Review Article</div>
 </div>
-</html>
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:lightslategray">
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Introduction</h2>
+  <p>
+    About the website <br><br>
+  </p>
+</div>
+<div id="b2" class="containerTab" style="display:none;background:lightslategray">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Browse for a Tool</h2>
+  <p>We want to help you find a genome visualization tool that will fit your needs!<br><br>
+    Navigate to the <a href = "{{site.baseurl}}/search_page"style="color: white">Browser</a> tab. All tools in our database will be displayed initially, and you can filter through the different characteristics to find a tool you need. Further descriptions on the listed attributes can be found in the <a href = "{{site.baseurl}}/attribute_page"style="color: white">Attributes</a> tab.
+  </p>
+</div>
+<div id="b3" class="containerTab" style="display:none;background:lightslategray">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Submit a New Tool</h2>
+  <p>How to submit a new tool<br><br>
+  </p>
+</div>
+<div id="b4" class="containerTab" style="display:none;background:lightslategray">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Link to Review Article</h2>
+  <p><u><a href ="{{site.baseurl}}/assets/Paper.pdf" style="color: white">Tasks, Techniques, and Tools for Genomic Data Visualization</a></u> <br>
+  <small>Sabrina Nusrat, Theresa Harbig, and Nils Gehlenborg</small>
+  </p>
+</div>
+
+<style>
+.column {
+  margin: 1%;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: lightslategray;
+  float: left;
+  width: 25%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: darkslategrey;
+}
+
+.containerTab {
+  float: left;
+  border-radius: 25px;
+  width: 77%;
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</div>
