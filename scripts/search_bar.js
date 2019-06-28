@@ -1,5 +1,4 @@
 function search() {
-  console.log("reached search function!")
   var input, filter, x, a;
   input = document.getElementById("mySearch");
   filter = input.value.toUpperCase();

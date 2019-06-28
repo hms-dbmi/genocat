@@ -12,8 +12,8 @@ permalink: /search_page/
   </style>
 </head>
 
-<div class="column">
-
+<div class="column left">
+<div class="sidenav">
 <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
   <br><br>
   User Preferences
@@ -39,9 +39,11 @@ permalink: /search_page/
   <details>
     <summary>Layout</summary>
     <input type="radio" id="circular" name = "layout"/><small>Circular </small><img src="{{site.baseurl}}/assets/circular_example.png"style="width:35px; height:30px">
+    <br>
     <input type="radio" id="linear" name = "layout"/><small>Linear </small><img src="{{site.baseurl}}/assets/linear_example.png"style="width:35px; height:30px">
     <br>
     <input type="radio" id="spacefilling" name = "layout"/> <small>Space Filling </small><img src="{{site.baseurl}}/assets/spacefilling_example.png"style="width:45px; height:35px">
+    <br>
     <input type="radio" id="spatial" name = "layout"/> <small>Spatial </small><img src="{{site.baseurl}}/assets/spatial_example.png"style="width:40px; height:30px">
     <br>
     <input type="radio" id="show-all-layouts" name="layout"/> <small>Show All</small>
@@ -60,6 +62,7 @@ permalink: /search_page/
   <details>
     <summary>View</summary>
     <input type="radio" id="single-view" name = "view"/> <small>Single View </small><img src="{{site.baseurl}}/assets/Single View.png"style="width:32px; height:30px">
+    <br>
     <input type="radio" id="multiple-view" name = "view"/> <small>Multiple View</small><img src="{{site.baseurl}}/assets/Multiple View.png"style="width:32px; height:30px">
     <br>
     <input type="radio" id="show-all-views" name="view"/> <small>Show All</small>
@@ -67,6 +70,7 @@ permalink: /search_page/
   <details>
     <summary>Scale</summary>
     <input type="radio" id="single-scale" name = "scale"/> <small>Single Scale </small><img src="{{site.baseurl}}/assets/Single Scale.png"style="width:32px; height:30px">
+    <br>
     <input type="radio" id="multiple-scale" name = "scale"/> <small>Multiple Scale </small><img src="{{site.baseurl}}/assets/Multiple Scale.png"style="width:32px; height:30px">
     <br>
     <input type="radio" id="show-all-scales" name="scale"/> <small>Show All</small>
@@ -74,20 +78,24 @@ permalink: /search_page/
   <details>
     <summary>Focus</summary>
     <input type="radio" id="single-focus" name = "focus"/> <small>Single Focus </small><img src="{{site.baseurl}}/assets/Single Focus.png"style="width:35px; height:25px">
+    <br>
     <input type="radio" id="multiple-focus" name = "focus"/> <small>Multiple Focus </small><img src="{{site.baseurl}}/assets/Multiple Foci.png"style="width:35px; height:25px">
     <br>
     <input type="radio" id="show-all-foci" name="focus"/> <small>Show All</small>
   </details>
 </details>
 </div>
+</div>
 
 
-<div class="column">
+<div class="column right">
+  <div class = "items">
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 {% for post in site.tools %}
       <div class="filterDiv {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
       <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></div>
 {% endfor %}
+</div>
 </div>
 <style>
 
@@ -107,6 +115,27 @@ permalink: /search_page/
        }
 
 </style>
+
+<style>
+
+.items {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.left {
+  width: 25%;
+}
+.right {
+  width: 50%;
+}
+
+.sidenav {
+  /* somehow make this column skinnier? padding just moves the text over to the left */
+}
+</style>
+
 
 <script src="{{site.baseurl}}/scripts/onClick.js"></script>
 <script src = "{{site.baseurl}}/scripts/filter.js"></script>
