@@ -10,6 +10,7 @@ view: multiple
 paper_title: 'HiGlass: web-based visual exploration and analysis of genome interaction maps'
 paper: https://www.ncbi.nlm.nih.gov/pubmed/30143029
 browser: https://higlass.io/
+access_format: Web Browser
 image: /assets/HiGlass.png
 ---
 

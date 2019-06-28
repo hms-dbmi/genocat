@@ -72,6 +72,13 @@ layout: default
         {% endif %}
       {% endfor %}
     </p>
+    <p> Publication Year:
+      {% for tool in site.data.scholar_data %}
+        {% if tool.title == page.title %}
+          {{ tool.citedby }}
+        {% endif %}
+      {% endfor %}
+    </p>
     <p> Attributes:
       {%- if page.lay == "linear" -%}
         <li><a href= "{{site.baseurl}}/attributes/layout/Linear.html">Linear</a></li>

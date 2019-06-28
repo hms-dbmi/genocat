@@ -10,6 +10,7 @@ view: multiple
 paper_title: 'Using the NCBI Map Viewer to browse genomic sequence data'
 paper: https://www.ncbi.nlm.nih.gov/pubmed/18428781
 browser: https://www.ncbi.nlm.nih.gov/projects/sviewer/
+access_format: Web Browser
 image: /assets/NCBISequenceViewer.png
 ---
 
