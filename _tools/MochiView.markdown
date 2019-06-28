@@ -11,6 +11,7 @@ paper_title: 'MochiView: versatile software for genome browsing and DNA motif an
 paper: https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-8-49
 browser: http://www.johnsonlab.ucsf.edu/mochi
 access_format: Software
+pub_year: '2010'
 image: /assets/MochiView.png
 ---
 <h4>Background</h4>

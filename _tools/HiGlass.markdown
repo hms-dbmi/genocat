@@ -11,6 +11,7 @@ paper_title: 'HiGlass: web-based visual exploration and analysis of genome inter
 paper: https://www.ncbi.nlm.nih.gov/pubmed/30143029
 browser: https://higlass.io/
 access_format: Web Browser
+pub_year: '2018'
 image: /assets/HiGlass.png
 ---
 

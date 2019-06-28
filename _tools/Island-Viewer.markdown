@@ -11,6 +11,7 @@ paper_title: 'IslandViewer 3: more flexible, interactive genomic island discover
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4489224/
 browser: https://www.pathogenomics.sfu.ca/islandviewer/
 access_format: Web Browser
+pub_year: '2015'
 image: /assets/IslandViewer_example.png
 ---
 

@@ -11,6 +11,7 @@ paper_title: 'Database Resources of the National Center for Biotechnology Inform
 paper: https://doi.org/10.1093/nar/gkw1071
 browser: https://www.ncbi.nlm.nih.gov/genome/gdv/
 access_format: Web Browser
+pub_year: '2017'
 image: /assets/NCBIGenomeBrowser.png
 ---
 

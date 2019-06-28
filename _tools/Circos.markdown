@@ -11,6 +11,7 @@ paper_title: 'Circos: an information aesthetic for comparative genomics'
 paper: https://www.ncbi.nlm.nih.gov/pubmed/19541911
 browser: http://circos.ca/
 access_format: Software
+pub_year: '2009'
 image: /assets/Circos.png
 ---
 

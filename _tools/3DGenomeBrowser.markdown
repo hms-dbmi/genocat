@@ -12,6 +12,7 @@ paper_title: 'A low-latency, big database system and browser for storage, queryi
 paper: https://www.ncbi.nlm.nih.gov/pubmed/25990738
 browser: http://3dgb.cs.mcgill.ca/
 access_format: Web Browser
+pub_year: '2015'
 image: /assets/3D_Genome_Browser.jpg
 ---
 

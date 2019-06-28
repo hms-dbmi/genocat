@@ -65,6 +65,7 @@ layout: default
   <div class="sidenav">
     <p> Tool can be found <a href="{{ page.browser }}">here</a> </p>
     <p> Paper can be found<a href="{{ page.paper }}"> here</a> </p>
+    <p> Access: {{ page.access_format }}</p>
     <p> Cited by:
       {% for tool in site.data.scholar_data %}
         {% if tool.title == page.title %}
@@ -72,13 +73,7 @@ layout: default
         {% endif %}
       {% endfor %}
     </p>
-    <p> Publication Year:
-      {% for tool in site.data.scholar_data %}
-        {% if tool.title == page.title %}
-          {{ tool.citedby }}
-        {% endif %}
-      {% endfor %}
-    </p>
+    <p> Publication Year: {{ page.pub_year }}</p>
     <p> Attributes:
       {%- if page.lay == "linear" -%}
         <li><a href= "{{site.baseurl}}/attributes/layout/Linear.html">Linear</a></li>
