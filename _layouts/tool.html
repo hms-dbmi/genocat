@@ -63,8 +63,8 @@ layout: default
   <body>
 
   <div class="sidenav">
-    <p> Tool can be found <a href="{{ page.paper }}">here</a> </p>
-    <p> Paper can be found<a href="{{ page.browser }}"> here</a> </p>
+    <p> Tool can be found <a href="{{ page.browser }}">here</a> </p>
+    <p> Paper can be found<a href="{{ page.paper }}"> here</a> </p>
     <p> Cited by:
       {% for tool in site.data.scholar_data %}
         {% if tool.title == page.title %}
@@ -100,7 +100,6 @@ layout: default
       {%- elsif page.view == "multiple" -%}
         <li><a href= "{{site.baseurl}}/attributes/view/Multiple-View.html">Multiple Views</a></li>
       {%- endif -%}
-
     </p>
 
   </div>
