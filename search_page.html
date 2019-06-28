@@ -12,7 +12,7 @@ permalink: /search_page/
   </style>
 </head>
 
-<div class="column">
+<div class="column left">
 <div class="sidenav">
 <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
   <br><br>
@@ -88,7 +88,7 @@ permalink: /search_page/
 </div>
 
 
-<div class="column">
+<div class="column right">
   <div class = "items">
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 {% for post in site.tools %}
@@ -122,6 +122,13 @@ permalink: /search_page/
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+.left {
+  width: 25%;
+}
+.right {
+  width: 50%;
 }
 
 .sidenav {
