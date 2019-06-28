@@ -48,7 +48,7 @@ function w3AddClass(element, name) {
       element.className += " " + arr2[i];
     }
   }
-  console.log(element.className);
+  //console.log(element.className);
 }
 
 // Hide elements that are not selected
