@@ -14,10 +14,7 @@ view: multiple
 type: segment spare and contiguous
 interconnection: within
 arrangement:
-access_format:
-  - jupyter
-  - web browser
-  - javascript
+access_format: ['web browser', 'javascript', 'jupyter']
 pub_year: 2018
 license:
 image: /assets/HiGlass.png
