@@ -18,3 +18,26 @@
   citedby: 37
 - title: UCSC Genome Browser
   citedby: 6933
+
+- title: 3D Genome Browser
+  doi: 12345
+- title: CGView
+  doi: 12346
+- title: Circos
+  doi: 12347
+- title: HiGlass
+  doi: 12348
+- title: HilbertVis
+  doi: 12349
+- title: Island Viewer
+  doi: 12340
+- title: MizBee
+  doi: 12341
+- title: MochiView
+  doi: 12342
+- title: NCBI Genome Viewer
+  doi: 12343
+- title: NCBI Sequence Viewer
+  doi: 12344
+- title: UCSC Genome Browser
+  doi: 12350

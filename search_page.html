@@ -12,6 +12,9 @@ permalink: /search_page/
   </style>
 </head>
 
+<!-- <input type="checkbox" id="sort-by-citation-count" name="sort by" value="citation count"<label for="citation count">Sort by citation count</label> -->
+<input type="radio" id="sort" name = "sort"/><small>Sort by citation count </small>
+
 <div class="column left">
 <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
   <br><br>
@@ -87,11 +90,13 @@ permalink: /search_page/
 
 <div class="column right">
   <div class = "items">
-<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+
 {% for post in site.tools %}
-      <div class="filterDiv {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
-      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></div>
+      <div class="filterDiv {{ post.doi }}{{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </div>
 {% endfor %}
+
 </div>
 </div>
 <style>
@@ -103,6 +108,8 @@ permalink: /search_page/
          text-align: center;
          margin: 5px;
          display: none; /* Hidden by default */
+         padding-left: 5px;
+         padding-right: 5px;
        }
 
 
@@ -134,5 +141,6 @@ permalink: /search_page/
 <script src="{{site.baseurl}}/scripts/onClick.js"></script>
 <script src = "{{site.baseurl}}/scripts/filter.js"></script>
 <script src="{{site.baseurl}}/scripts/search_bar.js"></script>
+<script src="{{site.baseurl}}/scripts/sortBy.js"></script>
 
 </html>

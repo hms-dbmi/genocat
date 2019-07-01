@@ -8,6 +8,9 @@ for file in os.listdir('_tools'):
     post = frontmatter.load(filepath)
     title = post['title']
     paper_title = post['paper_title']
+    doi = post['doi']
+    print paper_title
+    print doi
     search_query = scholarly.search_pubs_query(paper_title)
-    f.write("- title: "+title+"\n  "+str(next(search_query))+"\n\n")
+    f.write("- title: "+title+"\n  "+"doi: "+doi+"\n  "+str(next(search_query))+"\n\n")
 f.close()
