@@ -14,7 +14,7 @@ view: multiple
 type: 
 interconnection: none
 arrangement: 
-access_format: Software
+access_format: software
 pub_year: 2010
 license: 
 image: /assets/MochiView.png

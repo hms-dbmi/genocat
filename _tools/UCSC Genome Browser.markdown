@@ -14,7 +14,7 @@ view: single
 type: 
 interconnection: none
 arrangement: 
-access_format: Web Browser
+access_format: web browser
 pub_year: 2002
 license: 
 image: /assets/UCSC_Genome_Viewer.png

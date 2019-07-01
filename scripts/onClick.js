@@ -4,6 +4,106 @@ document.getElementById("sort").onclick = function() {
   console.log("sort by citation count!");
   sortList();
 }
+//web browser
+document.getElementById("web browser").onclick=function() {
+  if (!arr.includes("web browser")) {
+    arr.push("web browser");
+  }
+  arr = uncheck("software", arr);
+  arr = uncheck("java package", arr);
+  arr = uncheck("r package", arr);
+  arr = uncheck("jupyter", arr);
+  arr = uncheck("javascript", arr);
+  arr = uncheck("show-all-usage", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+
+//software
+document.getElementById("software").onclick=function() {
+  if (!arr.includes("software")) {
+    arr.push("software");
+  }
+  arr = uncheck("web browser", arr);
+  arr = uncheck("java package", arr);
+  arr = uncheck("r package", arr);
+  arr = uncheck("jupyter", arr);
+  arr = uncheck("javascript", arr);
+  arr = uncheck("show-all-usage", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+
+//java package
+document.getElementById("java package").onclick=function() {
+  if (!arr.includes("java package")) {
+    arr.push("java package");
+  }
+  arr = uncheck("web browser", arr);
+  arr = uncheck("software", arr);
+  arr = uncheck("r package", arr);
+  arr = uncheck("jupyter", arr);
+  arr = uncheck("javascript", arr);
+  arr = uncheck("show-all-usage", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+
+//r package
+document.getElementById("r package").onclick=function() {
+  if (!arr.includes("r package")) {
+    arr.push("r package");
+  }
+  arr = uncheck("web browser", arr);
+  arr = uncheck("software", arr);
+  arr = uncheck("java package", arr);
+  arr = uncheck("jupyter", arr);
+  arr = uncheck("javascript", arr);
+  arr = uncheck("show-all-usage", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+
+//jupyter
+document.getElementById("jupyter").onclick=function() {
+  if (!arr.includes("jupyter")) {
+    arr.push("jupyter");
+  }
+  arr = uncheck("web browser", arr);
+  arr = uncheck("software", arr);
+  arr = uncheck("java package", arr);
+  arr = uncheck("r package", arr);
+  arr = uncheck("javascript", arr);
+  arr = uncheck("show-all-usage", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+
+//javascript
+document.getElementById("javascript").onclick=function() {
+  if (!arr.includes("javascript")) {
+    arr.push("javascript");
+  }
+  arr = uncheck("web browser", arr);
+  arr = uncheck("software", arr);
+  arr = uncheck("java package", arr);
+  arr = uncheck("r package", arr);
+  arr = uncheck("jupyter", arr);
+  arr = uncheck("show-all-usage", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+
+//show all
+document.getElementById("show-all-usage").onclick=function() {
+  arr = uncheck("web browser", arr);
+  arr = uncheck("software", arr);
+  arr = uncheck("java package", arr);
+  arr = uncheck("r package", arr);
+  arr = uncheck("jupyter", arr);
+  arr = uncheck("javascript", arr);
+  filterMultSelection(arr);
+}
 
 //linear
 document.getElementById("linear").onclick=function() {

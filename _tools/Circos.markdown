@@ -1,5 +1,5 @@
 ---
-layout: tool 
+layout: tool
 title: Circos
 paper: https://www.ncbi.nlm.nih.gov/pubmed/19541911
 paper_title: "Circos: an information aesthetic for comparative genomics"
@@ -11,11 +11,11 @@ lay: circular
 focus: single
 scale: single
 view: single
-type: 
+type:
 interconnection: within, between
-arrangement: 
-access_format: Software
+arrangement:
+access_format: software
 pub_year: 2009
-license: 
+license:
 image: /assets/Circos.png
 ---

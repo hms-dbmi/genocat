@@ -1,5 +1,5 @@
 ---
-layout: tool 
+layout: tool
 title: HiGlass
 paper: https://www.ncbi.nlm.nih.gov/pubmed/30143029
 paper_title: "HiGlass: web-based visual exploration and analysis of genome interaction maps"
@@ -13,9 +13,12 @@ scale: multiple
 view: multiple
 type: segment spare and contiguous
 interconnection: within
-arrangement: 
-access_format: Web Browser
+arrangement:
+access_format:
+  - jupyter
+  - web browser
+  - javascript
 pub_year: 2018
-license: 
+license:
 image: /assets/HiGlass.png
 ---

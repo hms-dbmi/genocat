@@ -14,7 +14,7 @@ view: single
 type: 
 interconnection: none
 arrangement: 
-access_format: Java package
+access_format: java package
 pub_year: 2015
 license: 
 image: /assets/CGView.png

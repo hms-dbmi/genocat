@@ -14,7 +14,7 @@ view: multiple
 type: segment contiguous
 interconnection: between
 arrangement: Parallel
-access_format: Package
+access_format: software
 pub_year: 2009
 license: 
 image: /assets/Mizbee.jpg

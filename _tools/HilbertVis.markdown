@@ -14,7 +14,7 @@ view: single
 type: 
 interconnection: none
 arrangement: 
-access_format: R package
+access_format: r package
 pub_year: 2009
 license: 
 image: /assets/HilbertVis.png

@@ -20,7 +20,20 @@ permalink: /search_page/
   <br><br>
   User Preferences
   <details>
-    <summary>Format</summary>
+    <summary>Usage Format</summary>
+    <input type="radio" id="web browser" name = "access_format"/><small>Web Browser </small>
+    <br>
+    <input type="radio" id="software" name = "access_format"/><small>Software </small>
+    <br>
+    <input type="radio" id="java package" name = "access_format"/> <small>Java Package </small>
+    <br>
+    <input type="radio" id="r package" name = "access_format"/> <small>R package </small>
+    <br>
+    <input type="radio" id="jupyter" name="access_format"/> <small>Jupyter</small>
+    <br>
+    <input type="radio" id="javascript" name="access_format"/> <small>Javascript</small>
+    <br>
+    <input type="radio" id="show-all-usage" name="access_format"/> <small>Show All</small>
   </details>
   <details>
     <summary>Citation Count</summary>
@@ -92,7 +105,7 @@ permalink: /search_page/
   <div class = "items">
 
 {% for post in site.tools %}
-      <div class="filterDiv {{ post.doi }}{{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+      <div class="filterDiv {{ post.doi }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </div>
 {% endfor %}

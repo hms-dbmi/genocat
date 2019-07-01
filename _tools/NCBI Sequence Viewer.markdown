@@ -14,7 +14,7 @@ view: multiple
 type: 
 interconnection: none
 arrangement: 
-access_format: Web Browser
+access_format: web browser
 pub_year: 2007
 license: 
 image: /assets/NCBISequenceViewer.png
