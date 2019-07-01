@@ -15,4 +15,5 @@ access_format: Software
 pub_year: 2009
 license:
 image: /assets/Circos.png
+doi: 12347
 ---

@@ -1,5 +1,5 @@
 ---
-layout: tool 
+layout: tool
 title: UCSC Genome Browser
 paper: https://www.ncbi.nlm.nih.gov/pubmed/12045153
 paper_title: "The human genome browser at UCSC."
@@ -10,9 +10,10 @@ lay: linear
 focus: single
 scale: single
 view: single
-arrangement: 
+arrangement:
 access_format: Web Browser
 pub_year: 2002
-license: 
+license:
 image: /assets/UCSC_Genome_Viewer.png
+doi: 12350
 ---

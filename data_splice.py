@@ -1,8 +1,10 @@
 f1 = open('_data/raw_scholarly.txt', 'r')
-f2 = open('_data/scholar_data.yml', 'w')
+f2 = open('_data/scholar_data.yml', 'a')
 for line in f1:
     if line[0:9] == "- title: ":
         curr_tool = line[9:]
+        f2.write(line)
+    if line[2:5] == "doi":
         f2.write(line)
     if line[2:9] == "citedby":
         f2.write("  citedby: "+line[12:].replace(',', ''))

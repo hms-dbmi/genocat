@@ -1,5 +1,5 @@
 ---
-layout: tool 
+layout: tool
 title: Island Viewer
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4489224/
 paper_title: "IslandViewer 3: more flexible, interactive genomic island discovery, visualization and analysis"
@@ -10,9 +10,10 @@ lay: circular
 focus: multiple
 scale: multiple
 view: multiple
-arrangement: 
+arrangement:
 access_format: Web Browser
 pub_year: 2015
-license: 
+license:
 image: /assets/IslandViewer_example.png
+doi: 12340
 ---

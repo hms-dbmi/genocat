@@ -116,3 +116,36 @@
  'id_scholarcitedby': u'15058966686884065510',
  'source': u'scholar',
  'url_scholarbib': u'https://scholar.googleusercontent.com/scholar.bib?q=info:5nAqeGoy_NAJ:scholar.google.com/&output=citation&scisdr=CgUH0OHGEMKNlPpMRdM:AAGBfm0AAAAAXRJJXdONtaUSIV_kHqEPPlft_HYfUE3S&scisig=AAGBfm0AAAAAXRJJXUBzoqmpd3Zae-Pp6OI2mRQ54W4T&scisf=4&ct=citation&cd=0&hl=en'}
+
+- title: 3D Genome Browser
+  doi: 12345
+
+- title: CGView
+  doi: 12346
+
+- title: Circos
+  doi: 12347
+
+- title: HiGlass
+  doi: 12348
+
+- title: HilbertVis
+  doi: 12349
+
+- title: Island Viewer
+  doi: 12340
+
+- title: MizBee
+  doi: 12341
+
+- title: MochiView
+  doi: 12342
+
+- title: NCBI Genome Viewer
+  doi: 12343
+
+- title: NCBI Sequence Viewer
+  doi: 12344
+
+- title: UCSC Genome Browser
+  doi: 12350

@@ -1,5 +1,5 @@
 ---
-layout: tool 
+layout: tool
 title: MochiView
 paper: https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-8-49
 paper_title: "MochiView: versatile software for genome browsing and DNA motif analysis"
@@ -10,9 +10,10 @@ lay: linear
 focus: single
 scale: multiple
 view: multiple
-arrangement: 
+arrangement:
 access_format: Software
 pub_year: 2010
-license: 
+license:
 image: /assets/MochiView.png
+doi: 12342
 ---

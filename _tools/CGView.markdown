@@ -1,5 +1,5 @@
 ---
-layout: tool 
+layout: tool
 title: CGView
 paper: https://academic.oup.com/bioinformatics/article/21/4/537/203470
 paper_title: "Circular genome visualization and exploration using CGView"
@@ -10,9 +10,10 @@ lay: circular
 focus: single
 scale: single
 view: single
-arrangement: 
+arrangement:
 access_format: Java package
 pub_year: 2015
-license: 
+license:
 image: /assets/CGView.png
+doi: 12346
 ---

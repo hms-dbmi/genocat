@@ -1,5 +1,5 @@
 ---
-layout: tool 
+layout: tool
 title: HilbertVis
 paper: https://academic.oup.com/bioinformatics/article/25/10/1231/270493
 paper_title: "Visualization of genomic data with the Hilbert curve"
@@ -10,9 +10,10 @@ lay: spacefilling
 focus: single
 scale: single
 view: single
-arrangement: 
+arrangement:
 access_format: R package
 pub_year: 2009
-license: 
+license:
 image: /assets/HilbertVis.png
+doi: 12349
 ---

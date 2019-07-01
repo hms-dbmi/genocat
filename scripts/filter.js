@@ -25,13 +25,12 @@ filterMultSelection([]);
 function filterMultSelection(c) {
   var x, i, j;
   x = document.getElementsByClassName("filterDiv");
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     j=0;
-    w3AddClass(x[i], "show");
+    addTool(x[i], "show");
     while (j<c.length) {
       if (x[i].className.indexOf(c[j]) == -1 && c.length>0) {
-        w3RemoveClass(x[i], "show");
+        removeTool(x[i], "show");
       }
       j++;
     }
@@ -39,7 +38,7 @@ function filterMultSelection(c) {
 }
 
 // Show filtered elements
-function w3AddClass(element, name) {
+function addTool(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -52,7 +51,7 @@ function w3AddClass(element, name) {
 }
 
 // Hide elements that are not selected
-function w3RemoveClass(element, name) {
+function removeTool(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");

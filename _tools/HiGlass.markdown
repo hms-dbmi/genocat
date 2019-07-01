@@ -15,4 +15,5 @@ access_format: Web Browser
 pub_year: 2018
 license:
 image: /assets/HiGlass.png
+doi: 12348
 ---

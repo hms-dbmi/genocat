@@ -1,5 +1,5 @@
 ---
-layout: tool 
+layout: tool
 title: NCBI Sequence Viewer
 paper: https://www.ncbi.nlm.nih.gov/pubmed/18428781
 paper_title: "Using the NCBI Map Viewer to browse genomic sequence data."
@@ -10,9 +10,10 @@ lay: linear
 focus: multiple
 scale: multiple
 view: multiple
-arrangement: 
+arrangement:
 access_format: Web Browser
 pub_year: 2007
-license: 
+license:
 image: /assets/NCBISequenceViewer.png
+doi: 12344
 ---

@@ -1,5 +1,5 @@
 ---
-layout: tool 
+layout: tool
 title: NCBI Genome Viewer
 paper: https://doi.org/10.1093/nar/gkw1071
 paper_title: "Database Resources of the National Center for Biotechnology Information"
@@ -10,9 +10,10 @@ lay: linear
 focus: single
 scale: single
 view: single
-arrangement: 
+arrangement:
 access_format: Web Browser
 pub_year: 2017
-license: 
+license:
 image: /assets/NCBIGenomeBrowser.png
+doi: 12343
 ---
