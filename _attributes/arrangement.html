@@ -1,0 +1,69 @@
+---
+layout: page
+title:  Arrangement
+categories: attributes
+---
+The different arrangements can be used to (i) visualize interconnection features or (ii) compare two different sequence in the context of comparative genomics.
+<br><br>
+<div>
+  <h1><a id="Circular Parallel"></a>Circular Parallel</h1>
+    <img src = "{{site.baseurl}}/assets/circularll.png" width="200" align = "left">
+    <br><br>
+
+    {% for post in site.tools %}
+      {% if post.arrangement == "circular parallel" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
+<br><br><br><br><br>
+<div>
+  <h1><a id="Circular Serial"></a>Circular Serial</h1>
+    <img src = "{{site.baseurl}}/assets/circulars.png" width="200" align = "left">
+
+
+    A serial circular arrangement corresponds to two sequence axes in a “half-circle” layout.
+    <br><br>
+
+    {% for post in site.tools %}
+      {% if post.arrangement == "circular serial" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
+<br><br><br><br><br>
+<div>
+  <h1><a id="Linear Parallel"></a>Linear Parallel</h1>
+    <img src = "{{site.baseurl}}/assets/linearparallel.png" width="200" align = "left">
+    <br><br>
+    {% for post in site.tools %}
+      {% if post.arrangement == "linear parallel" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
+<br><br><br><br><br>
+<div>
+  <h1><a id="Linear Serial"></a>Linear Serial</h1>
+    <img src = "{{site.baseurl}}/assets/linears.png" width="200" align = "left">
+    <br><br>
+
+    {% for post in site.tools %}
+      {% if post.arrangement == "linear serial" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
+<br><br><br><br><br>
+<div>
+  <h1><a id="Linear Orthogonal"></a>Linear Orthogonal</h1>
+    <img src = "{{site.baseurl}}/assets/linearo.png" width="200" align = "left">
+    <br><br>
+
+    {% for post in site.tools %}
+      {% if post.arrangement == "linear orthogonal" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
+<br><br>

@@ -49,6 +49,12 @@ permalink: /search_page/
   </details>
   <details>
     <summary>Interconnection</summary>
+    <input type="radio" id="none" name="interconnection"/> <small>None </small><img src="{{site.baseurl}}/assets/NoneInter.png"style="width:35px; height:25px">
+    <br>
+    <input type="radio" id="within" name="interconnection"/> <small>Within </small><img src="{{site.baseurl}}/assets/WithinInter.png"style="width:35px; height:25px">
+    <br>
+    <input type="radio" id="between" name="interconnection"/> <small>Between </small><img src="{{site.baseurl}}/assets/BetweenInter.png"style="width:35px; height:25px">
+    <br>
   </details>
   <br>
   Coordinate System
@@ -110,7 +116,7 @@ permalink: /search_page/
   <div class = "items">
 
 {% for post in site.tools %}
-      <div class="filterDiv {{ post.doi }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+      <div class="filterDiv {{ post.doi }} {{ post.interconnection }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </div>
 {% endfor %}

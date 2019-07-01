@@ -69,7 +69,11 @@ layout: default
     {% for items in  page.access_format %}
       <li>{{items}} </li>
     {% endfor %}
-
+    </p>
+    <p> Interconnection:
+    {% for items in  page.interconnection %}
+      <li>{{items}} </li>
+    {% endfor %}
     </p>
     <p> Cited by:
       {% for tool in site.data.scholar_data %}
@@ -99,13 +103,13 @@ layout: default
       {%- if page.scale == "single" -%}
         <li><a href= "{{site.baseurl}}/attributes/scale/Single_Scale.html">Single Scale</a></li>
       {%- elsif page.scale == "multiple" -%}
-        <li><a href= "{{site.baseurl}}/attributes/scale/Multiple-Scales.html">Multiple Scales</a></li>
+        <li><a href= "{{site.baseurl}}/attributes/scale/Multiple_Scales.html">Multiple Scales</a></li>
       {%- endif -%}
 
       {%- if page.view == "single" -%}
         <li><a href= "{{site.baseurl}}/attributes/view/Single_View.html">Single View</a></li>
       {%- elsif page.view == "multiple" -%}
-        <li><a href= "{{site.baseurl}}/attributes/view/Multiple-View.html">Multiple Views</a></li>
+        <li><a href= "{{site.baseurl}}/attributes/view/Multiple_View.html">Multiple Views</a></li>
       {%- endif -%}
     </p>
 

@@ -12,8 +12,8 @@ focus: single
 scale: single
 view: single
 type:
-interconnection: within, between
-arrangement:
+interconnection: ['within', 'between']
+arrangement: circular serial
 access_format: software
 pub_year: 2009
 license:
