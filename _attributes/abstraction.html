@@ -1,0 +1,47 @@
+---
+layout: page
+title:  Abstraction
+categories: attributes
+---
+A way of reducing the space of a sequence in order to concentrate on specific regions is abstraction. This involves replacing the entire/parts of the sequence by abstraction elements, such as symbols, while maintaining the order of the elements. For example, if we are only interested in exons, the introns can be abstracted to a gap, symbol, or completely filtered out. Therefore, non-adjacent parts of the sequence are next to each other in the visualization. We could not identify a tool applying a complete abstraction in our literature research, which would correspond to replacing both exons and introns with symbols.
+<br><br>
+<div>
+  <h1><a id="None"></a>None</h1>
+
+    <img src = "{{site.baseurl}}/assets/n.png" width="200" align = "left">
+
+
+    {% for post in site.tools %}
+      {% if post.abstraction == "none" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
+<br><br><br>
+<div>
+  <h1><a id="Partial"></a>Partial</h1>
+
+    <img src = "{{site.baseurl}}/assets/p.png" width="200" align = "left">
+    <br>
+
+    <br>
+    {% for post in site.tools %}
+      {% if post.abstraction == "partial" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+</div>
+<br><br><br><br>
+<div>
+  <h1><a id="Complete"></a>Complete</h1>
+
+    <img src = "{{site.baseurl}}/assets/com.png" width="200" align = "left">
+    <br>
+
+    <br>
+    {% for post in site.tools %}
+      {% if post.abstraction == "complete" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+</div>

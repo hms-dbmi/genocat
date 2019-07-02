@@ -4,7 +4,188 @@ document.getElementById("sort").onclick = function() {
   console.log("sort by citation count!");
   sortList();
 }
-
+//linear parallel
+document.getElementById("linear parallel").onclick=function() {
+  if (!arr.includes("linear parallel")) {
+    arr.push("linear parallel");
+  }
+  arr = uncheck("linear orthogonal", arr);
+  arr = uncheck("linear serial", arr);
+  arr = uncheck("circular parallel", arr);
+  arr = uncheck("circular serial", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//linear serial
+document.getElementById("linear serial").onclick=function() {
+  if (!arr.includes("linear serial")) {
+    arr.push("linear serial");
+  }
+  arr = uncheck("linear parallel", arr);
+  arr = uncheck("linear orthogonal", arr);
+  arr = uncheck("circular parallel", arr);
+  arr = uncheck("circular serial", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//noabstraction
+document.getElementById("linear orthogonal").onclick=function() {
+  if (!arr.includes("linear orthogonal")) {
+    arr.push("linear orthogonal");
+  }
+  arr = uncheck("linear parallel", arr);
+  arr = uncheck("linear serial", arr);
+  arr = uncheck("circular parallel", arr);
+  arr = uncheck("circular serial", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//partial
+document.getElementById("circular parallel").onclick=function() {
+  if (!arr.includes("circular parallel")) {
+    arr.push("circular parallel");
+  }
+  arr = uncheck("linear parallel", arr);
+  arr = uncheck("linear serial", arr);
+  arr = uncheck("linear orthogonal", arr);
+  arr = uncheck("circular serial", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//complete
+document.getElementById("circular serial").onclick=function() {
+  if (!arr.includes("circular serial")) {
+    arr.push("circular serial");
+  }
+  arr = uncheck("linear parallel", arr);
+  arr = uncheck("linear serial", arr);
+  arr = uncheck("linear orthogonal", arr);
+  arr = uncheck("circular parallel", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//show all arrangement
+document.getElementById("show-all-arrangement").onclick=function() {
+  arr = uncheck("linear parallel", arr);
+  arr = uncheck("linear serial", arr);
+  arr = uncheck("linear orthogonal", arr);
+  arr = uncheck("circular parallel", arr);
+  arr = uncheck("circular serial", arr);
+  filterMultSelection(arr);
+}
+//noabstraction
+document.getElementById("noneab").onclick=function() {
+  if (!arr.includes("noneab")) {
+    arr.push("noneab");
+  }
+  arr = uncheck("partialab", arr);
+  arr = uncheck("completeab", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//partial
+document.getElementById("partialab").onclick=function() {
+  if (!arr.includes("partialab")) {
+    arr.push("partialab");
+  }
+  arr = uncheck("noneab", arr);
+  arr = uncheck("completeab", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//complete
+document.getElementById("completeab").onclick=function() {
+  if (!arr.includes("completeab")) {
+    arr.push("completeab");
+  }
+  arr = uncheck("noneab", arr);
+  arr = uncheck("partialab", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//show all abstraction
+document.getElementById("show-all-abstraction").onclick=function() {
+  arr = uncheck("noneab", arr);
+  arr = uncheck("partialab", arr);
+  arr = uncheck("completeab", arr);
+  filterMultSelection(arr);
+}
+//contiguous
+document.getElementById("contiguous").onclick=function() {
+  if (!arr.includes("contiguous")) {
+    arr.push("contiguous");
+  }
+  arr = uncheck("segregated", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//segregated
+document.getElementById("segregated").onclick=function() {
+  if (!arr.includes("segregated")) {
+    arr.push("segregated");
+  }
+  arr = uncheck("contiguous", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//show all partition
+document.getElementById("show-all-partition").onclick=function() {
+  arr = uncheck("segregated", arr);
+  arr = uncheck("contiguous", arr);
+  filterMultSelection(arr);
+}
+//point sparse
+document.getElementById("point sparse").onclick=function() {
+  if (!arr.includes("point sparse")) {
+    arr.push("point sparse");
+  }
+  arr = uncheck("segment sparse", arr);
+  arr = uncheck("point contiguous", arr);
+  arr = uncheck("segment contiguous", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//segment sparse
+document.getElementById("segment sparse").onclick=function() {
+  if (!arr.includes("segment sparse")) {
+    arr.push("segment sparse");
+  }
+  arr = uncheck("point sparse", arr);
+  arr = uncheck("point contiguous", arr);
+  arr = uncheck("segment contiguous", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//point contiguous
+document.getElementById("point contiguous").onclick=function() {
+  if (!arr.includes("point contiguous")) {
+    arr.push("point contiguous");
+  }
+  arr = uncheck("point sparse", arr);
+  arr = uncheck("segment sparse", arr);
+  arr = uncheck("segment contiguous", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//segment contiguous
+document.getElementById("segment contiguous").onclick=function() {
+  if (!arr.includes("segment contiguous")) {
+    arr.push("segment contiguous");
+  }
+  arr = uncheck("point sparse", arr);
+  arr = uncheck("segment sparse", arr);
+  arr = uncheck("point contiguous", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//show all
+document.getElementById("show-all-type").onclick=function() {
+  arr = uncheck("point sparse", arr);
+  arr = uncheck("segment sparse", arr);
+  arr = uncheck("segment sparse", arr);
+  arr = uncheck("point contiguous", arr);
+  filterMultSelection(arr);
+}
 //none
 document.getElementById("none").onclick=function() {
   if (!arr.includes("none")) {
@@ -35,6 +216,13 @@ document.getElementById("between").onclick=function() {
   arr = uncheck("within", arr);
   arr = uncheck("none", arr);
   //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+//show all
+document.getElementById("show-all-interconnection").onclick=function() {
+  arr = uncheck("between", arr);
+  arr = uncheck("within", arr);
+  arr = uncheck("none", arr);
   filterMultSelection(arr);
 }
 
