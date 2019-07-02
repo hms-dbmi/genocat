@@ -1,32 +1,54 @@
+
 function sortList() {
-  var list, i, switching, b, shouldSwitch;
+  var list, b, switching, counts;
   list = document.getElementsByClassName("filterDiv");
   switching = true;
-  /* Make a loop that will continue until
-  no switching has been done: */
-  while (switching) {
-    // Start by saying: no switching is done:
-    switching = false;
-    b = list;
-    // Loop through all list items:
-    for (i = 0; i < (b.length - 1); i++) {
-      // Start by saying there should be no switching:
-      console.log(b[i]);
+  b = list;
+  counts = [];
+  getCiteCount(counts, b, switching);
+}
+
+function makeSwitch(counts, b, switching) {
+  var shouldSwitch, i, currCount, nextCount;
+  shouldSwitch = false;
+  for (i = 0; i < (b.length - 1); i++) {
       shouldSwitch = false;
-      /* Check if the next item should
-      switch place with the current item: */
-      if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
-        /* If next item is alphabetically lower than current item,
-        mark as a switch and break the loop: */
+      currCount = counts[i];
+      nextCount = counts[i+1];
+      if (currCount < nextCount) {
         shouldSwitch = true;
         break;
       }
-    }
-    if (shouldSwitch) {
-      /* If a switch has been marked, make the switch
-      and mark the switch as done: */
-      b[i].parentNode.insertBefore(b[i + 1], b[i]);
-      switching = true;
-    }
   }
+  if (shouldSwitch) {
+    b[i].parentNode.insertBefore(b[i + 1], b[i]);
+    switching = true;
+  }
+  return switching;
+}
+
+function getCiteCount(counts, b, switching) {
+  var myvar, words, i, citeCount, j;
+  jQuery.get('../scholar_data.txt', function(data) {
+    while (switching) {
+      switching = false;
+      for (i=0; i< (b.length); i++) {
+        doi = b[i].className.split(" ")[1];
+        myvar = data;
+        words = myvar.split("\n");
+        j=0;
+        var citedby;
+        while (j<words.length) {
+          if (words[j] == "  doi: "+doi) {
+            citedby = words[j+1];
+            break;
+          }
+          j++;
+        }
+        citeCount = parseInt(citedby.substring(11, citedby.length));
+        counts[i] = citeCount;
+      }
+      switching = makeSwitch(counts, b, switching);
+    }
+  });
 }
