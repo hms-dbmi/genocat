@@ -9,18 +9,5 @@
  'citedby': 3,
  'id_scholarcitedby': u'1429410098976800791',
  'source': u'scholar',
- 'url_scholarbib': u'https://scholar.googleusercontent.com/scholar.bib?q=info:F0DeY-lI1hMJ:scholar.google.com/&output=citation&scisdr=CgUH0OHGGAA:AAGBfm0AAAAAXRueRHk8ae0cWCSmaablhofB5o7LeraJ&scisig=AAGBfm0AAAAAXRueRJ5ioUf6koXfu5Sz7IRt_dNaWQtn&scisf=4&ct=citation&cd=0&hl=en'}
-
-- title: CGView
-  doi: 10.1093/bioinformatics/bti054
-  {'_filled': False,
- 'bib': {u'abstract': u'CGView (Circular Genome Viewer) is a Java application and library for generating high-quality, zoomable maps of circular genomes. It converts XML or tab-delimited input into a graphical map (PNG, JPG or Scalable Vector Graphics format), complete with sequence features, labels, legends and footnotes. In addition to the default full view map, the program can generate a series of hyperlinked maps showing expanded views. The linked maps can be explored using any Web browser, allowing rapid genome browsing and facilitating data \u2026',
-         u'author': u'P Stothard and DS Wishart',
-         u'eprint': u'https://academic.oup.com/bioinformatics/article/21/4/537/203470',
-         u'title': u'Circular genome visualization and exploration using CGView',
-         u'url': u'https://academic.oup.com/bioinformatics/article-abstract/21/4/537/203470'},
- 'citedby': 471,
- 'id_scholarcitedby': u'10228009798861786119',
- 'source': u'scholar',
- 'url_scholarbib': u'https://scholar.googleusercontent.com/scholar.bib?q=info:BwxfxLgw8Y0J:scholar.google.com/&output=citation&scisdr=CgUH0OHGEOy3s_ObVHk:AAGBfm0AAAAAXRueTHlWt2Uj0GNvWD3U8blHbctAAhaE&scisig=AAGBfm0AAAAAXRueTBSXkpiwj2pQBXoh4xxdIIHmgaSl&scisf=4&ct=citation&cd=0&hl=en'}
+ 'url_scholarbib': u'https://scholar.googleusercontent.com/scholar.bib?q=info:F0DeY-lI1hMJ:scholar.google.com/&output=citation&scisdr=CgUH0OHGGAA:AAGBfm0AAAAAXRue-V7v1UeKeP99F_sgyGP9KoAuoszQ&scisig=AAGBfm0AAAAAXRue-TlR4htGVhBLMyAVWtWsaI1Qcos9&scisf=4&ct=citation&cd=0&hl=en'}
 

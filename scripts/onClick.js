@@ -1,7 +1,6 @@
 var arr = [];
 
 document.getElementById("sort").onclick = function() {
-  console.log("sort by citation count!");
   sortList();
 }
 
