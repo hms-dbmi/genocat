@@ -1,5 +1,5 @@
 f1 = open('_data/raw_scholarly.txt', 'r')
-f2 = open('_data/scholar_data.yml', 'w')
+f2 = open('scholar_data.txt', 'w')
 for line in f1:
     if line[0:9] == "- title: ":
         curr_tool = line[9:]

@@ -1,0 +1,26 @@
+- title: 3D Genome Browser
+  doi: 10.1093/nar/gkv476
+  {'_filled': False,
+ 'bib': {u'abstract': u'Recent releases of genome three-dimensional (3D) structures have the potential to transform our understanding of genomes. Nonetheless, the storage technology and visualization tools need to evolve to offer to the scientific community fast and convenient access to these data. We introduce simultaneously a database system to store and query 3D genomic data (3DBG), and a 3D genome browser to visualize and explore 3D genome structures (3DGB). We benchmark 3DBG against state-of-the-art systems and demonstrate \u2026',
+         u'author': u'A Butyaev and R Mavlyutov and M Blanchette\u2026',
+         u'eprint': u'https://academic.oup.com/nar/article/43/16/e103/1074932',
+         u'title': u'A low-latency, big database system and browser for storage, querying and visualization of 3D genomic data',
+         u'url': u'https://academic.oup.com/nar/article-abstract/43/16/e103/1074932'},
+ 'citedby': 3,
+ 'id_scholarcitedby': u'1429410098976800791',
+ 'source': u'scholar',
+ 'url_scholarbib': u'https://scholar.googleusercontent.com/scholar.bib?q=info:F0DeY-lI1hMJ:scholar.google.com/&output=citation&scisdr=CgUH0OHGGAA:AAGBfm0AAAAAXRueRHk8ae0cWCSmaablhofB5o7LeraJ&scisig=AAGBfm0AAAAAXRueRJ5ioUf6koXfu5Sz7IRt_dNaWQtn&scisf=4&ct=citation&cd=0&hl=en'}
+
+- title: CGView
+  doi: 10.1093/bioinformatics/bti054
+  {'_filled': False,
+ 'bib': {u'abstract': u'CGView (Circular Genome Viewer) is a Java application and library for generating high-quality, zoomable maps of circular genomes. It converts XML or tab-delimited input into a graphical map (PNG, JPG or Scalable Vector Graphics format), complete with sequence features, labels, legends and footnotes. In addition to the default full view map, the program can generate a series of hyperlinked maps showing expanded views. The linked maps can be explored using any Web browser, allowing rapid genome browsing and facilitating data \u2026',
+         u'author': u'P Stothard and DS Wishart',
+         u'eprint': u'https://academic.oup.com/bioinformatics/article/21/4/537/203470',
+         u'title': u'Circular genome visualization and exploration using CGView',
+         u'url': u'https://academic.oup.com/bioinformatics/article-abstract/21/4/537/203470'},
+ 'citedby': 471,
+ 'id_scholarcitedby': u'10228009798861786119',
+ 'source': u'scholar',
+ 'url_scholarbib': u'https://scholar.googleusercontent.com/scholar.bib?q=info:BwxfxLgw8Y0J:scholar.google.com/&output=citation&scisdr=CgUH0OHGEOy3s_ObVHk:AAGBfm0AAAAAXRueTHlWt2Uj0GNvWD3U8blHbctAAhaE&scisig=AAGBfm0AAAAAXRueTBSXkpiwj2pQBXoh4xxdIIHmgaSl&scisf=4&ct=citation&cd=0&hl=en'}
+
