@@ -1,5 +1,5 @@
 ---
-layout: tool 
+layout: tool
 title: MizBee
 paper: https://www.ncbi.nlm.nih.gov/pubmed/19834152
 paper_title: "MizBee: a multiscale synteny browser."
@@ -13,9 +13,9 @@ scale: multiple
 view: multiple
 type: segment contiguous
 interconnection: between
-arrangement: Parallel
+arrangement: circular parallel
 access_format: software
 pub_year: 2009
-license: 
+license:
 image: /assets/Mizbee.jpg
 ---

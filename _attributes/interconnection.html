@@ -1,0 +1,51 @@
+---
+layout: page
+title:  Interconnection
+categories: attributes
+---
+<div>
+  <h1><a id="None"></a>None</h1>
+    <img src = "{{site.baseurl}}/assets/NoneInter.png" width="200" align = "left">
+    <br><br>
+
+    No interconnections between sequences are displayed in the following.
+    <br><br><br><br><br>
+
+    {% for post in site.tools %}
+      {% if post.interconnection == "none" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
+<br><br>
+
+<div>
+  <h1><a id="Within"></a>Within</h1>
+    <img src = "{{site.baseurl}}/assets/WithinInter.png" width="200" align = "left">
+    <br>
+    An interconnection feature is a link between two regions. Interconnections that connect features within a sequence are classified as “within.”    Interconnections within
+    <br><br><br><br>
+
+    {% for post in site.tools %}
+      {% if post.interconnection == "within" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
+<br><br>
+
+<div>
+  <h1><a id="Between"></a>Between</h1>
+    <img src = "{{site.baseurl}}/assets/BetweenInter.png" width="200" align = "left">
+    <br><br>
+
+    Interconnections that connect features between sequences are classified as “between.”
+    <br><br><br><br>
+
+    {% for post in site.tools %}
+      {% if post.interconnection == "between" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
+<br><br>

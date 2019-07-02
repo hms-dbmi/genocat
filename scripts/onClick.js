@@ -4,6 +4,40 @@ document.getElementById("sort").onclick = function() {
   console.log("sort by citation count!");
   sortList();
 }
+
+//none
+document.getElementById("none").onclick=function() {
+  if (!arr.includes("none")) {
+    arr.push("none");
+  }
+  arr = uncheck("within", arr);
+  arr = uncheck("between", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+
+//within
+document.getElementById("within").onclick=function() {
+  if (!arr.includes("within")) {
+    arr.push("within");
+  }
+  arr = uncheck("none", arr);
+  arr = uncheck("between", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+
+//between
+document.getElementById("between").onclick=function() {
+  if (!arr.includes("between")) {
+    arr.push("between");
+  }
+  arr = uncheck("within", arr);
+  arr = uncheck("none", arr);
+  //document.getElementById("demo").innerHTML = arr;
+  filterMultSelection(arr);
+}
+
 //web browser
 document.getElementById("web browser").onclick=function() {
   if (!arr.includes("web browser")) {
