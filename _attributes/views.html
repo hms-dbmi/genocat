@@ -18,8 +18,8 @@ categories: attributes
     {% for post in site.tools %}
       {% if post.view == "single" %}
         <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
-        {% endif %}
-        {% endfor %}
+      {% endif %}
+    {% endfor %}
 </div>
 <br><br>
 <div>

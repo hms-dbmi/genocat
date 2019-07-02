@@ -1,0 +1,65 @@
+---
+layout: page
+title:  Type
+categories: attributes
+---
+Features can be of different types. Those that only cover one nucleotide are defined as point features while features covering more than one nucleotide are segment features. While there can be gaps between features in sparse sets, contiguous feature sets cover the entire genome.
+<br><br><br>
+<div>
+  <h1><a id="Point Sparse"></a>Point Sparse</h1>
+
+    <img src = "{{site.baseurl}}/assets/ps.png" width="200" align = "left">
+    <br>
+
+    {% for post in site.tools %}
+      {% if post.sparse_type == "point sparse" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+</div>
+<br><br><br><br>
+
+
+<div>
+  <h1><a id="Segment Sparse"></a>Segment Sparse</h1>
+
+    <img src = "{{site.baseurl}}/assets/ss.png" width="200" align = "left">
+    <br>
+
+    <br>
+    {% for post in site.tools %}
+      {% if post.sparse_type == "segment sparse" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+</div>
+<br><br><br><br>
+
+<div>
+  <h1><a id="Point Contiguous"></a>Point Contiguous</h1>
+
+    <img src = "{{site.baseurl}}/assets/pc.png" width="200" align = "left">
+    <br>
+
+    <br>
+    {% for post in site.tools %}
+      {% if post.contiguous_type == "point contiguous" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+</div>
+<br><br><br><br>
+
+<div>
+  <h1><a id="Segment Contiguous"></a>Segment Contiguous</h1>
+
+    <img src = "{{site.baseurl}}/assets/sc.png" width="200" align = "left">
+
+    <br>
+    {% for post in site.tools %}
+      {% if post.contiguous_type == "segment contiguous" %}
+        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+</div>
+<br><br>
