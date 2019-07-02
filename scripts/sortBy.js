@@ -1,30 +1,33 @@
+function sortByName() {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementsByClassName("filterDiv");
+  switching = true;
+  while (switching) {
+    switching = false;
+    b = list;
+    for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
 
-function sortList() {
+
+
+function sortByCitation() {
   var list, b, switching, counts;
   list = document.getElementsByClassName("filterDiv");
   switching = true;
   b = list;
   counts = [];
   getCiteCount(counts, b, switching);
-}
-
-function makeSwitch(counts, b, switching) {
-  var shouldSwitch, i, currCount, nextCount;
-  shouldSwitch = false;
-  for (i = 0; i < (b.length - 1); i++) {
-      shouldSwitch = false;
-      currCount = counts[i];
-      nextCount = counts[i+1];
-      if (currCount < nextCount) {
-        shouldSwitch = true;
-        break;
-      }
-  }
-  if (shouldSwitch) {
-    b[i].parentNode.insertBefore(b[i + 1], b[i]);
-    switching = true;
-  }
-  return switching;
 }
 
 function getCiteCount(counts, b, switching) {
@@ -51,4 +54,23 @@ function getCiteCount(counts, b, switching) {
       switching = makeSwitch(counts, b, switching);
     }
   });
+}
+
+function makeSwitch(counts, b, switching) {
+  var shouldSwitch, i, currCount, nextCount;
+  shouldSwitch = false;
+  for (i = 0; i < (b.length - 1); i++) {
+      shouldSwitch = false;
+      currCount = counts[i];
+      nextCount = counts[i+1];
+      if (currCount < nextCount) {
+        shouldSwitch = true;
+        break;
+      }
+  }
+  if (shouldSwitch) {
+    b[i].parentNode.insertBefore(b[i + 1], b[i]);
+    switching = true;
+  }
+  return switching;
 }

@@ -1,7 +1,11 @@
 var arr = [];
 
-document.getElementById("sort").onclick = function() {
-  sortList();
+document.getElementById("byCitation").onclick = function() {
+  sortByCitation();
+}
+
+document.getElementById("byName").onclick = function() {
+  sortByName();
 }
 
 //none
