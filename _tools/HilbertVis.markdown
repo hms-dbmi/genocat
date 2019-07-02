@@ -1,5 +1,5 @@
 ---
-layout: tool
+layout: tool 
 title: HilbertVis
 paper: https://academic.oup.com/bioinformatics/article/25/10/1231/270493
 paper_title: "Visualization of genomic data with the Hilbert curve"
@@ -16,9 +16,9 @@ view: single
 sparse_type: segment sparse
 contiguous_type: point contiguous
 interconnection: none
-arrangement:
+arrangement: 
 access_format: r package
 pub_year: 2009
-license:
+license: 
 image: /assets/HilbertVis.png
 ---
