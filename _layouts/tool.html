@@ -18,7 +18,7 @@ layout: default
     right: 0px;
     background: #eee;
     overflow-x: hidden;
-    padding-top: 85px;
+    padding-top: 50px;
     padding-left: 30px;
   }
 
@@ -84,6 +84,7 @@ layout: default
     </p>
     <p> Publication Year: {{ page.pub_year }}</p>
     <p> Attributes:
+
       {%- if page.lay == "linear" -%}
         <li><a href= "{{site.baseurl}}/attributes/layout/Linear.html">Linear</a></li>
       {%- elsif page.lay == "circular" -%}
@@ -92,6 +93,44 @@ layout: default
         <li><a href= "{{site.baseurl}}/attributes/layout/Space-Filling.html">Space Filling</a></li>
       {%- elsif page.lay == "spatial" -%}
         <li><a href= "{{site.baseurl}}/attributes/layout/Spatial.html">Spatial</a></li>
+      {%- endif -%}
+
+      {%- if page.partition == "contiguous" -%}
+        <li><a href= "{{site.baseurl}}/attributes/partition.html#Contiguous">Contiguous</a></li>
+      {%- elsif page.partition == "segregated" -%}
+        <li><a href= "{{site.baseurl}}/attributes/partition.html#Segregated">Segregated</a></li>
+      {%- endif -%}
+
+      {%- if page.sparse_type == "point sparse" -%}
+        <li><a href="{{site.baseurl}}/attributes/type.html#Point Sparse">Point Sparse</a></li>
+      {%- elsif page.sparse_type == "segment sparse" -%}
+        <li><a href="{{site.baseurl}}/attributes/type.html#Segment Sparse">Segment Sparse</a></li>
+      {%- endif -%}
+
+      {%- if page.contiguous_type == "point contiguous" -%}
+        <li><a href="{{site.baseurl}}/attributes/type.html#Point Contiguous">Point Contiguous</a></li>
+      {%- elsif page.contiguous_type == "segment contiguous" -%}
+        <li><a href="{{site.baseurl}}/attributes/type.html#Segment Contiguous">Segment Contiguous</a></li>
+      {%- endif -%}
+
+      {%- if page.abstraction == "none" -%}
+        <li><a href= "{{site.baseurl}}/attributes/abstraction.html#None">No Abstraction</a></li>
+      {%- elsif page.abstraction == "partial" -%}
+        <li><a href= "{{site.baseurl}}/attributes/abstraction.html#Partial">Partial Abstraction</a></li>
+      {%- elsif page.abstraction == "complete" -%}
+        <li><a href= "{{site.baseurl}}/attributes/abstraction.html#Complete">Complete Abstraction</a></li>
+      {%- endif -%}
+
+      {%- if page.arrangement == "linear parallel" -%}
+        <li><a href="{{site.baseurl}}/attributes/arrangement.html#Linear Parallel">Linear Parallel</a></li>
+      {%- elsif page.lay == "linear serial" -%}
+      <li><a href="{{site.baseurl}}/attributes/arrangement.html#Linear Serial">Linear Serial</a></li>
+      {%- elsif page.lay == "linear orthogonal" -%}
+      <li><a href="{{site.baseurl}}/attributes/arrangement.html#Linear Orthogonal">Linear Orthogonal</a></li>
+      {%- elsif page.lay == "circular parallel" -%}
+      <li><a href="{{site.baseurl}}/attributes/arrangement.html#Circular Parallel">Circular Parallel</a></li>
+      {%- elsif page.lay == "circular serial" -%}
+      <li><a href="{{site.baseurl}}/attributes/arrangement.html#Circular Serial">Circular Serial</a></li>
       {%- endif -%}
 
       {%- if page.focus == "single" -%}
