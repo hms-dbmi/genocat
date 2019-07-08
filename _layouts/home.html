@@ -3,5 +3,63 @@ layout: default
 main:
   class: usa-grid usa-section usa-content usa-layout-docs
 ---
+<!DOCTYPE html>
+<html>
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+  <style>
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: #555;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
 
-{{ content }}
+  .container .btn:hover {
+    background-color: gray;
+  }
+  </style>
+<div class="container">
+  <img class="mySlides" src="../assets/Rondo.png" style="width:100%" height="500" >
+  <img class="mySlides" src="../assets/Cinteny.png" style="width:100%" height="500" >
+  <img class="mySlides" src="../assets/HiGlass.png" style="width:100%"height="500">
+  <img class="mySlides" src="../assets/MochiView.png" style="width:100%" height="500">
+  <img class="mySlides" src="../assets/Gremlin.png" style="width:100%" height="500">
+
+  <button class="btn" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</body>
+</html>
