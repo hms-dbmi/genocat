@@ -21,7 +21,7 @@ github_username: hms-dbmi
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: uswds-jekyll
 plugins:
   - jekyll-feed
 collections:
