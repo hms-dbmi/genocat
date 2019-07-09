@@ -17,10 +17,17 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   position: relative;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+}
+
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 /* Next & previous buttons */
@@ -31,12 +38,13 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  text-decoration: none;
 }
 
 /* Position the "next button" to the right */
@@ -50,15 +58,6 @@ img {vertical-align: middle;}
   background-color: rgba(0,0,0,0.8);
 }
 
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -84,6 +83,27 @@ img {vertical-align: middle;}
   animation-duration: 1.5s;
 }
 
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -104,24 +124,24 @@ img {vertical-align: middle;}
 
 <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
-  <img src="../assets/Cinteny.png" height = "300">
+<div class="mySlides fade container">
+  <img src="../assets/Cinteny.png" height = "400" class = "center">
+  <div class="overlay">Cinteny</div>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 4</div>
-  <img src="../assets/HiGlass.png" height = "300">
+<div class="mySlides fade container">
+  <img src="../assets/HiGlass.png" height = "400" class = "center">
+  <div class="overlay">HiGlass</div>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-  <img src="../assets/CGView.png" height = "300">
+<div class="mySlides fade container">
+  <img src="../assets/CGView.png" height = "400" class = "center">
+  <div class="overlay">CGView</div>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-  <img src="../assets/NCBIGenomeBrowser.png" height = "300">
+<div class="mySlides fade container">
+  <img src="../assets/NCBIGenomeBrowser.png" height = "400" class = "center">
+  <div class="overlay">NCBI Genome Browser</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
