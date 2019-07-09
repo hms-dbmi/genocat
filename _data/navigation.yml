@@ -16,13 +16,3 @@ primary:
     href: /attribute_page/
 
 secondary: []
-
-members:
-  - text: Biography
-    href: '#biography'
-  - text: Awards
-    href: '#awards'
-  - text: Projects
-    href: '#projects'
-  - text: Courses
-    href: '#courses'
