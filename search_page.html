@@ -9,13 +9,23 @@ permalink: /search_page/
     float: left;
     width: 50%;
   }
+  input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: radio;
+    position: relative;
+    left: auto;
+    box-sizing: border-box;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+}
   </style>
 </head>
 
 <!-- <input id="file-input" type="file"> -->
 
 <!-- <input type="checkbox" id="sort-by-citation-count" name="sort by" value="citation count"<label for="citation count">Sort by citation count</label> -->
-
 
 <div class="column left">
   <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
