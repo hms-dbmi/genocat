@@ -4,7 +4,7 @@
 
 layout: home
 hero:
-  image: /assets/Rondo.png
+  image: /assets/home1.png
   callout:
     alt: "GenVis:"
     text: browse for tools to better visualize a genome of interest!
