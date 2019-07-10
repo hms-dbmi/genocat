@@ -8,13 +8,11 @@ layout: page
   body {
     font-family: "Lato", sans-serif;
   }
-
   .post-content {
     width: 70%;
     top: 0;
     left: 0;
   }
-
   .sidenav {
     height:100%;
     width: 20%;
@@ -30,17 +28,13 @@ layout: page
     padding-left: 25px;
     padding-right: 25px;
   }
-
   .sidenav a {
     text-decoration: none;
     color: #2196F3;
   }
-
   .sidenav a:hover {
     color: #064579;
   }
-
-
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -55,7 +49,6 @@ layout: page
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
 }
-
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
   .sidebar a {
@@ -169,7 +162,7 @@ layout: page
   </div>
 
   {%- if site.disqus.shortname -%}
-    <!-- {%- include disqus_comments.html -%} -->
+    {%- include disqus_comments.html -%}
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
