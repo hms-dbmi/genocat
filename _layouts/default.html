@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}">
   <head>
+    <!-- {% include meta.html %} -->
     {% include styles.html %}
+    <!-- {% if site.google_analytics_ua or site.dap_agency %}
+      {% include analytics.html %}
+    {% endif %} -->
   </head>
   <body class="{{ layout.class }} {{ page.class }} {% if site.site_width %}site-{{ site.site_width }}{% endif %}">
 
-
+    <!-- {% include skipnav.html %} -->
     {% include header.html %}
 
     {% assign hero = page.hero %}
@@ -22,25 +26,25 @@
     </section>
     {% endif %}
 
-    {% capture _graphics %}
+    <!-- {% capture _graphics %}
       {% include graphic-list.html graphics=page.graphics %}
-    {% endcapture %}
+    {% endcapture %} -->
 
-    {% if page.graphics_position != 'after' %}
+    <!-- {% if page.graphics_position != 'after' %}
       {{ _graphics }}
-    {% endif %}
+    {% endif %} -->
 
     <main id="main-content"{% for _attr in layout.main %} {{ _attr[0] }}="{{ _attr[1] }}"{% endfor %}>
           {{ content }}
     </main>
 
-    {% if page.graphics_position == 'after' %}
+    <!-- {% if page.graphics_position == 'after' %}
       {{ _graphics }}
-    {% endif %}
+    {% endif %} -->
 
     {% include footer.html %}
 
-    {% include scripts.html %}
+    <!-- {% include scripts.html %} -->
 
   </body>
 </html>
