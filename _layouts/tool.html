@@ -9,21 +9,22 @@ layout: page
     font-family: "Lato", sans-serif;
   }
   .post-content {
-    width: 70%;
+    width: 60%;
+    height: 100%;
     top: 0;
     left: 0;
+    float: left;
   }
   .sidenav {
-    height:100%;
-    width: 20%;
-    position: absolute;
+    float: right;
+    height: 100%;
+    width: 25%;
+    position: relative;
     z-index: 1;
-    right:0;
-    top: 0;
     background: #eee;
     overflow-x: hidden;
-    margin-top: 250px;
-    margin-right: 25px;
+    overflow-y: visible;
+    margin-left: 50px;
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
@@ -160,10 +161,6 @@ layout: page
     </p>
 
   </div>
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
