@@ -10,7 +10,7 @@ links: footer
 # An array of agency logos to show, side by side, in the lower left
 # of the footer on large screens.
 logos:
-  - src: assets/hms.svg
+  - src: /assets/hms.svg
     alt: Harvard Medical School
 
 contact:
