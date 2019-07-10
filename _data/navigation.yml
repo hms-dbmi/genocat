@@ -9,7 +9,7 @@
 
 primary:
   - text: Home
-    href: /index/
+    href: /
   - text: Browser
     href: /search_page/
   - text: Attributes
