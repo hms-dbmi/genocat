@@ -9,57 +9,17 @@ permalink: /search_page/
     float: left;
     width: 50%;
   }
-
-  input, textarea, select {
-    appearance: none;
-    border: 0.1rem solid #5b616b;
-    border-radius: 0;
-    box-sizing: border-box;
-    color: #212121;
-    display: inline-flex;
-    font-size: 1.7rem;
-    height: 4.4rem;
-    line-height: 1.3;
-    margin: 0.2em 0;
-    max-width: 46rem;
-    padding: 1rem 0.7em;
-    width: 100%;
-  }
-  input[type="radio"] {
-    background-color: inherit;
+  input[type="radio" i] {
+    background-color: initial;
     cursor: default;
     -webkit-appearance: radio;
-    display: inline;
     /* position: relative; */
     /* left: auto; */
     box-sizing: border-box;
     margin: 3px 0.5ex;
     padding: initial;
-    border: 0;
+    border: initial;
 }
-[type=checkbox] + label, [type=radio] + label {
-    cursor: pointer;
-    font-weight: 400;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-label {
-    display: flex;
-    margin-top: 0.5rem;
-    max-width: 46rem;
-}
-
-[type=radio] + label::before {
-    border-radius: 100%;
-    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #757575;
-    height: 1rem;
-    line-height: 1rem;
-    margin-left: 1px;
-    margin-top: 0.3em;
-    margin-right: 0.5em;
-    width: 1rem;
-}
-
   </style>
 </head>
 
@@ -70,7 +30,7 @@ label {
 <div class="column left">
   <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
   <br>
-  <input type="radio" id="byCitation" name = "sort" /> <label for="byCitation">Sort by citation count</label>
+  <input type="radio" id="byCitation" name = "sort"/> <label for="byCitation">Sort by citation count</label>
   <input type="radio" id="byName" name="sort" checked/><label for="byName">Sort by name</label>
   <br>
   User Preferences
