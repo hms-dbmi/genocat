@@ -4,8 +4,8 @@ script:
 
 deploy:
   provider: s3
-  access_key_id: AKIA5NNBA5ZVA6IDB66I
-  secret_access_key: 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
+  access_key_id:
+  secret_access_key:
   bucket: genomic-data-vis.org
   skip_cleanup: true
   region: us-east-1
