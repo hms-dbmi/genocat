@@ -4,9 +4,8 @@ script:
 
 deploy:
   provider: s3
-  access_key_id: AKIA5NNBA5ZVHPDL3A67
+  access_key_id:
   secret_access_key:
-    secure: "baSCUfXb1RpYeoN/eICH5FfIrMNa3GgFzV5Oza2Z67AJTxPwAhBsaMCx45SezHFEUkOmYnGPPAvSAkewBFskDog4G4gQ0fbNWbhWzvOQkllsFXi4mMo+6qoR9bhR87nnobDhdSsep/eQd5ZMjTJiY8k8Mg1I21z8CMKcXSpFqVrjhgpenggzz3wlm/Ilug8jjV0kn7vfcWjCEX/hDIeN/D9dFCdr6AWwEPFU3mu+R/IR45DXRD1yH92MInojWRsuHBGsZQaQ42JrHytQ8meB/UbOb4PLNt3nKnM/FrekPC4c5k3usbtYfDoVqjK0IXVCC42PeXsivVweVNPGQMWaTdmK27jXLS/VtlI5KEd+kjJ8/HHsmWlvDnLK/tF2T/zBTmW0EfXcZMzw/72kgAJ7F6X/yni+kRCZ8pzFDW0dg++Qqcu32GGRXvs9wuh44C5riQ60z4gnCz9p5rdMwvMfAl2Cxc6Hi6JSmWOmxEeAnmaNonIX+lhAanp0z5E4AFt387p8WEGHRUQedKKz87VE7N6ePHSuY4y+pnaaD9I+subLt2gYg5wYTOk/fSkJESZXqaFIPviw7BvDUvWES9MrCzTRZXpVyFG9+kviU1/GZZaZalcJqSRXct7KXa+JBVmZrmW6bH5c9U1UUqgZVPw6FXd3BdZ95mdWIJTOECt93bE="
   skip_cleanup: true
   region: us-east-1
   bucket: genomic-data-vis.org
