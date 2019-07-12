@@ -9,4 +9,5 @@ deploy:
   skip_cleanup: true
   region: us-east-1 
   bucket: genomic-data-vis.org
- 
+  local_dir: _site
+  acl: public_read
