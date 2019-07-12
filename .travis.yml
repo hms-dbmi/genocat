@@ -10,4 +10,4 @@ deploy:
   region: us-east-1 
   bucket: genomic-data-vis.org
   local_dir: _site
-  acl: public_read
+#   acl: public_read
