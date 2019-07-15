@@ -29,8 +29,6 @@ permalink: /search_page/
     cursor: default;
     -webkit-appearance: radio;
     display: inline;
-    /* position: relative; */
-    /* left: auto; */
     box-sizing: border-box;
     margin: 3px 0.5ex;
     padding: initial;
@@ -57,18 +55,23 @@ label {
     margin-right: 0.5em;
     width: 1rem;
 }
+[type="checkbox"] + label {
+    width: 5em;
+}
   </style>
 </head>
 
 <!-- <input id="file-input" type="file"> -->
 
-<!-- <input type="checkbox" id="sort-by-citation-count" name="sort by" value="citation count"<label for="citation count">Sort by citation count</label> -->
 
 <div class="column left">
+  <!--  -->
+  <input type="checkbox" id="testing" name="testing" value="testing"/><label for="testing">Testing</label>
+  <!--  -->
   <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
   <br>
-  <input type="radio" id="byCitation" name = "sort"/> <label for="byCitation">Sort by citation count</label>
   <input type="radio" id="byName" name="sort" checked/><label for="byName">Sort by name</label>
+  <input type="radio" id="byCitation" name = "sort"/> <label for="byCitation">Sort by citation count</label>
   <br>
   User Preferences
   <details>
@@ -208,5 +211,7 @@ label {
 <script src = "{{site.baseurl}}/scripts/filter.js"></script>
 <script src="{{site.baseurl}}/scripts/search_bar.js"></script>
 <script src="{{site.baseurl}}/scripts/sortBy.js"></script>
+
+<script src="{{site.baseurl}}/scripts/testing.js"></script>
 
 </html>
