@@ -6,7 +6,7 @@ layout: home
 hero:
   image: /assets/home1.png
   callout:
-    alt: "GenVis:"
+    alt: "GenoCAT:"
     text: browse for tools to better visualize a genome of interest!
   button:
     href: /search_page/
