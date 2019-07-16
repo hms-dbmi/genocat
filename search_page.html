@@ -4,14 +4,20 @@ permalink: /search_page/
 ---
 <html>
 <head>
+
   <style>
+  a:visited {
+    color: #0071bc;
+}
   .column {
     float: left;
     width: 50%;
+    padding: 20px;
+    border: 0.1rem solid #DCDCDC;
   }
   input, textarea, select {
     appearance: none;
-    border: 0.1rem solid #5b616b;
+    border: 0.1rem solid #DCDCDC;
     border-radius: 0;
     box-sizing: border-box;
     color: #212121;
@@ -21,7 +27,7 @@ permalink: /search_page/
     line-height: 1.3;
     margin: 0.2em 0;
     max-width: 46rem;
-    padding: 1rem 0.7em;
+    padding: 1rem 1em;
     width: 100%;
   }
   input[type="radio"] {
@@ -29,6 +35,8 @@ permalink: /search_page/
     cursor: default;
     -webkit-appearance: radio;
     display: inline;
+    /* position: relative; */
+    /* left: auto; */
     box-sizing: border-box;
     margin: 3px 0.5ex;
     padding: initial;
@@ -55,26 +63,19 @@ label {
     margin-right: 0.5em;
     width: 1rem;
 }
-[type="checkbox"] + label {
-    width: 5em;
-}
   </style>
 </head>
 
 <!-- <input id="file-input" type="file"> -->
 
+<!-- <input type="checkbox" id="sort-by-citation-count" name="sort by" value="citation count"<label for="citation count">Sort by citation count</label> -->
 
 <div class="column left">
-  <!--  -->
-  <input type="checkbox" id="orange" name="fruit" value="testing"/><label for="orange">Orange</label>
-  <input type="checkbox" id="apple" name="fruit" value="testing"/><label for="apple">Apple</label>
-  <input type="checkbox" id="cat" name="animal" value="testing"/><label for="cat">Cat</label>
-  <input type="checkbox" id="dog" name="animal" value="testing"/><label for="dog">Dog</label>
-  <!--  -->
+
   <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
   <br>
-  <input type="radio" id="byName" name="sort" checked/><label for="byName">Sort by name</label>
   <input type="radio" id="byCitation" name = "sort"/> <label for="byCitation">Sort by citation count</label>
+  <input type="radio" id="byName" name="sort" checked/><label for="byName">Sort by name</label>
   <br>
   User Preferences
   <details>
@@ -163,9 +164,88 @@ label {
   <div class = "items">
 
 {% for post in site.tools %}
+    <div class = "container">
       <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
-        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
+          <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" width="250"></a>
+        <div class="overlay"><small>
+            Cited by:
+              {% for tool in site.data.scholar_data %}
+                {% if tool.title == post.title %}
+                  {{ tool.citedby }}
+                  {% endif %}
+              {% endfor %}
+              <p> Attributes: <br>
+
+                {%- if post.lay == "linear" -%}
+                  -Linear<br>
+                {%- elsif post.lay == "circular" -%}
+                  -Circular<br>
+                {%- elsif post.lay == "spacefilling" -%}
+                  -Space Filling<br>
+                {%- elsif post.lay == "spatial" -%}
+                  -Spatial<br>
+                {%- endif -%}
+
+                {%- if post.partition == "contiguous" -%}
+                  -Contiguous<br>
+                {%- elsif post.partition == "segregated" -%}
+                  -Segregated<br>
+                {%- endif -%}
+
+                {%- if post.sparse_type == "point sparse" -%}
+                  -Point Sparse<br>
+                {%- elsif post.sparse_type == "segment sparse" -%}
+                  -Segment Sparse<br>
+                {%- endif -%}
+
+                {%- if post.contiguous_type == "point contiguous" -%}
+                  -Point Contiguous<br>
+                {%- elsif post.contiguous_type == "segment contiguous" -%}
+                  -Segment Contiguous<br>
+                {%- endif -%}
+
+                {%- if post.abstraction == "none" -%}
+                  -No Abstraction<br>
+                {%- elsif post.abstraction == "partial" -%}
+                  -Partial Abstraction<br>
+                {%- elsif post.abstraction == "complete" -%}
+                  -Complete Abstraction<br>
+                {%- endif -%}
+
+                {%- if post.arrangement == "linear parallel" -%}
+                  -Linear Parallel<br>
+                {%- elsif post.lay == "linear serial" -%}
+                  -Linear Serial<br>
+                {%- elsif post.lay == "linear orthogonal" -%}
+                  -Linear Orthogonal<br>
+                {%- elsif post.lay == "circular parallel" -%}
+                  -Circular Parallel<br>
+                {%- elsif post.lay == "circular serial" -%}
+                  -Circular Serial<br>
+                {%- endif -%}
+
+                {%- if post.focus == "single" -%}
+                  -Single Focus<br>
+                {%- elsif post.focus == "multiple" -%}
+                  -Multiple Foci<br>
+                {%- endif -%}
+
+                {%- if post.scale == "single" -%}
+                  -Single Scale<br>
+                {%- elsif post.scale == "multiple" -%}
+                  -Multiple Scales<br>
+                {%- endif -%}
+
+                {%- if post.view == "single" -%}
+                  -Single View<br>
+                {%- elsif post.view == "multiple" -%}
+                  -Multiple Views<br>
+                {%- endif -%}
+              </p></small>
+        </div>
       </div>
+    </div>
 {% endfor %}
 
 <!--  -->
@@ -180,14 +260,26 @@ label {
 <style>
 
 .filterDiv {
-         float: left;
-         background-color: #f1f1f1;
+         background-color: #FFFFFF;
+         border:1px solid #DCDCDC;
          line-height: 50px;
-         text-align: center;
+         text-align: left;
          margin: 5px;
          display: none; /* Hidden by default */
-         padding-left: 5px;
-         padding-right: 5px;
+         padding-left: 20px;
+         padding-right: 20px;
+       }
+.container {
+         position: relative;
+       }
+.overlay {
+         font-size: 17px;
+         text-decoration: none;
+         position: absolute;
+         top: 10%;
+         right: 25%;
+         color: black;
+         line-height: 2px;
        }
 
 
@@ -210,8 +302,7 @@ label {
   width: 30%;
 }
 .right {
-  width: 50%;
-  margin-left: 20px;
+  width: 70%;
 }
 
 </style>
@@ -221,7 +312,5 @@ label {
 <script src = "{{site.baseurl}}/scripts/filter.js"></script>
 <script src="{{site.baseurl}}/scripts/search_bar.js"></script>
 <script src="{{site.baseurl}}/scripts/sortBy.js"></script>
-
-<script src="{{site.baseurl}}/scripts/testing.js"></script>
 
 </html>
