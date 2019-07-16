@@ -35,8 +35,6 @@ permalink: /search_page/
     cursor: default;
     -webkit-appearance: radio;
     display: inline;
-    /* position: relative; */
-    /* left: auto; */
     box-sizing: border-box;
     margin: 3px 0.5ex;
     padding: initial;
@@ -63,13 +61,23 @@ label {
     margin-right: 0.5em;
     width: 1rem;
 }
+
+[type=checkbox] + label::before {
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px #757575;
+    height: 1rem;
+    line-height: 0.5rem;
+    margin-left: 1px;
+    margin-right: 0.6em;
+    margin-top: 0.5em;
+    width: 1rem;
+}
+
+body {
+    font-size: 1.5rem;
+}
   </style>
 </head>
-
-<!-- <input id="file-input" type="file"> -->
-
-<!-- <input type="checkbox" id="sort-by-citation-count" name="sort by" value="citation count"<label for="citation count">Sort by citation count</label> -->
-
 <div class="column left">
   <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
   <br>
@@ -85,76 +93,66 @@ label {
     <input type="checkbox" id="r package" name = "access_format"/><label for="r package">R package</label>
     <input type="checkbox" id="jupyter" name="access_format"/><label for="jupyter">Jupyter</label>
     <input type="checkbox" id="javascript" name="access_format"/><label for="javascript">Javascript</label>
-    <!-- <input type="checkbox" id="show-all-usage" name="access_format" checked/><label for="show-all-usage">Show All</label> -->
   </details>
   <br>
   Data Taxonomy
   <details>
     <summary>Type</summary>
-    <input type="checkbox" id="point sparse" name="type"/> <label for="point sparse">Point Sparse <img src="{{site.baseurl}}/assets/ps.png"style="width:32px; height:25px"></label>
-    <input type="checkbox" id="segment sparse" name="type"/> <label for="segment sparse">Segment Sparse <img src="{{site.baseurl}}/assets/ss.png"style="width:32px; height:25px"></label>
-    <input type="checkbox" id="point contiguous" name="type"/><label for="point contiguous">Point Contiguous <img src="{{site.baseurl}}/assets/pc.png"style="width:32px; height:25px"></label>
-    <input type="checkbox" id="segment contiguous" name="type"/><label for="segment contiguous">Segment Contiguous <img src="{{site.baseurl}}/assets/sc.png"style="width:32px; height:25px"></label>
-    <!-- <input type="checkbox" id="show-all-type" name="type" checked/><label for="show-all-type">Show All</label> -->
+    <input type="checkbox" id="point sparse" name="type"/> <label for="point sparse">Point Sparse </label>
+    <input type="checkbox" id="segment sparse" name="type"/> <label for="segment sparse">Segment Sparse </label>
+    <input type="checkbox" id="point contiguous" name="type"/><label for="point contiguous">Point Contiguous </label>
+    <input type="checkbox" id="segment contiguous" name="type"/><label for="segment contiguous">Segment Contiguous </label>
   </details>
   <details>
     <summary>Interconnection</summary>
-    <input type="checkbox" id="none" name="interconnection"/> <label for="none">None <img src="{{site.baseurl}}/assets/NoneInter.png"style="width:32px; height:23px"></label>
-    <input type="checkbox" id="within" name="interconnection"/><label for="within">Within <img src="{{site.baseurl}}/assets/WithinInter.png"style="width:32px; height:23px"></label>
-    <input type="checkbox" id="between" name="interconnection"/><label for="between">Between <img src="{{site.baseurl}}/assets/BetweenInter.png"style="width:32px; height:23px"></label>
-    <!-- <input type="checkbox" id="show-all-interconnection" name="interconnection" checked/><label for="show-all-interconnection">Show All</label> -->
+    <input type="checkbox" id="none" name="interconnection"/> <label for="none">None </label>
+    <input type="checkbox" id="within" name="interconnection"/><label for="within">Within </label>
+    <input type="checkbox" id="between" name="interconnection"/><label for="between">Between </label>
   </details>
   <br>
   Coordinate System
   <details>
     <summary>Layout</summary>
-    <input type="checkbox" id="circular" name = "layout"/> <label for="circular">Circular <img src="{{site.baseurl}}/assets/circular_example.png"style="width:35px; height:30px"></label>
-    <input type="checkbox" id="linear" name = "layout"/> <label for="linear">Linear<img src="{{site.baseurl}}/assets/linear_example.png"style="width:35px; height:30px"></label>
-    <input type="checkbox" id="spacefilling" name = "layout"/> <label for="spacefilling">Space Filling<img src="{{site.baseurl}}/assets/spacefilling_example.png"style="width:45px; height:35px"></label>
-    <input type="checkbox" id="spatial" name = "layout"/> <label for="spatial">Spatial <img src="{{site.baseurl}}/assets/spatial_example.png"style="width:40px; height:30px"></label>
-    <!-- <input type="checkbox" id="show-all-layouts" name="layout" checked/> <label for="show-all-layouts">Show All</label> -->
+    <input type="checkbox" id="circular" name = "layout"/> <label for="circular">Circular </label>
+    <input type="checkbox" id="linear" name = "layout"/> <label for="linear">Linear </label>
+    <input type="checkbox" id="spacefilling" name = "layout"/> <label for="spacefilling">Space Filling </label>
+    <input type="checkbox" id="spatial" name = "layout"/> <label for="spatial">Spatial </label>
   </details>
   <details>
     <summary>Partition</summary>
-    <input type="checkbox" id="contiguous" name = "partition"/> <label for="contiguous">Contiguous <img src="{{site.baseurl}}/assets/c.png"style="width:40px; height:30px"></label>
-    <input type="checkbox" id="segregated" name = "partition"/> <label for="segregated">Segregated <img src="{{site.baseurl}}/assets/s.png"style="width:40px; height:25px"></label>
-    <!-- <input type="checkbox" id="show-all-partition" name="partition" checked/> <label for="show-all-partition">Show All</label> -->
+    <input type="checkbox" id="contiguous" name = "partition"/> <label for="contiguous">Contiguous </label>
+    <input type="checkbox" id="segregated" name = "partition"/> <label for="segregated">Segregated </label>
   </details>
   <details>
     <summary>Abstraction</summary>
-    <input type="checkbox" id="noneab" name = "abstraction"/> <label for="noneab"> None <img src="{{site.baseurl}}/assets/n.png"style="width:45px; height:35px"></label>
-    <input type="checkbox" id="partialab" name = "abstraction"/> <label for="partialab"> Partial <img src="{{site.baseurl}}/assets/p.png"style="width:45px; height:35px"></label>
-    <input type="checkbox" id="completeab" name = "abstraction"/> <label for="completeab"> Complete <img src="{{site.baseurl}}/assets/com.png"style="width:40px; height:30px"></label>
-    <!-- <input type="checkbox" id="show-all-abstraction" name="abstraction" checked/> <label for="show-all-abstraction"> Show All</label> -->
+    <input type="checkbox" id="noneab" name = "abstraction"/> <label for="noneab"> None </label>
+    <input type="checkbox" id="partialab" name = "abstraction"/> <label for="partialab"> Partial </label>
+    <input type="checkbox" id="completeab" name = "abstraction"/> <label for="completeab"> Complete </label>
   </details>
   <details>
     <summary>Arrangement</summary>
-    <input type="checkbox" id="linear parallel" name = "arrangement"/> <label for="linear parallel"> Linear Parallel <img src="{{site.baseurl}}/assets/linearll.png"style="width:40px; height:30px"></label>
-    <input type="checkbox" id="linear serial" name = "arrangement"/> <label for="linear serial"> Linear Serial <img src="{{site.baseurl}}/assets/linears.png"style="width:40px; height:30px"></label>
-    <input type="checkbox" id="linear orthogonal" name = "arrangement"/> <label for="linear orthogonal"> Linear Orthogonal <img src="{{site.baseurl}}/assets/linearo.png"style="width:40px; height:30px"></label>
-    <input type="checkbox" id="circular parallel" name = "arrangement"/> <label for="circular parallel"> Circular Parallel <img src="{{site.baseurl}}/assets/circularll.png"style="width:40px; height:30px"></label>
-    <input type="checkbox" id="circular serial" name = "arrangement"/> <label for="circular serial"> Circular Serial <img src="{{site.baseurl}}/assets/circulars.png"style="width:40px; height:30px"></label>
-    <!-- <input type="checkbox" id="show-all-arrangement" name="arrangement" checked/> <label for="show-all-arrangement">Show All</label> -->
+    <input type="checkbox" id="linear parallel" name = "arrangement"/> <label for="linear parallel"> Linear Parallel </label>
+    <input type="checkbox" id="linear serial" name = "arrangement"/> <label for="linear serial"> Linear Serial </label>
+    <input type="checkbox" id="linear orthogonal" name = "arrangement"/> <label for="linear orthogonal"> Linear Orthogonal </label>
+    <input type="checkbox" id="circular parallel" name = "arrangement"/> <label for="circular parallel"> Circular Parallel </label>
+    <input type="checkbox" id="circular serial" name = "arrangement"/> <label for="circular serial"> Circular Serial </label>
   </details>
   <br>
   View Configurations
   <details>
     <summary>View</summary>
-    <input type="checkbox" id="single-view" name = "view"/> <label for="single-view"> Single <img src="{{site.baseurl}}/assets/Single View.png"style="width:32px; height:30px"></label>
-    <input type="checkbox" id="multiple-view" name = "view"/> <label for="multiple-view"> Multiple <img src="{{site.baseurl}}/assets/Multiple View.png"style="width:32px; height:30px"></label>
-    <input type="checkbox" id="show-all-views" name="view" checked/> <label for="show-all-views"> Show All</label>
+    <input type="checkbox" id="single-view" name = "view"/> <label for="single-view"> Single </label>
+    <input type="checkbox" id="multiple-view" name = "view"/> <label for="multiple-view"> Multiple </label>
   </details>
   <details>
     <summary>Scale</summary>
-    <input type="checkbox" id="single-scale" name = "scale"/> <label for="single-scale"> Single <img src="{{site.baseurl}}/assets/Single Scale.png"style="width:32px; height:30px"></label>
-    <input type="checkbox" id="multiple-scale" name = "scale"/> <label for="multiple-scale"> Multiple <img src="{{site.baseurl}}/assets/Multiple Scale.png"style="width:32px; height:30px"></label>
-    <input type="checkbox" id="show-all-scales" name="scale" checked/> <label for="show-all-scales"> Show All</label>
+    <input type="checkbox" id="single-scale" name = "scale"/> <label for="single-scale"> Single </label>
+    <input type="checkbox" id="multiple-scale" name = "scale"/> <label for="multiple-scale"> Multiple </label>
   </details>
   <details>
     <summary>Focus</summary>
-    <input type="checkbox" id="single-focus" name = "focus"/> <label for="single-focus"> Single <img src="{{site.baseurl}}/assets/Single Focus.png"style="width:35px; height:25px"></label>
-    <input type="checkbox" id="multiple-focus" name = "focus"/> <label for="multiple-focus"> Multiple <img src="{{site.baseurl}}/assets/Multiple Foci.png"style="width:35px; height:25px"></label>
-    <input type="checkbox" id="show-all-foci" name="focus" checked/> <label for="show-all-foci"> Show All </label>
+    <input type="checkbox" id="single-focus" name = "focus"/> <label for="single-focus"> Single </label>
+    <input type="checkbox" id="multiple-focus" name = "focus"/> <label for="multiple-focus"> Multiple </label>
   </details>
 </details>
 </div>
@@ -304,7 +302,5 @@ label {
 <script src = "{{site.baseurl}}/scripts/filter.js"></script>
 <script src="{{site.baseurl}}/scripts/search_bar.js"></script>
 <script src="{{site.baseurl}}/scripts/sortBy.js"></script>
-
-<!-- <script src="{{site.baseurl}}/scripts/testing.js"></script> -->
 
 </html>
