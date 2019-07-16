@@ -11,7 +11,7 @@ primary:
   - text: Home
     href: /
   - text: Browser
-    href: /search_page_one/
+    href: /search_page/
   - text: Attributes
     href: /attribute_page/
 
