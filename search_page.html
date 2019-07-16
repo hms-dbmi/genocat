@@ -165,84 +165,24 @@ body {
       <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
           <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" width="250"></a>
-        <div class="overlay"><small>
+        <div class="overlay">
             Cited by:
               {% for tool in site.data.scholar_data %}
                 {% if tool.title == post.title %}
                   {{ tool.citedby }}
                   {% endif %}
-              {% endfor %}
-              <p> Attributes: <br>
-
-                {%- if post.lay == "linear" -%}
-                  -Linear<br>
-                {%- elsif post.lay == "circular" -%}
-                  -Circular<br>
-                {%- elsif post.lay == "spacefilling" -%}
-                  -Space Filling<br>
-                {%- elsif post.lay == "spatial" -%}
-                  -Spatial<br>
-                {%- endif -%}
-
-                {%- if post.partition == "contiguous" -%}
-                  -Contiguous<br>
-                {%- elsif post.partition == "segregated" -%}
-                  -Segregated<br>
-                {%- endif -%}
-
-                {%- if post.sparse_type == "point sparse" -%}
-                  -Point Sparse<br>
-                {%- elsif post.sparse_type == "segment sparse" -%}
-                  -Segment Sparse<br>
-                {%- endif -%}
-
-                {%- if post.contiguous_type == "point contiguous" -%}
-                  -Point Contiguous<br>
-                {%- elsif post.contiguous_type == "segment contiguous" -%}
-                  -Segment Contiguous<br>
-                {%- endif -%}
-
-                {%- if post.abstraction == "none" -%}
-                  -No Abstraction<br>
-                {%- elsif post.abstraction == "partial" -%}
-                  -Partial Abstraction<br>
-                {%- elsif post.abstraction == "complete" -%}
-                  -Complete Abstraction<br>
-                {%- endif -%}
-
-                {%- if post.arrangement == "linear parallel" -%}
-                  -Linear Parallel<br>
-                {%- elsif post.lay == "linear serial" -%}
-                  -Linear Serial<br>
-                {%- elsif post.lay == "linear orthogonal" -%}
-                  -Linear Orthogonal<br>
-                {%- elsif post.lay == "circular parallel" -%}
-                  -Circular Parallel<br>
-                {%- elsif post.lay == "circular serial" -%}
-                  -Circular Serial<br>
-                {%- endif -%}
-
-                {%- if post.focus == "single" -%}
-                  -Single Focus<br>
-                {%- elsif post.focus == "multiple" -%}
-                  -Multiple Foci<br>
-                {%- endif -%}
-
-                {%- if post.scale == "single" -%}
-                  -Single Scale<br>
-                {%- elsif post.scale == "multiple" -%}
-                  -Multiple Scales<br>
-                {%- endif -%}
-
-                {%- if post.view == "single" -%}
-                  -Single View<br>
-                {%- elsif post.view == "multiple" -%}
-                  -Multiple Views<br>
-                {%- endif -%}
-              </p></small>
+              {% endfor %}</div>
+        <div class="overlay">{{ post.lay }}</div>
+        <div class="overlay">{{ post.partition }}</div>
+        <div class="overlay">{{ post.sparse_type }}</div>
+        <div class="overlay">{{ post.contiguous_type }}</div>
+        <div class="overlay">{{ post.abstraction }} (abstraction)</div>
+        <div class="overlay">{{ post.arrangement }}</div>
+        <div class="overlay">{{ post.focus }} focus</div>
+        <div class="overlay">{{ post.scale }} scale</div>
+        <div class="overlay">{{ post.view }} view</div>
         </div>
       </div>
-    </div>
 {% endfor %}
 
 </div>
@@ -263,13 +203,12 @@ body {
          position: relative;
        }
 .overlay {
-         font-size: 17px;
+         /* font-size: 17px;
          text-decoration: none;
-         position: absolute;
-         top: 10%;
-         right: 25%;
+         float: right;
+         position: relative;
          color: black;
-         line-height: 2px;
+         line-height: 2px; */
        }
 
 
