@@ -66,7 +66,10 @@ label {
 
 <div class="column left">
   <!--  -->
-  <input type="checkbox" id="testing" name="testing" value="testing"/><label for="testing">Testing</label>
+  <input type="checkbox" id="orange" name="fruit" value="testing"/><label for="orange">Orange</label>
+  <input type="checkbox" id="apple" name="fruit" value="testing"/><label for="apple">Apple</label>
+  <input type="checkbox" id="cat" name="animal" value="testing"/><label for="cat">Cat</label>
+  <input type="checkbox" id="dog" name="animal" value="testing"/><label for="dog">Dog</label>
   <!--  -->
   <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
   <br>
@@ -164,6 +167,13 @@ label {
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </div>
 {% endfor %}
+
+<!--  -->
+<div class="filterDiv apple">Apple</div>
+<div class="filterDiv orange">Orange</div>
+<div class="filterDiv cat">Cat</div>
+<div class="filterDiv apple dog">Apple Dog</div>
+<!--  -->
 
 </div>
 </div>
