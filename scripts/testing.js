@@ -2,64 +2,35 @@ var testingList = [];
 testingList.push([]);
 testingList.push([]);
 
-document.getElementById("cat").onclick = function() {
-  var cat = document.getElementById("cat");
-  var name = cat.getAttribute("name");
+function click_filter(id) {
+  var tool = document.getElementById(id);
+  var name = tool.getAttribute("name");
   var index = getNameIndex(name);
-  if (cat.checked == true) {
-    if (!testingList.includes("cat")) {
-      testingList[index].push("cat");
+  if (tool.checked == true) {
+    if (!testingList.includes(id)) {
+      testingList[index].push(id);
     }
   } else {
-    testingList[index] = uncheck("cat", testingList[index]);
+    testingList[index] = uncheck(id, testingList[index]);
   }
   console.log(testingList);
   checkbox_filter(testingList);
+}
+
+document.getElementById("cat").onclick = function() {
+  click_filter("cat");
 }
 
 document.getElementById("dog").onclick = function() {
-  var dog = document.getElementById("dog");
-  var name = dog.getAttribute("name");
-  var index = getNameIndex(name);
-  if (dog.checked == true) {
-    if (!testingList.includes("dog")) {
-      testingList[index].push("dog");
-    }
-  } else {
-    testingList[index] = uncheck("dog", testingList[index]);
-  }
-  console.log(testingList);
-  checkbox_filter(testingList);
+  click_filter("dog");
 }
 
 document.getElementById("orange").onclick = function() {
-  var orange = document.getElementById("orange");
-  var name = orange.getAttribute("name");
-  var index = getNameIndex(name);
-  if (orange.checked == true) {
-    if (!testingList.includes("orange")) {
-      testingList[index].push("orange");
-    }
-  } else {
-    testingList[index] = uncheck("orange", testingList[index]);
-  }
-  console.log(testingList);
-  checkbox_filter(testingList);
+  click_filter("orange");
 }
 
 document.getElementById("apple").onclick = function() {
-  var apple = document.getElementById("apple");
-  var name = apple.getAttribute("name");
-  var index = getNameIndex(name);
-  if (apple.checked == true) {
-    if (!testingList.includes("apple")) {
-      testingList[index].push("apple");
-    }
-  } else {
-    testingList[index] = uncheck("apple", testingList[index]);
-  }
-  console.log(testingList);
-  checkbox_filter(testingList);
+  click_filter("apple");
 }
 
 function getNameIndex(name) {
