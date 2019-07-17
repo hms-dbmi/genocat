@@ -162,10 +162,11 @@ body {
 
 {% for post in site.tools %}
     <div class = "container">
-      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale"
+      onclick="openTab('b-{{post.doi}}')">
           <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" width="250"></a>
-        <div class="overlay">
+        <!-- <div class="overlay">
             Cited by:
               {% for tool in site.data.scholar_data %}
                 {% if tool.title == post.title %}
@@ -180,7 +181,9 @@ body {
         <div class="overlay">{{ post.arrangement }}</div>
         <div class="overlay">{{ post.focus }} focus</div>
         <div class="overlay">{{ post.scale }} scale</div>
-        <div class="overlay">{{ post.view }} view</div>
+        <div class="overlay">{{ post.view }} view</div> -->
+        <div id="b-{{post.doi}}" class="containerTab" style="display:none;background:grey">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         </div>
       </div>
 {% endfor %}
@@ -210,6 +213,14 @@ body {
          color: black;
          line-height: 2px; */
        }
+
+.containerTab {
+  float: left;
+  border-radius: 25px;
+  width: 77%;
+  padding: 20px;
+  color: white;
+  }
 
 
 /* The "show" class is added to the filtered elements */
@@ -241,5 +252,17 @@ body {
 <script src = "{{site.baseurl}}/scripts/filter.js"></script>
 <script src="{{site.baseurl}}/scripts/search_bar.js"></script>
 <script src="{{site.baseurl}}/scripts/sortBy.js"></script>
+
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
 
 </html>
