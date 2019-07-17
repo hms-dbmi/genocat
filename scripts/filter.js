@@ -20,22 +20,6 @@ function filterFunction() {
   }
 }
 
-// filterMultSelection([]);
-//
-// function filterMultSelection(c) {
-//   var x, i, j;
-//   x = document.getElementsByClassName("filterDiv");
-//   for (i = 0; i < x.length; i++) {
-//     j=0;
-//     addTool(x[i], "show");
-//     while (j<c.length) {
-//       if (x[i].className.indexOf(c[j]) == -1 && c.length>0) {
-//         removeTool(x[i], "show");
-//       }
-//       j++;
-//     }
-//   }
-// }
 
 checkbox_filter([]);
 
