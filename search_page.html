@@ -182,7 +182,7 @@ body {
         <div class="overlay">{{ post.focus }} focus</div>
         <div class="overlay">{{ post.scale }} scale</div>
         <div class="overlay">{{ post.view }} view</div> -->
-        <div id="b-{{post.doi}}" class="containerTab" style="display:none;background:grey">
+        <div id="b-{{post.doi}}" class="containerTab" style="display:none">
           <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
         </div>
       </div>
@@ -215,11 +215,13 @@ body {
        }
 
 .containerTab {
-  float: left;
-  border-radius: 25px;
+  float: right;
+  border-style: solid;
+  border-color: black;
   width: 77%;
   padding: 20px;
   color: white;
+  position: relative;
   }
 
 
