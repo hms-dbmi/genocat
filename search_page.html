@@ -6,9 +6,6 @@ permalink: /search_page/
 <head>
 
   <style>
-  a:visited {
-    color: #000000;
-}
   .column {
     float: left;
     width: 50%;
@@ -162,8 +159,7 @@ body {
 
 {% for post in site.tools %}
     <div class = "container">
-      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale"
-      onclick="openTab('b-{{post.doi}}')">
+      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
           <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" width="250"></a>
         <!-- <div class="overlay">
@@ -174,7 +170,6 @@ body {
                   {% endif %}
               {% endfor %}</div>
         <div class="overlay">{{ post.lay }}</div>
-        <div class="overlay">{{ post.partition }}</div>
         <div class="overlay">{{ post.sparse_type }}</div>
         <div class="overlay">{{ post.contiguous_type }}</div>
         <div class="overlay">{{ post.abstraction }} (abstraction)</div>
@@ -182,16 +177,26 @@ body {
         <div class="overlay">{{ post.focus }} focus</div>
         <div class="overlay">{{ post.scale }} scale</div>
         <div class="overlay">{{ post.view }} view</div> -->
-        <div id="b-{{post.doi}}" class="containerTab" style="display:none;background:grey">
-          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <div class="dropdown">
+          <button onclick="myFunction('{{post.doi}}')" class="dropbtn">+</button>
+            <div id="{{post.doi}}" class="dropdown-content">
+            <p>Hello World!</p>
+            {{ post.lay }}
+          </div>
         </div>
       </div>
+    </div>
 {% endfor %}
 
 </div>
 </div>
 <style>
-
+a{
+  color: #000000;
+}
+a:visited {
+  color: #000000;
+}
 .filterDiv {
          background-color: #FFFFFF;
          border:1px solid #DCDCDC;
@@ -214,19 +219,47 @@ body {
          line-height: 2px; */
        }
 
-.containerTab {
-  float: left;
-  border-radius: 25px;
-  width: 77%;
-  padding: 20px;
-  color: white;
-  }
-
 
 /* The "show" class is added to the filtered elements */
 .show {
          display: block;
        }
+/* Dropdown Button */
+.dropbtn {
+         position: relative;
+         left: 300px;
+         color: black;
+         padding: 16px;
+         font-size: 16px;
+         border: none;
+         cursor: pointer;
+         background-color: #f1f1f1;
+       }
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+         background-color: #f1f1f1;
+         color: black;
+       }
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+         position: relative;
+         display: inline-block;
+       }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+         display: none;
+         position: absolute;
+         left: 300px;
+         background-color: #f1f1f1;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+       }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 </style>
 
@@ -252,17 +285,26 @@ body {
 <script src = "{{site.baseurl}}/scripts/filter.js"></script>
 <script src="{{site.baseurl}}/scripts/search_bar.js"></script>
 <script src="{{site.baseurl}}/scripts/sortBy.js"></script>
-
-
 <script>
-function openTab(tabName) {
-  var i, x;
-  x = document.getElementsByClassName("containerTab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction(id) {
+  console.log(id);
+  document.getElementById(id).classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
-  document.getElementById(tabName).style.display = "block";
 }
 </script>
-
 </html>
