@@ -1,15 +1,15 @@
 ---
-layout: tool
-title: Dalliance
+layout: 
+title:
 github_account:
-paper: https://www.ncbi.nlm.nih.gov/pubmed/21252075
+paper:
 paper_title:
 doi:
 browser:
 abstract:
-citation: "Down TA, Piipari M, Hubbard TJP. Dalliance: interactive genome viewing on the web. Bioinformatics. academic.oup.com; 2011;27: 889–890."
+citation:
 citation_count:
-lay: linear
+lay:
 partition:
 abstraction:
 focus:
