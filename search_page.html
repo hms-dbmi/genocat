@@ -162,14 +162,10 @@ body {
       <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
           <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" width="250"></a>
-        <!-- <div class="overlay">
-            Cited by:
-              {% for tool in site.data.scholar_data %}
-                {% if tool.title == post.title %}
-                  {{ tool.citedby }}
-                  {% endif %}
-              {% endfor %}</div>
-        <div class="overlay">{{ post.lay }}</div>
+        <div class="overlay">
+          Access format: {{post.access_format}}
+        </div>
+        <!-- <div class="overlay">{{ post.lay }}</div>
         <div class="overlay">{{ post.sparse_type }}</div>
         <div class="overlay">{{ post.contiguous_type }}</div>
         <div class="overlay">{{ post.abstraction }} (abstraction)</div>
@@ -177,17 +173,16 @@ body {
         <div class="overlay">{{ post.focus }} focus</div>
         <div class="overlay">{{ post.scale }} scale</div>
         <div class="overlay">{{ post.view }} view</div> -->
-<<<<<<< HEAD
         <div class="dropdown">
           <button onclick="myFunction('{{post.doi}}')" class="dropbtn">+</button>
             <div id="{{post.doi}}" class="dropdown-content">
-            <p>Hello World!</p>
-            {{ post.lay }}
+              <p>Cited by:{% for tool in site.data.scholar_data %}
+                {% if tool.title == post.title %}
+                  {{ tool.citedby }}
+                  {% endif %}
+              {% endfor %}</p>
+            <p>Layout: {{ post.lay }}</p>
           </div>
-=======
-        <div id="b-{{post.doi}}" class="containerTab" style="display:none">
-          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
->>>>>>> 7594f1b8f2739427058cbd0c3027ca9d04c0b4a8
         </div>
       </div>
     </div>
@@ -216,27 +211,14 @@ a:visited {
          position: relative;
        }
 .overlay {
-         /* font-size: 17px;
+         font-size: 17px;
          text-decoration: none;
          float: right;
          position: relative;
          color: black;
-         line-height: 2px; */
+         line-height: 2px;
        }
 
-<<<<<<< HEAD
-=======
-.containerTab {
-  float: right;
-  border-style: solid;
-  border-color: black;
-  width: 77%;
-  padding: 20px;
-  color: white;
-  position: relative;
-  }
-
->>>>>>> 7594f1b8f2739427058cbd0c3027ca9d04c0b4a8
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -271,7 +253,8 @@ a:visited {
          position: absolute;
          left: 300px;
          background-color: #f1f1f1;
-         min-width: 160px;
+         padding: 16px;
+         min-width: 250px;
          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
          z-index: 1;
        }
