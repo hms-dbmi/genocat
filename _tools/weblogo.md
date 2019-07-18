@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: WebLogo
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/15173120
 paper_title: "WebLogo: a sequence logo generator."
 doi: 10.1101/gr.849004

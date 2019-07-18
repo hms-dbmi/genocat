@@ -24,7 +24,7 @@ for row_index, row in enumerate(datareader):
 	# Othrwise, create a YAML file from the data in this row...
 	else:
 		# Open a new file with filename based on the first column
-		filename = '../_tools/'+row[0] + '.markdown'
+		filename = '../_tools/'+row[0].lower().replace(" ", "_") + '.md'
 		new_yaml = open(filename, 'w+')
 
 

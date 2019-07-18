@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: Integrative Genomics Viewer
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/22517427
 paper_title: "Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration."
 doi: 10.1093/bib/bbs017

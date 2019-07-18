@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: HiGlass
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/30143029
 paper_title: "HiGlass: web-based visual exploration and analysis of genome interaction maps"
 doi: 10.1186/s13059-018-1486-1

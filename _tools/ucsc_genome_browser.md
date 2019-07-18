@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: UCSC Genome Browser
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/12045153
 paper_title: "The human genome browser at UCSC."
 doi: 10.1101/gr.229102

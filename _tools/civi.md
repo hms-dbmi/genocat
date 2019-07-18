@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: Civi
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/25910699
 paper_title: "CiVi: circular genome visualization with unique features to analyze sequence elements."
 doi: 10.1093/bioinformatics/btv249

@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: Lollipop Plot cBio
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/22588877
 paper_title: "The cBio cancer genomics portal: an open platform for exploring multidimensional cancer genomics data."
 doi: 10.1158/2159-8290.CD-12-0095

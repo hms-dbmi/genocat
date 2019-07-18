@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: CGView
+github_account: 
 paper: https://academic.oup.com/bioinformatics/article/21/4/537/203470
 paper_title: "Circular genome visualization and exploration using CGView"
 doi: 10.1093/bioinformatics/bti054

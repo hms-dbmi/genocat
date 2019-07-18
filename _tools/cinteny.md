@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: Cinteny
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/17343765
 paper_title: "Cinteny: flexible analysis and visualization of synteny and genome rearrangements in multiple organisms."
 doi: 10.1186/1471-2105-8-82
