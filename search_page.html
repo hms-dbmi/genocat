@@ -177,12 +177,17 @@ body {
         <div class="overlay">{{ post.focus }} focus</div>
         <div class="overlay">{{ post.scale }} scale</div>
         <div class="overlay">{{ post.view }} view</div> -->
+<<<<<<< HEAD
         <div class="dropdown">
           <button onclick="myFunction('{{post.doi}}')" class="dropbtn">+</button>
             <div id="{{post.doi}}" class="dropdown-content">
             <p>Hello World!</p>
             {{ post.lay }}
           </div>
+=======
+        <div id="b-{{post.doi}}" class="containerTab" style="display:none">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+>>>>>>> 7594f1b8f2739427058cbd0c3027ca9d04c0b4a8
         </div>
       </div>
     </div>
@@ -219,6 +224,19 @@ a:visited {
          line-height: 2px; */
        }
 
+<<<<<<< HEAD
+=======
+.containerTab {
+  float: right;
+  border-style: solid;
+  border-color: black;
+  width: 77%;
+  padding: 20px;
+  color: white;
+  position: relative;
+  }
+
+>>>>>>> 7594f1b8f2739427058cbd0c3027ca9d04c0b4a8
 
 /* The "show" class is added to the filtered elements */
 .show {
