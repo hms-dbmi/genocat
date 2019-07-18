@@ -83,12 +83,12 @@ layout: page
       <li>{{items}} </li>
     {% endfor %}
     </p>
-    <p> Cited by:
-      {% for tool in site.data.scholar_data %}
+    <p> Cited by: {{page.citation_count}}
+      <!-- {% for tool in site.data.scholar_data %}
         {% if tool.title == page.title %}
           {{ tool.citedby }}
         {% endif %}
-      {% endfor %}
+      {% endfor %} -->
     </p>
     <p> Publication Year: {{ page.pub_year }}</p>
     <p> Attributes:
