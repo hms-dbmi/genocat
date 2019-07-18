@@ -3,34 +3,59 @@ layout: page
 title:  Scales
 categories: attributes
 ---
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+  grid-gap: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
+}
+</style>
+</head>
 <div>
   <h1><a id="Single Scale"></a>Single Scale</h1>
 
     <img src = "{{site.baseurl}}/assets/Single Scale.png" width="200" align = "left">
-    <br>
+    <br><br><br>
     Single scale visualizations display a genome from a single perspective - one size.
     However, some single scale visualizations provide a zooming interaction, which allows
     the user to expand or shrink the genome view.
     <br><br><br><br><br>
-    {% for post in site.tools %}
-      {% if post.scale == "single" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+    <div class="grid-container">
+      {% for post in site.tools %}
+        {% if post.scale == "single" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
-        {% endfor %}
+      {% endfor %}
+    </div>
 </div>
 <br><br>
 <div>
   <h1><a id="Multiple Scales"></a>Multiple Scales</h1>
     <img src = "{{site.baseurl}}/assets/Multiple Scale.png" width="200" align = "left">
-    <br>
+    <br><br><br>
     A multiple scale visualization allows for visualizing data from multiple perspectives/sizes at once.
     This can be useful for something as large as a genome, particularly being able to view
     individual genes as well as the geneome on a whole, as scaling would allow.
     <br><br><br><br><br>
-    {% for post in site.tools %}
-      {% if post.scale == "multiple" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+    <div class="grid-container">
+      {% for post in site.tools %}
+        {% if post.scale == "multiple" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
-        {% endfor %}
+      {% endfor %}
+    </div>
 </div>

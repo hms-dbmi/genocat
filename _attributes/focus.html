@@ -3,23 +3,45 @@ layout: page
 title:  Focus
 categories: attributes
 ---
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+  grid-gap: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
+}
+</style>
+</head>
 <div>
   <h1><a id="Single Focus"></a>Single Focus</h1>
 
     <img src = "{{site.baseurl}}/assets/Single Focus.png" width="200" align = "left">
 
-    <br>
+    <br><br>
     A focus is similar to sliding a window across the
     genome. Only the region in this window can be analyzed.
 
-    <br><br><br>
-
-    {% for post in site.tools %}
-      {% if post.focus == "single" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+    <br><br><br><br><br>
+    <div class="grid-container">
+      {% for post in site.tools %}
+        {% if post.focus == "single" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
-        {% endfor %}
+      {% endfor %}
+    </div>
 </div>
 <br><br>
 <div>
@@ -30,11 +52,12 @@ categories: attributes
     Multiple foci enable users to look at distinct segments of a genome in parallel
     and compare features that are dispersed across the genome.
 
-    <br><br><br>
-
-    {% for post in site.tools %}
-      {% if post.focus == "multiple" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+    <br><br><br><br><br>
+    <div class="grid-container">
+      {% for post in site.tools %}
+        {% if post.focus == "multiple" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
-        {% endfor %}
+      {% endfor %}
+    </div>
 </div>

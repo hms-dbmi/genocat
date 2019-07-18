@@ -3,21 +3,42 @@ layout: page
 title:  Views
 categories: attributes
 ---
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+  grid-gap: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
+}
+</style>
+</head>
 <div>
   <h1><a id="Single View"></a>Single View</h1>
     <img src = "{{site.baseurl}}/assets/Single View.png" width="200" align = "left">
     <br><br>
 
-    <p align="left">We characterize a view as a set of one or multiple aligned tracks,
+  We characterize a view as a set of one or multiple aligned tracks,
   with at most one two-axis track. In a single view, we cannot visualize
-  multiple scales and foci.</p>
+  multiple scales and foci.
 
-    <br><br><br>
-
+  <br><br><br><br><br><br>
+  <div class="grid-container">
     {% for post in site.tools %}
       {% if post.view == "single" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
       {% endif %}
     {% endfor %}
 </div>
@@ -25,20 +46,20 @@ categories: attributes
 <div>
   <h1><a id="Multiple Views"></a>Multiple Views</h1>
     <img src = "{{site.baseurl}}/assets/Multiple View.png" width="200" align = "left">
-
-    <p> Multiple views allow for visualizations with multiple scales and foci.
+<br><br>
+  Multiple views allow for visualizations with multiple scales and foci.
   Multiple views can be (i) independent, (ii) weakly linked, (iii) medium linked or (iv)
   strongly linked. While independent views are not connected in
   any way, weakly linked views are linked by brushing and linking.
   Medium linked views share navigation, for example two views are
   at different scales, but zooming always affects both. Strongly linked
   views share genomic coordinates at one axis and can also share
-  tracks that are aligned to the axis.</p>
-
-    <br>
-    {% for post in site.tools %}
-      {% if post.view == "multiple"%}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+  tracks that are aligned to the axis.
+<br><br><br><br>
+    <div class="grid-container">
+      {% for post in site.tools %}
+        {% if post.view == "multiple" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
-        {% endfor %}
+      {% endfor %}
 </div>
