@@ -7,7 +7,7 @@ hero:
   image: /assets/home1.png
   callout:
     alt: "GenoCAT:"
-    text: browse for tools to better visualize a genome of interest!
+    text: browse for tools to better visualize genomic data
   button:
     href: /search_page/
     text: View Browser
