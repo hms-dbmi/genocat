@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: NCBI Genome Viewer
+github_account: 
 paper: https://doi.org/10.1093/nar/gkw1071
 paper_title: "Database Resources of the National Center for Biotechnology Information"
 doi: 10.1093/nar/gkw1071

@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: Circos
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/19541911
 paper_title: "Circos: an information aesthetic for comparative genomics"
 doi: 10.1101/gr.092759.109

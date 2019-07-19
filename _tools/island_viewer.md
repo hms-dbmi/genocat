@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: Island Viewer
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4489224/
 paper_title: "IslandViewer 3: more flexible, interactive genomic island discovery, visualization and analysis"
 doi: 10.1093/nar/gkv401

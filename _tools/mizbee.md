@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: MizBee
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/19834152
 paper_title: "MizBee: a multiscale synteny browser."
 doi: 10.1109/TVCG.2009.167

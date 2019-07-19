@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: HilbertCurve
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/27153599
 paper_title: "HilbertCurve: an R/Bioconductor package for high-resolution visualization of genomic data."
 doi: 10.1093/bioinformatics/btw161

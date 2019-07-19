@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: Sashimi Plot
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542614/
 paper_title: "Sashimi plots: Quantitative visualization of RNA sequencing read alignments"
 doi: 10.1093/bioinformatics/btv034

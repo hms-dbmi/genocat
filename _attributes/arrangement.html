@@ -3,44 +3,67 @@ layout: page
 title:  Arrangement
 categories: attributes
 ---
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+  grid-gap: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+</style>
+</head>
 The different arrangements can be used to (i) visualize interconnection features or (ii) compare two different sequence in the context of comparative genomics.
 <br><br>
 <div>
   <h1><a id="Circular Parallel"></a>Circular Parallel</h1>
     <img src = "{{site.baseurl}}/assets/circularll.png" width="200" align = "left">
     <br><br>
-
-    {% for post in site.tools %}
-      {% if post.arrangement == "circular parallel" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
-      {% endif %}
-    {% endfor %}
+    <div class="grid-container">
+      {% for post in site.tools %}
+        {% if post.arrangement == "circular parallel" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+        {% endif %}
+      {% endfor %}
 </div>
 <br><br><br><br><br>
 <div>
   <h1><a id="Circular Serial"></a>Circular Serial</h1>
     <img src = "{{site.baseurl}}/assets/circulars.png" width="200" align = "left">
-
-
-    A serial circular arrangement corresponds to two sequence axes in a “half-circle” layout.
     <br><br>
 
-    {% for post in site.tools %}
-      {% if post.arrangement == "circular serial" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
-      {% endif %}
-    {% endfor %}
+    A serial circular arrangement corresponds to two sequence axes in a “half-circle” layout.
+    <br><br><br><br><br><br>
+    <div class="grid-container">
+      {% for post in site.tools %}
+        {% if post.arrangement == "circular serial" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+        {% endif %}
+      {% endfor %}
 </div>
 <br><br><br><br><br>
 <div>
   <h1><a id="Linear Parallel"></a>Linear Parallel</h1>
     <img src = "{{site.baseurl}}/assets/linearparallel.png" width="200" align = "left">
-    <br><br>
-    {% for post in site.tools %}
-      {% if post.arrangement == "linear parallel" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
-      {% endif %}
-    {% endfor %}
+    <br><br><br><br><br><br><br>
+    <div class="grid-container">
+      {% for post in site.tools %}
+        {% if post.arrangement == "linear parallel" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+        {% endif %}
+      {% endfor %}
 </div>
 <br><br><br><br><br>
 <div>

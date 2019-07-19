@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: HilbertVis
+github_account: 
 paper: https://academic.oup.com/bioinformatics/article/25/10/1231/270493
 paper_title: "Visualization of genomic data with the Hilbert curve"
 doi: 10.1093/bioinformatics/btp152

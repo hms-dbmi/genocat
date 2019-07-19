@@ -3,6 +3,28 @@ layout: page
 title:  Partition
 categories: attributes
 ---
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+  grid-gap: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+</style>
+</head>
 Eukaryotic genomes often consist of multiple chromosomes, which are distinct sequences. However, they are often visualized as one contiguous sequence by placing them end-to-end of each other. Some visualizations, especially when comparing genomes, treat chromosomes as separate elements. While different chromosomes are the most common reason to display a sequence in separate parts, one could imagine partitioning a sequence based on other factors too, such as partitioning it in equally sized subsequences to show the entire sequence in multiple rows (similar to space-filling layouts).
 
 <br><br>
@@ -10,13 +32,16 @@ Eukaryotic genomes often consist of multiple chromosomes, which are distinct seq
   <h1><a id="Contiguous"></a>Contiguous</h1>
 
     <img src = "{{site.baseurl}}/assets/c.png" width="200" align = "left">
-
-
-    {% for post in site.tools %}
-      {% if post.partition == "contiguous" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
-      {% endif %}
-    {% endfor %}
+    <br><br>
+    Segments, typically individual chromosomes, of the genome are joined together end-to-end.
+    <br><br><br><br><br><br>
+    <div class="grid-container">
+      {% for post in site.tools %}
+        {% if post.partition == "contiguous" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+        {% endif %}
+      {% endfor %}
+    </div>
 </div>
 <br><br><br>
 
@@ -25,12 +50,15 @@ Eukaryotic genomes often consist of multiple chromosomes, which are distinct seq
   <h1><a id="Segregated"></a>Segregated</h1>
 
     <img src = "{{site.baseurl}}/assets/s.png" width="200" align = "left">
-    <br>
+    <br><br>
 
-    <br>
-    {% for post in site.tools %}
-      {% if post.partition == "segregated" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
+    Segments, typically individual chromosomes, of the genome are displayed separately.
+    <br><br><br><br><br>
+    <div class="grid-container">
+      {% for post in site.tools %}
+        {% if post.partition == "segregated" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
-        {% endfor %}
+      {% endfor %}
+    </div>
 </div>

@@ -1,6 +1,7 @@
 ---
 layout: tool 
 title: NCBI Sequence Viewer
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/18428781
 paper_title: "Using the NCBI Map Viewer to browse genomic sequence data."
 doi: 10.1002/0471250953.bi0105s16
