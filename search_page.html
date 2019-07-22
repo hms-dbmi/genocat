@@ -175,7 +175,16 @@ body {
         <div class="overlay">{{ post.focus }} focus</div>
         <div class="overlay">{{ post.scale }} scale</div>
         <div class="overlay">{{ post.view }} view</div> -->
-        <div class="dropdown">
+        <button class="collapsible">+</button>
+          <div class="content">
+            <p>Cited by:{% for tool in site.data.scholar_data %}
+              {% if tool.title == post.title %}
+                {{ tool.citedby }}
+                {% endif %}
+            {% endfor %}</p>
+          <p>Layout: {{ post.lay }}</p>
+          </div>
+        <!-- <div class="dropdown">
           <button onclick="myFunction('{{post.doi}}')" class="dropbtn">+</button>
             <div id="{{post.doi}}" class="dropdown-content">
               <p>Cited by:{% for tool in site.data.scholar_data %}
@@ -185,7 +194,7 @@ body {
               {% endfor %}</p>
             <p>Layout: {{ post.lay }}</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 {% endfor %}
@@ -201,17 +210,20 @@ a:visited {
 }
 .filterDiv {
          background-color: #FFFFFF;
-         border:1px solid #DCDCDC;
+         border: none;
          line-height: 50px;
          text-align: left;
          margin: 5px;
          display: none; /* Hidden by default */
          padding-left: 20px;
          padding-right: 20px;
+         padding-bottom: 10px;
+         padding-top: 10px;
+         box-shadow: 0px 8px 16px 4px rgba(0,0,0,0.2);
        }
 .container {
          position: relative;
-         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         border: none;
        }
 .overlay {
          font-size: 17px;
@@ -227,47 +239,38 @@ a:visited {
 .show {
          display: block;
        }
-/* Dropdown Button */
-.dropbtn {
-         position: relative;
-         left: 300px;
-         color: black;
-         padding: 16px;
-         font-size: 16px;
-         border: none;
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+
+         background-color: white;
+         color: #444;
          cursor: pointer;
-         background-color: #f1f1f1;
-       }
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-         background-color: #f1f1f1;
-         color: black;
-       }
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+         margin-top:80px;
+         border: none;
+         text-align: right;
+         font-size: 20px;
          position: relative;
-         display: inline-block;
-       }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-         display: none;
-         position: absolute;
          left: 300px;
-         background-color: #f1f1f1;
-         padding: 16px;
-         min-width: 250px;
-         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-         z-index: 1;
        }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+         background-color: white;
+         color: #444;
+         border: none;
+       }
 
-</style>
+/* Style the collapsible content. Note: hidden by default */
+.content {
+         padding: 0 18px;
+         display: none;
+         overflow: hidden;
+         background-color: white;
+         border-top-style: solid ;
+         border-top-width: 1px;
+         border-top-color: #DCDCDC;
+       }
 
-<style>
 
 .items {
   position: -webkit-sticky;
@@ -290,25 +293,21 @@ a:visited {
 <script src="{{site.baseurl}}/scripts/search_bar.js"></script>
 <script src="{{site.baseurl}}/scripts/sortBy.js"></script>
 <script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction(id) {
-  console.log(id);
-  document.getElementById(id).classList.toggle("show");
-}
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
     }
-  }
+  });
 }
 </script>
 </html>

@@ -1,7 +1,7 @@
 ---
-layout: tool 
+layout: tool
 title: Circos
-github_account: 
+github_account:
 paper: https://www.ncbi.nlm.nih.gov/pubmed/19541911
 paper_title: "Circos: an information aesthetic for comparative genomics"
 doi: 10.1101/gr.092759.109
@@ -10,17 +10,17 @@ abstract: We created a visualization tool called Circos to facilitate the identi
 citation: "Krzywinski M, Schein J, Birol I, Connors J, Gascoyne R, Horsman D, et al. Circos: an information aesthetic for comparative genomics. Genome Res. 2009;19: 1639–1645."
 citation_count: 4459
 lay: circular
-partition: 
-abstraction: 
+partition:
+abstraction:
 focus: single
 scale: single
 view: single
-sparse_type: 
-contiguous_type: 
-interconnection: ['within', 'between']
+sparse_type:
+contiguous_type:
+interconnection: ['within','between']
 arrangement: circular serial
 access_format: software
 pub_year: 2009
-license: 
+license:
 image: /assets/Circos.png
 ---

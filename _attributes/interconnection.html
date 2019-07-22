@@ -34,9 +34,11 @@ categories: attributes
     <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.interconnection == "none" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+        {% for items in  post.interconnection %}
+          {% if items == "none" %}
+            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </div>
 </div>
@@ -50,9 +52,11 @@ categories: attributes
     <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.interconnection == "within" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+        {% for items in post.interconnection %}
+          {% if items == "within" %}
+            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </div>
 </div>
@@ -67,9 +71,11 @@ categories: attributes
     <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.interconnection == "between" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+        {% for items in post.interconnection %}
+          {% if items == "between" %}
+            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+            {% endif %}
+          {% endfor %}
       {% endfor %}
     </div>
 </div>

@@ -35,9 +35,11 @@ categories: attributes
 
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.lay == "circular" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+        {% for items in  post.lay %}
+          {% if items == "circular" %}
+            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+            {% endif %}
+          {% endfor %}
       {% endfor %}
     </div>
 
@@ -52,9 +54,11 @@ categories: attributes
   <br><br><br><br><br>
   <div class="grid-container">
     {% for post in site.tools %}
-      {% if post.lay == "linear" %}
+    {% for items in  post.lay %}
+      {% if items == "linear" %}
         <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-      {% endif %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
 </div>
@@ -71,9 +75,11 @@ categories: attributes
 
   <div class="grid-container">
     {% for post in site.tools %}
-      {% if post.lay == "spacefilling" %}
-        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-      {% endif %}
+      {% for items in  post.lay %}
+        {% if items == "spacefilling" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
 </div>
@@ -90,9 +96,11 @@ categories: attributes
 
   <div class="grid-container">
     {% for post in site.tools %}
-      {% if post.lay == "spatial" %}
-        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-      {% endif %}
+      {% for items in  post.lay %}
+        {% if items == "spatial" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
 </div>
