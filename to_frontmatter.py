@@ -1,25 +1,30 @@
-import frontmatter
 import os
+
+def get_attribute(attr, lines):
+    length = len(attr)
+    j=0
+    while j<len(lines):
+        if lines[j][0:length] == attr:
+            return(lines[j])
+        j+=1
+    return 0
 
 f_data = open('scholar_data.txt', 'r')
 attributes = f_data.readlines()
 for file in os.listdir('_tools'):
     filepath = os.path.join('_tools', file)
-    post = frontmatter.load(filepath)
-    doi = post['doi']
     f_tool = open(filepath, 'r')
+    lines = f_tool.readlines()
+    doi = get_attribute('doi', lines)
     i=0
-    citedby=0
+    citedby="  citation_count: 0"
     while i<len(attributes):
-        # print(attributes[i])
-        string = "  doi: "+str(doi)+"\n"
-        # print(string)
+        string = "  "+str(doi)
         if attributes[i] == string:
             citedby = attributes[i+1]
             break
         i+=1
-    citeCount = int(citedby[11:])
-    lines = f_tool.readlines()
+    citeCount = int(citedby[18:])
     j=0
     while j < len(lines):
         string = "citation_count:"
