@@ -28,10 +28,6 @@ interconnection: none
 arrangement:
 access_format: web browser
 pub_year: 2013
-<<<<<<< HEAD
 license:
-=======
-license: 
->>>>>>> 711e5f464d5b93e9214bb168babd9608fe761f4d
 image: /assets/mgcv.jpg
 ---
