@@ -1,13 +1,13 @@
 ---
-layout: 
+layout: tool
 title:
 github_account:
 paper:
-paper_title:
+paper_title: ""
 doi:
 browser:
-abstract:
-citation:
+abstract: ""
+citation: ""
 citation_count:
 lay:
 partition:
