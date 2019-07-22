@@ -19,6 +19,9 @@
 - title: ggBio
   doi: 10.1186/gb-2012-13-8-r77
   citation_count: 145
+- title: GIVE
+  doi: 10.1186/s13059-018-1465-6
+  citation_count: 5
 - title: Gremlin
   doi: 10.1109/TVCG.2010.163
   citation_count: 29
