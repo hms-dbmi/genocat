@@ -1,6 +1,7 @@
 language: ruby
 script:
   - bundle exec jekyll build
+  - python from_frontmatter.py
 
 deploy:
   provider: s3
