@@ -10,7 +10,6 @@ def get_attribute(attr, lines):
     return 0
 
 f1 = open('scholar_data.txt', 'w')
-f2 = open('_data/scholar_data.yml', 'w')
 for file in os.listdir('_tools'):
     filepath = os.path.join('_tools', file)
     f_tool = open(filepath, 'r')
@@ -20,10 +19,6 @@ for file in os.listdir('_tools'):
     citation_count = get_attribute('citation_count', lines)
     f_tool.close()
     f1.write("- "+title)
-    f2.write("- "+title)
     f1.write("  "+doi)
-    f2.write("  "+doi)
     f1.write("  "+citation_count)
-    f2.write("  "+citation_count)
 f1.close()
-f2.close()
