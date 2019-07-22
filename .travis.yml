@@ -1,7 +1,6 @@
 language: ruby
 
 install:
-  - pip install pip==9.0.2
   - pip install frontmatter
 
 script:
