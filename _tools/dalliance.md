@@ -24,5 +24,5 @@ arrangement:
 access_format: web browser
 pub_year: 2011
 license:
-image: https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=3051325_btr020f1.jpg
+image: /assets/dalliance.png
 ---
