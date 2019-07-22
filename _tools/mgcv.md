@@ -29,5 +29,5 @@ arrangement:
 access_format: web browser
 pub_year: 2013
 license: 
-image: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2F1471-2164-14-209/MediaObjects/12864_2012_Article_4935_Fig2_HTML.jpg
+image: /assets/mgcv.jpg
 ---
