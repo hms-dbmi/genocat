@@ -1,4 +1,8 @@
 language: ruby
+
+install:
+  - pip install frontmatter
+
 script:
   - bundle exec jekyll build
   - python from_frontmatter.py
@@ -8,7 +12,7 @@ deploy:
   access_key_id: AKIA5NNBA5ZVDAEHHOVC
   secret_access_key: $SECRET_ACCESS_KEY
   skip_cleanup: true
-  region: us-east-1 
+  region: us-east-1
   bucket: genomic-data-vis.org
   local_dir: _site
   acl: public_read
