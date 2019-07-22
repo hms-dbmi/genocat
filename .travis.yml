@@ -1,6 +1,7 @@
 language: ruby
 
 install:
+  - bundle install
   - sudo pip install frontmatter --ignore-installed PyYAML
 
 script:
