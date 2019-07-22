@@ -180,7 +180,7 @@ body {
             <div id="{{post.doi}}" class="dropdown-content">
               <p>Cited by:{% for tool in site.data.scholar_data %}
                 {% if tool.title == post.title %}
-                  {{ tool.citedby }}
+                  {{ tool.citation_count }}
                   {% endif %}
               {% endfor %}</p>
             <p>Layout: {{ post.lay }}</p>

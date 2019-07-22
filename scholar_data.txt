@@ -1,63 +1,66 @@
 - title: 3D Genome Browser
   doi: 10.1093/nar/gkv476
-  citedby: 3
+  citation_count: 3
 - title: CGView
   doi: 10.1093/bioinformatics/bti054
-  citedby: 471
+  citation_count: 471
 - title: Cinteny
   doi: 10.1186/1471-2105-8-82
-  citedby: 134
+  citation_count: 134
 - title: Circos
   doi: 10.1101/gr.092759.109
-  citedby: 4459
+  citation_count: 4459
 - title: Civi
   doi: 10.1093/bioinformatics/btv249
-  citedby: 17
+  citation_count: 17
+- title: Dalliance
+  doi: 10.1093/bioinformatics/btr020
+  citation_count: 78
 - title: ggBio
   doi: 10.1186/gb-2012-13-8-r77
-  citedby: 145
+  citation_count: 145
 - title: Gremlin
   doi: 10.1109/TVCG.2010.163
-  citedby: 29
+  citation_count: 29
 - title: HiGlass
   doi: 10.1186/s13059-018-1486-1
-  citedby: 23
+  citation_count: 23
 - title: HilbertCurve
   doi: 10.1093/bioinformatics/btw161
-  citedby: 6
+  citation_count: 6
 - title: HilbertVis
   doi: 10.1093/bioinformatics/btp152
-  citedby: 65
+  citation_count: 65
 - title: Integrative Genomics Viewer
   doi: 10.1093/bib/bbs017
-  citedby: 3693
+  citation_count: 3693
 - title: Island Viewer
   doi: 10.1093/nar/gkv401
-  citedby: 244
+  citation_count: 244
 - title: Lollipop Plot cBio
   doi: 10.1158/2159-8290.CD-12-0095
-  citedby: 4710
+  citation_count: 4710
 - title: MizBee
   doi: 10.1109/TVCG.2009.167
-  citedby: 142
+  citation_count: 142
 - title: MochiView
   doi: 10.1186/1741-7007-8-49
-  citedby: 106
+  citation_count: 106
 - title: NCBI Genome Viewer
   doi: 10.1093/nar/gkw1071
-  citedby: 1429
+  citation_count: 1429
 - title: NCBI Sequence Viewer
   doi: 10.1002/0471250953.bi0105s16
-  citedby: 37
+  citation_count: 37
 - title: Rondo
   doi: 10.1101/gr.201517.115
-  citedby: 104
+  citation_count: 104
 - title: Sashimi Plot
   doi: 10.1093/bioinformatics/btv034
-  citedby: 8
+  citation_count: 8
 - title: UCSC Genome Browser
   doi: 10.1101/gr.229102
-  citedby: 6940
+  citation_count: 6940
 - title: WebLogo
   doi: 10.1101/gr.849004
-  citedby: 7486
+  citation_count: 7486
