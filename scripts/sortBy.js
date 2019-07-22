@@ -48,7 +48,7 @@ function getCiteCount(counts, b, switching) {
           }
           j++;
         }
-        citeCount = parseInt(citedby.substring(11, citedby.length));
+        citeCount = parseInt(citedby.substring(18, citedby.length));
         counts[i] = citeCount;
       }
       switching = makeSwitch(counts, b, switching);
