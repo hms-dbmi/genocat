@@ -1,7 +1,8 @@
 language: ruby
 
 install:
-  - pip install frontmatter
+  - bundle install
+  - sudo pip install frontmatter --ignore-installed PyYAML
 
 script:
   - bundle exec jekyll build
