@@ -78,8 +78,8 @@ body {
 <div class="column left">
   <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
   <br>
-  <input type="radio" id="byCitation" name = "sort"/> <label for="byCitation">Sort by citation count</label>
   <input type="radio" id="byName" name="sort" checked/><label for="byName">Sort by name</label>
+  <input type="radio" id="byCitation" name = "sort"/> <label for="byCitation">Sort by citation count</label>
   <br>
   User Preferences
   <details>
@@ -167,30 +167,11 @@ body {
               <li>{{items}} </li>
               {%endfor%}
         </div>
-        <!-- <div class="overlay">{{ post.lay }}</div>
-        <div class="overlay">{{ post.sparse_type }}</div>
-        <div class="overlay">{{ post.contiguous_type }}</div>
-        <div class="overlay">{{ post.abstraction }} (abstraction)</div>
-        <div class="overlay">{{ post.arrangement }}</div>
-        <div class="overlay">{{ post.focus }} focus</div>
-        <div class="overlay">{{ post.scale }} scale</div>
-        <div class="overlay">{{ post.view }} view</div> -->
         <button class="collapsible">+</button>
           <div class="content">
             <p>Cited by: {{post.citation_count}}
           <p>Layout: {{ post.lay }}</p>
           </div>
-        <!-- <div class="dropdown">
-          <button onclick="myFunction('{{post.doi}}')" class="dropbtn">+</button>
-            <div id="{{post.doi}}" class="dropdown-content">
-              <p>Cited by:{% for tool in site.data.scholar_data %}
-                {% if tool.title == post.title %}
-                  {{ tool.citation_count }}
-                  {% endif %}
-              {% endfor %}</p>
-            <p>Layout: {{ post.lay }}</p>
-          </div>
-        </div> -->
       </div>
     </div>
 {% endfor %}
