@@ -177,11 +177,7 @@ body {
         <div class="overlay">{{ post.view }} view</div> -->
         <button class="collapsible">+</button>
           <div class="content">
-            <p>Cited by:{% for tool in site.data.scholar_data %}
-              {% if tool.title == post.title %}
-                {{ tool.citedby }}
-                {% endif %}
-            {% endfor %}</p>
+            <p>Cited by: {{page.citation_count}}
           <p>Layout: {{ post.lay }}</p>
           </div>
         <!-- <div class="dropdown">
