@@ -1,4 +1,3 @@
-# import frontmatter
 import os
 
 def get_attribute(attr, lines):
@@ -25,7 +24,6 @@ for file in os.listdir('_tools'):
             citedby = attributes[i+1]
             break
         i+=1
-    print(citedby)
     citeCount = int(citedby[18:])
     j=0
     while j < len(lines):
