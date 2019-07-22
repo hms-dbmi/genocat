@@ -163,7 +163,9 @@ body {
           <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" width="250"></a>
         <div class="overlay">
-          Access format: {{post.access_format}}
+          {% for items in  post.access_format %}
+              <li>{{items}} </li>
+              {%endfor%}
         </div>
         <!-- <div class="overlay">{{ post.lay }}</div>
         <div class="overlay">{{ post.sparse_type }}</div>
