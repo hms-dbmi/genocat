@@ -19,7 +19,7 @@ scale: single
 view: single
 sparse_type:
 contiguous_type:
-interconnection:
+interconnection: none
 arrangement:
 access_format: ['Java', 'Artemis Software']
 pub_year: 2009
