@@ -1,5 +1,6 @@
 - title: 3D Genome Browser
   doi: 10.1093/nar/gkv476
+  pub_year: 2015
   {'_filled': False,
  'bib': {u'abstract': u'Recent releases of genome three-dimensional (3D) structures have the potential to transform our understanding of genomes. Nonetheless, the storage technology and visualization tools need to evolve to offer to the scientific community fast and convenient access to these data. We introduce simultaneously a database system to store and query 3D genomic data (3DBG), and a 3D genome browser to visualize and explore 3D genome structures (3DGB). We benchmark 3DBG against state-of-the-art systems and demonstrate \u2026',
          u'author': u'A Butyaev and R Mavlyutov and M Blanchette\u2026',
@@ -13,6 +14,7 @@
 
 - title: CGView
   doi: 10.1093/bioinformatics/bti054
+  pub_year: 2015
   {'_filled': False,
  'bib': {u'abstract': u'CGView (Circular Genome Viewer) is a Java application and library for generating high-quality, zoomable maps of circular genomes. It converts XML or tab-delimited input into a graphical map (PNG, JPG or Scalable Vector Graphics format), complete with sequence features, labels, legends and footnotes. In addition to the default full view map, the program can generate a series of hyperlinked maps showing expanded views. The linked maps can be explored using any Web browser, allowing rapid genome browsing and facilitating data \u2026',
          u'author': u'P Stothard and DS Wishart',
@@ -26,6 +28,7 @@
 
 - title: Cinteny
   doi: 10.1186/1471-2105-8-82
+  pub_year: 2007
   {'_filled': False,
  'bib': {u'abstract': u'Identifying syntenic regions, ie, blocks of genes or other markers with evolutionary conserved order, and quantifying evolutionary relatedness between genomes in terms of chromosomal rearrangements is one of the central goals in comparative genomics. However, the analysis of synteny and the resulting assessment of genome rearrangements are sensitive to the choice of a number of arbitrary parameters that affect the detection of synteny blocks. In particular, the choice of a set of markers and the effect of different \u2026',
          u'author': u'AU Sinha and J Meller',
@@ -39,6 +42,7 @@
 
 - title: Circos
   doi: 10.1101/gr.092759.109
+  pub_year: 2009
   {'_filled': False,
  'bib': {u'abstract': u'We created a visualization tool called Circos to facilitate the identification and analysis of similarities and differences arising from comparisons of genomes. Our tool is effective in displaying variation in genome structure and, generally, any other kind of positional relationships between genomic intervals. Such data are routinely produced by sequence alignments, hybridization arrays, genome mapping, and genotyping studies. Circos uses a circular ideogram layout to facilitate the display of relationships between pairs of positions \u2026',
          u'author': u'M Krzywinski and J Schein and I Birol and J Connors\u2026',
@@ -52,6 +56,7 @@
 
 - title: Civi
   doi: 10.1093/bioinformatics/btv249
+  pub_year: 2015
   {'_filled': False,
  'bib': {u'abstract': u'We have developed CiVi, a user-friendly web-based tool to create custom circular maps to aid the analysis of microbial genomes and sequence elements. Sequence related data such as gene-name, COG class, PFAM domain, GC%, and subcellular location can be comprehensively viewed. Quantitative gene-related data (eg expression ratios or read counts) as well as predicted sequence elements (eg regulatory sequences) can be uploaded and visualized. CiVi accommodates the analysis of genomic elements by allowing \u2026',
          u'author': u'L Overmars and SAFT van Hijum and RJ Siezen\u2026',
@@ -65,6 +70,7 @@
 
 - title: Gremlin
   doi: 10.1109/TVCG.2010.163
+  pub_year: 2010
   {'_filled': False,
  'bib': {u'abstract': u'In this work we present, apply, and evaluate a novel, interactive visualization model for comparative analysis of structural variants and rearrangements in human and cancer genomes, with emphasis on data integration and uncertainty visualization. To support both global trend analysis and local feature detection, this model enables explorations continuously scaled from the high-level, complete genome perspective, down to the low-level, structural rearrangement view, while preserving global context at all times. We have \u2026',
          u'author': u"T O'Brien and A Ritz and B Raphael\u2026",
@@ -78,6 +84,7 @@
 
 - title: HiGlass
   doi: 10.1186/s13059-018-1486-1
+  pub_year: 2018
   {'_filled': False,
  'bib': {u'abstract': u'We present HiGlass, an open source visualization tool built on web technologies that provides a rich interface for rapid, multiplex, and multiscale navigation of 2D genomic maps alongside 1D genomic tracks, allowing users to combine various data types, synchronize multiple visualization modalities, and share fully customizable views with others. We demonstrate its utility in exploring different experimental conditions, comparing the results of analyses, and creating interactive snapshots to share with collaborators and the broader \u2026',
          u'author': u'P Kerpedjiev and N Abdennur\u2026',
@@ -91,6 +98,7 @@
 
 - title: HilbertCurve
   doi: 10.1093/bioinformatics/btw161
+  pub_year: 2016
   {'_filled': False,
  'bib': {u'abstract': u'Hilbert curves enable high-resolution visualization of genomic data on a chromosome-or genome-wide scale. Here we present the HilbertCurve package that provides an easy-to-use interface for mapping genomic data to Hilbert curves. The package transforms the curve as a virtual axis, thereby hiding the details of the curve construction from the user. HilbertCurve supports multiple-layer overlay that makes it a powerful tool to correlate the spatial distribution of multiple feature types. Availability and implementation: The \u2026',
          u'author': u'Z Gu and R Eils and M Schlesner',
@@ -104,6 +112,7 @@
 
 - title: HilbertVis
   doi: 10.1093/bioinformatics/btp152
+  pub_year: 2009
   {'_filled': False,
  'bib': {u'abstract': u"In many genomic studies, one works with genome-position-dependent data, eg ChIP-chip or ChIP-Seq scores. Using conventional tools, it can be difficult to get a good feel for the data, especially the distribution of features. This article argues that the so-called Hilbert curve visualization can complement genome browsers and help to get further insights into the structure of one's data. This is demonstrated with examples from different use cases. An open-source application, called HilbertVis, is presented that allows the user to produce and \u2026",
          u'author': u'S Anders',
@@ -117,6 +126,7 @@
 
 - title: Integrative Genomics Viewer
   doi: 10.1093/bib/bbs017
+  pub_year: 2013
   {'_filled': False,
  'bib': {u'abstract': u"Data visualization is an essential component of genomic data analysis. However, the size and diversity of the data sets produced by today's sequencing and array-based profiling methods present major challenges to visualization tools. The Integrative Genomics Viewer (IGV) is a high-performance viewer that efficiently handles large heterogeneous data sets, while providing a smooth and intuitive user experience at all levels of genome resolution. A key characteristic of IGV is its focus on the integrative nature of genomic studies, with \u2026",
          u'author': u'H Thorvaldsd\xf3ttir and JT Robinson\u2026',
@@ -130,6 +140,7 @@
 
 - title: Island Viewer
   doi: 10.1093/nar/gkv401
+  pub_year: 2015
   {'_filled': False,
  'bib': {u'abstract': u'IslandViewer (http://pathogenomics. sfu. ca/islandviewer) is a widely used web-based resource for the prediction and analysis of genomic islands (GIs) in bacterial and archaeal genomes. GIs are clusters of genes of probable horizontal origin, and are of high interest since they disproportionately encode genes involved in medically and environmentally important adaptations, including antimicrobial resistance and virulence. We now report a major new release of IslandViewer, since the last release in 2013 \u2026',
          u'author': u'BK Dhillon and MR Laird and JA Shay and GL Winsor\u2026',
@@ -143,6 +154,7 @@
 
 - title: Lollipop Plot cBio
   doi: 10.1158/2159-8290.CD-12-0095
+  pub_year: 2012
   {'_filled': False,
  'bib': {u'abstract': u'The cBio Cancer Genomics Portal (http://cbioportal. org) is an open-access resource for interactive exploration of multidimensional cancer genomics data sets, currently providing access to data from more than 5,000 tumor samples from 20 cancer studies. The cBio \u2026',
          u'author': u'\u2026 and BE Gross and SO Sumer and BA Aksoy and A Jacobsen\u2026',
@@ -156,6 +168,7 @@
 
 - title: MizBee
   doi: 10.1109/TVCG.2009.167
+  pub_year: 2009
   {'_filled': False,
  'bib': {u'abstract': u'In the field of comparative genomics, scientists seek to answer questions about evolution and genomic function by comparing the genomes of species to find regions of shared sequences. Conserve dsyntenic blocks are an important biological data abstraction for indicating regions of shared sequences. The goal of this work is to show multiple types of relationships at multiple scales in a way that is visually comprehensible in accordance with known perceptual principles. We present a task analysis for this domain where the \u2026',
          u'author': u'M Meyer and T Munzner and H Pfister',
@@ -169,6 +182,7 @@
 
 - title: MochiView
   doi: 10.1186/1741-7007-8-49
+  pub_year: 2010
   {'_filled': False,
  'bib': {u'abstract': u'As high-throughput technologies rapidly generate genome-scale data, it becomes increasingly important to visually integrate these data so that specific hypotheses can be formulated and tested. We present MochiView, a platform-independent Java software that integrates browsing of genomic sequences, features, and data with DNA motif visualization and analysis in a visually-appealing and user-friendly application. While highly versatile, the software is particularly useful for organizing, exploring, and analyzing large genomic data \u2026',
          u'author': u'OR Homann and AD Johnson',
@@ -182,6 +196,7 @@
 
 - title: NCBI Genome Viewer
   doi: 10.1093/nar/gkw1071
+  pub_year: 2017
   {'_filled': False,
  'bib': {u'abstract': u"In addition to maintaining the GenBank\xae nucleic acid sequence database, the National Center for Biotechnology Information (NCBI) provides analysis and retrieval resources for the data in GenBank and other biological data made available through NCBI's Web site \u2026",
          u'author': u'DL Wheeler and T Barrett and DA Benson\u2026',
@@ -195,6 +210,7 @@
 
 - title: NCBI Sequence Viewer
   doi: 10.1002/0471250953.bi0105s16
+  pub_year: 2007
   {'_filled': False,
  'bib': {u'abstract': u"This unit includes a Basic Protocol with an introduction to the Map Viewer, describing how to perform a simple text\u2010based search of genome annotations to view the genomic context of a gene, navigate along a chromosome, zoom in and out, and change the displayed maps to hide and show information. It also describes some of NCBI's sequence\u2010analysis tools, which are provided as links from the Map Viewer. The Alternate Protocols describe different ways to query the genome sequence, and also illustrate additional features of the Map Viewer \u2026",
          u'author': u'TG Wolfsberg',
@@ -207,6 +223,7 @@
 
 - title: Rondo
   doi: 10.1101/gr.201517.115
+  pub_year: 2016
   {'_filled': False,
  'bib': {u'abstract': u'A three-dimensional chromatin state underpins the structural and functional basis of the genome by bringing regulatory elements and genes into close spatial proximity to ensure proper, cell-type\u2013specific gene expression profiles. Here, we performed Hi-C chromosome conformation capture sequencing to investigate how three-dimensional chromatin organization is disrupted in the context of copy-number variation, long-range epigenetic remodeling, and atypical gene expression programs in prostate cancer. We find that cancer \u2026',
          u'author': u'PC Taberlay and J Achinger-Kawecka and ATL Lun\u2026',
@@ -220,6 +237,7 @@
 
 - title: Sashimi Plot
   doi: 10.1093/bioinformatics/btv034
+  pub_year: 2015
   {'_filled': False,
  'bib': {u'abstract': u'We introduce Sashimi plots, a quantitative multi-sample visualization of mRNA sequencing reads aligned to gene annotations. Sashimi plots are made using alignments (stored in the SAM/BAM format) and gene model annotations (in GFF format), which can be custom-made by the user or obtained from databases such as Ensembl or UCSC. We describe two implementations of Sashimi plots:(1) a stand-alone command line implementation aimed at making customizable publication quality figures, and (2) an implementation built into the \u2026',
          u'author': u'Y Katz and ET Wang and J Silterra and S Schwartz and B Wong\u2026',
@@ -233,6 +251,7 @@
 
 - title: UCSC Genome Browser
   doi: 10.1101/gr.229102
+  pub_year: 2002
   {'_filled': False,
  'bib': {u'abstract': u'As vertebrate genome sequences near completion and research refocuses to their analysis, the issue of effective genome annotation display becomes critical. A mature web tool for rapid and reliable display of any requested portion of the genome at any scale, together with \u2026',
          u'author': u'WJ Kent and CW Sugnet and TS Furey and KM Roskin\u2026',
@@ -246,6 +265,7 @@
 
 - title: WebLogo
   doi: 10.1101/gr.849004
+  pub_year: 2004
   {'_filled': False,
  'bib': {u'abstract': u'WebLogo generates sequence logos, graphical representations of the patterns within a multiple sequence alignment. Sequence logos provide a richer and more precise description of sequence similarity than consensus sequences and can rapidly reveal significant features of the alignment otherwise difficult to perceive. Each logo consists of stacks of letters, one stack for each position in the sequence. The overall height of each stack indicates the sequence conservation at that position (measured in bits), whereas the \u2026',
          u'author': u'GE Crooks and G Hon and JM Chandonia\u2026',
@@ -256,4 +276,3 @@
  'id_scholarcitedby': u'6054553881190663610',
  'source': u'scholar',
  'url_scholarbib': u'https://scholar.googleusercontent.com/scholar.bib?q=info:ugXVMa0YBlQJ:scholar.google.com/&output=citation&scisdr=CgUH0OHGELfks_OwBxs:AAGBfm0AAAAAXRu1Hxu9gZn9lhd08f7U_ehcgc7ONggS&scisig=AAGBfm0AAAAAXRu1H7RAPYx6ODlHdWqTO6OzoDJ3mg0L&scisf=4&ct=citation&cd=0&hl=en'}
-

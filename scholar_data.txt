@@ -1,69 +1,100 @@
 - title: 3D Genome Browser
   doi: 10.1093/nar/gkv476
+  pub_year: 2015
   citation_count: 3
 - title: CGView
   doi: 10.1093/bioinformatics/bti054
+  pub_year: 2015
   citation_count: 471
 - title: Cinteny
   doi: 10.1186/1471-2105-8-82
+  pub_year: 2007
   citation_count: 134
 - title: Circos
   doi: 10.1101/gr.092759.109
+  pub_year: 2009
   citation_count: 4459
 - title: Civi
   doi: 10.1093/bioinformatics/btv249
+  pub_year: 2015
   citation_count: 17
 - title: Dalliance
   doi: 10.1093/bioinformatics/btr020
+  pub_year: 2011
   citation_count: 78
+- title: DNAPlotter
+  doi: 10.1093/bioinformatics/btn578
+  pub_year: 2009
+  citation_count: 531
 - title: ggBio
   doi: 10.1186/gb-2012-13-8-r77
+  pub_year: 2012
   citation_count: 145
 - title: GIVE
   doi: 10.1186/s13059-018-1465-6
+  pub_year: 2018
   citation_count: 5
 - title: Gremlin
   doi: 10.1109/TVCG.2010.163
+  pub_year: 2010
   citation_count: 29
 - title: HiGlass
   doi: 10.1186/s13059-018-1486-1
+  pub_year: 2018
   citation_count: 23
 - title: HilbertCurve
   doi: 10.1093/bioinformatics/btw161
+  pub_year: 2016
   citation_count: 6
 - title: HilbertVis
   doi: 10.1093/bioinformatics/btp152
+  pub_year: 2009
   citation_count: 65
 - title: Integrative Genomics Viewer
   doi: 10.1093/bib/bbs017
+  pub_year: 2013
   citation_count: 3693
 - title: Island Viewer
   doi: 10.1093/nar/gkv401
+  pub_year: 2015
   citation_count: 244
 - title: Lollipop Plot cBio
   doi: 10.1158/2159-8290.CD-12-0095
+  pub_year: 2012
   citation_count: 4710
+- title: MGcV
+  doi: 10.1186/1471-2164-14-209
+  pub_year: 2013
+  citation_count: 45
 - title: MizBee
   doi: 10.1109/TVCG.2009.167
+  pub_year: 2009
   citation_count: 142
 - title: MochiView
   doi: 10.1186/1741-7007-8-49
+  pub_year: 2010
   citation_count: 106
 - title: NCBI Genome Viewer
   doi: 10.1093/nar/gkw1071
+  pub_year: 2017
   citation_count: 1429
 - title: NCBI Sequence Viewer
   doi: 10.1002/0471250953.bi0105s16
+  pub_year: 2007
   citation_count: 37
 - title: Rondo
   doi: 10.1101/gr.201517.115
+  pub_year: 2016
   citation_count: 104
 - title: Sashimi Plot
   doi: 10.1093/bioinformatics/btv034
+  pub_year: 2015
   citation_count: 8
 - title: UCSC Genome Browser
   doi: 10.1101/gr.229102
+  pub_year: 2002
   citation_count: 6940
 - title: WebLogo
   doi: 10.1101/gr.849004
+  pub_year: 2004
   citation_count: 7486

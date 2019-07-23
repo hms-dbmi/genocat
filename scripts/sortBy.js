@@ -19,15 +19,44 @@ function sortByName() {
   }
 }
 
-
-
-function sortByCitation() {
-  var list, b, switching, counts;
+function sortByRecency() {
+  var list, switching;
   list = document.getElementsByClassName("filterDiv");
   switching = true;
-  b = list;
+  getPubYear(list, switching, []);
+}
+
+function getPubYear(b, switching, years) {
+  var i, myvar, words, j, pub_year, year;
+  jQuery.get('../scholar_data.txt', function(data) {
+    while (switching) {
+      switching = false;
+      for (i=0; i<(b.length); i++) {
+        doi = b[i].className.split(" ")[1];
+        myvar = data;
+        words = myvar.split("\n");
+        j=0;
+        while (j<words.length) {
+          if (words[j] == "  doi: "+doi) {
+            pub_year = words[j+1];
+            break;
+          }
+          j++;
+        }
+        year = parseInt(pub_year.substring(12, pub_year.length));
+        years[i] = year;
+      }
+      switching = makeSwitch(years, b, switching);
+    }
+  })
+}
+
+function sortByCitation() {
+  var list, switching, counts;
+  list = document.getElementsByClassName("filterDiv");
+  switching = true;
   counts = [];
-  getCiteCount(counts, b, switching);
+  getCiteCount(counts, list, switching);
 }
 
 function getCiteCount(counts, b, switching) {
@@ -43,7 +72,7 @@ function getCiteCount(counts, b, switching) {
         var citedby;
         while (j<words.length) {
           if (words[j] == "  doi: "+doi) {
-            citedby = words[j+1];
+            citedby = words[j+2];
             break;
           }
           j++;

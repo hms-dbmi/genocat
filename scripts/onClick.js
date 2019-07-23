@@ -8,6 +8,10 @@ document.getElementById("byCitation").onclick = function() {
   sortByCitation();
 }
 
+document.getElementById("byYear").onclick = function() {
+  sortByRecency();
+}
+
 document.getElementById("byName").onclick = function() {
   sortByName();
 }
