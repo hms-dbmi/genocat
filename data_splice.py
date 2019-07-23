@@ -6,6 +6,8 @@ for line in f1:
         f2.write(line)
     if line[2:5] == "doi":
         f2.write(line)
+    if line[2:10] == "pub_year":
+        f2.write(line)
     if line[2:9] == "citedby":
         f2.write("  citation_count: "+line[12:].replace(',', ''))
 f1.close()
