@@ -170,7 +170,11 @@ body {
         <button class="collapsible">+</button>
           <div class="content">
             <p>Cited by: {{post.citation_count}}
-          <p>Layout: {{ post.lay }}</p>
+
+          <p>
+            {% for items in  post.lay %}
+               <a href="{{site.baseurl}}/attributes/layout.html" class="button layout">{{ items }}</a>
+            {%endfor%} </p>
           </div>
       </div>
     </div>
@@ -246,9 +250,29 @@ a:visited {
          border-top-style: solid ;
          border-top-width: 1px;
          border-top-color: #DCDCDC;
+         font-size: 15px;
+       }
+.button {
+         background-color: white;
+         border: 2px solid black;
+         color: black;
+         padding: 5px 10px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         margin: 2px 1px;
+         cursor: pointer;
+       }
+/* Green */
+.layout {
+         border-color: #4CAF50;
+         color: green;
        }
 
-
+.layout:hover {
+         background-color: #4CAF50;
+         color: white;
+       }
 .items {
   position: -webkit-sticky;
   position: sticky;
