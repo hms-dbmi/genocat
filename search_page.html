@@ -170,7 +170,8 @@ body {
         </div>
         <button class="collapsible">+</button>
           <div class="content">
-            <p>Cited by: {{post.citation_count}}
+            <p>Cited by: {{post.citation_count}}</p>
+            <p>Paper Publication Year: {{post.pub_year}}</p>
 
           <p>
             {% for items in  post.lay %}
@@ -263,6 +264,7 @@ a:visited {
          display: inline-block;
          margin: 2px 1px;
          cursor: pointer;
+         border-radius: 15px;
        }
 /* Green */
 .layout {
