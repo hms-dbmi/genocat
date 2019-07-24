@@ -21,7 +21,7 @@ for file in os.listdir('_tools'):
     while i<len(attributes):
         string = "  "+str(doi)
         if attributes[i] == string:
-            citedby = attributes[i+1]
+            citedby = attributes[i+2]
             break
         i+=1
     citeCount = int(citedby[18:])

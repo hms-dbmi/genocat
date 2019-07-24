@@ -10,7 +10,7 @@ abstract: "DNAPlotter is an interactive Java application for generating circular
 
 AVAILABILITY: DNAPlotter is freely available (under a GPL licence) for download (for MacOSX, UNIX and Windows) at the Wellcome Trust Sanger Institute web sites: http://www.sanger.ac.uk/Software/Artemis/circular/"
 citation: "Carver T, Thomson N, Bleasby A, Berriman M, Parkhill J. DNAPlotter: circular and linear interactive genome visualization. Bioinformatics. academic.oup.com; 2009;25: 119–120."
-citation_count: 531
+citation_count: 0
 lay: ['linear', 'circular']
 partition:
 abstraction:

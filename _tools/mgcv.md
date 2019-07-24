@@ -15,7 +15,7 @@ MGcV is a versatile, easy-to-use tool that renders a visualization of the genomi
 Conclusion:
 MGcV advances the manual comparative analysis of genes and regulatory elements by providing fast and flexible integration of gene related data combined with straightforward data retrieval. MGcV is available at http://mgcv.cmbi.ru.nl."
 citation: "Overmars L, Kerkhoven R, Siezen RJ, Francke C. MGcV: the microbial genomic context viewer for comparative genome analysis. BMC Genomics. bmcgenomics.biomedcentral.com; 2013;14: 209."
-citation_count: 45
+citation_count: 0
 lay: linear
 partition:
 abstraction:

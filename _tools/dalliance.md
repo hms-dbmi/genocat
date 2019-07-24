@@ -10,7 +10,7 @@ abstract: "SUMMARY: Dalliance is a new genome viewer which offers a high level o
 
 AVAILABILITY AND IMPLEMENTATION: Dalliance runs entirely within your web browser, and relies on existing DAS server infrastructure. Browsers for several mammalian genomes are available at http://www.biodalliance.org/, and the use of DAS means you can add your own data to these browsers. In addition, the source code (Javascript) is available under the BSD license, and is straightforward to install on your own web server and embed within other documents."
 citation: "Down TA, Piipari M, Hubbard TJP. Dalliance: interactive genome viewing on the web. Bioinformatics. academic.oup.com; 2011;27: 889–890."
-citation_count: 78
+citation_count: 0
 lay: linear
 partition:
 abstraction:
