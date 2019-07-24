@@ -6,6 +6,7 @@ install:
 script:
   - bundle exec jekyll build
   - python from_frontmatter.py
+  - sh cron.sh
 
 deploy:
   provider: s3
