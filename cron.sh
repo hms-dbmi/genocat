@@ -1,3 +1,4 @@
+echo "travis event type is $TRAVIS_EVENT_TYPE"
 if ["$TRAVIS_EVENT_TYPE" == "$cron"]
 then
   echo "hello"
