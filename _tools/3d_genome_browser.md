@@ -2,14 +2,14 @@
 layout: tool 
 title: 3D Genome Browser
 github_account: 
-paper: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1519-9
-paper_title: "The 3D Genome Browser: a web-based browser for visualizing 3D genome organization and long-range chromatin interactions"
-doi: 10.1186/s13059-018-1519-9
-browser: http://3dgenome.org
-abstract: "Here, we introduce the 3D Genome Browser, http://3dgenome.org , which allows users to conveniently explore both their own and over 300 publicly available chromatin interaction data of different types. We design a new binary data format for Hi-C data that reduces the file size by at least a magnitude and allows users to visualize chromatin interactions over millions of base pairs within seconds. Our browser provides multiple methods linking distal cis-regulatory elements with their potential target genes. Users can seamlessly integrate thousands of other omics data to gain a comprehensive view of both regulatory landscape and 3D genome structure."
-citation: "Wang Y, Song F, Zhang B, Zhang L, Xu J, Kuang D, et al. The 3D Genome Browser: a web-based browser for visualizing 3D genome organization and long-range chromatin interactions. Genome Biol. genomebiology.biomedcentral.com; 2018;19: 151."
-citation_count: 58
-lay: linear
+paper: https://www.ncbi.nlm.nih.gov/pubmed/25990738
+paper_title: "A low-latency, big database system and browser for storage, querying and visualization of 3D genomic data"
+doi: 10.1093/nar/gkv476
+browser: http://3dgb.cs.mcgill.ca/
+abstract: Recent releases of genome three-dimensional (3D) structures have the potential to transform our understanding of genomes. Nonetheless, the storage technology and visualization tools need to evolve to offer to the scientific community fast and convenient access to these data. We introduce simultaneously a database system to store and query 3D genomic data (3DBG), and a 3D genome browser to visualize and explore 3D genome structures (3DGB). We benchmark 3DBG against state-of-the-art systems and demonstrate that it is faster than previous solutions, and importantly gracefully scales with the size of data. We also illustrate the usefulness of our 3D genome Web browser to explore human genome structures. The 3D genome browser is available at http://3dgb.cs.mcgill.ca/.
+citation: "Butyaev A, Mavlyutov R, Blanchette M, Cudré-Mauroux P, Waldispühl J. A low-latency, big database system and browser for storage, querying and visualization of 3D genomic data. Nucleic Acids Res. academic.oup.com; 2015;43: e103."
+citation_count: 3
+lay: spatial
 partition: segregated
 abstraction: none
 focus: single
@@ -17,15 +17,15 @@ scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: ['none', 'within', 'between']
+interconnection_type: within
 interconnection_density: 
 coordinate_systems: 
 arrangement: none
 access_format: web browser
 supported_species: 
-user_documentation: http://promoter.bx.psu.edu/hi-c/tutorial.html
-pub_year: 2018
+user_documentation: 
+pub_year: 2015
 license: 
 license_form: 
-image: /assets/3Dgenomebrowser.jpg
+image: /assets/3D_Genome_Browser.jpg
 ---

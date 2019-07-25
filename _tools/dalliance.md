@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: Dalliance
-github_account:
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/21252075
 paper_title: "Dalliance: interactive genome viewing on the web."
 doi: 10.1093/bioinformatics/btr020
@@ -10,22 +10,22 @@ abstract: "SUMMARY: Dalliance is a new genome viewer which offers a high level o
 citation: "Down TA, Piipari M, Hubbard TJP. Dalliance: interactive genome viewing on the web. Bioinformatics. academic.oup.com; 2011;27: 889–890."
 citation_count: 78
 lay: linear
-partition:
-abstraction:
+partition: 
+abstraction: 
 focus: single
 scale: single
 view: single
-sparse_type:
-contiguous_type:
+sparse_type: 
+contiguous_type: 
 interconnection_type: none
-interconnection_density:
-coordinate_systems:
-arrangement:
+interconnection_density: 
+coordinate_systems: 
+arrangement: 
 access_format: web browser
-supported_species:
+supported_species: 
 user_documentation: https://www.biodalliance.org/started.html
 pub_year: 2011
-license: BSD 2-Clause
+license: BSD 2-Clause 
 license_form: open source
 image: /assets/dalliance.png
 ---
