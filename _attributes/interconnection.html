@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Interconnection
+title:  interconnection_type
 categories: attributes
 ---
 <head>
@@ -30,11 +30,11 @@ categories: attributes
     <img src = "{{site.baseurl}}/assets/NoneInter.png" width="200" align = "left">
     <br><br>
 
-    No interconnections between sequences are displayed in the following.
+    No interconnection_types between sequences are displayed in the following.
     <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% for items in  post.interconnection %}
+        {% for items in  post.interconnection_type %}
           {% if items == "none" %}
             <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
           {% endif %}
@@ -48,11 +48,11 @@ categories: attributes
   <h1><a id="Within"></a>Within</h1>
     <img src = "{{site.baseurl}}/assets/WithinInter.png" width="200" align = "left">
     <br>
-    An interconnection feature is a link between two regions. Interconnections that connect features within a sequence are classified as “within.”    Interconnections within
+    An interconnection_type feature is a link between two regions. interconnection_types that connect features within a sequence are classified as “within.”    interconnection_types within
     <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% for items in post.interconnection %}
+        {% for items in post.interconnection_type %}
           {% if items == "within" %}
             <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
           {% endif %}
@@ -67,11 +67,11 @@ categories: attributes
     <img src = "{{site.baseurl}}/assets/BetweenInter.png" width="200" align = "left">
     <br><br>
 
-    Interconnections that connect features between sequences are classified as “between.”
+    interconnection_types that connect features between sequences are classified as “between.”
     <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% for items in post.interconnection %}
+        {% for items in post.interconnection_type %}
           {% if items == "between" %}
             <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
             {% endif %}

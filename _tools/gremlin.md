@@ -17,7 +17,7 @@ scale: multiple
 view: multiple
 sparse_type: segment sparse
 contiguous_type: 
-interconnection: within
+interconnection_type: within
 arrangement: 
 access_format: ['web browser', 'software']
 pub_year: 2010

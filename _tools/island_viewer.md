@@ -17,7 +17,7 @@ scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection: none
+interconnection_type: none
 arrangement: 
 access_format: web browser
 pub_year: 2015

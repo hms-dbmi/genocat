@@ -102,10 +102,10 @@ body {
     <input type="checkbox" id="segment contiguous" name="type"/><label for="segment contiguous">Segment Contiguous </label>
   </details>
   <details>
-    <summary>Interconnection</summary>
-    <input type="checkbox" id="none" name="interconnection"/> <label for="none">None </label>
-    <input type="checkbox" id="within" name="interconnection"/><label for="within">Within </label>
-    <input type="checkbox" id="between" name="interconnection"/><label for="between">Between </label>
+    <summary>interconnection_type</summary>
+    <input type="checkbox" id="none" name="interconnection_type"/> <label for="none">None </label>
+    <input type="checkbox" id="within" name="interconnection_type"/><label for="within">Within </label>
+    <input type="checkbox" id="between" name="interconnection_type"/><label for="between">Between </label>
   </details>
   <br>
   Coordinate System
@@ -160,7 +160,7 @@ body {
 
 {% for post in site.tools %}
     <div class = "container">
-      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection_type }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
           <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" width="250"></a>
         <div class="overlay">
@@ -177,7 +177,17 @@ body {
           <p>
             {% for items in  post.lay %}
                <a href="{{site.baseurl}}/attributes/layout.html" class="button layout">{{ items }}</a>
-            {%endfor%} </p>
+            {%endfor%}
+            {% for items in  post.view %}
+               <a href="{{site.baseurl}}/attributes/view.html" class="button layout" style="border-color: blue; color: blue;">{{ items }} view</a>
+            {%endfor%}
+            {% for items in  post.scale %}
+               <a href="{{site.baseurl}}/attributes/scale.html" class="button layout" style="border-color: red; color: red;">{{ items }} scale</a>
+            {%endfor%}
+            {% for items in  post.focus %}
+               <a href="{{site.baseurl}}/attributes/focus.html" class="button layout" style="border-color: purple; color: purple;">{{ items }} focus</a>
+            {%endfor%}
+          </p>
           </div>
       </div>
     </div>

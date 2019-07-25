@@ -17,7 +17,7 @@ scale: multiple
 view: multiple
 sparse_type: point sparse
 contiguous_type: segment contiguous
-interconnection: none
+interconnection_type: none
 arrangement: 
 access_format: ['web browser', 'software', 'javascript']
 pub_year: 2013

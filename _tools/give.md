@@ -17,7 +17,7 @@ scale: multiple
 view: multiple
 sparse_type:
 contiguous_type:
-interconnection: within
+interconnection_type: within
 arrangement: 'linear parallel'
 access_format: ['web browser', 'HTML']
 pub_year: 2018

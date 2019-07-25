@@ -17,7 +17,7 @@ scale: single
 view: single
 sparse_type: segment sparse
 contiguous_type: point contiguous
-interconnection: none
+interconnection_type: none
 arrangement: 
 access_format: r package
 pub_year: 2009

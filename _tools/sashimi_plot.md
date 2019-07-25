@@ -17,7 +17,7 @@ scale: single
 view: single
 sparse_type: point sparse
 contiguous_type: 
-interconnection: within
+interconnection_type: within
 arrangement: 
 access_format: web browser
 pub_year: 2015

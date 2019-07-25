@@ -17,7 +17,7 @@ scale: single
 view: single
 sparse_type: 
 contiguous_type: segment contiguous
-interconnection: between
+interconnection_type: between
 arrangement: linear parallel
 access_format: web browser
 pub_year: 2007

@@ -37,7 +37,7 @@ function getNameIndex(name) {
   if (name == "type") {
     return 1;
   }
-  if (name == "interconnection") {
+  if (name == "interconnection_type") {
     return 2;
   }
   if (name == "layout") {

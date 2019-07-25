@@ -17,7 +17,7 @@ scale: single
 view: single
 sparse_type:
 contiguous_type:
-interconnection: ['none', 'within', 'between']
+interconnection_type: ['none', 'within', 'between']
 arrangement:
 access_format: r package
 pub_year: 2012

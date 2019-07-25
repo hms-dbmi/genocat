@@ -17,7 +17,7 @@ scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: segment contiguous'
-interconnection: between
+interconnection_type: between
 arrangement: ['circular parallel', 'linear parallel']
 access_format: software
 pub_year: 2009

@@ -17,7 +17,7 @@ scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection: none
+interconnection_type: none
 arrangement: 
 access_format: software
 pub_year: 2010

@@ -17,7 +17,7 @@ scale: single
 view: single
 sparse_type:
 contiguous_type:
-interconnection: ['within','between']
+interconnection_type: ['within','between']
 arrangement: circular serial
 access_format: software
 pub_year: 2009

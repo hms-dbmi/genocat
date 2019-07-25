@@ -17,7 +17,7 @@ scale:
 view:
 sparse_type:
 contiguous_type:
-interconnection:
+interconnection_type:
 arrangement:
 access_format:
 pub_year:

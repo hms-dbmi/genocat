@@ -17,7 +17,7 @@ scale: multiple
 view: multiple
 sparse_type: segment sparse
 contiguous_type: segment contiguous
-interconnection: within
+interconnection_type: within
 arrangement: 
 access_format: ['web browser', 'jupyter', 'javascript']
 pub_year: 2018
