@@ -17,10 +17,15 @@ scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: segment contiguous'
-interconnection: between
+interconnection_type: between
+interconnection_density: 
+coordinate_systems: 
 arrangement: ['circular parallel', 'linear parallel']
 access_format: software
+supported_species: 
+user_documentation: 
 pub_year: 2009
 license: 
+license_form: 
 image: /assets/Mizbee.jpg
 ---

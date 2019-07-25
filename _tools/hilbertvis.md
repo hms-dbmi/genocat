@@ -17,10 +17,15 @@ scale: single
 view: single
 sparse_type: segment sparse
 contiguous_type: point contiguous
-interconnection: none
-arrangement: 
+interconnection_type: none
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: r package
+supported_species: 
+user_documentation: 
 pub_year: 2009
-license: 
+license: GPL
+license_form: 
 image: /assets/HilbertVis.png
 ---

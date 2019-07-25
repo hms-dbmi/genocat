@@ -17,10 +17,15 @@ scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection: none
-arrangement: 
+interconnection_type: none
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: software
+supported_species: 
+user_documentation: 
 pub_year: 2010
 license: 
+license_form: 
 image: /assets/MochiView.png
 ---

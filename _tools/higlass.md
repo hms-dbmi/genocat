@@ -17,10 +17,15 @@ scale: multiple
 view: multiple
 sparse_type: segment sparse
 contiguous_type: segment contiguous
-interconnection: within
-arrangement: 
+interconnection_type: within
+interconnection_density: 
+coordinate_systems: 
+arrangement: linear orthogonal
 access_format: ['web browser', 'jupyter', 'javascript']
+supported_species: 
+user_documentation: 
 pub_year: 2018
 license: 
+license_form: 
 image: /assets/HiGlass.png
 ---

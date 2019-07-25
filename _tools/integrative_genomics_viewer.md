@@ -17,10 +17,15 @@ scale: multiple
 view: multiple
 sparse_type: point sparse
 contiguous_type: segment contiguous
-interconnection: none
-arrangement: 
+interconnection_type: none
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: ['web browser', 'software', 'javascript']
+supported_species: 
+user_documentation: 
 pub_year: 2013
-license: 
+license: MIT
+license_form: 
 image: /assets/IGV.png
 ---

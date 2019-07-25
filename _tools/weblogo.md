@@ -17,10 +17,15 @@ scale: single
 view: single
 sparse_type: 
 contiguous_type: point contiguous
-interconnection: none
-arrangement: 
+interconnection_type: none
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: web browser
+supported_species: 
+user_documentation: 
 pub_year: 2004
-license: 
+license: MIT
+license_form: open source
 image: /assets/Weblogo.png
 ---

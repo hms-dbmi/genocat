@@ -17,10 +17,15 @@ scale: single
 view: single
 sparse_type: point sparse
 contiguous_type: 
-interconnection: none
-arrangement: 
+interconnection_type: none
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: web browser
+supported_species: 
+user_documentation: 
 pub_year: 2012
 license: 
+license_form: 
 image: /assets/Lollipop.png
 ---

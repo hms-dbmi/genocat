@@ -17,10 +17,15 @@ scale: single
 view: single
 sparse_type: segment sparse
 contiguous_type: point contiguous
-interconnection: none
-arrangement: 
+interconnection_type: none
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: web browser
+supported_species: 
+user_documentation: http://civi.cmbi.ru.nl/help.html
 pub_year: 2015
 license: 
+license_form: 
 image: /assets/Civi.png
 ---

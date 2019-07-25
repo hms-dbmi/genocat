@@ -10,17 +10,22 @@ abstract: This unit includes an introduction to the Map Viewer, which describes 
 citation: "Wolfsberg TG. Using the NCBI Map Viewer to browse genomic sequence data. Curr Protoc Bioinformatics. 2007;Chapter 1: Unit 1.5."
 citation_count: 37
 lay: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: multiple
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection: none
-arrangement: 
+interconnection_type: none
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: web browser
+supported_species: 
+user_documentation: 
 pub_year: 2007
 license: 
+license_form: 
 image: /assets/NCBISequenceViewer.png
 ---
