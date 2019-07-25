@@ -10,17 +10,22 @@ abstract: CGView (Circular Genome Viewer) is a Java application and library for 
 citation: "Stothard P, Wishart DS. Circular genome visualization and exploration using CGView. Bioinformatics. academic.oup.com; 2005;21: 537–539."
 citation_count: 471
 lay: circular
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
 interconnection_type: none
-arrangement: 
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: java package
+supported_species: 
+user_documentation: 
 pub_year: 2015
 license: 
+license_form: 
 image: /assets/CGView.png
 ---

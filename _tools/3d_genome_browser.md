@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: 3D Genome Browser
-github_account:
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/25990738
 paper_title: "A low-latency, big database system and browser for storage, querying and visualization of 3D genomic data"
 doi: 10.1093/nar/gkv476
@@ -10,17 +10,22 @@ abstract: Recent releases of genome three-dimensional (3D) structures have the p
 citation: "Butyaev A, Mavlyutov R, Blanchette M, Cudré-Mauroux P, Waldispühl J. A low-latency, big database system and browser for storage, querying and visualization of 3D genomic data. Nucleic Acids Res. academic.oup.com; 2015;43: e103."
 citation_count: 3
 lay: spatial
-partition:
-abstraction:
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single
 sparse_type: 
-contiguous_type:
+contiguous_type: 
 interconnection_type: within
-arrangement:
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: web browser
+supported_species: 
+user_documentation: 
 pub_year: 2015
-license:
+license: 
+license_form: 
 image: /assets/3D_Genome_Browser.jpg
 ---

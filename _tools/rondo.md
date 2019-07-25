@@ -18,9 +18,14 @@ view: single
 sparse_type: point sparse
 contiguous_type: segment contiguous
 interconnection_type: within
-arrangement: 
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: web browser
+supported_species: 
+user_documentation: https://www.youtube.com/watch?v=s8eorV5aL6U&feature=youtu.be
 pub_year: 2016
 license: 
+license_form: 
 image: /assets/Rondo.png
 ---

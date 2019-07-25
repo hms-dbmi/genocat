@@ -10,17 +10,22 @@ abstract: The National Center for Biotechnology Information (NCBI) provides a la
 citation: "NCBI Resource Coordinators. Database Resources of the National Center for Biotechnology Information. Nucleic Acids Res. 2017;45: D12–D17."
 citation_count: 1429
 lay: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
 interconnection_type: none
+interconnection_density: 
+coordinate_systems: 
 arrangement: 
 access_format: web browser
+supported_species: 
+user_documentation: 
 pub_year: 2017
 license: 
+license_form: 
 image: /assets/NCBIGenomeBrowser.png
 ---

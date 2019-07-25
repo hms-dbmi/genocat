@@ -18,9 +18,14 @@ view: multiple
 sparse_type: segment sparse
 contiguous_type: 
 interconnection_type: within
-arrangement: 
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: ['web browser', 'software']
+supported_species: 
+user_documentation: 
 pub_year: 2010
 license: 
+license_form: 
 image: /assets/Gremlin.png
 ---

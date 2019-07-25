@@ -10,17 +10,22 @@ abstract: As vertebrate genome sequences near completion and research refocuses 
 citation: "Kent WJ, Sugnet CW, Furey TS, Roskin KM, Pringle TH, Zahler AM, et al. The human genome browser at UCSC. Genome Res. 2002;12: 996–1006."
 citation_count: 6940
 lay: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: partial
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
 interconnection_type: none
-arrangement: 
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: web browser
+supported_species: 
+user_documentation: 
 pub_year: 2002
 license: 
+license_form: 
 image: /assets/UCSC_Genome_Viewer.png
 ---

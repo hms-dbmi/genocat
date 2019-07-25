@@ -18,9 +18,14 @@ view: single
 sparse_type: segment sparse
 contiguous_type: point contiguous
 interconnection_type: none
-arrangement: 
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: r package
+supported_species: 
+user_documentation: 
 pub_year: 2016
-license: 
+license: MIT
+license_form: open source
 image: /assets/HC.png
 ---

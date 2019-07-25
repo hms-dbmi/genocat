@@ -18,9 +18,14 @@ view: single
 sparse_type: 
 contiguous_type: segment contiguous
 interconnection_type: between
+interconnection_density: 
+coordinate_systems: 
 arrangement: linear parallel
 access_format: web browser
+supported_species: 
+user_documentation: tab-delimited text files
 pub_year: 2007
 license: 
+license_form: 
 image: /assets/Cinteny.png
 ---

@@ -10,17 +10,22 @@ abstract: IslandViewer (http://pathogenomics.sfu.ca/islandviewer) is a widely us
 citation: "Dhillon BK, Laird MR, Shay JA, Winsor GL, Lo R, Nizam F, et al. IslandViewer 3: more flexible, interactive genomic island discovery, visualization and analysis. Nucleic Acids Res. 2015;43: W104–8."
 citation_count: 244
 lay: circular
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: multiple
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
 interconnection_type: none
-arrangement: 
+interconnection_density: 
+coordinate_systems: 
+arrangement: none
 access_format: web browser
+supported_species: 
+user_documentation: 
 pub_year: 2015
 license: 
+license_form: 
 image: /assets/IslandViewer_example.png
 ---
