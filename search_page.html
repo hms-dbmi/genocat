@@ -169,6 +169,7 @@ body {
               {%endfor%}
         </div>
         <button class="collapsible">+</button>
+        <!-- </div> -->
           <div class="content">
             <p>Cited by: {{post.citation_count}}</p>
             <p>Paper Publication Year: {{post.pub_year}}</p>
@@ -192,8 +193,8 @@ a:visited {
   color: #000000;
 }
 .filterDiv {
+         /* float: left; */
          background-color: #FFFFFF;
-         border: none;
          line-height: 50px;
          text-align: left;
          margin: 5px;
@@ -202,18 +203,24 @@ a:visited {
          padding-right: 20px;
          padding-bottom: 10px;
          padding-top: 10px;
-         box-shadow: 0px 8px 16px 4px rgba(0,0,0,0.2);
+         box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+         position: relative;
+         /* border-style: solid;
+         border-width: thin;
+         border-color: #DCDCDC; */
        }
 .container {
          position: relative;
          border: none;
        }
 .overlay {
-         font-size: 10px;
+         float: right;
+         font-size: 15px;
          text-decoration: none;
          right: 20px;
          bottom: 50%;
          position: absolute;
+         position: relative;
          color: black;
          line-height: 2px;
          background-color: white;
@@ -228,7 +235,6 @@ a:visited {
        }
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-
          background-color: white;
          color: #444;
          cursor: pointer;
