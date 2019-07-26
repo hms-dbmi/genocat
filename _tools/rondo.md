@@ -18,8 +18,8 @@ view: single
 sparse_type: point sparse
 contiguous_type: segment contiguous
 interconnection_type: within
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: dense
+coordinate_systems: single
 arrangement: none
 access_format: web browser
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2016
 license: 
 license_form: 
 image: /assets/Rondo.png
+image_location: 
 ---

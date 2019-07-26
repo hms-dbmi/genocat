@@ -19,7 +19,7 @@ sparse_type:
 contiguous_type: 
 interconnection_type: none
 interconnection_density: 
-coordinate_systems: 
+coordinate_systems: single
 arrangement: none
 access_format: web browser
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2007
 license: 
 license_form: 
 image: /assets/NCBISequenceViewer.png
+image_location: 
 ---

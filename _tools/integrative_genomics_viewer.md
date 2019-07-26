@@ -19,7 +19,7 @@ sparse_type: point sparse
 contiguous_type: segment contiguous
 interconnection_type: none
 interconnection_density: 
-coordinate_systems: 
+coordinate_systems: single
 arrangement: none
 access_format: ['web browser', 'software', 'javascript']
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2013
 license: MIT
 license_form: 
 image: /assets/IGV.png
+image_location: 
 ---

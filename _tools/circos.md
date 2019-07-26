@@ -18,8 +18,8 @@ view: single
 sparse_type: 
 contiguous_type: 
 interconnection_type: ['within', 'between']
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: sparse
+coordinate_systems: single
 arrangement: circular serial
 access_format: software
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2009
 license: GPL
 license_form: 
 image: /assets/Circos.png
+image_location: 
 ---

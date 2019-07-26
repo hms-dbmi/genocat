@@ -18,8 +18,8 @@ view: single
 sparse_type: segment sparse
 contiguous_type: point contiguous
 interconnection_type: none
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: none
+coordinate_systems: single
 arrangement: none
 access_format: web browser
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2015
 license: 
 license_form: 
 image: /assets/Civi.png
+image_location: 
 ---

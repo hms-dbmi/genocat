@@ -18,8 +18,8 @@ view: single
 sparse_type: 
 contiguous_type: 
 interconnection_type: 
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: none
+coordinate_systems: single
 arrangement: none
 access_format: ['Java', 'Artemis Software']
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2009
 license: GPL
 license_form: open source
 image: /assets/DNAPlotter.png
+image_location: 
 ---

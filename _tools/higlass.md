@@ -18,8 +18,8 @@ view: multiple
 sparse_type: segment sparse
 contiguous_type: segment contiguous
 interconnection_type: within
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: dense
+coordinate_systems: single
 arrangement: linear orthogonal
 access_format: ['web browser', 'jupyter', 'javascript']
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2018
 license: 
 license_form: 
 image: /assets/HiGlass.png
+image_location: 
 ---

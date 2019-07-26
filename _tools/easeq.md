@@ -18,8 +18,8 @@ view: single
 sparse_type: 
 contiguous_type: 
 interconnection_type: none
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: none
+coordinate_systems: single
 arrangement: none
 access_format: software
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2016
 license: CC BY-NC-SA
 license_form: 
 image: 
+image_location: 
 ---
