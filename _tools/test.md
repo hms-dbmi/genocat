@@ -2,13 +2,13 @@
 layout: tool
 title: test
 github_account:
-paper: 
+paper:
 paper_title: #"insert title in quotation marks"
 doi: 12345
 browser:
 abstract: #"insert abstract in quotation marks"
 citation: #"insert citation in quotation marks"
-citation_count: 4
+citation_count: 6
 lay: #['linear', 'circular', 'spatial', 'spacefilling']
 partition: #['contiguous', 'segregated']
 abstraction: #['none', 'partial', 'complete']
