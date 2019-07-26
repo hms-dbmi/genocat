@@ -18,8 +18,8 @@ view: multiple
 sparse_type: 
 contiguous_type: segment contiguous'
 interconnection_type: between
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: none
+coordinate_systems: multiple
 arrangement: ['circular parallel', 'linear parallel']
 access_format: software
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2009
 license: 
 license_form: 
 image: /assets/Mizbee.jpg
+image_location: 
 ---

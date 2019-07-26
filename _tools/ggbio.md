@@ -18,8 +18,8 @@ view: single
 sparse_type: 
 contiguous_type: 
 interconnection_type: ['none', 'within', 'between']
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: none
+coordinate_systems: single
 arrangement: 
 access_format: r package
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2012
 license: Artistic-2.0
 license_form: open source
 image: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fgb-2012-13-8-r77/MediaObjects/13059_2012_Article_3010_Fig7_HTML.jpg
+image_location: 
 ---

@@ -18,8 +18,8 @@ view: multiple
 sparse_type: 
 contiguous_type: 
 interconnection_type: none
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: none
+coordinate_systems: single
 arrangement: 
 access_format: software
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2009
 license: GPL, Artistic License
 license_form: open source
 image: /assets/GBrowse.png
+image_location: 
 ---

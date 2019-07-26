@@ -18,8 +18,8 @@ view: single
 sparse_type: 
 contiguous_type: 
 interconnection_type: none
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: none
+coordinate_systems: single
 arrangement: none
 access_format: ['web browser', 'stand alone']
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2016
 license: GNU LGPL,  Artistic License
 license_form: open source
 image: /assets/jbrowse.png
+image_location: 
 ---

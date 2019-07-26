@@ -18,8 +18,8 @@ view: single
 sparse_type: 
 contiguous_type: 
 interconnection_type: ['none', 'within', 'between']
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: none
+coordinate_systems: multiple
 arrangement: none
 access_format: web browser
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2018
 license: 
 license_form: 
 image: /assets/3Dgenomebrowser.jpg
+image_location: 
 ---

@@ -18,8 +18,8 @@ view: single
 sparse_type: 
 contiguous_type: 
 interconnection_type: none
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: none
+coordinate_systems: single
 arrangement: none
 access_format: website
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2011
 license: 
 license_form: 
 image: /assets/washu.png
+image_location: 
 ---

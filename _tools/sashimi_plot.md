@@ -18,8 +18,8 @@ view: single
 sparse_type: point sparse
 contiguous_type: 
 interconnection_type: within
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: sparse
+coordinate_systems: single
 arrangement: none
 access_format: web browser
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2015
 license: MIT
 license_form: open source
 image: /assets/Sashimi.png
+image_location: 
 ---

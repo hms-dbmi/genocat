@@ -6,7 +6,7 @@ install:
 script:
   - python from_frontmatter.py
   - bundle exec jekyll build
-  - python from_frontmatter.py
+  # - python from_frontmatter.py
   - sh cron.sh
 
 deploy:

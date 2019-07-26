@@ -18,8 +18,8 @@ view: single
 sparse_type: 
 contiguous_type: point contiguous
 interconnection_type: none
-interconnection_density: 
-coordinate_systems: 
+interconnection_density: none
+coordinate_systems: single
 arrangement: none
 access_format: web browser
 supported_species: 
@@ -28,4 +28,5 @@ pub_year: 2004
 license: MIT
 license_form: open source
 image: /assets/Weblogo.png
+image_location: 
 ---
