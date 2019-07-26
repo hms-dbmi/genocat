@@ -4,9 +4,9 @@ install:
   - bundle install
 
 script:
-  - bundle exec jekyll build
   - python from_frontmatter.py
   - sh cron.sh
+  - bundle exec jekyll build
 
 deploy:
   provider: s3
