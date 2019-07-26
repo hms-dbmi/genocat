@@ -3,10 +3,11 @@ layout: tool
 title:
 github_account:
 paper:
-paper_title: #"insert title"
+paper_title: #"insert title in quotation marks"
 doi:
 browser:
-abstract: #"insert abstract"
+abstract: #"insert abstract in quotation marks"
+citation: #"insert citation in quotation marks"
 citation_count:
 lay: #['linear', 'circular', 'spatial', 'spacefilling']
 partition: #['contiguous', 'segregated']
