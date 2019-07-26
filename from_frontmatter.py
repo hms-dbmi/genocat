@@ -9,7 +9,7 @@ def get_attribute(attr, lines):
         j+=1
     return 0
 
-f1 = open('scholar_data.txt', 'w')
+f1 = open('scholar_data.txt', 'w+')
 for file in os.listdir('_tools'):
     filepath = os.path.join('_tools', file)
     f_tool = open(filepath, 'r')
