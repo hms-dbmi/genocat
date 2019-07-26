@@ -8,7 +8,7 @@ doi: 12345
 browser:
 abstract: #"insert abstract in quotation marks"
 citation: #"insert citation in quotation marks"
-citation_count: 10000
+citation_count: 4
 lay: #['linear', 'circular', 'spatial', 'spacefilling']
 partition: #['contiguous', 'segregated']
 abstraction: #['none', 'partial', 'complete']
