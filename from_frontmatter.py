@@ -5,6 +5,10 @@ def get_attribute(attr, lines):
     j=0
     while j<len(lines):
         if lines[j][0:length] == attr:
+            words = lines[j].split(" ")
+            # if doi, citation count, or pub year is not filled in, insert "0"
+            if len(words) == 1:
+                lines[j] = attr+": 0\n"
             return(lines[j])
         j+=1
     return 0
