@@ -7,10 +7,10 @@ hero:
   image: /assets/home1.png
   callout:
     alt: "GenoCAT:"
-    text: browse for tools to better visualize genomic data
+    text: browse for tools to visualize genomic data
   button:
     href: /search_page/
-    text: View Browser
+    text: Browse Now
 title: Overview of Genomic Visualization Tools
 tagline: Hundreds of ways to visualize a genome.
 intro: |
