@@ -12,7 +12,7 @@ hero:
     href: /search_page/
     text: View Browser
 title: Overview of Genomic Visualization Tools
-tagline: Data visualization to drive discovery.
+tagline: Hundreds of ways to visualize a genome.
 intro: |
   This site provides a database of genomic visualization tools. Each tool has been sorted and grouped based on various attributes, and this website has been designed to help you find what you’re looking for. Our review article on genomic visualization tools can be found [here](https://arxiv.org/pdf/1905.02853.pdf).
 graphics:
