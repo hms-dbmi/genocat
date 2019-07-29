@@ -10,7 +10,7 @@
 primary:
   - text: Home
     href: /
-  - text: Browser
+  - text: Browse
     href: /search_page/
   - text: Attributes
     href: /attribute_page/
