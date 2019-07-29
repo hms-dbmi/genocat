@@ -12,7 +12,7 @@ primary:
     href: /
   - text: Browse
     href: /search_page/
-  - text: Attributes
-    href: /attribute_page/
+  - text: Taxonomy
+    href: /taxonomy_page/
 
 secondary: []
