@@ -26,6 +26,6 @@ supported_species: # one / many
 user_documentation: #link to user documentation
 pub_year: # paper publication year
 license:
-license_form: # open source / commercial
-image: # path to the image
+license_form: # 'open source' / commercial
+image: # url path to the image
 ---
