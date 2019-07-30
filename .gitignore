@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 scholar_data.txt
 .DS_Store
+node_modules
