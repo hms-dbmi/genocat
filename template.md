@@ -9,7 +9,7 @@ browser: # link to tool
 abstract: # "insert paper abstract in quotation marks"
 citation: # "insert paper citation in quotation marks"
 citation_count: # number of times the paper has been cited
-lay: # ['linear', 'circular', 'spatial', 'spacefilling']
+genome_layout: # ['linear', 'circular', 'spatial', 'spacefilling']
 partition: # ['contiguous', 'segregated']
 abstraction: # ['none', 'partial', 'complete']
 focus: # ['single', 'multiple']

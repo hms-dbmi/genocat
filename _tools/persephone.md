@@ -9,7 +9,7 @@ browser:
 abstract: ""
 citation: "Persephone Software, LLC. Persephone: A multi-genome browser carefully crafted using latest technologies. In: Persephone [Internet]. [cited 2 Feb 2019]. Available: https://persephonesoft.com/"
 citation_count:
-lay: linear
+genome_layout: linear
 partition:
 abstraction:
 focus: multiple

@@ -9,7 +9,7 @@ browser: https://epiviz.github.io/
 abstract: "Visualization is an integral aspect of genomics data analysis where the output of procedures performed in computing environments like Bioconductor is often visualized. Algorithmic-statistical analysis and interactive visualization are usually disjoint but are most effective when used iteratively. We introduce tools that provide this tight-knit integration: Epiviz (http://epiviz.cbcb.umd.edu), a web-based genome browser, and the Epivizr Bioconductor package allowing interactive, extensible and reproducible visualization within a state-of-the-art data analysis platform."
 citation: "Chelaru F, Smith L, Goldstein N, Bravo HC. Epiviz: interactive visual analytics for functional genomics data. Nat Methods. nature.com; 2014;11: 938–940."
 citation_count: 47
-lay: linear
+genome_layout: linear
 partition: segregated
 abstraction: none
 focus: single

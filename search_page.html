@@ -6,66 +6,31 @@ permalink: /search_page/
 <head>
 
   <style>
+
   .column {
     float: left;
     width: 50%;
     padding: 20px;
     border: 0.1rem solid #DCDCDC;
   }
+
   input, textarea, select {
-    appearance: none;
     border: 0.1rem solid #DCDCDC;
-    border-radius: 0;
-    box-sizing: border-box;
-    color: #212121;
-    display: inline-flex;
-    font-size: 1.7rem;
-    height: 4.4rem;
-    line-height: 1.3;
-    margin: 0.2em 0;
-    max-width: 46rem;
-    padding: 1rem 1em;
-    width: 100%;
   }
-  input[type="radio"] {
-    background-color: inherit;
-    cursor: default;
-    -webkit-appearance: radio;
-    display: inline;
-    box-sizing: border-box;
-    margin: 3px 0.5ex;
-    padding: initial;
-    border: 0;
-}
+
 [type=checkbox] + label, [type=radio] + label {
-    cursor: pointer;
-    font-weight: 400;
     margin-bottom: 1em;
     margin-top: 1em;
 }
-label {
-    display: flex;
-    margin-top: 0.5rem;
-    max-width: 46rem;
-}
+
 [type=radio] + label::before {
-    border-radius: 100%;
-    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #757575;
     height: 1rem;
-    line-height: 1rem;
-    margin-left: 1px;
-    margin-top: 0.3em;
-    margin-right: 0.5em;
     width: 1rem;
 }
 
 [type=checkbox] + label::before {
-    border-radius: 2px;
-    box-shadow: 0 0 0 1px #757575;
     height: 1rem;
     line-height: 0.5rem;
-    margin-left: 1px;
-    margin-right: 0.6em;
     margin-top: 0.5em;
     width: 1rem;
 }
@@ -160,7 +125,7 @@ body {
 
 {% for post in site.tools %}
     <div class = "container">
-      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection_type }} {{ post.access_format }} {{ post.lay }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
           <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" width="250"></a>
         <div class="overlay">
@@ -169,23 +134,22 @@ body {
               {%endfor%}
         </div>
         <button class="collapsible">+</button>
-        <!-- </div> -->
           <div class="content">
             <p>Cited by: {{post.citation_count}}</p>
             <p>Paper Publication Year: {{post.pub_year}}</p>
 
           <p>
-            {% for items in  post.lay %}
-               <a href="{{site.baseurl}}/attributes/layout.html" class="button layout">{{ items }}</a>
+            {% for items in  post.genome_layout %}
+               <a href="{{site.baseurl}}/attributes/layout.html" class="button layout" style="--border-color: green; --color: green;">{{ items }}</a>
             {%endfor%}
             {% for items in  post.view %}
-               <a href="{{site.baseurl}}/attributes/view.html" class="button layout" style="border-color: blue; color: blue;">{{ items }} view</a>
+               <a href="{{site.baseurl}}/attributes/view.html" class="button layout" style="--border-color: blue; --color: blue;">{{ items }} view</a>
             {%endfor%}
             {% for items in  post.scale %}
-               <a href="{{site.baseurl}}/attributes/scale.html" class="button layout" style="border-color: red; color: red;">{{ items }} scale</a>
+               <a href="{{site.baseurl}}/attributes/scale.html" class="button layout" style="--border-color: red; --color: red;">{{ items }} scale</a>
             {%endfor%}
             {% for items in  post.focus %}
-               <a href="{{site.baseurl}}/attributes/focus.html" class="button layout" style="border-color: purple; color: purple;">{{ items }} focus</a>
+               <a href="{{site.baseurl}}/attributes/focus.html" class="button layout" style="--border-color: purple; --color: purple;">{{ items }} focus</a>
             {%endfor%}
           </p>
           </div>
@@ -203,21 +167,17 @@ a:visited {
   color: #000000;
 }
 .filterDiv {
-         /* float: left; */
          background-color: #FFFFFF;
          line-height: 50px;
          text-align: left;
          margin: 5px;
-         display: none; /* Hidden by default */
+         display: none;
          padding-left: 20px;
          padding-right: 20px;
          padding-bottom: 10px;
          padding-top: 10px;
          box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
          position: relative;
-         /* border-style: solid;
-         border-width: thin;
-         border-color: #DCDCDC; */
        }
 .container {
          position: relative;
@@ -239,11 +199,11 @@ a:visited {
        }
 
 
-/* The "show" class is added to the filtered elements */
+/* "show" class is added to filtered elements */
 .show {
          display: block;
        }
-/* Style the button that is used to open and close the collapsible content */
+/* Style the "+" button that is used to open and close the collapsible content */
 .collapsible {
          background-color: white;
          color: #444;
@@ -259,14 +219,11 @@ a:visited {
 .active, .collapsible:hover {
          background-color: white;
          color: #444;
-         border: none;
        }
 
-/* Style the collapsible content. Note: hidden by default */
 .content {
          padding: 0 18px;
          display: none;
-         overflow: hidden;
          background-color: white;
          border-top-style: solid ;
          border-top-width: 1px;
@@ -282,17 +239,16 @@ a:visited {
          text-decoration: none;
          display: inline-block;
          margin: 2px 1px;
-         cursor: pointer;
          border-radius: 15px;
        }
 /* Green */
 .layout {
-         border-color: #4CAF50;
-         color: green;
+         border-color: var(--border-color);
+         color: var(--color);
        }
 
 .layout:hover {
-         background-color: #4CAF50;
+         background-color: var(--border-color);
          color: white;
        }
 .items {

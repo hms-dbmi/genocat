@@ -89,7 +89,7 @@ layout: page
     <p> Publication Year: {{ page.pub_year }}</p>
     <p> Attributes:
 
-      {% for items in  page.lay %}
+      {% for items in  page.genome_layout %}
       {%- if items == "linear" -%}
         <li><a href="{{site.baseurl}}/attributes/layout.html#Linear">Linear</a></li>
       {%- elsif items == "circular" -%}

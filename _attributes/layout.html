@@ -35,7 +35,7 @@ categories: attributes
 
     <div class="grid-container">
       {% for post in site.tools %}
-        {% for items in  post.lay %}
+        {% for items in  post.genome_layout %}
           {% if items == "circular" %}
             <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
             {% endif %}
@@ -54,7 +54,7 @@ categories: attributes
   <br><br><br><br><br>
   <div class="grid-container">
     {% for post in site.tools %}
-    {% for items in  post.lay %}
+    {% for items in  post.genome_layout %}
       {% if items == "linear" %}
         <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
@@ -75,7 +75,7 @@ categories: attributes
 
   <div class="grid-container">
     {% for post in site.tools %}
-      {% for items in  post.lay %}
+      {% for items in  post.genome_layout %}
         {% if items == "spacefilling" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
@@ -96,7 +96,7 @@ categories: attributes
 
   <div class="grid-container">
     {% for post in site.tools %}
-      {% for items in  post.lay %}
+      {% for items in  post.genome_layout %}
         {% if items == "spatial" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}

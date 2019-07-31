@@ -10,7 +10,7 @@ abstract: "Background: We introduce Sequence Bundles--a novel data visualisation
 Conclusions: Sequence Bundles is a novel method for visualisation of MSAs and the discovery of sequence motifs. It can aid in generating new insight and hypothesis making. Sequence Bundles is well disposed for future implementation as an interactive visual analytics software, which can complement existing visualisation tools."
 citation: "Kultys M, Nicholas L, Schwarz R, Goldman N, King J. Sequence Bundles: a novel method for visualising, discovering and exploring sequence motifs. BMC Proc. bmcproc.biomedcentral.com; 2014;8: S8."
 citation_count: 7
-lay: ['linear']
+genome_layout: ['linear']
 partition:
 abstraction:
 focus: ['single']
