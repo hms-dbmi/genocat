@@ -62,7 +62,9 @@ layout: page
   <body>
 
     <div class="post-content" itemprop="articleBody">
-      <img src = "{{site.baseurl}}{{ page.image }}" width="500"> <br><br>
+      <img src = "{{site.baseurl}}{{ page.image }}" width="500">
+      <small>{{page.image_location}}</small>
+      <br><br>
       <h2>{{page.paper_title}}</h2>
       <h3>Abstract</h3>
       {{ page.abstract }}

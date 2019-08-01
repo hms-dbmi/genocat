@@ -1,7 +1,7 @@
 ---
-layout: tool 
+layout: tool
 title: MizBee
-github_account: 
+github_account:
 paper: https://www.ncbi.nlm.nih.gov/pubmed/19834152
 paper_title: "MizBee: a multiscale synteny browser."
 doi: 10.1109/TVCG.2009.167
@@ -15,18 +15,18 @@ abstraction: none
 focus: single
 scale: multiple
 view: multiple
-sparse_type: 
+sparse_type:
 contiguous_type: segment contiguous'
 interconnection_type: between
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: ['circular parallel', 'linear parallel']
 access_format: software
-supported_species: 
-user_documentation: 
+supported_species:
+user_documentation:
 pub_year: 2009
-license: 
-license_form: 
+license:
+license_form:
 image: /assets/Mizbee.jpg
-image_location: 
+image_location: http://www.cs.utah.edu/~miriah/mizbee/Overview.html
 ---
