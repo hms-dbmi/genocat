@@ -24,7 +24,7 @@ arrangement: linear orthogonal
 access_format: ['web browser', 'software']
 supported_species: 
 user_documentation: https://github.com/aidenlab/Juicebox/wiki
-pub_year: 
+pub_year: 2016
 license: MIT
 license_form: open source
 image: /assets/juicebox.png
