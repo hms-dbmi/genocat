@@ -17,7 +17,7 @@ scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
+interconnection_type: ['none', 'within']
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
@@ -29,4 +29,5 @@ license: MIT
 license_form: open source
 image: /assets/juicebox.png
 image_location: 
+notes: 
 ---

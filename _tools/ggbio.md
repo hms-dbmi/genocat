@@ -10,17 +10,17 @@ abstract: "We introduce ggbio, a new methodology to visualize and explore genomi
 citation: "Yin T, Cook D, Lawrence M. ggbio: an R package for extending the grammar of graphics for genomic data. Genome Biol. genomebiology.biomedcentral.com; 2012;13: R77."
 citation_count: 145
 genome_layout: ['linear', 'circular']
-partition: 
-abstraction: 
+partition: ['segregated', 'contiguous']
+abstraction: ['none','partial']
 focus: single
 scale: single
-view: single
+view: ['single','multiple']
 sparse_type: 
 contiguous_type: 
 interconnection_type: ['none', 'within', 'between']
 interconnection_density: none
 coordinate_systems: single
-arrangement: 
+arrangement: none
 access_format: r package
 supported_species: 
 user_documentation: browseVignettes("ggbio")
@@ -29,4 +29,5 @@ license: Artistic-2.0
 license_form: open source
 image: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fgb-2012-13-8-r77/MediaObjects/13059_2012_Article_3010_Fig7_HTML.jpg
 image_location: 
+notes: 
 ---

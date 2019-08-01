@@ -29,4 +29,5 @@ license: GNU LGPL,  Artistic License
 license_form: open source
 image: /assets/jbrowse.png
 image_location: 
+notes: 
 ---

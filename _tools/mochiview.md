@@ -10,8 +10,8 @@ abstract: As high-throughput technologies rapidly generate genome-scale data, it
 citation: "Homann OR, Johnson AD. MochiView: versatile software for genome browsing and DNA motif analysis. BMC Biol. bmcbiol.biomedcentral.com; 2010;8: 49."
 citation_count: 106
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: multiple
 view: multiple
@@ -29,4 +29,5 @@ license:
 license_form: 
 image: /assets/MochiView.png
 image_location: 
+notes: 
 ---

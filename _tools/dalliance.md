@@ -10,8 +10,8 @@ abstract: "SUMMARY: Dalliance is a new genome viewer which offers a high level o
 citation: "Down TA, Piipari M, Hubbard TJP. Dalliance: interactive genome viewing on the web. Bioinformatics. academic.oup.com; 2011;27: 889–890."
 citation_count: 78
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
-arrangement: 
+arrangement: none
 access_format: web browser
 supported_species: 
 user_documentation: https://www.biodalliance.org/started.html
@@ -29,4 +29,5 @@ license: BSD 2-Clause
 license_form: open source
 image: /assets/dalliance.png
 image_location: 
+notes: 
 ---

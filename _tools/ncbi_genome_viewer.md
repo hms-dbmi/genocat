@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
-arrangement: 
+arrangement: none
 access_format: web browser
 supported_species: 
 user_documentation: 
@@ -29,4 +29,5 @@ license:
 license_form: 
 image: /assets/NCBIGenomeBrowser.png
 image_location: 
+notes: 
 ---

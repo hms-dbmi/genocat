@@ -29,4 +29,5 @@ license: GPL
 license_form: open source
 image: /assets/readxplorer.png
 image_location: 
+notes: 
 ---

@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: 3D Genome Browser
-github_account:
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/25990738
 paper_title: "A low-latency, big database system and browser for storage, querying and visualization of 3D genomic data"
 doi: 10.1093/nar/gkv476
@@ -15,18 +15,19 @@ abstraction: none
 focus: single
 scale: single
 view: single
-sparse_type:
-contiguous_type:
+sparse_type: 
+contiguous_type: 
 interconnection_type: within
 interconnection_density: dense
 coordinate_systems: single
 arrangement: none
 access_format: web browser
-supported_species:
-user_documentation:
+supported_species: 
+user_documentation: 
 pub_year: 2015
-license:
-license_form:
+license: 
+license_form: 
 image: /assets/3D_Genome_Browser.jpg
-image_location:
+image_location: 
+notes: 
 ---

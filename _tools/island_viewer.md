@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: Island Viewer
-github_account:
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4489224/
 paper_title: "IslandViewer 3: more flexible, interactive genomic island discovery, visualization and analysis"
 doi: 10.1093/nar/gkv401
@@ -15,18 +15,19 @@ abstraction: none
 focus: multiple
 scale: multiple
 view: multiple
-sparse_type:
-contiguous_type:
+sparse_type: 
+contiguous_type: 
 interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: web browser
-supported_species:
-user_documentation:
+supported_species: 
+user_documentation: 
 pub_year: 2015
-license:
-license_form:
+license: 
+license_form: 
 image: /assets/IslandViewer_example.png
-image_location:
+image_location: 
+notes: 
 ---

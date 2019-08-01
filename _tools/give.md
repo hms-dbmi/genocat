@@ -10,7 +10,7 @@ abstract: "Growing popularity and diversity of genomic data demand portable and 
 citation: 
 citation_count: 5
 genome_layout: linear
-partition: 
+partition: segregated
 abstraction: none
 focus: single
 scale: multiple
@@ -29,4 +29,5 @@ license: Apache License, Version 2.0 (the "License")
 license_form: open source
 image: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13059-018-1465-6/MediaObjects/13059_2018_1465_Fig1_HTML.png
 image_location: 
+notes: 
 ---

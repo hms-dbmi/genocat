@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: MEME
-github_account:
+github_account: 
 paper: https://academic.oup.com/nar/article/34/suppl_2/W369/2505578
 paper_title: "MEME: discovering and analyzing DNA and protein sequence motifs."
 doi: 10.1093/nar/gkl198
@@ -10,23 +10,24 @@ abstract: "MEME (Multiple EM for Motif Elicitation) is one of the most widely us
 citation: "Bailey TL, Williams N, Misleh C, Li WW. MEME: discovering and analyzing DNA and protein sequence motifs. Nucleic Acids Res. academic.oup.com; 2006;34: W369–73."
 citation_count: 1790
 genome_layout: linear
-partition:
-abstraction:
+partition: 
+abstraction: 
 focus: single
 scale: multiple
 view: multiple
-sparse_type:
-contiguous_type:
-interconnection_type:
+sparse_type: 
+contiguous_type: 
+interconnection_type: 
 interconnection_density: none
 coordinate_systems: single
-arrangement:
+arrangement: 
 access_format: ['web browser', 'software']
-supported_species:
+supported_species: 
 user_documentation: http://meme-suite.org/doc/overview.html?man_type=web
 pub_year: 2006
-license:
-license_form:
-image:
-image_location:  
+license: 
+license_form: 
+image: 
+image_location: 
+notes: 
 ---

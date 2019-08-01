@@ -11,7 +11,7 @@ citation: "Krzywinski M, Schein J, Birol I, Connors J, Gascoyne R, Horsman D, et
 citation_count: 4459
 genome_layout: circular
 partition: ['segregated', 'contiguous']
-abstraction: 
+abstraction: ['none','partial']
 focus: single
 scale: single
 view: single
@@ -29,4 +29,5 @@ license: GPL
 license_form: 
 image: /assets/Circos.png
 image_location: 
+notes: 
 ---

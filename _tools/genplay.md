@@ -29,4 +29,5 @@ license: GNU GPL
 license_form: open source
 image: /assets/genplay.png
 image_location: 
+notes: 
 ---

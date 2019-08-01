@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: EaSeq
-github_account:
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/26926434
 paper_title: "An interactive environment for agile analysis and visualization of ChIP-sequencing data."
 doi: 10.1038/nsmb.3180
@@ -10,23 +10,24 @@ abstract: "To empower experimentalists with a means for fast and comprehensive c
 citation: "Lerdrup M, Johansen JV, Agrawal-Singh S, Hansen K. An interactive environment for agile analysis and visualization of ChIP-sequencing data. Nat Struct Mol Biol. nature.com; 2016;23: 349–357."
 citation_count: 62
 genome_layout: linear
-partition:
+partition: 
 abstraction: none
 focus: single
 scale: single
 view: single
-sparse_type:
-contiguous_type:
+sparse_type: 
+contiguous_type: 
 interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: software
-supported_species:
+supported_species: 
 user_documentation: https://easeq.net/getting-started/
 pub_year: 2016
 license: CC BY-NC-SA
-license_form:
-image: /assets/easeq.png
-image_location:
+license_form: 
+image: 
+image_location: 
+notes: 
 ---

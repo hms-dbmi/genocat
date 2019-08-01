@@ -17,7 +17,7 @@ scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
+interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
@@ -29,4 +29,5 @@ license: GPL
 license_form: open source
 image: /assets/DNAPlotter.png
 image_location: 
+notes: 
 ---
