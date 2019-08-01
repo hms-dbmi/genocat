@@ -7,7 +7,7 @@ def get_attribute(attr, lines):
         if lines[j][0:length] == attr:
             words = lines[j].split(" ")
             # if doi, citation count, or pub year is not filled in, insert "0"
-            if len(words) == 1:
+            if len(words) == 1 or words[1] == "\n":
                 lines[j] = attr+": 0\n"
             return(lines[j])
         j+=1
@@ -19,6 +19,7 @@ for file in os.listdir('_tools'):
     f_tool = open(filepath, 'r')
     lines = f_tool.readlines()
     title = get_attribute('title', lines)
+    print title
     doi = get_attribute('doi', lines)
     pub_year = get_attribute('pub_year', lines)
     citation_count = get_attribute('citation_count', lines)
