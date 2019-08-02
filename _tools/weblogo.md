@@ -21,25 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-<<<<<<< HEAD
 access_format: [web application]
-supported_species: 
+supported_species:  
 user_documentation_availability: no
-user_documentation: 
-=======
-access_format: web browser
-supported_species:
 user_documentation:
->>>>>>> 15a06e10fedd1abf5c79d0044b3616904b9c05aa
 pub_year: 2004
 license: MIT
 license_form: open source
 image: /assets/Weblogo.png
-<<<<<<< HEAD
 image_location: https://weblogo.berkeley.edu/examples.html
-notes: 
-=======
-image_location:
 notes:
->>>>>>> 15a06e10fedd1abf5c79d0044b3616904b9c05aa
 ---

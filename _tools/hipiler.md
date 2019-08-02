@@ -21,14 +21,9 @@ interconnection_type:
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
-<<<<<<< HEAD
 access_format: [web application]
-supported_species: 
+supported_species:  
 user_documentation_availability: yes
-=======
-access_format: web browser
-supported_species:
->>>>>>> 15a06e10fedd1abf5c79d0044b3616904b9c05aa
 user_documentation: http://hipiler.higlass.io/docs
 pub_year: 2018
 license: MIT
