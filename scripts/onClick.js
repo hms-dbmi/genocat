@@ -138,34 +138,19 @@ document.getElementById("between").onclick=function() {
   click_filter("between");
 }
 
-//web browser
-document.getElementById("web browser").onclick=function() {
-  click_filter("web browser");
+//web application
+document.getElementById("web application").onclick=function() {
+  click_filter("web application");
 }
 
-//software
-document.getElementById("software").onclick=function() {
-  click_filter("software");
+//standalone
+document.getElementById("standalone app").onclick=function() {
+  click_filter("standalone app");
 }
 
-//java package
-document.getElementById("java package").onclick=function() {
-  click_filter("java package");
-}
-
-//r package
-document.getElementById("r package").onclick=function() {
-  click_filter("r package");
-}
-
-//jupyter
-document.getElementById("jupyter").onclick=function() {
-  click_filter("jupyter");
-}
-
-//javascript
-document.getElementById("javascript").onclick=function() {
-  click_filter("javascript");
+//programming library
+document.getElementById("programming library").onclick=function() {
+  click_filter("programming library");
 }
 
 
