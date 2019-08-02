@@ -21,13 +21,14 @@ interconnection_type: between
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: linear parallel
-access_format: web browser
+access_format: [web application]
 supported_species: 
-user_documentation: tab-delimited text files
+user_documentation_availability: yes
+user_documentation: https://cinteny.cchmc.org/doc/demo.php
 pub_year: 2007
 license: 
 license_form: 
 image: /assets/Cinteny.png
-image_location: 
+image_location: https://cinteny.cchmc.org/doc/wholegenome.php
 notes: 
 ---

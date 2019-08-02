@@ -21,12 +21,13 @@ interconnection_type:
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://hicexplorer.usegalaxy.eu/tours/core.galaxy_ui
 pub_year: 2018
 license: MIT
-license_form: open
+license_form: open source
 image: /assets/hicexplorer.png
 image_location: https://hicexplorer.usegalaxy.eu/
 notes: 

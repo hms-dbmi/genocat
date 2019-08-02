@@ -21,12 +21,13 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://www.jalview.org/Help/Getting-Started
 pub_year: 2009
 license: GPL
-license_form: open
+license_form: open source
 image: /assets/jalview.png
 image_location: https://www.youtube.com/watch?time_continue=61&v=RdbcdZZUDHg
 notes: 

@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: 
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://gmod.org/wiki/GBrowse#Documentation
 pub_year: 2009
 license: GPL, Artistic License
 license_form: open source
 image: /assets/GBrowse.png
-image_location: 
+image_location: http://gmod.org/wiki/GBrowse#Screenshots
 notes: 
 ---

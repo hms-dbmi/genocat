@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://easeq.net/getting-started/
 pub_year: 2016
 license: CC BY-NC-SA
 license_form: 
-image: 
-image_location: 
+image: /assets/easeq.png
+image_location: https://easeq.net/
 notes: 
 ---

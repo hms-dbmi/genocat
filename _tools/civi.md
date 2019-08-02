@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://civi.cmbi.ru.nl/help.html
 pub_year: 2015
 license: 
 license_form: 
 image: /assets/Civi.png
-image_location: 
+image_location: http://civi.cmbi.ru.nl/help.html
 notes: 
 ---

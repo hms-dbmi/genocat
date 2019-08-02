@@ -21,12 +21,13 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://ormbunkar.se/aliview/#TOP_HELP
 pub_year: 2014
 license: GNU General Public License, version 3.0 (GPLv3)
-license_form: open
+license_form: open source
 image: /assets/aliview.png
 image_location: http://ormbunkar.se/aliview/#top
 notes: 

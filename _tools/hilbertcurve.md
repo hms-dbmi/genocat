@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: r package
+access_format: [programming library]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: https://bioconductor.org/packages/release/bioc/vignettes/HilbertCurve/inst/doc/HilbertCurve.html
 pub_year: 2016
 license: MIT
 license_form: open source
 image: /assets/HC.png
-image_location: 
+image_location: https://arxiv.org/pdf/1905.02853.pdf
 notes: 
 ---

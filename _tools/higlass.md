@@ -21,13 +21,14 @@ interconnection_type: within
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
-access_format: ['web browser', 'jupyter', 'javascript']
+access_format: [web application, programming library]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: https://higlass.io/docs
 pub_year: 2018
-license: 
+license: Creative Commons Attribution license (CC BY)
 license_form: 
 image: /assets/HiGlass.png
-image_location: 
+image_location: https://higlass.io/
 notes: 
 ---

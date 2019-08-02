@@ -17,17 +17,18 @@ scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: ['none', 'between']
+interconnection_type: [none, between]
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: 
-access_format: ['web browser', 'software']
+access_format: [web application, standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://useast.ensembl.org/info/index.html
 pub_year: 2002
 license: Apache License 2.0
 license_form: open source
 image: /assets/ensembl.png
-image_location: 
+image_location: https://useast.ensembl.org/index.html
 notes: 
 ---

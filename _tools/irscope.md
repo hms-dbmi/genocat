@@ -21,9 +21,10 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
-user_documentation: n/a
+user_documentation_availability: no
+user_documentation: 
 pub_year: 2018
 license: Under the license of the University of Helsinki
 license_form: 

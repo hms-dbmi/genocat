@@ -21,8 +21,9 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: no
 user_documentation: n/a
 pub_year: 2008
 license: 

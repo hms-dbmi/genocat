@@ -10,24 +10,25 @@ abstract: We created a visualization tool called Circos to facilitate the identi
 citation: "Krzywinski M, Schein J, Birol I, Connors J, Gascoyne R, Horsman D, et al. Circos: an information aesthetic for comparative genomics. Genome Res. 2009;19: 1639–1645."
 citation_count: 4459
 genome_layout: circular
-partition: ['segregated', 'contiguous']
-abstraction: ['none','partial']
+partition: [segregated, contiguous]
+abstraction: [none, partial]
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: ['within', 'between']
+interconnection_type: [within, between]
 interconnection_density: sparse
 coordinate_systems: single
 arrangement: circular serial
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://circos.ca/documentation/
 pub_year: 2009
 license: GPL
-license_form: 
+license_form: open source
 image: /assets/Circos.png
-image_location: 
+image_location: http://circos.ca/images/
 notes: 
 ---

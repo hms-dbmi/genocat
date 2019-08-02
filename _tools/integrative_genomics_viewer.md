@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: 
 coordinate_systems: single
 arrangement: none
-access_format: ['web browser', 'software', 'javascript']
+access_format: [web application, standalone app]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: https://software.broadinstitute.org/software/igv/UserGuide
 pub_year: 2013
 license: MIT
-license_form: 
+license_form: open source
 image: /assets/IGV.png
-image_location: 
+image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3603213/figure/bbs017-F7/
 notes: 
 ---

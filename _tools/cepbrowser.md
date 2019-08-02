@@ -12,8 +12,8 @@ citation_count: 6
 genome_layout: linear
 partition: 
 abstraction: 
-focus: ['multiple','single']
-scale: ['multiple','single']
+focus: [multiple, single]
+scale: [multiple, single]
 view: multiple
 sparse_type: 
 contiguous_type: 
@@ -21,8 +21,9 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: linear parallel
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://www.cepbrowser.org/cpbrowser/manual.php
 pub_year: 2013
 license: 

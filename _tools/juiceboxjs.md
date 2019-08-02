@@ -1,6 +1,6 @@
 ---
 layout: tool 
-title: Juicebox.js
+title: Juiceboxjs
 github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/29428417
 paper_title: "Juicebox.js Provides a Cloud-Based Visualization System for Hi-C Data."
@@ -21,12 +21,13 @@ interconnection_type:
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
-access_format: Javascript
+access_format: [programming language]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://igvteam.github.io/juicebox.js/
 pub_year: 2018
 license: MIT
-license_form: open
+license_form: open source
 image: /assets/juiceboxjs.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6047755/figure/F1/
 notes: public instance is the same as Juicebox... 

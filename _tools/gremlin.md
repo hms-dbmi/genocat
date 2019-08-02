@@ -21,13 +21,14 @@ interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
 arrangement: none
-access_format: ['web browser', 'software']
+access_format: [web application, standalone app]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: http://compbio-research.cs.brown.edu/software/Gremlin/GremlinInteraction.pdf
 pub_year: 2010
 license: 
 license_form: 
 image: /assets/Gremlin.png
-image_location: 
+image_location: http://compbio-research.cs.brown.edu/software/Gremlin/GremlinOverview.pdf
 notes: 
 ---

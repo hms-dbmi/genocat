@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: 
 coordinate_systems: single
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: https://www.ncbi.nlm.nih.gov/tools/sviewer/
 pub_year: 2007
 license: 
 license_form: 
 image: /assets/NCBISequenceViewer.png
-image_location: 
+image_location: https://www.ncbi.nlm.nih.gov/projects/sviewer/
 notes: 
 ---

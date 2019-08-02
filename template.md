@@ -21,9 +21,10 @@ interconnection_type: # [none, within, between]
 interconnection_density: # [none, sparse, dense]
 coordinate_systems: # [single, multiple]
 arrangement: # [linear parallel, linear serial, linear orthogonal, circular parallel, circular serial]
-access_format: # [web application, standalone app, programming library]
+access_format: #[web application, standalone app, programming library]
 supported_species: # one / many
-user_documentation: # link to user documentation
+user_documentation_availability: #yes/no
+user_documentation: #link to user documentation
 pub_year: # paper publication year
 license: # license name
 license_form: # open source / commercial

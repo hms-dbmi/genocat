@@ -21,8 +21,9 @@ interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
 arrangement: 
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://montgomerylab.stanford.edu/spliceplot/index.html#running-spliceplot
 pub_year: 2013
 license: 

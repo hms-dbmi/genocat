@@ -21,8 +21,9 @@ interconnection_type:
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: no
 user_documentation: n/a
 pub_year: 2009
 license: 

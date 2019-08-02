@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: no
 user_documentation: 
 pub_year: 2012
 license: 
 license_form: 
 image: /assets/Lollipop.png
-image_location: 
+image_location: https://arxiv.org/pdf/1905.02853.pdf
 notes: 
 ---

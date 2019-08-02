@@ -21,8 +21,9 @@ interconnection_type:
 interconnection_density: sparse
 coordinate_systems: single
 arrangement: none
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://splicegrapher.sourceforge.net/userguide.html
 pub_year: 2012
 license: 

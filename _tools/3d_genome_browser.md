@@ -21,13 +21,14 @@ interconnection_type: within
 interconnection_density: dense
 coordinate_systems: single
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: http://3dgb.cs.mcgill.ca/
 pub_year: 2015
 license: 
 license_form: 
 image: /assets/3D_Genome_Browser.jpg
-image_location: 
+image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4652742/figure/F2/
 notes: 
 ---
