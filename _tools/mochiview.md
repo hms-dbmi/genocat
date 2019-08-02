@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: software
+access_format: [standalone app]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: https://static1.squarespace.com/static/56463117e4b0770d2cd2d163/t/564bbbb1e4b0c03db1589e9a/1447803825330/MochiView_Manual_v1.45.pdf
 pub_year: 2010
-license: 
+license: The Regents of the University of California
 license_form: 
 image: /assets/MochiView.png
-image_location: 
+image_location: http://www.johnsonlab.ucsf.edu/mochi
 notes: 
 ---

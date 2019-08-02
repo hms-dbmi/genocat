@@ -21,8 +21,9 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://www.ebi.ac.uk/goldman-srv/sequencebundles/
 pub_year: 2014
 license: Creative Commons CC BY v4.0 license 

@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: ['web browser', 'software']
+access_format: [web application, standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://genomeview.org/content/where-do-i-find-documentation
 pub_year: 2012
 license: 
 license_form: open source
 image: /assets/genomeview.jpeg
-image_location: 
+image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3258165/figure/gkr995-F5/
 notes: 
 ---

@@ -17,17 +17,18 @@ scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: ['none', 'within', 'between']
+interconnection_type: [none, within, between]
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://promoter.bx.psu.edu/hi-c/tutorial.html
 pub_year: 2018
 license: 
 license_form: 
 image: /assets/3Dgenomebrowser.jpg
-image_location: 
+image_location: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1519-9
 notes: 
 ---

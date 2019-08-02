@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: r package
+access_format: [programming library]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: https://bioconductor.riken.jp/packages/3.5/bioc/vignettes/HilbertVis/inst/doc/HilbertVis.pdf
 pub_year: 2009
 license: GPL
-license_form: 
+license_form: open source
 image: /assets/HilbertVis.png
-image_location: 
+image_location: https://bioconductor.riken.jp/packages/3.5/bioc/vignettes/HilbertVis/inst/doc/HilbertVis.pdf
 notes: 
 ---

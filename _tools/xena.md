@@ -21,12 +21,13 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: 
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://ucsc-xena.gitbook.io/project/
 pub_year: 2018
 license: Apache-2.0
-license_form: open
+license_form: open source
 image: /assets/xena.png
 image_location: https://xenabrowser.net/?bookmark=501ed28f4548b872967b71b098fe7f65
 notes: 

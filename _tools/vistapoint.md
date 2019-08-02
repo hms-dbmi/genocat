@@ -21,8 +21,9 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://pipeline.lbl.gov/vista_help/help.html#vistapoint
 pub_year: 2000
 license: 

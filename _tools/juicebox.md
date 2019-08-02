@@ -17,17 +17,18 @@ scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: ['none', 'within']
+interconnection_type: [none, within]
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
-access_format: ['web browser', 'software']
+access_format: [web application, standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://github.com/aidenlab/Juicebox/wiki
 pub_year: 2016
 license: MIT
 license_form: open source
 image: /assets/juicebox.png
-image_location: 
+image_location: https://www.aidenlab.org/juicebox/
 notes: 
 ---

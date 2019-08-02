@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: java package
+access_format: [standalone app]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: http://wishart.biology.ualberta.ca/cgview/application.html
 pub_year: 2015
 license: 
 license_form: 
 image: /assets/CGView.png
-image_location: 
+image_location: http://wishart.biology.ualberta.ca/cgview/gallery.html
 notes: 
 ---

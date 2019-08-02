@@ -21,8 +21,9 @@ interconnection_type:
 interconnection_density: dense
 coordinate_systems: single
 arrangement: none
-access_format: ['web browser', 'software']
+access_format: [web application, standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://bioinfo.au.tsinghua.edu.cn/member/nadhir/HiC3DViewer/static/data/UserManual.pdf
 pub_year: 2017
 license: 

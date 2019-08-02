@@ -21,13 +21,14 @@ interconnection_type: within
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear parallel'
-access_format: ['web browser', 'HTML']
+access_format: [web application, programming library]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://github.com/Zhong-Lab-UCSD/Genomic-Interactive-Visualization-Engine/tree/master/tutorials
 pub_year: 2018
 license: Apache License, Version 2.0 (the "License")
 license_form: open source
-image: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13059-018-1465-6/MediaObjects/13059_2018_1465_Fig1_HTML.png
-image_location: 
+image: /assets/give.png
+image_location: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13059-018-1465-6/MediaObjects/13059_2018_1465_Fig1_HTML.png
 notes: 
 ---

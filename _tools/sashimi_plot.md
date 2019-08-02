@@ -21,13 +21,14 @@ interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: https://software.broadinstitute.org/software/igv/Sashimi
 pub_year: 2015
 license: MIT
 license_form: open source
 image: /assets/Sashimi.png
-image_location: 
+image_location: https://software.broadinstitute.org/software/igv/Sashimi
 notes: 
 ---

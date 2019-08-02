@@ -21,12 +21,13 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: no
 user_documentation: 
 pub_year: 2012
 license: GNU Lesser General Public License v3.0
-license_form: open
+license_form: open source
 image: /assets/abrowse.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3265404/
 notes: broken browser link

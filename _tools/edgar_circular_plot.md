@@ -21,8 +21,9 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: circular parallel
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://www.uni-giessen.de/fbz/fb08/Inst/bioinformatik/software/EDGAR/documentation
 pub_year: 2016
 license: 

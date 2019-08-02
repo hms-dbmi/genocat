@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: ['web browser', 'stand alone']
+access_format: [web application, standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://jbrowse.org/docs/installation.html
 pub_year: 2016
 license: GNU LGPL,  Artistic License
 license_form: open source
 image: /assets/jbrowse.png
-image_location: 
+image_location: https://jbrowse.org/
 notes: 
 ---

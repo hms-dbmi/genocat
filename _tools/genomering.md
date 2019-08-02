@@ -21,12 +21,13 @@ interconnection_type: between
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: ['circular serial']
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://uni-tuebingen.de/index.php?eID=tx_securedownloads&p=156756&u=0&g=0&t=1564721933&hash=75c3bc2982100e01b583263ea77447020e61d401&file=/fileadmin/Uni_Tuebingen/Fakultaeten/InfoKogni/WSI/IntegTranskript/Softwareprojekte/GenomeRing/howto.pdf
 pub_year: 2012
 license: GNU Lesser General Public License
-license_form: open
+license_form: open source
 image: /assets/genomering.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3371849/figure/F7/
 notes: 

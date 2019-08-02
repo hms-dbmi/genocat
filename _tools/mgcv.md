@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://mgcv.cmbi.umcn.nl/help.html#data_input
 pub_year: 2013
 license: 
 license_form: 
 image: /assets/mgcv.jpg
-image_location: 
+image_location: https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-14-209
 notes: 
 ---

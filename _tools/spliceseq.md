@@ -21,12 +21,13 @@ interconnection_type:
 interconnection_density: sparse
 coordinate_systems: single
 arrangement: none
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://bioinformatics.mdanderson.org/public-software/spliceseq/installation/
 pub_year: 2012
 license: 
-license_form: open
+license_form: open source
 image: /assets/spliceseq.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3436850/figure/bts452-F1/
 notes: 

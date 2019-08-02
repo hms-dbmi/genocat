@@ -23,6 +23,7 @@ coordinate_systems: multiple
 arrangement: none
 access_format: 
 supported_species: 
+user_documentation_availability: no
 user_documentation: 
 pub_year: 2015
 license: 

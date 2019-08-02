@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: 
-access_format: software
+access_format: [standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://wiki.transvar.org/display/igbman/Home
 pub_year: 2016
 license: Common Public License version 1.0.
 license_form: open source
 image: /assets/IGB.png
-image_location: 
+image_location: https://bioviz.org/overview.html
 notes: 
 ---

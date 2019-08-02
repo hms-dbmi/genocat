@@ -21,13 +21,14 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
-access_format: web browser
+access_format: [web application]
 supported_species: 
-user_documentation: 
+user_documentation_availability: yes
+user_documentation: https://www.ncbi.nlm.nih.gov/genome/gdv/browser/help/
 pub_year: 2017
 license: 
 license_form: 
 image: /assets/NCBIGenomeBrowser.png
-image_location: 
+image_location: https://www.ncbi.nlm.nih.gov/genome/gdv/browser/?context=genome&acc=GCF_000001405.39
 notes: 
 ---

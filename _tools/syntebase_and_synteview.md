@@ -1,6 +1,6 @@
 ---
 layout: tool 
-title: SynteBaseSynteView
+title: SynteBase and SynteView
 github_account: 
 paper: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-536
 paper_title: "SynteBase/SynteView: a tool to visualize gene order conservation in prokaryotic genomes"
@@ -21,8 +21,9 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
-access_format: ['software', 'web browser']
+access_format: [web application, standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://www.synteview.u-psud.fr/documents.php
 pub_year: 2008
 license: 

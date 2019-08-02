@@ -21,12 +21,13 @@ interconnection_type:
 interconnection_density: 
 coordinate_systems: multiple
 arrangement: 
-access_format: ['software', 'web browser', 'javascript']
+access_format: [standalone app, web application]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: https://youtu.be/ba4Plz8a2sg
 pub_year: 2016
 license: Boost Software
-license_form: open
+license_form: open source
 image: /assets/msaviewer.png
 image_location: https://academic.oup.com/bioinformatics/article/32/22/3501/2525598
 notes: 

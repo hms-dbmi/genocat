@@ -21,13 +21,14 @@ interconnection_type:
 interconnection_density: none
 coordinate_systems: single
 arrangement: 
-access_format: ['web browser', 'software']
+access_format: [web application, standalone app]
 supported_species: 
+user_documentation_availability: yes
 user_documentation: http://meme-suite.org/doc/overview.html?man_type=web
 pub_year: 2006
-license: 
+license: The Regents of the University of California
 license_form: 
-image: 
-image_location: 
+image: /assets/meme.png
+image_location: http://meme-suite.org/doc/examples/meme_example_output_files/meme.html?man_type=web
 notes: 
 ---
