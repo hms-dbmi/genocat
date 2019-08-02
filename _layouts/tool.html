@@ -76,6 +76,7 @@ layout: page
   <div class="sidenav">
     <p> Tool can be found <a href="{{ page.browser }}" target="_blank">here</a> </p>
     <p> Paper can be found<a href="{{ page.paper }}" target="_blank"> here</a> </p>
+    <p> Tool Documentation can be found<a href="{{ page.user_documentation }}" target="_blank"> here</a> </p>
     <p> Usage:
     {% for items in  page.access_format %}
       <li>{{items}} </li>
@@ -176,6 +177,8 @@ layout: page
       {%endfor%}
 
     </p>
+    <p>License: {{page.license}} </p>
+    <p> Notes: {{page.notes}} </p>
 
   </div>
 
