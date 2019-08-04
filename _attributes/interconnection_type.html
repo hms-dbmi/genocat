@@ -7,7 +7,7 @@ categories: attributes
 <style>
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 300px 300px 300px;
   background-color: white;
   grid-gap: 10px;
 }
@@ -30,7 +30,7 @@ categories: attributes
     <img src = "{{site.baseurl}}/assets/NoneInter.png" width="200" align = "left">
     <br><br>
 
-    No interconnection_types between sequences are displayed in the following.
+    The following display no interconnections between sequences.
     <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
@@ -48,7 +48,7 @@ categories: attributes
   <h1><a id="Within"></a>Within</h1>
     <img src = "{{site.baseurl}}/assets/WithinInter.png" width="200" align = "left">
     <br>
-    An interconnection_type feature is a link between two regions. interconnection_types that connect features within a sequence are classified as “within.”    interconnection_types within
+    An interconnection feature is a link between two regions. Interconnections that connect features within a sequence are classified as “within.”
     <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
@@ -67,7 +67,7 @@ categories: attributes
     <img src = "{{site.baseurl}}/assets/BetweenInter.png" width="200" align = "left">
     <br><br>
 
-    interconnection_types that connect features between sequences are classified as “between.”
+    Interconnections that connect features between sequences are classified as “between.”
     <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
