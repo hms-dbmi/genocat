@@ -118,10 +118,10 @@ body {
 </div>
 
 <div class="column right">
-  <div class = "items">
+  <!-- <div class = "items"> -->
 
 {% for post in site.tools %}
-    <div class = "container">
+    <div class = "container items">
       <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
         <p>
           <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
@@ -259,20 +259,21 @@ a:visited {
          color: white;
        }
 .items {
-  position: -webkit-sticky;
+  /* position: -webkit-sticky;
   position: sticky;
   top: 0;
 
   -webkit-column-count: 2;
   -webkit-column-gap: 10px;
-  /* Old Firefox*/
+
   -moz-column-count: 2;
   -moz-column-gap: 10px;
 
-  /* Standard syntax */
   column-count: 2;
-  column-gap: 10px;
-
+  column-gap: 10px; */
+display: grid;
+grid-template-columns: auto auto;
+grid-auto-flow: row;
 }
 
 .left {
