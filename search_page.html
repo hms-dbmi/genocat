@@ -125,17 +125,16 @@ body {
       <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
           <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" height="120" width = "200"></a>
-
+        <div class="overlay">
+          {% for items in  post.access_format %}
+              <li>{{items}} </li>
+              {%endfor%}
+        </div>
         <button class="collapsible">+</button>
           <div class="content">
             <p>Cited by: {{post.citation_count}}</p>
             <p>Paper Publication Year: {{post.pub_year}}</p>
 
-            <p>
-            {% for items in  post.access_format %}
-            <a href="{{site.baseurl}}/taxonomy_page/" class="button layout" style="--border-color: #FF1493; --color: #FF1493;">{{ items }}</a>
-                {%endfor%}
-            </p>
           <p>
             {% for items in  post.genome_layout %}
                <a href="{{site.baseurl}}/attributes/layout.html" class="button layout" style="--border-color: green; --color: green;">{{ items }}</a>
@@ -151,7 +150,7 @@ body {
             {%endfor%}
           </p>
           {%if post.user_documentation_availability %}
-              <a href = "{{post.user_documentation}}" class="button layout" style="--border-color: black; --color: black;">User Documentation Available</a>
+              <a href = "{{post.user_documentation}}"class="button layout" style="--border-color: black; --color: black;">User Documentation Available</a>
           {%endif%}
           </div>
       </div>
@@ -168,29 +167,42 @@ a:visited {
   color: #000000;
 }
 .filterDiv {
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 25px;
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        padding: 10px;
-        font-size: 30px;
-        text-align: center;
-        text-decoration: none;
-        color:black;
-        box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
-        position: relative;
+         background-color: #FFFFFF;
+         text-align: left;
+         margin: 5px;
+         display: none;
+         padding-left: 20px;
+         padding-right: 20px;
+         padding-bottom: 10px;
+         padding-top: 10px;
+         box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+         position: relative;
        }
 .container {
          position: relative;
          border: none;
        }
-
+.overlay {
+         float: right;
+         font-size: 15px;
+         text-decoration: none;
+         right: 20px;
+         bottom: 40%;
+         position: absolute;
+         position: relative;
+         color: black;
+         line-height: 1px;
+         background-color: white;
+         border: none;
+         padding: 5px;
+       }
 /* "show" class is added to filtered elements */
 .show {
          display: block;
        }
 /* Style the "+" button that is used to open and close the collapsible content */
 .collapsible {
-         background-color: transparent;
+         background-color: white;
          color: #444;
          cursor: pointer;
          border: none;
@@ -202,22 +214,19 @@ a:visited {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-         background-color:  transparent;
+         background-color: white;
          color: #444;
-         border: none;
        }
 
 .content {
-         text-align: left;
-         border-top: 4px #DCDCDC;
-         font-size: 15px;
+         padding: 0 18px;
          display: none;
          background-color: white;
-         position: absolute;
-         min-width: 160px;
-         box-shadow: 16px 8px 16px 8px rgba(0,0,0,0.2);
-         padding: 12px 16px;
-         z-index: 1;
+         border-top-style: solid ;
+         border-top-width: 1px;
+         border-top-color: #DCDCDC;
+         font-size: 15px;
+         padding-bottom: 10px;
        }
 .button {
          background-color: white;
@@ -229,7 +238,6 @@ a:visited {
          display: inline-block;
          margin: 2px 1px;
          border-radius: 15px;
-         /* font-size: 10px; */
        }
 .button:hover{
       background-color: white;
@@ -249,11 +257,6 @@ a:visited {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  display: grid;
-  grid-template-columns: 315px 315px;
-  background-color: white;
-  grid-gap: 10px;
-
 }
 
 .left {
