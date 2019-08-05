@@ -62,7 +62,6 @@ function sortByCitation() {
 function getCiteCount(counts, b, switching) {
   var myvar, words, i, citeCount, j;
   jQuery.get('../scholar_data.txt', function(data) {
-    // console.log(data); //
     while (switching) {
       switching = false;
       for (i=0; i< (b.length); i++) {
