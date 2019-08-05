@@ -121,16 +121,11 @@ body {
   <div class = "items">
 
 {% for post in site.tools %}
-    <div class = "container items">
       <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
         <p>
           <a href="{{ post.url | relative_url }}"><h3>   {{ post.title }}</h3></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" height="120" width = "200"></a>
-        <!-- <div class="overlay">
-          {% for items in  post.access_format %}
-              <li>{{items}} </li>
-              {%endfor%}
-        </div> -->
+
         <button class="collapsible">+</button>
           <div class="content">
 
@@ -162,7 +157,7 @@ body {
           </div>
         </p>
       </div>
-    </div>
+
 {% endfor %}
 
 </div>
@@ -191,10 +186,6 @@ a:visited {
         height: 225px;
         break-inside: avoid;
 
-       }
-.container {
-         position: relative;
-         border: none;
        }
 
 /* "show" class is added to filtered elements */
@@ -259,18 +250,6 @@ a:visited {
          color: white;
        }
 .items {
-  /* position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-
-  -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
-
-  -moz-column-count: 2;
-  -moz-column-gap: 10px;
-
-  column-count: 2;
-  column-gap: 10px; */
 display: grid;
 grid-template-columns: auto auto;
 grid-auto-flow: row;
