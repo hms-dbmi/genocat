@@ -4,7 +4,7 @@
 
 layout: home
 hero:
-  image: /assets/home1.png
+  image: /assets/giphy_cit.gif
   callout:
     alt: "GenoCAT:"
     text: browse for tools to visualize genomic data
