@@ -132,27 +132,31 @@ body {
             <p>Cited by: {{post.citation_count}}</p>
             <p>Paper Publication Year: {{post.pub_year}}</p>
 
+
             <p>
-            {% for items in  post.access_format %}
-            <a href="{{site.baseurl}}/taxonomy_page/" class="button layout" style="--border-color: #FF1493; --color: #FF1493;">{{ items }}</a>
-                {%endfor%}
+              {% for items in  post.access_format %}
+              <a href="{{site.baseurl}}/attributes/layout.html" class="button layout" style="--border-color: #CC79A7; --color: #CC79A7;">{{ items }}</a>
+                  {%endfor%}
+                  <hr/>
             </p>
           <p>
+
             {% for items in  post.genome_layout %}
-               <a href="{{site.baseurl}}/attributes/layout.html" class="button layout" style="--border-color: green; --color: green;">{{ items }}</a>
+               <a href="{{site.baseurl}}/attributes/layout.html" class="button layout" style="--border-color: #D55E00; --color: #D55E00;">{{ items }}</a>
             {%endfor%}
             {% for items in  post.view %}
-               <a href="{{site.baseurl}}/attributes/view.html" class="button layout" style="--border-color: blue; --color: blue;">{{ items }} view</a>
+               <a href="{{site.baseurl}}/attributes/view.html" class="button layout" style="--border-color: #0072B2; --color: #0072B2;">{{ items }} view</a>
             {%endfor%}
             {% for items in  post.scale %}
-               <a href="{{site.baseurl}}/attributes/scale.html" class="button layout" style="--border-color: red; --color: red;">{{ items }} scale</a>
+               <a href="{{site.baseurl}}/attributes/scale.html" class="button layout" style="--border-color: #000000; --color: #000000;">{{ items }} scale</a>
             {%endfor%}
             {% for items in  post.focus %}
-               <a href="{{site.baseurl}}/attributes/focus.html" class="button layout" style="--border-color: purple; --color: purple;">{{ items }} focus</a>
+               <a href="{{site.baseurl}}/attributes/focus.html" class="button layout" style="--border-color: #009E73; --color: #009E73;">{{ items }} focus</a>
             {%endfor%}
           </p>
+          <hr/>
           {%if post.user_documentation_availability %}
-              <a href = "{{post.user_documentation}}" target="_blank" class="button layout" style="--border-color: black; --color: black;">User Documentation Available</a>
+              <a href = "{{post.user_documentation}}" target="_blank" class="button layout" style="--border-color: royalblue; --color: royalblue;">User Documentation Available</a>
           {%endif%}
           </div>
         </p>
@@ -222,7 +226,7 @@ a:visited {
 
 .content {
          text-align: left;
-         border-top: 4px #DCDCDC;
+         border: 2px solid #F5F5F5;
          font-size: 15px;
          display: none;
          background-color: white;
@@ -235,7 +239,6 @@ a:visited {
 .button {
          background-color: white;
          border: 2px solid black;
-         color: black;
          padding: 0.5px 10px;
          text-align: center;
          text-decoration: none;
