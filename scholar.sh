@@ -1,16 +1,25 @@
 #!/bin/bash
-paper_title="A low-latency, big database system and browser for storage, querying and visualization of 3D genomic data"
-# python scholar.py/scholar.py -c 1 --phrase "$paper_title" --title-only "$paper_title"
 
+> "scholarpy.txt"
 cd _tools
 for f in *; do
-  echo "hi"
+  input="$f"
+  while IFS= read -r line
+  do
+    if [ "${line:0:13}" = "paper_title: " ]; then
+      echo "${line:13}"
+      paper_title="${line:13}"
+      python ../scholar.py/scholar.py -c 1 --phrase "$paper_title" --title-only "$paper_title"
+    fi
+  done < "$input"
 done
 
-input="weblogo.md"
-while IFS= read -r line
-do
-  if [ "${line:0:13}" = "paper_title: " ]; then
-    echo "${line:13}"
-  fi
-done < "$input"
+# input="_tools/weblogo.md"
+# while IFS= read -r line
+# do
+#   if [ "${line:0:13}" = "paper_title: " ]; then
+#     echo "${line:13}"
+#     paper_title="${line:13}"
+#     python scholar.py/scholar.py -c 1 --phrase "$paper_title" --title-only "$paper_title"
+#   fi
+# done < "$input"

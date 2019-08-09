@@ -4,7 +4,7 @@ function search() {
   filter = input.value.toUpperCase();
   x = document.getElementsByClassName("filterDiv");
   for (i = 0; i < x.length; i++) {
-    a = x[i].getElementsByTagName("h3")[0];
+    a = x[i].getElementsByTagName("h4")[0];
     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
       x[i].style.display = "";
     } else {
