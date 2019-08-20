@@ -10,8 +10,8 @@ abstract: "The CGView Server generates graphical maps of circular genomes that s
 citation: "Grant JR, Stothard P. The CGView Server: a comparative genomics tool for circular genomes. Nucleic Acids Res. academic.oup.com; 2008;36: W181–4."
 citation_count: 358
 genome_layout: circular
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single

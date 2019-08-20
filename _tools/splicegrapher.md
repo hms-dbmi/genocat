@@ -10,14 +10,14 @@ abstract: "We propose a method for predicting splice graphs that enhances curate
 citation: "Rogers MF, Thomas J, Reddy AS, Ben-Hur A. SpliceGrapher: detecting patterns of alternative splicing from RNA-Seq data in the context of gene models and EST data. Genome Biol. genomebiology.biomedcentral.com; 2012;13: R4."
 citation_count: 103
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: partial
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
+interconnection_type: none
 interconnection_density: sparse
 coordinate_systems: single
 arrangement: none

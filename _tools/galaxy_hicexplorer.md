@@ -10,14 +10,14 @@ abstract: "Galaxy HiCExplorer is a web server that facilitates the study of the 
 citation: "Wolff J, Bhardwaj V, Nothjunge S, Richard G, Renschler G, Gilsbach R, et al. Galaxy HiCExplorer: a web server for reproducible Hi-C data analysis, quality control and visualization. Nucleic Acids Res. academic.oup.com; 2018;46: W11–W16."
 citation_count: 7
 genome_layout: linear
-partition: 
-abstraction: 
+partition: contiguous
+abstraction: none
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
+interconnection_type: within
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal

@@ -10,15 +10,15 @@ abstract: "Summary: AliView is an alignment viewer and editor designed to meet t
 citation: "Larsson A. AliView: a fast and lightweight alignment viewer and editor for large datasets. Bioinformatics. academic.oup.com; 2014;30: 3276–3278."
 citation_count: 606
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: [none, partial]
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
-interconnection_density: none
+interconnection_type: between
+interconnection_density: sparse
 coordinate_systems: multiple
 arrangement: none
 access_format: [standalone app]

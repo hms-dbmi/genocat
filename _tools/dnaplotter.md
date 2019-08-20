@@ -10,7 +10,7 @@ abstract: "DNAPlotter is an interactive Java application for generating circular
 citation: "Carver T, Thomson N, Bleasby A, Berriman M, Parkhill J. DNAPlotter: circular and linear interactive genome visualization. Bioinformatics. academic.oup.com; 2009;25: 119–120."
 citation_count: 531
 genome_layout: [linear, circular]
-partition: segregated
+partition: contiguous
 abstraction: none
 focus: single
 scale: single

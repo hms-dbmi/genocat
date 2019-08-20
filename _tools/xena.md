@@ -10,8 +10,8 @@ abstract: "UCSC Xena is a web-based visual integration and exploration tool for 
 citation: "Goldman M, Craft B, Brooks AN, Zhu J, Haussler D. The UCSC Xena Platform for cancer genomics data visualization and interpretation [Internet]. bioRxiv. 2018. p. 326470. doi:10.1101/326470"
 citation_count: 35
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: multiple
 scale: multiple
 view: multiple

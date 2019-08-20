@@ -10,14 +10,14 @@ abstract: "Contact mapping experiments such as Hi-C explore how genomes fold in 
 citation: "Robinson JT, Turner D, Durand NC, Thorvaldsdóttir H, Mesirov JP, Aiden EL. Juicebox.js Provides a Cloud-Based Visualization System for Hi-C Data. Cell Syst. Elsevier; 2018;6: 256–258.e1."
 citation_count: 17
 genome_layout: linear
-partition: 
-abstraction: 
+partition: contiguous
+abstraction: none
 focus: single
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
+interconnection_type: [within]
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal

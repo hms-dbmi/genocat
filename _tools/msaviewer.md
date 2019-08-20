@@ -10,17 +10,17 @@ abstract: "The MSAViewer is a quick and easy visualization and analysis JavaScri
 citation: "Yachdav G, Wilzbach S, Rauscher B, Sheridan R, Sillitoe I, Procter J, et al. MSAViewer: interactive JavaScript visualization of multiple sequence alignments. Bioinformatics. academic.oup.com; 2016;32: 3501–3503."
 citation_count: 71
 genome_layout: linear
-partition: 
-abstraction: 
+partition: contiguous
+abstraction: none
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
-interconnection_density: 
+interconnection_type: between
+interconnection_density: sparse
 coordinate_systems: multiple
-arrangement: 
+arrangement: none
 access_format: [standalone app, web application]
 supported_species: 
 user_documentation_availability: yes

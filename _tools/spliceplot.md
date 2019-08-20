@@ -10,8 +10,8 @@ abstract: "Summary: RNA sequencing has provided unprecedented resolution of alte
 citation: "Wu E, Nance T, Montgomery SB. SplicePlot: a utility for visualizing splicing quantitative trait loci. Bioinformatics. academic.oup.com; 2014;30: 1025–1026."
 citation_count: 11
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
-arrangement: 
+arrangement: none
 access_format: [standalone app]
 supported_species: 
 user_documentation_availability: yes

@@ -10,14 +10,14 @@ abstract: "SpliceSeq is a resource for RNA-Seq data that provides a clear view o
 citation: "Ryan MC, Cleland J, Kim R, Wong WC, Weinstein JN. SpliceSeq: a resource for analysis and visualization of RNA-Seq data on alternative splicing and its functional impacts. Bioinformatics. academic.oup.com; 2012;28: 2385–2387."
 citation_count: 81
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: partial
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
+interconnection_type: none
 interconnection_density: sparse
 coordinate_systems: single
 arrangement: none

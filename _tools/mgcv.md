@@ -10,7 +10,7 @@ abstract: "Background: , Conserved gene context is used in many types of compara
 citation: "Overmars L, Kerkhoven R, Siezen RJ, Francke C. MGcV: the microbial genomic context viewer for comparative genome analysis. BMC Genomics. bmcgenomics.biomedcentral.com; 2013;14: 209."
 citation_count: 45
 genome_layout: linear
-partition: 
+partition: contiguous
 abstraction: none
 focus: single
 scale: single

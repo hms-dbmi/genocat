@@ -10,8 +10,8 @@ abstract: "Motivation: The number of completely sequenced genomes is continuousl
 citation: "Herbig A, Jäger G, Battke F, Nieselt K. GenomeRing: alignment visualization based on SuperGenome coordinates. Bioinformatics. academic.oup.com; 2012;28: i7–15."
 citation_count: 45
 genome_layout: circular
-partition: 
-abstraction: 
+partition: ['segregated', 'contiguous']
+abstraction: none
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: between
 interconnection_density: none
 coordinate_systems: multiple
-arrangement: ['circular serial']
+arrangement: none
 access_format: [standalone app]
 supported_species: 
 user_documentation_availability: yes

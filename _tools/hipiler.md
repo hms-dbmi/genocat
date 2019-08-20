@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: HiPiler
-github_account:
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/28866592
 paper_title: "HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples."
 doi: 10.1109/TVCG.2017.2745978
@@ -10,19 +10,19 @@ abstract: "This paper presents an interactive visualization interface-HiPiler-fo
 citation: "Lekschas F, Bach B, Kerpedjiev P, Gehlenborg N, Pfister H. HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples. IEEE Trans Vis Comput Graph. ieeexplore.ieee.org; 2018;24: 522–531."
 citation_count: 13
 genome_layout: linear
-partition:
-abstraction:
+partition: contiguous
+abstraction: none
 focus: multiple
 scale: multiple
 view: multiple
-sparse_type:
-contiguous_type:
-interconnection_type:
+sparse_type: 
+contiguous_type: 
+interconnection_type: [within]
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
 access_format: [web application]
-supported_species:  
+supported_species: 
 user_documentation_availability: yes
 user_documentation: http://hipiler.higlass.io/docs
 pub_year: 2018
@@ -30,5 +30,5 @@ license: MIT
 license_form: open source
 image: /assets/hipiler.png
 image_location: http://hipiler.higlass.io/docs
-notes:
+notes: 
 ---

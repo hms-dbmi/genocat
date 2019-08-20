@@ -10,8 +10,8 @@ abstract: "Jalview Version 2 is a system for interactive WYSIWYG editing, analys
 citation: "Waterhouse AM, Procter JB, Martin DMA, Clamp M, Barton GJ. Jalview Version 2—a multiple sequence alignment editor and analysis workbench. Bioinformatics. Oxford University Press; 2009;25: 1189–1191."
 citation_count: 4618
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single

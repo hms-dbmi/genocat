@@ -10,8 +10,8 @@ abstract: "MOTIVATION: Genome plotting is performed using a wide range of visual
 citation: "Amiryousefi A, Hyvönen J, Poczai P. IRscope: An online program to visualize the junction sites of chloroplast genomes. Bioinformatics. 2018; doi:10.1093/bioinformatics/bty220"
 citation_count: 14
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: partial
 focus: single
 scale: single
 view: single

@@ -10,18 +10,18 @@ abstract: "Hi-C experiments study how genomes fold in 3D, generating contact map
 citation: "Durand NC, Robinson JT, Shamim MS, Machol I, Mesirov JP, Lander ES, et al. Juicebox Provides a Visualization System for Hi-C Contact Maps with Unlimited Zoom. Cell Syst. Elsevier; 2016;3: 99–101."
 citation_count: 189
 genome_layout: linear
-partition: 
-abstraction: 
+partition: contiguous
+abstraction: none
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: [none, within]
+interconnection_type: [within]
 interconnection_density: dense
 coordinate_systems: single
-arrangement: linear orthogonal
-access_format: [web application, standalone app]
+arrangement: none
+access_format: [standalone app]
 supported_species: 
 user_documentation_availability: yes
 user_documentation: https://github.com/aidenlab/Juicebox/wiki

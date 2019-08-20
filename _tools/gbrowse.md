@@ -10,8 +10,8 @@ abstract: "A genome browser is software that allows users to visualize DNA, prot
 citation: "Donlin MJ. Using the Generic Genome Browser (GBrowse). Curr Protoc Bioinformatics. 2009;Chapter 9: Unit 9.9."
 citation_count: 127
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: multiple
 view: multiple
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
-arrangement: 
+arrangement: none
 access_format: [standalone app]
 supported_species: 
 user_documentation_availability: yes

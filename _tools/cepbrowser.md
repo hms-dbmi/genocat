@@ -10,8 +10,8 @@ abstract: "We developed the Comparative Epigenome Browser (CEpBrowser) to allow 
 citation: "Cao X, Zhong S. Enabling interspecies epigenomic comparison with CEpBrowser. Bioinformatics. academic.oup.com; 2013;29: 1223–1225."
 citation_count: 6
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: [multiple, single]
 scale: [multiple, single]
 view: multiple

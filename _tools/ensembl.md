@@ -10,17 +10,17 @@ abstract: "The Ensembl (http://www.ensembl.org/) database project provides a bio
 citation: "Hubbard T, Barker D, Birney E, Cameron G, Chen Y, Clark L, et al. The Ensembl genome database project. Nucleic Acids Res. academic.oup.com; 2002;30: 38–41."
 citation_count: 1482
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: [none, between]
-interconnection_density: none
+interconnection_type: between
+interconnection_density: sparse
 coordinate_systems: multiple
-arrangement: 
+arrangement: none
 access_format: [web application, standalone app]
 supported_species: 
 user_documentation_availability: yes

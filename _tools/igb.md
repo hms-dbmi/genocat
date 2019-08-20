@@ -10,8 +10,8 @@ abstract: "MOTIVATION: Genome browsers that support fast navigation through vast
 citation: "Freese NH, Norris DC, Loraine AE. Integrated genome browser: visual analytics platform for genomics. Bioinformatics. academic.oup.com; 2016;32: 2089–2095."
 citation_count: 94
 genome_layout: linear
-partition: 
-abstraction: 
+partition: contiguous
+abstraction: partial
 focus: single
 scale: multiple
 view: multiple
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
-arrangement: 
+arrangement: none
 access_format: [standalone app]
 supported_species: 
 user_documentation_availability: yes

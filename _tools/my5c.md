@@ -10,14 +10,14 @@ abstract: None.
 citation: "Lajoie BR, van Berkum NL, Sanyal A, Dekker J. My5C: web tools for chromosome conformation capture studies. Nat Methods. nature.com; 2009;6: 690–691."
 citation_count: 84
 genome_layout: linear
-partition: 
-abstraction: 
+partition: contiguous
+abstraction: none
 focus: single
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
+interconnection_type: [within]
 interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal

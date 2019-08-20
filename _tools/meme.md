@@ -10,17 +10,17 @@ abstract: "MEME (Multiple EM for Motif Elicitation) is one of the most widely us
 citation: "Bailey TL, Williams N, Misleh C, Li WW. MEME: discovering and analyzing DNA and protein sequence motifs. Nucleic Acids Res. academic.oup.com; 2006;34: W369–73."
 citation_count: 1790
 genome_layout: linear
-partition: 
-abstraction: 
+partition: contiguous
+abstraction: none
 focus: single
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
+interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
-arrangement: 
+arrangement: none
 access_format: [web application, standalone app]
 supported_species: 
 user_documentation_availability: yes

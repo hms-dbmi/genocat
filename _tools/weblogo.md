@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: WebLogo
-github_account:
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/15173120
 paper_title: "WebLogo: a sequence logo generator."
 doi: 10.1101/gr.849004
@@ -15,20 +15,20 @@ abstraction: none
 focus: single
 scale: single
 view: single
-sparse_type:
+sparse_type: 
 contiguous_type: point contiguous
 interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species:  
+supported_species: 
 user_documentation_availability: no
-user_documentation:
+user_documentation: 
 pub_year: 2004
 license: MIT
 license_form: open source
 image: /assets/Weblogo.png
 image_location: https://weblogo.berkeley.edu/examples.html
-notes:
+notes: 
 ---

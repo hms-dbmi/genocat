@@ -10,14 +10,14 @@ abstract: "Although significant progress has been made to map chromatin structur
 citation: "Djekidel MN, Wang M, Zhang MQ, Gao J. HiC-3DViewer: a new tool to visualize Hi-C data in 3D space. Quantitative Biology. Springer; 2017;5: 183–190."
 citation_count: 6
 genome_layout: spatial
-partition: 
-abstraction: 
+partition: contiguous
+abstraction: none
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
+interconnection_type: none
 interconnection_density: dense
 coordinate_systems: single
 arrangement: none

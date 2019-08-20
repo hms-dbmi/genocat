@@ -10,8 +10,8 @@ abstract: "Background: It has been repeatedly observed that gene order is rapidl
 citation: "Lemoine F, Labedan B, Lespinet O. SynteBase/SynteView: a tool to visualize gene order conservation in prokaryotic genomes. BMC Bioinformatics. bmcbioinformatics.biomedcentral …; 2008;9: 536."
 citation_count: 17
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single

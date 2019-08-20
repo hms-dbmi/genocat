@@ -10,8 +10,8 @@ abstract: "MOTIVATION: High throughput chromatin conformation capture (3C) techn
 citation: "Martin JS, Xu Z, Reiner AP, Mohlke KL, Sullivan P, Ren B, et al. HUGIn: Hi-C Unifying Genomic Interrogator. Bioinformatics. academic.oup.com; 2017;33: 3793–3795."
 citation_count: 31
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single

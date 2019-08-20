@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: UCSC Genome Browser
-github_account:
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pubmed/12045153
 paper_title: "The human genome browser at UCSC."
 doi: 10.1101/gr.229102
@@ -15,20 +15,20 @@ abstraction: partial
 focus: single
 scale: single
 view: single
-sparse_type:
-contiguous_type:
+sparse_type: 
+contiguous_type: 
 interconnection_type: none
 interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species:
+supported_species: 
 user_documentation_availability: yes
 user_documentation: https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html
 pub_year: 2002
-license:
-license_form:
+license: 
+license_form: 
 image: /assets/UCSC_Genome_Viewer.png
 image_location: https://genome.ucsc.edu
-notes:
+notes: 
 ---

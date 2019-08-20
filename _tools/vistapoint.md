@@ -10,8 +10,8 @@ abstract: "SUMMARY: VISTA is a program for visualizing global DNA sequence align
 citation: "Mayor C, Brudno M, Schwartz JR, Poliakov A, Rubin EM, Frazer KA, et al. VISTA : visualizing global DNA sequence alignments of arbitrary length. Bioinformatics. academic.oup.com; 2000;16: 1046–1047."
 citation_count: 889
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single

@@ -10,8 +10,8 @@ abstract: "Motivation: Rapidly decreasing sequencing cost due to the emergence a
 citation: "Lajugie J, Bouhassira EE. GenPlay, a multipurpose genome analyzer and browser. Bioinformatics. academic.oup.com; 2011;27: 1889–1893."
 citation_count: 22
 genome_layout: linear
-partition: 
-abstraction: 
+partition: segregated
+abstraction: none
 focus: single
 scale: single
 view: single
@@ -19,8 +19,8 @@ sparse_type:
 contiguous_type: 
 interconnection_type: none
 interconnection_density: none
-coordinate_systems: single
-arrangement: 
+coordinate_systems: multiple
+arrangement: none
 access_format: [standalone app]
 supported_species: 
 user_documentation_availability: yes

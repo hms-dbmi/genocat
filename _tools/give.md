@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: within
 interconnection_density: dense
 coordinate_systems: single
-arrangement: linear parallel'
+arrangement: ['linear parallel']
 access_format: [web application, programming library]
 supported_species: 
 user_documentation_availability: yes
