@@ -19,7 +19,8 @@ If you would like to contribute and add a tool to GenoCAT, fork our repository o
 
 ## CSV to yaml
 
-To add or edit tools from a CSV file, update or replace the data.csv file and run the following:
+Adding tools from a CSV file should not be done frequently and should only be done with the master CSV file. To add or edit tools from a CSV file, update or replace the data.csv file and run the following:
 ```
-$ python csv_to_yaml/csv_to_yaml.py
+$ cd csv_to_yaml
+$ python csv_to_yaml.py
 ```
