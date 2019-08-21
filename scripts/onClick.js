@@ -19,6 +19,7 @@ document.getElementById("byName").onclick = function() {
 function click_filter(id) {
   var tool = document.getElementById(id);
   var name = tool.getAttribute("name");
+  // console.log("name of clicked filter: "+name);
   var index = getNameIndex(name);
   if (tool.checked == true) {
     if (!arr.includes(id)) {
@@ -34,32 +35,29 @@ function getNameIndex(name) {
   if (name == "access_format") {
     return 0;
   }
-  if (name == "type") {
+  if (name == "interconnection_type") {
     return 1;
   }
-  if (name == "interconnection_type") {
+  if (name == "layout") {
     return 2;
   }
-  if (name == "layout") {
+  if (name == "partition") {
     return 3;
   }
-  if (name == "partition") {
+  if (name == "abstraction") {
     return 4;
   }
-  if (name == "abstraction") {
+  if (name == "arrangement") {
     return 5;
   }
-  if (name == "arrangement") {
+  if (name == "view") {
     return 6;
   }
-  if (name == "view") {
+  if (name == "scale") {
     return 7;
   }
-  if (name == "scale") {
-    return 8;
-  }
   if (name == "focus") {
-    return 9;
+    return 8;
   }
 }
 
@@ -104,23 +102,6 @@ document.getElementById("contiguous").onclick=function() {
 //segregated
 document.getElementById("segregated").onclick=function() {
   click_filter("segregated");
-}
-
-//point sparse
-document.getElementById("point sparse").onclick=function() {
-  click_filter("point sparse");
-}
-//segment sparse
-document.getElementById("segment sparse").onclick=function() {
-  click_filter("segment sparse");
-}
-//point contiguous
-document.getElementById("point contiguous").onclick=function() {
-  click_filter("point contiguous");
-}
-//segment contiguous
-document.getElementById("segment contiguous").onclick=function() {
-  click_filter("segment contiguous");
 }
 
 //none
