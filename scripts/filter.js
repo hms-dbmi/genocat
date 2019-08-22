@@ -30,7 +30,7 @@ function checkbox_filter(tags) {
     var tagList = tools[i].className.split(" ");
     // console.log("tool is "+tagList[1]);
     j=0;
-    addTool(tools[i], "show");
+    addClass(tools[i], "show");
     while (j<tags.length) {
       // console.log("curr category tags are "+tags[j]);
       // console.log("length of tags["+j+"] is "+tags[j].length);
@@ -50,7 +50,7 @@ function checkbox_filter(tags) {
       }
       if (or == false) {
         // console.log("did not find any matches: tool is "+tagList[1]+" category "+tags[j]);
-        removeTool(tools[i], "show");
+        removeClass(tools[i], "show");
         break;
       }
       j++;
@@ -60,7 +60,7 @@ function checkbox_filter(tags) {
 
 
 // Show filtered elements
-function addTool(element, name) {
+function addClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -73,7 +73,7 @@ function addTool(element, name) {
 }
 
 // Hide elements that are not selected
-function removeTool(element, name) {
+function removeClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");

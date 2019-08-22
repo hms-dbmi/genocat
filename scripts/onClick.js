@@ -5,14 +5,20 @@ for (var i=0; i < num_categories; i++) {
 }
 
 document.getElementById("byCitation").onclick = function() {
+  var loader = document.getElementById("loader");
+  removeClass(loader, "hide-loader");
   sortByCitation();
 }
 
 document.getElementById("byYear").onclick = function() {
+  var loader = document.getElementById("loader");
+  removeClass(loader, "hide-loader");
   sortByRecency();
 }
 
 document.getElementById("byName").onclick = function() {
+  var loader = document.getElementById("loader");
+  removeClass(loader, "hide-loader");
   sortByName();
 }
 

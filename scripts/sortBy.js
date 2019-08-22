@@ -17,19 +17,23 @@ function sortByName() {
       switching = true;
     }
   }
+  addClass(loader, "hide-loader");
 }
 
 function sortByRecency() {
   var list, switching;
+  // document.getElementById("loader").style.display = "show";
   list = document.getElementsByClassName("filterDiv");
   switching = true;
   getPubYear(list, switching, []);
+  // document.getElementById("loader").style.display = "none";
 }
 
 function getPubYear(b, switching, years) {
   var i, myvar, words, j, pub_year, year;
   jQuery.get('../scholar_data.txt', function(data) {
     while (switching) {
+      document.getElementById("loader").style.display = "show";
       switching = false;
       for (i=0; i<(b.length); i++) {
         doi = b[i].className.split(" ")[1];
@@ -48,6 +52,7 @@ function getPubYear(b, switching, years) {
       }
       switching = makeSwitch(years, b, switching);
     }
+    addClass(loader, "hide-loader");
   })
 }
 
@@ -82,6 +87,7 @@ function getCiteCount(counts, b, switching) {
       }
       switching = makeSwitch(counts, b, switching);
     }
+    addClass(loader, "hide-loader");
   });
 }
 

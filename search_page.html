@@ -45,11 +45,35 @@ permalink: /search_page/
     width: 1rem;
 }
 
+.loader {
+  position: relative;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 2px;
+  display: show;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+}
+
+.hide-loader{
+display:none;
+}
+
 body {
     font-size: 1.5rem;
 }
   </style>
 </head>
+
+<div class="loader hide-loader" id="loader"></div>
+
 <div class="column left">
   <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
   <br>
