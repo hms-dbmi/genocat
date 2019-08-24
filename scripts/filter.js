@@ -56,7 +56,11 @@ function checkbox_filter(tags) {
       j++;
     }
   }
+  document.getElementById("demo").innerHTML = tools.length + " results";
 }
+
+// var myCollection = document.getElementsByClassName("filterDiv ");
+// document.getElementById("demo").innerHTML = i + " results";
 
 
 // Show filtered elements
