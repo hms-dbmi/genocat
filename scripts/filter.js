@@ -26,6 +26,7 @@ checkbox_filter([]);
 function checkbox_filter(tags) {
   var tools, i, j, or;
   tools = document.getElementsByClassName("filterDiv");
+  var num = tools.length;
   for (i = 0; i < tools.length; i++) {
     var tagList = tools[i].className.split(" ");
     // console.log("tool is "+tagList[1]);
@@ -51,12 +52,13 @@ function checkbox_filter(tags) {
       if (or == false) {
         // console.log("did not find any matches: tool is "+tagList[1]+" category "+tags[j]);
         removeClass(tools[i], "show");
+        num--;
         break;
       }
       j++;
     }
   }
-  document.getElementById("demo").innerHTML = tools.length + " results";
+  document.getElementById("demo").innerHTML = num + " results";
 }
 
 // var myCollection = document.getElementsByClassName("filterDiv ");
