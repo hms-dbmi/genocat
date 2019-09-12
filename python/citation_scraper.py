@@ -10,23 +10,20 @@ from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
 chrome_options.add_argument("--headless")
 
-# !pip install phantomjs-binary
-
 title = 'Database Resources of the National Center for Biotechnology Information'
 title_dict = {'q': title}
 
 query = urllib.urlencode(title_dict)
-# query
 
 queryFront = 'https://scholar.google.com/scholar?hl=en&as_sdt=0%2C22&'
 queryEnd = '&btnG='
 fullQuery = queryFront + query + queryEnd
-# fullQuery
 
 driver = webdriver.Chrome()
 driver.get(fullQuery)
-time.sleep(5)
 htmlSource = driver.page_source
+driver.close()
+driver.quit()
 
 content = BeautifulSoup(htmlSource, 'html.parser')
 
