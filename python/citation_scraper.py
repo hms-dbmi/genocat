@@ -4,13 +4,19 @@ import urllib
 import time
 from selenium import webdriver
 
+import sys
+
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
-chrome_options = Options()
-chrome_options.add_argument("--headless")
+f = open('../scholarpy.txt', 'a')
 
-title = 'Database Resources of the National Center for Biotechnology Information'
+# chrome_options = Options()
+# chrome_options.add_argument("--headless")
+
+# title = 'Database Resources of the National Center for Biotechnology Information'
+title = sys.argv[1]
+f.write("- title: "+title+"\n")
 title_dict = {'q': title}
 
 query = urllib.urlencode(title_dict)
@@ -19,7 +25,15 @@ queryFront = 'https://scholar.google.com/scholar?hl=en&as_sdt=0%2C22&'
 queryEnd = '&btnG='
 fullQuery = queryFront + query + queryEnd
 
-driver = webdriver.Chrome()
+options = webdriver.ChromeOptions()
+options.add_argument('headless')
+# options.add_argument('window-size=1920x1080')
+# options.add_argument("disable-gpu")
+
+driver = webdriver.Chrome('chromedriver', chrome_options=options)
+
+
+
 driver.get(fullQuery)
 htmlSource = driver.page_source
 driver.close()
@@ -35,4 +49,5 @@ for tag in aTags:
         citationTag = tag
 
 citeCount = int(citationTag.contents[0].split(" ")[2])
-print citeCount
+f.write("  citeCount: "+str(citeCount)+"\n")
+f.close()

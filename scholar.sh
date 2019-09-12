@@ -7,9 +7,10 @@ for f in *; do
   while IFS= read -r line
   do
     if [ "${line:0:13}" = "paper_title: " ]; then
-      echo "${line:13}"
+      # echo "${line:13}"
       paper_title="${line:13}"
-      python ../scholar.py/scholar.py -c 1 --phrase "$paper_title" --title-only "$paper_title"
+      # python ../scholar.py/scholar.py -c 1 --phrase "$paper_title" --title-only "$paper_title"
+      python ../python/citation_scraper.py "$paper_title"
     fi
   done < "$input"
 done
