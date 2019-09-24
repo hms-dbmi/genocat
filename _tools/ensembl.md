@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/ensembl.png
 image_location: https://useast.ensembl.org/index.html
 notes: 
+supported_species: 
+supported_files: 
 ---

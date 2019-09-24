@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/gepard.png
 image_location: https://academic.oup.com/view-large/figure/1970702/btm039f1.jpeg
 notes: 
+supported_species: 
+supported_files: 
 ---

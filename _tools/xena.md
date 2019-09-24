@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/xena.png
 image_location: https://xenabrowser.net/?bookmark=501ed28f4548b872967b71b098fe7f65
 notes: 
+supported_species: 
+supported_files: 
 ---

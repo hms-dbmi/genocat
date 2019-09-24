@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://genomeview.org/content/where-do-i-find-documentation
 pub_year: 2012
-license: 
+license: open source
 license_form: open source
 image: /assets/genomeview.jpeg
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3258165/figure/gkr995-F5/
 notes: 
+supported_species: 
+supported_files: 
 ---

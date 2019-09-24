@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: https://mgcv.cmbi.umcn.nl/help.html#data_input
 pub_year: 2013
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/mgcv.jpg
 image_location: https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-14-209
 notes: 
+supported_species: 
+supported_files: 
 ---

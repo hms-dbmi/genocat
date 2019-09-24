@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: no
 user_documentation: n/a
 pub_year: 2015
-license: 
+license: open source
 license_form: open source
 image: /assets/magi.png
 image_location: https://www.nature.com/articles/nmeth.3412/figures/1
 notes: website doesn't load
+supported_species: 
+supported_files: 
 ---

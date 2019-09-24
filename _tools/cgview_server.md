@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: no
 user_documentation: n/a
 pub_year: 2008
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/cgview_server.png
 image_location: http://stothard.afns.ualberta.ca/cgview_server/examples/example_1/images/settings_1.png
 notes: 
+supported_species: 
+supported_files: 
 ---

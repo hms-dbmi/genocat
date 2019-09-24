@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://pipeline.lbl.gov/vista_help/help.html#vistapoint
 pub_year: 2000
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/vistapoint.png
 image_location: http://pipeline.lbl.gov/tbrowser/tbrowser/
 notes: 
+supported_species: 
+supported_files: 
 ---

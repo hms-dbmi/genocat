@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/aliview.png
 image_location: http://ormbunkar.se/aliview/#top
 notes: 
+supported_species: 
+supported_files: 
 ---

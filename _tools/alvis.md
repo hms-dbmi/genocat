@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/alvis.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4856975/
 notes: 
+supported_species: 
+supported_files: 
 ---

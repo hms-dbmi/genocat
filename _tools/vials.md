@@ -10,14 +10,14 @@ abstract: "Alternative splicing is a process by which the same DNA sequence is u
 citation: "Strobelt H, Alsallakh B, Botros J, Peterson B, Borowsky M, Pfister H, et al. Vials: Visualizing Alternative Splicing of Genes. IEEE Trans Vis Comput Graph. 2016;22: 399–408."
 citation_count: 11
 genome_layout: linear
-partition: 
-abstraction: 
+partition: contiguous
+abstraction: partial
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: 
+interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
 arrangement: none
@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: no
 user_documentation: n/a
 pub_year: 2016
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/vials.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4720991/figure/F1/
 notes: website doesn't load
+supported_species: 
+supported_files: 
 ---

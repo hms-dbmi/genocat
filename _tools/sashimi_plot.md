@@ -2,33 +2,35 @@
 layout: tool 
 title: Sashimi Plot
 github_account: 
-paper: https://www.ncbi.nlm.nih.gov/pubmed/20975128
-paper_title: "Gremlin: an interactive visualization model for analyzing genomic rearrangements."
-doi: 10.1109/TVCG.2010.163
-browser: http://compbio-research.cs.brown.edu/software/Gremlin/geneVisDemo.html
-abstract: "In this work we present, apply, and evaluate a novel, interactive visualization model for comparative analysis of structural variants and rearrangements in human and cancer genomes, with emphasis on data integration and uncertainty visualization. To support both global trend analysis and local feature detection, this model enables explorations continuously scaled from the high-level, complete genome perspective, down to the low-level, structural rearrangement view, while preserving global context at all times. We have implemented these techniques in Gremlin, a genomic rearrangement explorer with multi-scale, linked interactions, which we apply to four human cancer genome data sets for evaluation. Using an insight-based evaluation methodology, we compare Gremlin to Circos, the state-of-the-art in genomic rearrangement visualization, through a small user study with computational biologists working in rearrangement analysis. Results from user study evaluations demonstrate that this visualization model enables more total insights, more insights per minute, and more complex insights than the current state-of-the-art for visual analysis and exploration of genome rearrangements."
-citation: "O’Brien TM, Ritz AM, Raphael BJ, Laidlaw DH. Gremlin: an interactive visualization model for analyzing genomic rearrangements. IEEE Trans Vis Comput Graph. ieeexplore.ieee.org; 2010;16: 918–926."
-citation_count: 29
+paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542614/
+paper_title: "Sashimi plots: Quantitative visualization of RNA sequencing read alignments"
+doi: 10.1093/bioinformatics/btv034
+browser: https://software.broadinstitute.org/software/igv/Sashimi
+abstract: "Motivation: Analysis of RNA sequencing (RNA-Seq) data revealed that the vast majority of human genes express multiple mRNA isoforms, produced by alternative pre-mRNA splicing and other mechanisms, and that most alternative isoforms vary in expression between human tissues. As RNA-Seq datasets grow in size, it remains challenging to visualize isoform expression across multiple samples. Results: To help address this problem, we present Sashimi plots, a quantitative visualization of aligned RNA-Seq reads that enables quantitative comparison of exon usage across samples or experimental conditions. Sashimi plots can be made using the Broad Integrated Genome Viewer or with a stand-alone command line program."
+citation: "Katz Y, Wang ET, Silterra J, Schwartz S, Wong B, Mesirov JP, et al. Sashimi plots: Quantitative visualization of RNA sequencing read alignments [Internet]. arXiv [q-bio.GN]. 2013. Available: http://arxiv.org/abs/1306.3466"
+citation_count: 8
 genome_layout: linear
 partition: contiguous
 abstraction: none
 focus: single
-scale: multiple
-view: multiple
-sparse_type: segment sparse
+scale: single
+view: single
+sparse_type: point sparse
 contiguous_type: 
 interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
 arrangement: none
-access_format: [web application, standalone app]
+access_format: [web application]
 supported_species: 
 user_documentation_availability: yes
-user_documentation: http://compbio-research.cs.brown.edu/software/Gremlin/GremlinInteraction.pdf
-pub_year: 2010
-license: 
-license_form: 
-image: /assets/Gremlin.png
-image_location: http://compbio-research.cs.brown.edu/software/Gremlin/GremlinOverview.pdf
+user_documentation: https://software.broadinstitute.org/software/igv/Sashimi
+pub_year: 2015
+license: MIT
+license_form: open source
+image: /assets/Sashimi.png
+image_location: https://software.broadinstitute.org/software/igv/Sashimi
 notes: 
+supported_species: 
+supported_files: 
 ---

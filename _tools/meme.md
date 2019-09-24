@@ -27,8 +27,10 @@ user_documentation_availability: yes
 user_documentation: http://meme-suite.org/doc/overview.html?man_type=web
 pub_year: 2006
 license: The Regents of the University of California
-license_form: 
+license_form: unavailable
 image: /assets/meme.png
 image_location: http://meme-suite.org/doc/examples/meme_example_output_files/meme.html?man_type=web
 notes: 
+supported_species: 
+supported_files: 
 ---

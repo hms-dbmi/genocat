@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/abrowse.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3265404/
 notes: broken browser link
+supported_species: 
+supported_files: 
 ---

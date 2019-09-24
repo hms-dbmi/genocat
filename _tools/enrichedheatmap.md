@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/enrichedheatmaps.png
 image_location: https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4625-x/figures/2
 notes: 
+supported_species: 
+supported_files: 
 ---

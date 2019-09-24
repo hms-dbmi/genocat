@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/gview.png
 image_location: https://www.gview.ca/wiki/GView/WebHome
 notes: 
+supported_species: 
+supported_files: 
 ---

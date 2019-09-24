@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: no
 user_documentation: 
 pub_year: 2012
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/Lollipop.png
 image_location: https://arxiv.org/pdf/1905.02853.pdf
 notes: 
+supported_species: 
+supported_files: 
 ---

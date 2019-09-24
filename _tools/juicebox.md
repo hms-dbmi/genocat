@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/juicebox.png
 image_location: https://www.aidenlab.org/juicebox/
 notes: 
+supported_species: 
+supported_files: 
 ---

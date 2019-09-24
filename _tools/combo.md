@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: https://pdfs.semanticscholar.org/1122/9b9f3aacfcbdd39afd73a74466aa19f63284.pdf
 pub_year: 2006
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/Combo.png
 image_location: https://academic.oup.com/bioinformatics/article/22/14/1782/227719
 notes: broken browser link
+supported_species: 
+supported_files: 
 ---

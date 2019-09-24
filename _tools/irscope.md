@@ -27,8 +27,10 @@ user_documentation_availability: no
 user_documentation: 
 pub_year: 2018
 license: Under the license of the University of Helsinki
-license_form: 
+license_form: unavailable
 image: /assets/irscope.jpg
 image_location: https://irscope.shinyapps.io/irapp/
 notes: ShinyApp
+supported_species: 
+supported_files: 
 ---

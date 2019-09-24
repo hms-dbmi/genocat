@@ -27,8 +27,10 @@ user_documentation_availability: yes
 user_documentation: https://higlass.io/docs
 pub_year: 2018
 license: Creative Commons Attribution license (CC BY)
-license_form: 
+license_form: creative commons
 image: /assets/HiGlass.png
 image_location: https://higlass.io/
 notes: 
+supported_species: 
+supported_files: 
 ---

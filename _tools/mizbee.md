@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://www.cs.utah.edu/~miriah/mizbee/Video.html
 pub_year: 2009
-license: 
+license: open source
 license_form: open source
 image: /assets/Mizbee.jpg
 image_location: http://www.cs.utah.edu/~miriah/mizbee/Overview.html
 notes: 
+supported_species: 
+supported_files: 
 ---

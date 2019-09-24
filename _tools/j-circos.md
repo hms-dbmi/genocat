@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/jcircos.png
 image_location: http://www.australianprostatecentre.org/research/software/jcircos
 notes: 
+supported_species: 
+supported_files: 
 ---

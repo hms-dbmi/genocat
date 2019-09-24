@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://www.synteview.u-psud.fr/documents.php
 pub_year: 2008
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/syntebaseview.png
 image_location: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-536/figures/4
 notes: 
+supported_species: 
+supported_files: 
 ---

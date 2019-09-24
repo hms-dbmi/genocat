@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/variantview.png
 image_location: http://www.cs.ubc.ca/labs/imager/tr/2013/VariantView/VariantViewSoftware/variant_view/VariantView.html
 notes: 
+supported_species: 
+supported_files: 
 ---

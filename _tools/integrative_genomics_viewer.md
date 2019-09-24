@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/IGV.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3603213/figure/bbs017-F7/
 notes: 
+supported_species: 
+supported_files: 
 ---

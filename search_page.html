@@ -90,6 +90,13 @@ body {
     <input type="checkbox" id="standalone app" name = "access_format"/><label for="standalone app">Standalone App</label>
     <input type="checkbox" id="programming library" name = "access_format"/><label for="programming library">Programming Library </label>
   </details>
+  <details>
+    <summary>License</summary>
+    <input type="checkbox" id="open source" name = "license_form"/><label for="open source">Open Source</label>
+    <input type="checkbox" id="commercial" name = "license_form"/><label for="commercial">Commercial</label>
+    <input type="checkbox" id="creative commons" name = "license_form"/><label for="creative commons">Creative Commons </label>
+    <input type="checkbox" id="unavailable" name = "license_form"/><label for="unavailable">Unavailable </label>
+  </details>
   <br>
   Data Taxonomy
   <details>
@@ -150,7 +157,7 @@ body {
   <div class = "items">
 
 {% for post in site.tools %}
-      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{post.license_form}} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
         <p>
           <a href="{{ post.url | relative_url }}"><h4>   {{ post.title }}</h4></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" height = "125px" class = "imag"></a>
@@ -160,7 +167,7 @@ body {
 
             <p>Cited by: {{post.citation_count}}</p>
             <p>Paper Publication Year: {{post.pub_year}}</p>
-
+            <p>License: {{post.license_form}}</p>
 
             <p>
               {% for items in  post.access_format %}

@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/juiceboxjs.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6047755/figure/F1/
 notes: public instance is the same as Juicebox... 
+supported_species: 
+supported_files: 
 ---

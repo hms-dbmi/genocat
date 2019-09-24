@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/synmap2.png
 image_location: https://genomevolution.org/coge/SynMap.pl
 notes: 
+supported_species: 
+supported_files: 
 ---

@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: https://www.uni-giessen.de/fbz/fb08/Inst/bioinformatik/software/EDGAR/documentation
 pub_year: 2016
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/edgarsyntenyplot.png
 image_location: https://edgar.computational.bio.uni-giessen.de/cgi-bin/edgar.cgi
 notes: 
+supported_species: 
+supported_files: 
 ---

@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/GBrowse.png
 image_location: http://gmod.org/wiki/GBrowse#Screenshots
 notes: 
+supported_species: 
+supported_files: 
 ---

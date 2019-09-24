@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/deepmotifdashboard.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5787355/figure/F2/
 notes: 
+supported_species: 
+supported_files: 
 ---

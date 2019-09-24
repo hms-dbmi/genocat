@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/give.png
 image_location: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13059-018-1465-6/MediaObjects/13059_2018_1465_Fig1_HTML.png
 notes: 
+supported_species: 
+supported_files: 
 ---

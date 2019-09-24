@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/IGB.png
 image_location: https://bioviz.org/overview.html
 notes: 
+supported_species: 
+supported_files: 
 ---

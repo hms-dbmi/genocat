@@ -27,8 +27,10 @@ user_documentation_availability: yes
 user_documentation: https://easeq.net/getting-started/
 pub_year: 2016
 license: CC BY-NC-SA
-license_form: 
+license_form: unavailable
 image: /assets/easeq.png
 image_location: https://easeq.net/
 notes: 
+supported_species: 
+supported_files: 
 ---

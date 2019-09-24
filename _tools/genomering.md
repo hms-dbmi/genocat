@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/genomering.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3371849/figure/F7/
 notes: 
+supported_species: 
+supported_files: 
 ---

@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: 
 user_documentation: 
 pub_year: 2007
-license: 
+license: commercial
 license_form: commercial
 image: /assets/persephone.png
 image_location: https://persephonesoft.com/wp-content/uploads/2017/01/shot1.jpg
 notes: 
+supported_species: 
+supported_files: 
 ---

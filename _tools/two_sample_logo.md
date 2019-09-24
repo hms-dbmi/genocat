@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/two.png
 image_location: http://www.twosamplelogo.org/examples.html
 notes: 
+supported_species: 
+supported_files: 
 ---

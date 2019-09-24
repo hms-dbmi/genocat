@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/msaviewer.png
 image_location: https://academic.oup.com/bioinformatics/article/32/22/3501/2525598
 notes: 
+supported_species: 
+supported_files: 
 ---

@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: https://static1.squarespace.com/static/56463117e4b0770d2cd2d163/t/564bbbb1e4b0c03db1589e9a/1447803825330/MochiView_Manual_v1.45.pdf
 pub_year: 2010
-license: The Regents of the University of California
-license_form: 
+license: GNU Library/Lesser General Public License (LGPL)
+license_form: open source
 image: /assets/MochiView.png
 image_location: http://www.johnsonlab.ucsf.edu/mochi
 notes: 
+supported_species: 
+supported_files: 
 ---

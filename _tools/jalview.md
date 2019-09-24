@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/jalview.png
 image_location: https://www.youtube.com/watch?time_continue=61&v=RdbcdZZUDHg
 notes: 
+supported_species: 
+supported_files: 
 ---

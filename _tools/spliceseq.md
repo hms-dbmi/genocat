@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: https://bioinformatics.mdanderson.org/public-software/spliceseq/installation/
 pub_year: 2012
-license: 
+license: open source
 license_form: open source
 image: /assets/spliceseq.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3436850/figure/bts452-F1/
 notes: 
+supported_species: 
+supported_files: 
 ---

@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/jbrowse.png
 image_location: https://jbrowse.org/
 notes: 
+supported_species: 
+supported_files: 
 ---

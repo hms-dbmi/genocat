@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: https://epigenomegateway.readthedocs.io/en/latest/
 pub_year: 2011
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/washu.png
 image_location: http://epigenomegateway.wustl.edu/browser/
 notes: 
+supported_species: 
+supported_files: 
 ---

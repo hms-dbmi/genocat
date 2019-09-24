@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://montgomerylab.stanford.edu/spliceplot/index.html#running-spliceplot
 pub_year: 2013
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/spliceplot.png
 image_location: http://montgomerylab.stanford.edu/spliceplot/index.html
 notes: 
+supported_species: 
+supported_files: 
 ---

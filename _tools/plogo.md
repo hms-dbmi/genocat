@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: https://plogo.uconn.edu/help/plogomap
 pub_year: 2013
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/plogo.png
 image_location: https://www.nature.com/articles/nmeth.2646/figures/1
 notes: 
+supported_species: 
+supported_files: 
 ---

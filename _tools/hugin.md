@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: https://yunliweb.its.unc.edu/HUGIn/tutorial_page.php
 pub_year: 2017
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/hugin.png
 image_location: https://yunliweb.its.unc.edu/HUGIn/#plots
 notes: 
+supported_species: 
+supported_files: 
 ---

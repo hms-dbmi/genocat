@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/DNAPlotter.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2612626/figure/F1/
 notes: 
+supported_species: 
+supported_files: 
 ---

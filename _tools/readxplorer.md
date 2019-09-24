@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/readxplorer.png
 image_location: https://www.uni-giessen.de/fbz/fb08/Inst/bioinformatik/software/ReadXplorer
 notes: 
+supported_species: 
+supported_files: 
 ---

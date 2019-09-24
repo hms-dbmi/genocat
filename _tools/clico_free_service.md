@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: no
 user_documentation: http://codoncloud.com:3000/help
 pub_year: 2015
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/clico.png
 image_location: http://codoncloud.com:3000/help
 notes: 
+supported_species: 
+supported_files: 
 ---

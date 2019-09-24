@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://pipeline.lbl.gov/vista_help/help.html#dotplot
 pub_year: 2004
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/vistadot.png
 image_location: http://pipeline.lbl.gov/vista_help/help.html#dotplot
 notes: 
+supported_species: 
+supported_files: 
 ---

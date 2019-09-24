@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://civi.cmbi.ru.nl/help.html
 pub_year: 2015
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/Civi.png
 image_location: http://civi.cmbi.ru.nl/help.html
 notes: 
+supported_species: 
+supported_files: 
 ---

@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/epiviz.png
 image_location: http://epiviz.cbcb.umd.edu/4/?ws=Ago25FdPLVb&seqName=chr2&start=69300680&end=90699322&settings=default&useCookie=true&
 notes: 
+supported_species: 
+supported_files: 
 ---

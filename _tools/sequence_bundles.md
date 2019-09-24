@@ -27,8 +27,10 @@ user_documentation_availability: yes
 user_documentation: https://www.ebi.ac.uk/goldman-srv/sequencebundles/
 pub_year: 2014
 license: Creative Commons CC BY v4.0 license 
-license_form: 
+license_form: creative commons
 image: /assets/sequencebundles.png
 image_location: https://www.ebi.ac.uk/goldman-srv/sequencebundles/
 notes: 
+supported_species: 
+supported_files: 
 ---

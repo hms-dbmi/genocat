@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/hicexplorer.png
 image_location: https://hicexplorer.usegalaxy.eu/
 notes: 
+supported_species: 
+supported_files: 
 ---

@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://compbio-research.cs.brown.edu/software/Gremlin/GremlinInteraction.pdf
 pub_year: 2010
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/Gremlin.png
 image_location: http://compbio-research.cs.brown.edu/software/Gremlin/GremlinOverview.pdf
 notes: 
+supported_species: 
+supported_files: 
 ---

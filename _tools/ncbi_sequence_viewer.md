@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: https://www.ncbi.nlm.nih.gov/tools/sviewer/
 pub_year: 2007
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/NCBISequenceViewer.png
 image_location: https://www.ncbi.nlm.nih.gov/projects/sviewer/
 notes: 
+supported_species: 
+supported_files: 
 ---

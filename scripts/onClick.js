@@ -1,5 +1,5 @@
 var arr = [];
-var num_categories = 10;
+var num_categories = 11;
 for (var i=0; i < num_categories; i++) {
   arr.push([]);
 }
@@ -65,6 +65,25 @@ function getNameIndex(name) {
   if (name == "focus") {
     return 8;
   }
+  if (name == "license_form") {
+    return 9;
+  }
+}
+//open source
+document.getElementById("open source").onclick=function() {
+  click_filter("open source");
+}
+//creative commons
+document.getElementById("creative commons").onclick=function() {
+  click_filter("creative commons");
+}
+//commercial
+document.getElementById("commercial").onclick=function() {
+  click_filter("commercial");
+}
+//unavailable
+document.getElementById("unavailable").onclick=function() {
+  click_filter("unavailable");
 }
 
 //linear parallel

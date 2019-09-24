@@ -10,8 +10,8 @@ abstract: "BACKGROUND:, The volume of complete bacterial genome sequence data av
 citation: "Aurisano J, Reda K, Johnson A, Marai EG, Leigh J. BactoGeNIE: a large-scale comparative genome visualization for big displays. BMC Bioinformatics. bmcbioinformatics.biomedcentral …; 2015;16 Suppl 11: S6."
 citation_count: 6
 genome_layout: linear
-partition: 
-abstraction: 
+partition: contiguous
+abstraction: none
 focus: single
 scale: single
 view: single
@@ -21,14 +21,16 @@ interconnection_type: none
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
-access_format: 
+access_format: [standalone app]
 supported_species: 
 user_documentation_availability: no
 user_documentation: 
 pub_year: 2015
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/bactogenie.jpg
 image_location: http://europepmc.org/articles/pmc4547189
 notes: unable to find link
+supported_species: 
+supported_files: 
 ---

@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://bioinfo.au.tsinghua.edu.cn/member/nadhir/HiC3DViewer/static/data/UserManual.pdf
 pub_year: 2017
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/3dviewer.png
 image_location: http://bioinfo.au.tsinghua.edu.cn/member/nadhir/HiC3DViewer/
 notes: 
+supported_species: 
+supported_files: 
 ---

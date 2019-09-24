@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://wishart.biology.ualberta.ca/cgview/application.html
 pub_year: 2015
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/CGView.png
 image_location: http://wishart.biology.ualberta.ca/cgview/gallery.html
 notes: 
+supported_species: 
+supported_files: 
 ---

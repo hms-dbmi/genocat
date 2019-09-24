@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: https://cinteny.cchmc.org/doc/demo.php
 pub_year: 2007
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/Cinteny.png
 image_location: https://cinteny.cchmc.org/doc/wholegenome.php
 notes: 
+supported_species: 
+supported_files: 
 ---

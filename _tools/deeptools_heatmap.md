@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/deeptools.png
 image_location: https://deeptools.readthedocs.io/en/develop/content/tools/plotHeatmap.html
 notes: 
+supported_species: 
+supported_files: 
 ---

@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/genplay.png
 image_location: https://academic.oup.com/bioinformatics/article/27/14/1889/194658
 notes: 
+supported_species: 
+supported_files: 
 ---

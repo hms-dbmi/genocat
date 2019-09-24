@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://splicegrapher.sourceforge.net/userguide.html
 pub_year: 2012
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/splicegrapher.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334585/figure/F1/
 notes: 
+supported_species: 
+supported_files: 
 ---

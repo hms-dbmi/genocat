@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/ngsplot.png
 image_location: https://github.com/shenlab-sinai/ngsplot
 notes: 
+supported_species: 
+supported_files: 
 ---

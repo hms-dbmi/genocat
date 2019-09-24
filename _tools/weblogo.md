@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/Weblogo.png
 image_location: https://weblogo.berkeley.edu/examples.html
 notes: 
+supported_species: 
+supported_files: 
 ---

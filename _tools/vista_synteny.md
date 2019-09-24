@@ -26,9 +26,11 @@ supported_species:
 user_documentation_availability: yes
 user_documentation: http://pipeline.lbl.gov/vista_help/help.html#synteny
 pub_year: 2004
-license: 
-license_form: 
+license: unavailable
+license_form: unavailable
 image: /assets/vistasynteny.png
 image_location: http://pipeline.lbl.gov/vista_help/help.html#synteny
 notes: unable to find Synteny view
+supported_species: 
+supported_files: 
 ---

@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/hipiler.png
 image_location: http://hipiler.higlass.io/docs
 notes: 
+supported_species: 
+supported_files: 
 ---

@@ -31,4 +31,6 @@ license_form: open source
 image: /assets/Circos.png
 image_location: http://circos.ca/images/
 notes: 
+supported_species: 
+supported_files: 
 ---
