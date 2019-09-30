@@ -28,7 +28,7 @@ pub_year: 2016
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/Rondo.png
 image_location: http://rondo.ws/
 notes: 

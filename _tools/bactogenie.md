@@ -28,7 +28,7 @@ pub_year: 2015
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/bactogenie.jpg
 image_location: http://europepmc.org/articles/pmc4547189
 notes: unable to find link

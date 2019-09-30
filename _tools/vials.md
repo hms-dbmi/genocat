@@ -28,7 +28,7 @@ pub_year: 2016
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/vials.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4720991/figure/F1/
 notes: website doesn't load

@@ -28,7 +28,7 @@ pub_year: 2015
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/3D_Genome_Browser.jpg
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4652742/figure/F2/
 notes: 

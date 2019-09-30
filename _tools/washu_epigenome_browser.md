@@ -28,7 +28,7 @@ pub_year: 2011
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/washu.png
 image_location: http://epigenomegateway.wustl.edu/browser/
 notes: 

@@ -28,7 +28,7 @@ pub_year: 2015
 license: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
 license_form: creative commons
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/mexpress.png
 image_location: https://mexpress.be/index.html
 notes: 

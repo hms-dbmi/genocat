@@ -28,7 +28,7 @@ pub_year: 2010
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/Gremlin.png
 image_location: http://compbio-research.cs.brown.edu/software/Gremlin/GremlinOverview.pdf
 notes: 

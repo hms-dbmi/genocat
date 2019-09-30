@@ -74,8 +74,8 @@ function getNameIndex(name) {
 }
 
 //None
-document.getElementById("na").onclick=function() {
-  click_filter("na");
+document.getElementById("notapplicable").onclick=function() {
+  click_filter("notapplicable");
 }
 //BED
 document.getElementById("bed").onclick=function() {

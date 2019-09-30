@@ -28,7 +28,7 @@ pub_year: 2017
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/NCBIGenomeBrowser.png
 image_location: https://www.ncbi.nlm.nih.gov/genome/gdv/browser/?context=genome&acc=GCF_000001405.39
 notes: 

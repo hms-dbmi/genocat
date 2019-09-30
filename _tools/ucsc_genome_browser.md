@@ -28,7 +28,7 @@ pub_year: 2002
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/UCSC_Genome_Viewer.png
 image_location: https://genome.ucsc.edu
 notes: 

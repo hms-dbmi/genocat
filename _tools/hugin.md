@@ -28,7 +28,7 @@ pub_year: 2017
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/hugin.png
 image_location: https://yunliweb.its.unc.edu/HUGIn/#plots
 notes: 

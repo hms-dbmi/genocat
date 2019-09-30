@@ -28,7 +28,7 @@ pub_year: 2006
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/Combo.png
 image_location: https://academic.oup.com/bioinformatics/article/22/14/1782/227719
 notes: broken browser link

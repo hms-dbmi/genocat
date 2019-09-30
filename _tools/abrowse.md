@@ -28,7 +28,7 @@ pub_year: 2012
 license: GNU Lesser General Public License v3.0
 license_form: open source
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/abrowse.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3265404/
 notes: broken browser link

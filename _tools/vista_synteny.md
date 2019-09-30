@@ -28,7 +28,7 @@ pub_year: 2004
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/vistasynteny.png
 image_location: http://pipeline.lbl.gov/vista_help/help.html#synteny
 notes: unable to find Synteny view

@@ -28,7 +28,7 @@ pub_year: 2015
 license: open source
 license_form: open source
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/magi.png
 image_location: https://www.nature.com/articles/nmeth.3412/figures/1
 notes: website doesn't load

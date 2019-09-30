@@ -28,7 +28,7 @@ pub_year: 2016
 license: open source
 license_form: open source
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/syntenyexplorer.png
 image_location: https://wooythan.github.io/syntery-explorer/genome.html?p=EUA&c1=ponAbe&c2=musMus
 notes: 

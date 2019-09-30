@@ -28,7 +28,7 @@ pub_year: 2013
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/cepbrowser.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3634190/
 notes: 

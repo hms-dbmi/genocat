@@ -28,7 +28,7 @@ pub_year: 2007
 license: unavailable
 license_form: unavailable
 supported_species: 
-supported_files: ['na']
+supported_files: ['notapplicable']
 image: /assets/NCBISequenceViewer.png
 image_location: https://www.ncbi.nlm.nih.gov/projects/sviewer/
 notes: 
