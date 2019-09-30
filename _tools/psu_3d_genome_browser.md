@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://promoter.bx.psu.edu/hi-c/tutorial.html
 pub_year: 2018
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['other']
 image: /assets/3Dgenomebrowser.jpg
 image_location: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1519-9
 notes: 
-supported_species: 
-supported_files: 
 ---

@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: no
 user_documentation: 
 pub_year: 2012
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['other']
 image: /assets/Lollipop.png
 image_location: https://arxiv.org/pdf/1905.02853.pdf
 notes: 
-supported_species: 
-supported_files: 
 ---

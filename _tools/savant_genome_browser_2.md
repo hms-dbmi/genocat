@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: no
 user_documentation: n/a
 pub_year: 2012
 license: open source
 license_form: open source
+supported_species: 
+supported_files: ['na']
 image: /assets/savant.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3394255/
 notes: tool link doesn't work
-supported_species: 
-supported_files: 
 ---

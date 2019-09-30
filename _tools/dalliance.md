@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://www.biodalliance.org/started.html
 pub_year: 2011
 license: BSD 2-Clause 
 license_form: open source
+supported_species: 
+supported_files: ['bed', 'sambamcram', 'other']
 image: /assets/dalliance.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3051325/figure/F1/
 notes: 
-supported_species: 
-supported_files: 
 ---

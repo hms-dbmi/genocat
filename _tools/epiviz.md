@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application, standalone app, programming library]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://epiviz.github.io/documentation/
 pub_year: 2014
 license: Artistic License
 license_form: open source
+supported_species: 
+supported_files: ['other']
 image: /assets/epiviz.png
 image_location: http://epiviz.cbcb.umd.edu/4/?ws=Ago25FdPLVb&seqName=chr2&start=69300680&end=90699322&settings=default&useCookie=true&
 notes: 
-supported_species: 
-supported_files: 
 ---

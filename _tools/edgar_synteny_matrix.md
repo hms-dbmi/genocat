@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: multiple
 arrangement: linear orthogona;
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://www.uni-giessen.de/fbz/fb08/Inst/bioinformatik/software/EDGAR/documentation
 pub_year: 2016
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['other']
 image: /assets/edgarsyntenymatrix.png
 image_location: https://edgar.computational.bio.uni-giessen.de/cgi-bin/edgar.cgi
 notes: 
-supported_species: 
-supported_files: 
 ---

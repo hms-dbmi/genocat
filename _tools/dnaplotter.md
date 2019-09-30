@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://sanger-pathogens.github.io/Artemis/DNAPlotter/
 pub_year: 2009
 license: GPL
 license_form: open source
+supported_species: 
+supported_files: ['other']
 image: /assets/DNAPlotter.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2612626/figure/F1/
 notes: 
-supported_species: 
-supported_files: 
 ---

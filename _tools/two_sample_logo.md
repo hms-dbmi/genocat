@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://www.twosamplelogo.org/tsl_manual.pdf
 pub_year: 2006
 license: MIT
 license_form: open source
+supported_species: 
+supported_files: ['txttab', 'other']
 image: /assets/two.png
 image_location: http://www.twosamplelogo.org/examples.html
 notes: 
-supported_species: 
-supported_files: 
 ---

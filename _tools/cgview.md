@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://wishart.biology.ualberta.ca/cgview/application.html
 pub_year: 2015
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['txttab', 'other']
 image: /assets/CGView.png
 image_location: http://wishart.biology.ualberta.ca/cgview/gallery.html
 notes: 
-supported_species: 
-supported_files: 
 ---

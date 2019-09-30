@@ -22,15 +22,14 @@ interconnection_density: dense
 coordinate_systems: single
 arrangement: none
 access_format: ['web application']
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://yunliweb.its.unc.edu/HUGIn/tutorial_page.php
 pub_year: 2017
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['na']
 image: /assets/hugin.png
 image_location: https://yunliweb.its.unc.edu/HUGIn/#plots
 notes: 
-supported_species: 
-supported_files: 
 ---

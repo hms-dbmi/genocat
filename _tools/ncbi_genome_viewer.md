@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://www.ncbi.nlm.nih.gov/genome/gdv/browser/help/
 pub_year: 2017
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['na']
 image: /assets/NCBIGenomeBrowser.png
 image_location: https://www.ncbi.nlm.nih.gov/genome/gdv/browser/?context=genome&acc=GCF_000001405.39
 notes: 
-supported_species: 
-supported_files: 
 ---

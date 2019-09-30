@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://plogo.uconn.edu/help/plogomap
 pub_year: 2013
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['fasta']
 image: /assets/plogo.png
 image_location: https://www.nature.com/articles/nmeth.2646/figures/1
 notes: 
-supported_species: 
-supported_files: 
 ---

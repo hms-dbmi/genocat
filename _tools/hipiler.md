@@ -22,15 +22,14 @@ interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://hipiler.higlass.io/docs
 pub_year: 2018
 license: MIT
 license_form: open source
+supported_species: 
+supported_files: ['other']
 image: /assets/hipiler.png
 image_location: http://hipiler.higlass.io/docs
 notes: 
-supported_species: 
-supported_files: 
 ---

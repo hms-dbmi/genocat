@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://github.com/QData/DeepMotif/blob/master/README.md
 pub_year: 2017
 license: MIT
 license_form: open source
+supported_species: 
+supported_files: ['other']
 image: /assets/deepmotifdashboard.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5787355/figure/F2/
 notes: 
-supported_species: 
-supported_files: 
 ---

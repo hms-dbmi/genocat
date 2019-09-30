@@ -22,15 +22,14 @@ interconnection_density: dense
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://github.com/aidenlab/Juicebox/wiki
 pub_year: 2016
 license: MIT
 license_form: open source
+supported_species: 
+supported_files: ['fasta', 'other']
 image: /assets/juicebox.png
 image_location: https://www.aidenlab.org/juicebox/
 notes: 
-supported_species: 
-supported_files: 
 ---

@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: no
 user_documentation: 
 pub_year: 2015
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['na']
 image: /assets/bactogenie.jpg
 image_location: http://europepmc.org/articles/pmc4547189
 notes: unable to find link
-supported_species: 
-supported_files: 
 ---

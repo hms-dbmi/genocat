@@ -22,15 +22,14 @@ interconnection_density:
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://www.ncbi.nlm.nih.gov/tools/sviewer/
 pub_year: 2007
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['na']
 image: /assets/NCBISequenceViewer.png
 image_location: https://www.ncbi.nlm.nih.gov/projects/sviewer/
 notes: 
-supported_species: 
-supported_files: 
 ---

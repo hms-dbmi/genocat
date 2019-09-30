@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://epigenomegateway.readthedocs.io/en/latest/
 pub_year: 2011
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['na']
 image: /assets/washu.png
 image_location: http://epigenomegateway.wustl.edu/browser/
 notes: 
-supported_species: 
-supported_files: 
 ---

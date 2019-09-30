@@ -22,15 +22,14 @@ interconnection_density: dense
 coordinate_systems: single
 arrangement: none
 access_format: [web application, standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://bioinfo.au.tsinghua.edu.cn/member/nadhir/HiC3DViewer/static/data/UserManual.pdf
 pub_year: 2017
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['txttab', 'bed']
 image: /assets/3dviewer.png
 image_location: http://bioinfo.au.tsinghua.edu.cn/member/nadhir/HiC3DViewer/
 notes: 
-supported_species: 
-supported_files: 
 ---

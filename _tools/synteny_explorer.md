@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: multiple
 arrangement: ['linear parallel', 'circular serial']
 access_format: [web application]
-supported_species: 
 user_documentation_availability: no
 user_documentation: n/a
 pub_year: 2016
 license: open source
 license_form: open source
+supported_species: 
+supported_files: ['na']
 image: /assets/syntenyexplorer.png
 image_location: https://wooythan.github.io/syntery-explorer/genome.html?p=EUA&c1=ponAbe&c2=musMus
 notes: 
-supported_species: 
-supported_files: 
 ---

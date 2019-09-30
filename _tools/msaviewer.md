@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: multiple
 arrangement: none
 access_format: [standalone app, web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://youtu.be/ba4Plz8a2sg
 pub_year: 2016
 license: Boost Software
 license_form: open source
+supported_species: 
+supported_files: ['fasta', 'other']
 image: /assets/msaviewer.png
 image_location: https://academic.oup.com/bioinformatics/article/32/22/3501/2525598
 notes: 
-supported_species: 
-supported_files: 
 ---

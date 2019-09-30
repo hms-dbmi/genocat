@@ -22,15 +22,14 @@ interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
 access_format: [web application]
-supported_species: 
 user_documentation_availability: no
 user_documentation: n/a
 pub_year: 2009
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['fasta', 'bed']
 image: /assets/my5c.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2859197/
 notes: 
-supported_species: 
-supported_files: 
 ---

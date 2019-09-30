@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://www.uni-giessen.de/fbz/fb08/Inst/bioinformatik/software/ReadXplorer/documentation
 pub_year: 2014
 license: GPL
 license_form: open source
+supported_species: 
+supported_files: ['sambamcram', 'fasta', 'other']
 image: /assets/readxplorer.png
 image_location: https://www.uni-giessen.de/fbz/fb08/Inst/bioinformatik/software/ReadXplorer
 notes: 
-supported_species: 
-supported_files: 
 ---

@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: multiple
 arrangement: linear parallel
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: 
 user_documentation: 
 pub_year: 2007
 license: commercial
 license_form: commercial
+supported_species: 
+supported_files: ['vcf', 'other']
 image: /assets/persephone.png
 image_location: https://persephonesoft.com/wp-content/uploads/2017/01/shot1.jpg
 notes: 
-supported_species: 
-supported_files: 
 ---

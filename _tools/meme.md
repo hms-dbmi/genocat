@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application, standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://meme-suite.org/doc/overview.html?man_type=web
 pub_year: 2006
 license: The Regents of the University of California
 license_form: unavailable
+supported_species: 
+supported_files: ['fasta']
 image: /assets/meme.png
 image_location: http://meme-suite.org/doc/examples/meme_example_output_files/meme.html?man_type=web
 notes: 
-supported_species: 
-supported_files: 
 ---

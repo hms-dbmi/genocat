@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: multiple
 arrangement: linear orthogonal
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://genomevolution.org/wiki/index.php/Tutorials
 pub_year: 2017
 license: MIT
 license_form: open source
+supported_species: 
+supported_files: ['fasta', 'sambamcram', 'other']
 image: /assets/synmap2.png
 image_location: https://genomevolution.org/coge/SynMap.pl
 notes: 
-supported_species: 
-supported_files: 
 ---

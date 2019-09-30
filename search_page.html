@@ -97,6 +97,16 @@ body {
     <input type="checkbox" id="creative commons" name = "license_form"/><label for="creative commons">Creative Commons </label>
     <input type="checkbox" id="unavailable" name = "license_form"/><label for="unavailable">Unavailable </label>
   </details>
+  <details>
+  <summary>Input File Formats</summary>
+  <input type="checkbox" id="na" name = "supported_files"/><label for="na">None</label>
+  <input type="checkbox" id="bed" name = "supported_files"/><label for="bed">BED</label>
+  <input type="checkbox" id="fasta" name = "supported_files"/><label for="fasta">FASTA </label>
+  <input type="checkbox" id="sambamcram" name = "supported_files"/><label for="sambamcram">SAM/BAM/CRAM </label>
+  <input type="checkbox" id="vcf" name = "supported_files"/><label for="vcf">VCF</label>
+  <input type="checkbox" id="txttab" name = "supported_files"/><label for="txttab">txt/tab </label>
+  <input type="checkbox" id="other" name = "supported_files"/><label for="other">Other</label>
+</details>
   <br>
   Data Taxonomy
   <details>
@@ -157,7 +167,7 @@ body {
   <div class = "items">
 
 {% for post in site.tools %}
-      <div class="filterDiv {{ post.doi }} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{post.license_form}} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+      <div class="filterDiv {{ post.doi }} {{post.supported_files}} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{post.license_form}} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
         <p>
           <a href="{{ post.url | relative_url }}"><h4>   {{ post.title }}</h4></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" height = "125px" class = "imag"></a>

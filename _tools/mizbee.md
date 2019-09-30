@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: multiple
 arrangement: ['circular parallel', 'linear parallel']
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://www.cs.utah.edu/~miriah/mizbee/Video.html
 pub_year: 2009
 license: open source
 license_form: open source
+supported_species: 
+supported_files: ['txttab']
 image: /assets/Mizbee.jpg
 image_location: http://www.cs.utah.edu/~miriah/mizbee/Overview.html
 notes: 
-supported_species: 
-supported_files: 
 ---

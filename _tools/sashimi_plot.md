@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://software.broadinstitute.org/software/igv/Sashimi
 pub_year: 2015
 license: MIT
 license_form: open source
+supported_species: 
+supported_files: ['bed', 'fasta', 'sambamcram', 'vcf', 'other']
 image: /assets/Sashimi.png
 image_location: https://software.broadinstitute.org/software/igv/Sashimi
 notes: 
-supported_species: 
-supported_files: 
 ---

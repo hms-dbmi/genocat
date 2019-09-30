@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: no
 user_documentation: n/a
 pub_year: 2008
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['fasta', 'other']
 image: /assets/cgview_server.png
 image_location: http://stothard.afns.ualberta.ca/cgview_server/examples/example_1/images/settings_1.png
 notes: 
-supported_species: 
-supported_files: 
 ---

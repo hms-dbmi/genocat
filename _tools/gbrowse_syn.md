@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: multiple
 arrangement: linear parallel
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://gmod.org/wiki/GBrowse_syn
 pub_year: 2010
 license: GPL, Artistic License
 license_form: open source
+supported_species: 
+supported_files: ['fasta', 'other']
 image: /assets/gbrowse_syn.png
 image_location: http://gmod.org/wiki/GBrowse_syn
 notes: 
-supported_species: 
-supported_files: 
 ---

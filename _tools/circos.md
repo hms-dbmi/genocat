@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: single
 arrangement: circular serial
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://circos.ca/documentation/
 pub_year: 2009
 license: GPL
 license_form: open source
+supported_species: 
+supported_files: ['txttab']
 image: /assets/Circos.png
 image_location: http://circos.ca/images/
 notes: 
-supported_species: 
-supported_files: 
 ---

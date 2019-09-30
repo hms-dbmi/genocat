@@ -22,15 +22,14 @@ interconnection_density: dense
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://www.youtube.com/watch?v=s8eorV5aL6U&feature=youtu.be
 pub_year: 2016
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['na']
 image: /assets/Rondo.png
 image_location: http://rondo.ws/
 notes: 
-supported_species: 
-supported_files: 
 ---

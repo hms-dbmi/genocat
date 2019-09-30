@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application, programming library]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://www.gview.ca/wiki/GViewDocumentation/WebHome
 pub_year: 2010
 license: GPL
 license_form: open source
+supported_species: 
+supported_files: ['other']
 image: /assets/gview.png
 image_location: https://www.gview.ca/wiki/GView/WebHome
 notes: 
-supported_species: 
-supported_files: 
 ---

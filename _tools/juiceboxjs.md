@@ -22,15 +22,14 @@ interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
 access_format: [programming language]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://igvteam.github.io/juicebox.js/
 pub_year: 2018
 license: MIT
 license_form: open source
+supported_species: 
+supported_files: ['fasta', 'other']
 image: /assets/juiceboxjs.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6047755/figure/F1/
 notes: public instance is the same as Juicebox... 
-supported_species: 
-supported_files: 
 ---

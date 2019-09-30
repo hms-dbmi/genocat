@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: multiple
 arrangement: linear orthogonal
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://pipeline.lbl.gov/vista_help/help.html#dotplot
 pub_year: 2004
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['fasta', 'other']
 image: /assets/vistadot.png
 image_location: http://pipeline.lbl.gov/vista_help/help.html#dotplot
 notes: 
-supported_species: 
-supported_files: 
 ---

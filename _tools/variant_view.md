@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://www.cs.ubc.ca/labs/imager/tr/2013/VariantView/VariantViewSoftware/variant_view/READ_ME.txt
 pub_year: 2013
 license: New BSD license
 license_form: open source
+supported_species: 
+supported_files: ['other']
 image: /assets/variantview.png
 image_location: http://www.cs.ubc.ca/labs/imager/tr/2013/VariantView/VariantViewSoftware/variant_view/VariantView.html
 notes: 
-supported_species: 
-supported_files: 
 ---

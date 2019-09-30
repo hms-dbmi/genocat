@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: ['single', 'multiple']
 arrangement: circular serial
 access_format: [web application]
-supported_species: 
 user_documentation_availability: no
 user_documentation: http://codoncloud.com:3000/help
 pub_year: 2015
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['txttab', 'other']
 image: /assets/clico.png
 image_location: http://codoncloud.com:3000/help
 notes: 
-supported_species: 
-supported_files: 
 ---

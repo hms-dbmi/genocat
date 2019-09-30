@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://deeptools.readthedocs.io/en/develop/content/tools/plotHeatmap.html
 pub_year: 2016
 license: GNU General Public License
 license_form: open source
+supported_species: 
+supported_files: ['txttab', 'sambamcram', 'other']
 image: /assets/deeptools.png
 image_location: https://deeptools.readthedocs.io/en/develop/content/tools/plotHeatmap.html
 notes: 
-supported_species: 
-supported_files: 
 ---

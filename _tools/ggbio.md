@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [programming library]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://bioconductor.org/packages/release/bioc/vignettes/ggbio/inst/doc/ggbio.pdf
 pub_year: 2012
 license: Artistic-2.0
 license_form: open source
+supported_species: 
+supported_files: ['other']
 image: /assets/ggBio.png
 image_location: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fgb-2012-13-8-r77/MediaObjects/13059_2012_Article_3010_Fig7_HTML.jpg
 notes: 
-supported_species: 
-supported_files: 
 ---

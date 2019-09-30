@@ -68,6 +68,38 @@ function getNameIndex(name) {
   if (name == "license_form") {
     return 9;
   }
+  if (name == "supported_files") {
+    return 10;
+  }
+}
+
+//None
+document.getElementById("na").onclick=function() {
+  click_filter("na");
+}
+//BED
+document.getElementById("bed").onclick=function() {
+  click_filter("bed");
+}
+//FASTA
+document.getElementById("fasta").onclick=function() {
+  click_filter("fasta");
+}
+//SAM/BAM/CRAM
+document.getElementById("sambamcram").onclick=function() {
+  click_filter("sambamcram");
+}
+//VCF
+document.getElementById("vcf").onclick=function() {
+  click_filter("vcf");
+}
+//txt/tab
+document.getElementById("txttab").onclick=function() {
+  click_filter("txttab");
+}
+//other
+document.getElementById("other").onclick=function() {
+  click_filter("other");
 }
 //open source
 document.getElementById("open source").onclick=function() {

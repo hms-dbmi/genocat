@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: single
 arrangement: none
 access_format: [programming language]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://github.com/shenlab-sinai/ngsplot
 pub_year: 2014
 license: GNU GENERAL PUBLIC LICENSE
 license_form: open source
+supported_species: 
+supported_files: ['txttab', 'sambamcram', 'other']
 image: /assets/ngsplot.png
 image_location: https://github.com/shenlab-sinai/ngsplot
 notes: 
-supported_species: 
-supported_files: 
 ---

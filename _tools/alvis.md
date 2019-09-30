@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://bitbucket.org/rfs/alvis/src/master/doc/
 pub_year: 2016
 license: GNU Affero General Public License version 3
 license_form: open source
+supported_species: 
+supported_files: ['fasta']
 image: /assets/alvis.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4856975/
 notes: 
-supported_species: 
-supported_files: 
 ---

@@ -22,15 +22,14 @@ interconnection_density: dense
 coordinate_systems: single
 arrangement: linear orthogonal
 access_format: [web application, programming library]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://higlass.io/docs
 pub_year: 2018
 license: Creative Commons Attribution license (CC BY)
 license_form: creative commons
+supported_species: 
+supported_files: ['bed', 'other']
 image: /assets/HiGlass.png
 image_location: https://higlass.io/
 notes: 
-supported_species: 
-supported_files: 
 ---

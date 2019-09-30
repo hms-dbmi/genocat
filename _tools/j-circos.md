@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://www.australianprostatecentre.org/SoftwareAttachments/manual_jcircosv2.pdf
 pub_year: 2015
 license: GNU GENERAL PUBLIC LICENSE
 license_form: open source
+supported_species: 
+supported_files: ['txttab', 'bed', 'other']
 image: /assets/jcircos.png
 image_location: http://www.australianprostatecentre.org/research/software/jcircos
 notes: 
-supported_species: 
-supported_files: 
 ---

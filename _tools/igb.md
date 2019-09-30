@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://wiki.transvar.org/display/igbman/Home
 pub_year: 2016
 license: Common Public License version 1.0.
 license_form: open source
+supported_species: 
+supported_files: ['bed', 'fasta', 'sambamcram', 'vcf', 'other']
 image: /assets/IGB.png
 image_location: https://bioviz.org/overview.html
 notes: 
-supported_species: 
-supported_files: 
 ---

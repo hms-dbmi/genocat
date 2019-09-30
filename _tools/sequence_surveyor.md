@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: multiple
 arrangement: linear parallel
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://graphics.cs.wisc.edu/Vis/SequenceSurveyor/SequenceSurveyor_User.html
 pub_year: 2011
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['other']
 image: /assets/sequencesurveryor.png
 image_location: https://graphics.cs.wisc.edu/Vis/SequenceSurveyor/SequenceSurveyor_User.html
 notes: 
-supported_species: 
-supported_files: 
 ---

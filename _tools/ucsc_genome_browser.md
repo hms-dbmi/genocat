@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html
 pub_year: 2002
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['na']
 image: /assets/UCSC_Genome_Viewer.png
 image_location: https://genome.ucsc.edu
 notes: 
-supported_species: 
-supported_files: 
 ---

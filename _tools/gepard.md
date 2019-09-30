@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: multiple
 arrangement: linear orthogonal
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://github.com/univieCUBE/gepard/blob/master/tutorial.html
 pub_year: 2007
 license: MIT
 license_form: open source
+supported_species: 
+supported_files: ['fasta']
 image: /assets/gepard.png
 image_location: https://academic.oup.com/view-large/figure/1970702/btm039f1.jpeg
 notes: 
-supported_species: 
-supported_files: 
 ---

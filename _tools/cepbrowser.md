@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: multiple
 arrangement: linear parallel
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://www.cepbrowser.org/cpbrowser/manual.php
 pub_year: 2013
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['na']
 image: /assets/cepbrowser.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3634190/
 notes: 
-supported_species: 
-supported_files: 
 ---

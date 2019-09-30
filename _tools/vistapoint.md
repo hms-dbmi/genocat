@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
 access_format: [web application]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://pipeline.lbl.gov/vista_help/help.html#vistapoint
 pub_year: 2000
 license: unavailable
 license_form: unavailable
+supported_species: 
+supported_files: ['fasta', 'other']
 image: /assets/vistapoint.png
 image_location: http://pipeline.lbl.gov/tbrowser/tbrowser/
 notes: 
-supported_species: 
-supported_files: 
 ---

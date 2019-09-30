@@ -22,15 +22,14 @@ interconnection_density: sparse
 coordinate_systems: multiple
 arrangement: none
 access_format: [web application, standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://useast.ensembl.org/info/index.html
 pub_year: 2002
 license: Apache License 2.0
 license_form: open source
+supported_species: 
+supported_files: ['bed', 'sambamcram', 'vcf', 'other']
 image: /assets/ensembl.png
 image_location: https://useast.ensembl.org/index.html
 notes: 
-supported_species: 
-supported_files: 
 ---

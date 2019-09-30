@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: single
 arrangement: none
 access_format: [programming language]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: https://bioconductor.org/packages/release/bioc/vignettes/EnrichedHeatmap/inst/doc/EnrichedHeatmap.html
 pub_year: 2018
 license: MIT
 license_form: open source
+supported_species: 
+supported_files: ['other']
 image: /assets/enrichedheatmaps.png
 image_location: https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4625-x/figures/2
 notes: 
-supported_species: 
-supported_files: 
 ---

@@ -22,15 +22,14 @@ interconnection_density: none
 coordinate_systems: multiple
 arrangement: none
 access_format: [standalone app]
-supported_species: 
 user_documentation_availability: yes
 user_documentation: http://genplay.net/wiki/index.php/Documentation
 pub_year: 2011
 license: GNU GPL
 license_form: open source
+supported_species: 
+supported_files: ['vcf']
 image: /assets/genplay.png
 image_location: https://academic.oup.com/bioinformatics/article/27/14/1889/194658
 notes: 
-supported_species: 
-supported_files: 
 ---
