@@ -19,181 +19,159 @@ layout: page
   body {
     font-family: "Lato", sans-serif;
   }
-  .post-content {
-    width: 60%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    float: left;
+  a{
+    color: black;
   }
-  .sidenav {
-    float: right;
-    height: 100%;
-    width: 25%;
-    position: relative;
-    z-index: 1;
-    background: #eee;
-    overflow-x: hidden;
-    overflow-y: visible;
-    margin-left: 50px;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+  /* visited link */
+  a:visited {
+    color: black;
   }
-  .sidenav a {
-    text-decoration: none;
-    color: #2196F3;
-  }
-  .sidenav a:hover {
-    color: #064579;
-  }
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+          }
+  .button {
+           background-color: var(--border-color);
+           border: 2px solid var(--border-color);
+           padding: 0.5px 10px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           margin: 2px 1px;
+           border-radius: 15px;
+           color: white;
+           font-weight: normal;
+           /* font-size: 10px; */
+         }
+  .button:hover{
+        background-color: white;
+        color: black;
+        }
+  .layout {
+        border-color: var(--border-color);
+        color: white;
+        text-decoration: none;
+        }
+  .layout:visited {
+        background-color: var(--border-color);
+        color: white;
+        }
+  .layout:hover {
+        background-color: var(--border-color);
+        color: white;
+        }
+  .column {
+        float: left;
+        width: 33.33%;
+        word-wrap: break-word;
+      }
+
+      /* Clear floats after the columns */
+  .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        /* On screens that are less than 700px wide, make the sidebar into a topbar */
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {float: left;}
+        div.content {margin-left: 0;}
+      }
+      /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      }
 }
   </style>
   </head>
   <body>
 
-    <div class="post-content" itemprop="articleBody">
-      <img src = "{{site.baseurl}}{{ page.image }}" width="500">
-      <br>
+    <div>
+      <img src = "{{site.baseurl}}{{ page.image }}" class = "center">
       <small>{{page.image_location}}</small>
       <br><br>
-      <h2>{{page.paper_title}}</h2>
-      <h3>Abstract</h3>
-      {{ page.abstract }}
-      <br><br>
-      <small>{{ page.citation }}</small>
 
     </div>
 
-  <div class="sidenav">
-    <p> Tool can be found <a href="{{ page.browser }}" target="_blank">here</a> </p>
-    <p> Paper can be found<a href="{{ page.paper }}" target="_blank"> here</a> </p>
-    <p> Tool Documentation can be found<a href="{{ page.user_documentation }}" target="_blank"> here</a> </p>
-    <p> Usage:
-    {% for items in  page.access_format %}
-      <li>{{items}} </li>
-    {% endfor %}
-    </p>
-    <p> Interconnection:
-    {% for items in  page.interconnection_type %}
-      <li>{{items}} </li>
-    {% endfor %}
-    </p>
-    <p> Cited by: {{page.citation_count}}
-    </p>
-    <p> Publication Year: {{ page.pub_year }}</p>
-    <p> License: {{ page.license }}</p>
-    <p> Attributes:
-
+    <div>
+      <h2>Methods</h2>
       {% for items in  page.genome_layout %}
-      {%- if items == "linear" -%}
-        <li><a href="{{site.baseurl}}/attributes/layout.html#Linear">Linear</a></li>
-      {%- elsif items == "circular" -%}
-        <li><a href="{{site.baseurl}}/attributes/layout.html#Circular">Circular</a></li>
-      {%- elsif items == "spacefilling" -%}
-        <li><a href="{{site.baseurl}}/attributes/layout.html#Space Filling">Space Filling</a></li>
-      {%- elsif items == "spatial" -%}
-        <li><a href="{{site.baseurl}}/attributes/layout.html#Spatial">Spatial</a></li>
-      {%- endif -%}
+         <a href="{{site.baseurl}}/attributes/layout.html" class="button layout" style="--border-color: #D83F87; --color: #D83F87;">{{ items }}</a>
       {%endfor%}
-
-      {% for items in  page.partition %}
-      {%- if items == "contiguous" -%}
-        <li><a href="{{site.baseurl}}/attributes/partition.html#Contiguous">Contiguous</a></li>
-      {%- elsif items == "segregated" -%}
-        <li><a href="{{site.baseurl}}/attributes/partition.html#Segregated">Segregated</a></li>
-      {%- endif -%}
-      {%endfor%}
-
-      {% for items in  page.sparse_type %}
-      {%- if items == "point sparse" -%}
-        <li><a href="{{site.baseurl}}/attributes/type.html#Point Sparse">Point Sparse</a></li>
-      {%- elsif items == "segment sparse" -%}
-        <li><a href="{{site.baseurl}}/attributes/type.html#Segment Sparse">Segment Sparse</a></li>
-      {%- endif -%}
-      {%endfor%}
-
-      {% for items in  page.contiguous_type %}
-      {%- if items == "point contiguous" -%}
-        <li><a href="{{site.baseurl}}/attributes/type.html#Point Contiguous">Point Contiguous</a></li>
-      {%- elsif items == "segment contiguous" -%}
-        <li><a href="{{site.baseurl}}/attributes/type.html#Segment Contiguous">Segment Contiguous</a></li>
-      {%- endif -%}
-      {%endfor%}
-
-      {% for items in  page.abstraction %}
-      {%- if items == "none" -%}
-        <li><a href="{{site.baseurl}}/attributes/abstraction.html#None">No Abstraction</a></li>
-      {%- elsif items == "partial" -%}
-        <li><a href="{{site.baseurl}}/attributes/abstraction.html#Partial">Partial Abstraction</a></li>
-      {%- elsif items == "complete" -%}
-        <li><a href="{{site.baseurl}}/attributes/abstraction.html#Complete">Complete Abstraction</a></li>
-      {%- endif -%}
-      {%endfor%}
-
-      {% for items in  page.arrangement %}
-      {%- if items == "linear parallel" -%}
-        <li><a href="{{site.baseurl}}/attributes/arrangement.html#Linear Parallel">Linear Parallel</a></li>
-      {%- elsif items == "linear serial" -%}
-      <li><a href="{{site.baseurl}}/attributes/arrangement.html#Linear Serial">Linear Serial</a></li>
-      {%- elsif items == "linear orthogonal" -%}
-      <li><a href="{{site.baseurl}}/attributes/arrangement.html#Linear Orthogonal">Linear Orthogonal</a></li>
-      {%- elsif items == "circular parallel" -%}
-      <li><a href="{{site.baseurl}}/attributes/arrangement.html#Circular Parallel">Circular Parallel</a></li>
-      {%- elsif items == "circular serial" -%}
-      <li><a href="{{site.baseurl}}/attributes/arrangement.html#Circular Serial">Circular Serial</a></li>
-      {%- endif -%}
-      {%endfor%}
-
-      {% for items in  page.focus %}
-      {%- if items == "single" -%}
-        <li><a href="{{site.baseurl}}/attributes/focus.html#Single Focus">Single Focus</a></li>
-      {%- elsif items == "multiple" -%}
-        <li><a href="{{site.baseurl}}/attributes/focus.html#Multiple Foci">Multiple Foci</a></li>
-      {%- endif -%}
-      {%endfor%}
-
-      {% for items in  page.scale %}
-      {%- if items == "single" -%}
-        <li><a href="{{site.baseurl}}/attributes/scales.html#Single Scale">Single Scale</a></li>
-      {%- elsif items == "multiple" -%}
-        <li><a href="{{site.baseurl}}/attributes/scales.html#Multiple Scales">Multiple Scales</a></li>
-      {%- endif -%}
-      {%endfor%}
-
       {% for items in  page.view %}
-      {%- if items == "single" -%}
-        <li><a href="{{site.baseurl}}/attributes/views.html#Single View">Single View</a></li>
-      {%- elsif items == "multiple" -%}
-        <li><a href="{{site.baseurl}}/attributes/views.html#Multiple Views">Multiple Views</a></li>
-      {%- endif -%}
+         <a href="{{site.baseurl}}/attributes/view.html" class="button layout" style="--border-color: #A4B3B6; --color: #A4B3B6;">{{ items }} view</a>
+      {%endfor%}
+      {% for items in  page.scale %}
+         <a href="{{site.baseurl}}/attributes/scale.html" class="button layout" style="--border-color:  #5680E9; --color:  #5680E9;">{{ items }} scale</a>
+      {%endfor%}
+      {% for items in  page.focus %}
+         <a href="{{site.baseurl}}/attributes/focus.html" class="button layout" style="--border-color: #84CEEB; --color: #84CEEB;">{{ items }} focus</a>
+      {%endfor%}
+      {% for items in  page.partition %}
+         <a href="{{site.baseurl}}/attributes/partition.html" class="button layout" style="--border-color: #41B3A3; --color: #41B3A3;">{{ items }}</a>
+      {%endfor%}
+      {% for items in  page.abstraction %}
+         <a href="{{site.baseurl}}/attributes/abstraction.html" class="button layout" style="--border-color: #44318D; --color: #44318D;">{{ items }} abstraction</a>
+      {%endfor%}
+      {% for items in  page.arrangement %}
+         <a href="{{site.baseurl}}/attributes/arrangement.html" class="button layout" style="--border-color: #E98074; --color: #E98074;">{{ items }} arrangement</a>
+      {%endfor%}
+      {% for items in  page.interconnection_type %}
+         <a href="{{site.baseurl}}/attributes/interconnection_type.html" class="button layout" style="--border-color: #5AB9EA; --color: #5AB9EA;">{{ items }} interconnection</a>
       {%endfor%}
 
-    </p>
-    <p>License: {{page.license}} </p>
-    <p> Notes: {{page.notes}} </p>
+    </div>
+    <div>
+      <h2>Tool</h2>
 
-  </div>
+          {% for items in  page.access_format %}
+              <button class="button layout" style="--border-color: #0C0032; --color: #0C0032;">{{ items }}</button>
+          {%endfor%}
+          {% for items in  page.supported_files %}
+              <button class="button layout" style="--border-color: #240090; --color: #240090;">{{ items }}</button>
+          {%endfor%}
+          {% for items in  page.license %}
+              <button class="button layout" style="--border-color: #3500D3; --color: #3500D3;">{{ items }}</button>
+          {%endfor%}
+
+          <div class="row">
+            <div class="column">
+              <h3>Tool: </h3> {{ page.title }}
+            </div>
+            <div class="column">
+              <h3>Tool Link: </h3> <a href="{{ page.browser }}" target="_blank">{{ page.browser }}</a>
+            </div>
+            <div class="column">
+              <h3>Documentation: </h3> <a href="{{ page.user_documentation }}" target="_blank">{{ page.user_documentation }}</a>
+            </div>
+          </div>
+    </div>
+    <div>
+      <h2>Paper</h2>
+      <h2>{{page.paper_title}}</h2>
+      <br>
+      {{ page.citation }}
+      <br><br>
+      Cited by: {{page.citation_count}}
+      <h3>Abstract</h3>
+      {{ page.abstract }}
+    </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
