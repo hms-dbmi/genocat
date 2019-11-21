@@ -11,16 +11,16 @@ citation: "Leiserson MDM, Gramazio CC, Hu J, Wu H-T, Laidlaw DH, Raphael BJ. MAG
 citation_count: 16
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: no
 user_documentation: n/a

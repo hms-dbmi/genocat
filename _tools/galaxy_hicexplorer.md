@@ -11,7 +11,7 @@ citation: "Wolff J, Bhardwaj V, Nothjunge S, Richard G, Renschler G, Gilsbach R,
 citation_count: 7
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single

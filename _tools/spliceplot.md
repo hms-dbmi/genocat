@@ -11,7 +11,7 @@ citation: "Wu E, Nance T, Montgomery SB. SplicePlot: a utility for visualizing s
 citation_count: 11
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: http://montgomerylab.stanford.edu/spliceplot/index.html#running-spliceplot

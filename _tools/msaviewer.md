@@ -11,7 +11,7 @@ citation: "Yachdav G, Wilzbach S, Rauscher B, Sheridan R, Sillitoe I, Procter J,
 citation_count: 71
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: between
 interconnection_density: sparse
 coordinate_systems: multiple
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app, web application]
 user_documentation_availability: yes
 user_documentation: https://youtu.be/ba4Plz8a2sg

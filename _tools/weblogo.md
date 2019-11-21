@@ -11,16 +11,16 @@ citation: "Crooks GE, Hon G, Chandonia J-M, Brenner SE. WebLogo: a sequence logo
 citation_count: 7486
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: point contiguous
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: no
 user_documentation: 

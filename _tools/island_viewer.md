@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: Island Viewer
-github_account:
+github_account: 
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4489224/
 paper_title: "IslandViewer 3: more flexible, interactive genomic island discovery, visualization and analysis"
 doi: 10.1093/nar/gkv401
@@ -11,25 +11,25 @@ citation: "Dhillon BK, Laird MR, Shay JA, Winsor GL, Lo R, Nizam F, et al. Islan
 citation_count: 244
 genome_layout: [circular, linear]
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: multiple
 scale: multiple
 view: multiple
-sparse_type:
-contiguous_type:
-interconnection_type: none
+sparse_type: 
+contiguous_type: 
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: no
-user_documentation:
+user_documentation: 
 pub_year: 2015
 license: GNU GENERAL PUBLIC LICENSE
 license_form: open source
-supported_species:
+supported_species: 
 supported_files: ['other']
 image: /assets/IslandViewer_example.png
-image_location: https://www.pathogenomics.sfu.ca/islandviewer/accession/NC_004631.1/
-notes:
+image_location: https://www.pathogenomics.sfu.ca/islandviewer/accession/NC_004631.1/?&load=%257B%2522m%2522%253A%257B%2522s%2522%253A4493092.18200115%252C%2522e%2522%253A4526150.469091758%252C%2522id%2522%253A%25222210%2522%252C%2522c%2522%253A500%252C%2522x%2522%253A%2522auto%2522%252C%2522y%2522%253A%2522auto%2522%252C%2522l%2522%253A600%257D%252C%2522un%2522%253A%255B%255D%252C%2522d%2522%253A%257B%2522v%2522%253Atrue%252C%2522t%2522%253A152.046875%252C%2522l%2522%253A836.234375%257D%257D?&load=%257B%2522m%2522%253A%257B%2522s%2522%253A4493298.565905276%252C%2522e%2522%253A4513493%252C%2522id%2522%253A%25222210%2522%252C%2522c%2522%253A500%252C%2522x%2522%253A%2522auto%2522%252C%2522y%2522%253A%2522auto%2522%252C%2522l%2522%253A600%257D%252C%2522un%2522%253A%255B%255D%252C%2522d%2522%253A%257B%2522v%2522%253Atrue%252C%2522t%2522%253A185.09375%252C%2522l%2522%253A840.3125%257D%257D
+notes: 
 ---

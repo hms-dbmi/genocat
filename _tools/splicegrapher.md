@@ -17,10 +17,10 @@ scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: sparse
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: http://splicegrapher.sourceforge.net/userguide.html

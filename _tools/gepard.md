@@ -11,7 +11,7 @@ citation: "Krumsiek J, Arnold R, Rattei T. Gepard: a rapid and sensitive tool fo
 citation_count: 403
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single

@@ -11,16 +11,16 @@ citation: "Wang Y, Song F, Zhang B, Zhang L, Xu J, Kuang D, et al. The 3D Genome
 citation_count: 58
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: [none, within, between]
+interconnection_type: [within, between]
 interconnection_density: none
 coordinate_systems: multiple
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: http://promoter.bx.psu.edu/hi-c/tutorial.html

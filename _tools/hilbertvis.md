@@ -11,16 +11,16 @@ citation: "Anders S. Visualization of genomic data with the Hilbert curve. Bioin
 citation_count: 65
 genome_layout: spacefilling
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: segment sparse
 contiguous_type: point contiguous
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [programming library]
 user_documentation_availability: yes
 user_documentation: https://bioconductor.riken.jp/packages/3.5/bioc/vignettes/HilbertVis/inst/doc/HilbertVis.pdf

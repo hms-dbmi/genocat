@@ -11,7 +11,7 @@ citation: "McKay SJ, Vergara IA, Stajich JE. Using the Generic Synteny Browser (
 citation_count: 57
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: multiple
 scale: multiple
 view: multiple

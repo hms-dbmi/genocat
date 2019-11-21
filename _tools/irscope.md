@@ -17,10 +17,10 @@ scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: multiple
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: no
 user_documentation: 

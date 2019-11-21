@@ -11,7 +11,7 @@ citation: "Frazer KA, Pachter L, Poliakov A, Rubin EM, Dubchak I. VISTA: computa
 citation_count: 1310
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single

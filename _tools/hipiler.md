@@ -11,7 +11,7 @@ citation: "Lekschas F, Bach B, Kerpedjiev P, Gehlenborg N, Pfister H. HiPiler: V
 citation_count: 13
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: multiple
 scale: multiple
 view: multiple

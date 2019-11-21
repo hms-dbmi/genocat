@@ -11,7 +11,7 @@ citation:
 citation_count: 5
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: multiple
 view: multiple

@@ -11,16 +11,16 @@ citation: "Schwarz RF, Tamuri AU, Kultys M, King J, Godwin J, Florescu AM, et al
 citation_count: 3
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: https://bitbucket.org/rfs/alvis/src/master/doc/

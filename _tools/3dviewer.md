@@ -11,16 +11,16 @@ citation: "Djekidel MN, Wang M, Zhang MQ, Gao J. HiC-3DViewer: a new tool to vis
 citation_count: 6
 genome_layout: spatial
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: dense
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application, standalone app]
 user_documentation_availability: yes
 user_documentation: http://bioinfo.au.tsinghua.edu.cn/member/nadhir/HiC3DViewer/static/data/UserManual.pdf

@@ -11,16 +11,16 @@ citation: "Cerami E, Gao J, Dogrusoz U, Gross BE, Sumer SO, Aksoy BA, et al. The
 citation_count: 4710
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single 
 view: single
 sparse_type: point sparse
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: no
 user_documentation: 

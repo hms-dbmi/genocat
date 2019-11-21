@@ -11,16 +11,16 @@ citation: "Buels R, Yao E, Diesh CM, Hayes RD, Munoz-Torres M, Helt G, et al. JB
 citation_count: 127
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application, standalone app]
 user_documentation_availability: yes
 user_documentation: https://jbrowse.org/docs/installation.html

@@ -11,7 +11,7 @@ citation: "Katz Y, Wang ET, Silterra J, Schwartz S, Wong B, Mesirov JP, et al. S
 citation_count: 8
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: https://software.broadinstitute.org/software/igv/Sashimi

@@ -11,16 +11,16 @@ citation: "Lerdrup M, Johansen JV, Agrawal-Singh S, Hansen K. An interactive env
 citation_count: 62
 genome_layout: linear
 partition: 
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: https://easeq.net/getting-started/

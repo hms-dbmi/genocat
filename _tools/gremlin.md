@@ -11,7 +11,7 @@ citation: "O’Brien TM, Ritz AM, Raphael BJ, Laidlaw DH. Gremlin: an interactiv
 citation_count: 29
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: multiple
 view: multiple
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application, standalone app]
 user_documentation_availability: yes
 user_documentation: http://compbio-research.cs.brown.edu/software/Gremlin/GremlinInteraction.pdf

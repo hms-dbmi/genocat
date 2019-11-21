@@ -140,8 +140,8 @@ document.getElementById("circular serial").onclick=function() {
 }
 
 //noabstraction
-document.getElementById("noneab").onclick=function() {
-  click_filter("noneab");
+document.getElementById("noab").onclick=function() {
+  click_filter("noab");
 }
 //partial
 document.getElementById("partialab").onclick=function() {
@@ -162,8 +162,8 @@ document.getElementById("segregated").onclick=function() {
 }
 
 //none
-document.getElementById("none").onclick=function() {
-  click_filter("none");
+document.getElementById("no").onclick=function() {
+  click_filter("no");
 }
 
 //within

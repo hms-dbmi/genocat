@@ -11,16 +11,16 @@ citation: "Overmars L, Kerkhoven R, Siezen RJ, Francke C. MGcV: the microbial ge
 citation_count: 45
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: https://mgcv.cmbi.umcn.nl/help.html#data_input

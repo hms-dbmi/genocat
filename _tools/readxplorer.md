@@ -11,16 +11,16 @@ citation: "Hilker R, Stadermann KB, Doppmeier D, Kalinowski J, Stoye J, Straube 
 citation_count: 74
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: https://www.uni-giessen.de/fbz/fb08/Inst/bioinformatik/software/ReadXplorer/documentation

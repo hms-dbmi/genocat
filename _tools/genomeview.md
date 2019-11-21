@@ -11,16 +11,16 @@ citation: "Abeel T, Van Parys T, Saeys Y, Galagan J, Van de Peer Y. GenomeView: 
 citation_count: 107
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application, standalone app]
 user_documentation_availability: yes
 user_documentation: http://genomeview.org/content/where-do-i-find-documentation

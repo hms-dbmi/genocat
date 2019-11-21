@@ -11,7 +11,7 @@ citation: "Hubbard T, Barker D, Birney E, Cameron G, Chen Y, Clark L, et al. The
 citation_count: 1482
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: multiple
 view: multiple
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: between
 interconnection_density: sparse
 coordinate_systems: multiple
-arrangement: none
+arrangement: ['no']
 access_format: [web application, standalone app]
 user_documentation_availability: yes
 user_documentation: https://useast.ensembl.org/info/index.html

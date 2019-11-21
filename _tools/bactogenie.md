@@ -11,16 +11,16 @@ citation: "Aurisano J, Reda K, Johnson A, Marai EG, Leigh J. BactoGeNIE: a large
 citation_count: 6
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: multiple
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: no
 user_documentation: 

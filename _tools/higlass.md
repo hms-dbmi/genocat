@@ -11,7 +11,7 @@ citation: "Kerpedjiev P, Abdennur N, Lekschas F, McCallum C, Dinkla K, Strobelt 
 citation_count: 23
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: multiple
 scale: multiple
 view: multiple

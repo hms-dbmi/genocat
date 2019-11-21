@@ -11,16 +11,16 @@ citation: "Mayor C, Brudno M, Schwartz JR, Poliakov A, Rubin EM, Frazer KA, et a
 citation_count: 889
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: multiple
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: http://pipeline.lbl.gov/vista_help/help.html#vistapoint

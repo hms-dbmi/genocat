@@ -11,16 +11,16 @@ citation: "Petkau A, Stuart-Edwards M, Stothard P, Van Domselaar G. Interactive 
 citation_count: 114
 genome_layout: [linear, circular]
 partition: 
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: 
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application, programming library]
 user_documentation_availability: yes
 user_documentation: https://www.gview.ca/wiki/GViewDocumentation/WebHome

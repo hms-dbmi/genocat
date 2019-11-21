@@ -11,7 +11,7 @@ citation: "Fiume M, Smith EJM, Brook A, Strbenac D, Turner B, Mezlini AM, et al.
 citation_count: 60
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: multiple
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: no
 user_documentation: n/a

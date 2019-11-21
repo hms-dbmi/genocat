@@ -11,13 +11,13 @@ citation: "Cao X, Zhong S. Enabling interspecies epigenomic comparison with CEpB
 citation_count: 6
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: [multiple, single]
 scale: [multiple, single]
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: linear parallel

@@ -141,13 +141,13 @@ layout: page
       <h2>Tool</h2>
 
           {% for items in  page.access_format %}
-              <button class="button layout" style="--border-color: #0C0032; --color: #0C0032;">{{ items }}</button>
+              <button class="button layout" style="--border-color: #0C0032; --color: #0C0032;">Access  Format: {{ items }}</button>
           {%endfor%}
           {% for items in  page.supported_files %}
-              <button class="button layout" style="--border-color: #240090; --color: #240090;">{{ items }}</button>
+              <button class="button layout" style="--border-color: #240090; --color: #240090;">Supported Files: {{ items }}</button>
           {%endfor%}
           {% for items in  page.license %}
-              <button class="button layout" style="--border-color: #3500D3; --color: #3500D3;">{{ items }}</button>
+              <button class="button layout" style="--border-color: #3500D3; --color: #3500D3;">License: {{ items }}</button>
           {%endfor%}
 
           <div class="row">

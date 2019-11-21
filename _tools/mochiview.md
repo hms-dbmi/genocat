@@ -11,16 +11,16 @@ citation: "Homann OR, Johnson AD. MochiView: versatile software for genome brows
 citation_count: 106
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: https://static1.squarespace.com/static/56463117e4b0770d2cd2d163/t/564bbbb1e4b0c03db1589e9a/1447803825330/MochiView_Manual_v1.45.pdf

@@ -11,7 +11,7 @@ citation: "Cheong W-H, Tan Y-C, Yap S-J, Ng K-P. ClicO FS: an interactive web-ba
 citation_count: 35
 genome_layout: circular
 partition: [segregated, contiguous]
-abstraction: [none, partial]
+abstraction: [partial]
 focus: single
 scale: single
 view: single

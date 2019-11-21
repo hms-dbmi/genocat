@@ -11,16 +11,16 @@ citation: "Gu Z, Eils R, Schlesner M. HilbertCurve: an R/Bioconductor package fo
 citation_count: 6
 genome_layout: spacefilling
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: segment sparse
 contiguous_type: point contiguous
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [programming library]
 user_documentation_availability: yes
 user_documentation: https://bioconductor.org/packages/release/bioc/vignettes/HilbertCurve/inst/doc/HilbertCurve.html

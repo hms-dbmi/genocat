@@ -11,16 +11,16 @@ citation: "Bailey TL, Williams N, Misleh C, Li WW. MEME: discovering and analyzi
 citation_count: 1790
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application, standalone app]
 user_documentation_availability: yes
 user_documentation: http://meme-suite.org/doc/overview.html?man_type=web

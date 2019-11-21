@@ -11,16 +11,16 @@ citation: "Thorvaldsdóttir H, Robinson JT, Mesirov JP. Integrative Genomics Vie
 citation_count: 3693
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: multiple
 scale: multiple
 view: multiple
 sparse_type: point sparse
 contiguous_type: segment contiguous
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: 
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application, standalone app]
 user_documentation_availability: yes
 user_documentation: https://software.broadinstitute.org/software/igv/UserGuide

@@ -11,16 +11,16 @@ citation: "Chelaru F, Smith L, Goldstein N, Bravo HC. Epiviz: interactive visual
 citation_count: 47
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application, standalone app, programming library]
 user_documentation_availability: yes
 user_documentation: https://epiviz.github.io/documentation/

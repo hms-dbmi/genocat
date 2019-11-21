@@ -11,13 +11,13 @@ citation: "Albers D, Dewey C, Gleicher M. Sequence Surveyor: leveraging overview
 citation_count: 44
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: linear parallel

@@ -11,16 +11,16 @@ citation: "O’Shea JP, Chou MF, Quader SA, Ryan JK, Church GM, Schwartz D. pLog
 citation_count: 137
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: https://plogo.uconn.edu/help/plogomap

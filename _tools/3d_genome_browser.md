@@ -11,7 +11,7 @@ citation: "Butyaev A, Mavlyutov R, Blanchette M, Cudré-Mauroux P, Waldispühl J
 citation_count: 3
 genome_layout: spatial
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: within
 interconnection_density: dense
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: http://3dgb.cs.mcgill.ca/

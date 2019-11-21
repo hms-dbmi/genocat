@@ -11,7 +11,7 @@ citation: "Haug-Baltzell A, Stephens SA, Davey S, Scheidegger CE, Lyons E. SynMa
 citation_count: 21
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single

@@ -11,7 +11,7 @@ citation: "Sinha AU, Meller J. Cinteny: flexible analysis and visualization of s
 citation_count: 134
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single

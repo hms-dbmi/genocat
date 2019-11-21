@@ -11,7 +11,7 @@ citation: "Robinson JT, Turner D, Durand NC, Thorvaldsdóttir H, Mesirov JP, Aid
 citation_count: 17
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: multiple
 view: multiple

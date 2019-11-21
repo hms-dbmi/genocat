@@ -11,16 +11,16 @@ citation: "NCBI Resource Coordinators. Database Resources of the National Center
 citation_count: 1429
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: https://www.ncbi.nlm.nih.gov/genome/gdv/browser/help/

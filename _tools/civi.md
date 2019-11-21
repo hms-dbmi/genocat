@@ -11,16 +11,16 @@ citation: "Overmars L, van Hijum SAFT, Siezen RJ, Francke C. CiVi: circular geno
 citation_count: 17
 genome_layout: circular
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: segment sparse
 contiguous_type: point contiguous
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: http://civi.cmbi.ru.nl/help.html

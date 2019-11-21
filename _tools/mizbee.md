@@ -11,7 +11,7 @@ citation: "Meyer M, Munzner T, Pfister H. MizBee: a multiscale synteny browser. 
 citation_count: 142
 genome_layout: [linear, circular]
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: multiple
 view: multiple

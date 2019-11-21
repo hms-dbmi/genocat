@@ -11,16 +11,16 @@ citation: "Wolfsberg TG. Using the NCBI Map Viewer to browse genomic sequence da
 citation_count: 37
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: multiple
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: 
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: https://www.ncbi.nlm.nih.gov/tools/sviewer/

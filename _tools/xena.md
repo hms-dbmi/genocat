@@ -11,16 +11,16 @@ citation: "Goldman M, Craft B, Brooks AN, Zhu J, Haussler D. The UCSC Xena Platf
 citation_count: 35
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: multiple
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: 
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: https://ucsc-xena.gitbook.io/project/

@@ -11,7 +11,7 @@ citation: "Durand NC, Robinson JT, Shamim MS, Machol I, Mesirov JP, Lander ES, e
 citation_count: 189
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: [within]
 interconnection_density: dense
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: https://github.com/aidenlab/Juicebox/wiki

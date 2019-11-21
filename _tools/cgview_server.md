@@ -11,16 +11,16 @@ citation: "Grant JR, Stothard P. The CGView Server: a comparative genomics tool 
 citation_count: 358
 genome_layout: circular
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: no
 user_documentation: n/a

@@ -11,7 +11,7 @@ citation: "Taberlay PC, Achinger-Kawecka J, Lun ATL, Buske FA, Sabir K, Gould CM
 citation_count: 104
 genome_layout: circular
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type: segment contiguous
 interconnection_type: within
 interconnection_density: dense
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: https://www.youtube.com/watch?v=s8eorV5aL6U&feature=youtu.be

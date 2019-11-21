@@ -11,16 +11,16 @@ citation: "Yin T, Cook D, Lawrence M. ggbio: an R package for extending the gram
 citation_count: 145
 genome_layout: [linear, circular]
 partition: [segregated, contiguous]
-abstraction: [none, partial]
+abstraction: [partial]
 focus: single
 scale: single
 view: [single, multiple]
 sparse_type: 
 contiguous_type: 
-interconnection_type: [none, within, between]
+interconnection_type: [within, between]
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [programming library]
 user_documentation_availability: yes
 user_documentation: https://bioconductor.org/packages/release/bioc/vignettes/ggbio/inst/doc/ggbio.pdf

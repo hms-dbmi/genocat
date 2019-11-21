@@ -11,7 +11,7 @@ citation: "Herbig A, Jäger G, Battke F, Nieselt K. GenomeRing: alignment visual
 citation_count: 45
 genome_layout: circular
 partition: ['segregated', 'contiguous']
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: between
 interconnection_density: none
 coordinate_systems: multiple
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: https://uni-tuebingen.de/index.php?eID=tx_securedownloads&p=156756&u=0&g=0&t=1564721933&hash=75c3bc2982100e01b583263ea77447020e61d401&file=/fileadmin/Uni_Tuebingen/Fakultaeten/InfoKogni/WSI/IntegTranskript/Softwareprojekte/GenomeRing/howto.pdf

@@ -11,7 +11,7 @@ citation: "Shen, L., Shao, N., Liu, X. and Nestler, E., 2014. ngs. plot: Quick m
 citation_count: 351
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: multiple
 scale: single
 view: multiple
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [programming language]
 user_documentation_availability: yes
 user_documentation: https://github.com/shenlab-sinai/ngsplot

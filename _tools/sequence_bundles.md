@@ -11,16 +11,16 @@ citation: "Kultys M, Nicholas L, Schwarz R, Goldman N, King J. Sequence Bundles:
 citation_count: 7
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes
 user_documentation: https://www.ebi.ac.uk/goldman-srv/sequencebundles/

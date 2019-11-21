@@ -11,13 +11,13 @@ citation: "Bryan C, Guterman G, Ma K, Lewin H, Larkin D, Kim J, et al. Synteny E
 citation_count: 4
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: multiple
 arrangement: ['linear parallel', 'circular serial']

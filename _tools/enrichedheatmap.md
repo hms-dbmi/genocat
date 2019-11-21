@@ -11,16 +11,16 @@ citation: "Gu Z, Eils R, Schlesner M, Ishaque N. EnrichedHeatmap: an R/Bioconduc
 citation_count: 7
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [programming language]
 user_documentation_availability: yes
 user_documentation: https://bioconductor.org/packages/release/bioc/vignettes/EnrichedHeatmap/inst/doc/EnrichedHeatmap.html

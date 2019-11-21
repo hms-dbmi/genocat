@@ -11,16 +11,16 @@ citation: "Donlin MJ. Using the Generic Genome Browser (GBrowse). Curr Protoc Bi
 citation_count: 127
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: multiple
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: 
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: http://gmod.org/wiki/GBrowse#Documentation

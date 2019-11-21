@@ -11,7 +11,7 @@ citation: "Persephone Software, LLC. Persephone: A multi-genome browser carefull
 citation_count: 0
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: multiple
 scale: multiple
 view: multiple

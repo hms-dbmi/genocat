@@ -11,16 +11,16 @@ citation: "Ramírez F, Ryan DP, Grüning B, Bhardwaj V, Kilpert F, Richter AS, e
 citation_count: 630
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: multiple
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: https://deeptools.readthedocs.io/en/develop/content/tools/plotHeatmap.html

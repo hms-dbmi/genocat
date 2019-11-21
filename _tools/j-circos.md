@@ -11,7 +11,7 @@ citation: "An J, Lai J, Sajjanhar A, Batra J, Wang C, Nelson CC. J-Circos: an in
 citation_count: 30
 genome_layout: circular
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: within
 interconnection_density: sparse
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: http://www.australianprostatecentre.org/SoftwareAttachments/manual_jcircosv2.pdf

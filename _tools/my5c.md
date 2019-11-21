@@ -11,7 +11,7 @@ citation: "Lajoie BR, van Berkum NL, Sanyal A, Dekker J. My5C: web tools for chr
 citation_count: 84
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: multiple
 view: multiple

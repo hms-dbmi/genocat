@@ -11,16 +11,16 @@ citation: "Lanchantin J, Singh R, Wang B, Qi Y. DEEP MOTIF DASHBOARD: VISUALIZIN
 citation_count: 45
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
 sparse_type: 
 contiguous_type: 
-interconnection_type: none
+interconnection_type: ['no']
 interconnection_density: none
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: https://github.com/QData/DeepMotif/blob/master/README.md

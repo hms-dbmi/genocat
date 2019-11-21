@@ -11,7 +11,7 @@ citation: "Larsson A. AliView: a fast and lightweight alignment viewer and edito
 citation_count: 606
 genome_layout: linear
 partition: segregated
-abstraction: [none, partial]
+abstraction: [partial]
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: between
 interconnection_density: sparse
 coordinate_systems: multiple
-arrangement: none
+arrangement: ['no']
 access_format: [standalone app]
 user_documentation_availability: yes
 user_documentation: http://ormbunkar.se/aliview/#TOP_HELP

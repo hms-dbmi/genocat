@@ -11,7 +11,7 @@ citation: "Martin JS, Xu Z, Reiner AP, Mohlke KL, Sullivan P, Ren B, et al. HUGI
 citation_count: 31
 genome_layout: linear
 partition: segregated
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: between
 interconnection_density: dense
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: ['web application']
 user_documentation_availability: yes
 user_documentation: https://yunliweb.its.unc.edu/HUGIn/tutorial_page.php

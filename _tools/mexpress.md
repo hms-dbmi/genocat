@@ -11,7 +11,7 @@ citation: "Koch, A., De Meyer, T., Jeschke, J. and Van Criekinge, W., 2015. MEXP
 citation_count: 55
 genome_layout: linear
 partition: contiguous
-abstraction: none
+abstraction: ['no']
 focus: single
 scale: single
 view: single
@@ -20,7 +20,7 @@ contiguous_type:
 interconnection_type: between
 interconnection_density: sparse
 coordinate_systems: single
-arrangement: none
+arrangement: ['no']
 access_format: [web application]
 user_documentation_availability: yes 
 user_documentation: https://mexpress.be/about.html
