@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: http://3dgb.cs.mcgill.ca/
 pub_year: 2015
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['notapplicable']
 image: /assets/3D_Genome_Browser.jpg

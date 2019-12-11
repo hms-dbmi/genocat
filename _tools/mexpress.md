@@ -25,8 +25,8 @@ access_format: [web application]
 user_documentation_availability: yes 
 user_documentation: https://mexpress.be/about.html
 pub_year: 2015
-license: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-license_form: creative commons
+license: MIT
+license_form: open source
 supported_species: 
 supported_files: ['notapplicable']
 image: /assets/mexpress.png

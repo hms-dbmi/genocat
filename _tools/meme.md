@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: http://meme-suite.org/doc/overview.html?man_type=web
 pub_year: 2006
 license: The Regents of the University of California
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['fasta']
 image: /assets/meme.png

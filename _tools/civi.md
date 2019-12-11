@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: http://civi.cmbi.ru.nl/help.html
 pub_year: 2015
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['other']
 image: /assets/Civi.png

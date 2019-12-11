@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: https://pdfs.semanticscholar.org/1122/9b9f3aacfcbdd39afd73a74466aa19f63284.pdf
 pub_year: 2006
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['notapplicable']
 image: /assets/Combo.png

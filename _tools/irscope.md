@@ -26,7 +26,7 @@ user_documentation_availability: no
 user_documentation: 
 pub_year: 2018
 license: Under the license of the University of Helsinki
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['fasta', 'other']
 image: /assets/irscope.jpg

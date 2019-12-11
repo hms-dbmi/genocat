@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: http://compbio-research.cs.brown.edu/software/Gremlin/GremlinInteraction.pdf
 pub_year: 2010
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['notapplicable']
 image: /assets/Gremlin.png

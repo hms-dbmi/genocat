@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: https://www.ncbi.nlm.nih.gov/tools/sviewer/
 pub_year: 2007
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['notapplicable']
 image: /assets/NCBISequenceViewer.png

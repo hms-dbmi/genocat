@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: https://yunliweb.its.unc.edu/HUGIn/tutorial_page.php
 pub_year: 2017
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['notapplicable']
 image: /assets/hugin.png

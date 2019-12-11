@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: http://splicegrapher.sourceforge.net/userguide.html
 pub_year: 2012
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['sambamcram', 'other']
 image: /assets/splicegrapher.png

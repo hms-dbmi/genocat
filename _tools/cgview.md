@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: http://wishart.biology.ualberta.ca/cgview/application.html
 pub_year: 2015
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['txttab', 'other']
 image: /assets/CGView.png

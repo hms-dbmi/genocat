@@ -25,8 +25,8 @@ access_format: [web application, programming library]
 user_documentation_availability: yes
 user_documentation: https://higlass.io/docs
 pub_year: 2018
-license: Creative Commons Attribution license (CC BY)
-license_form: creative commons
+license: MIT
+license_form: open source
 supported_species: 
 supported_files: ['bed', 'other']
 image: /assets/HiGlass.png

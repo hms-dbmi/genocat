@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: http://promoter.bx.psu.edu/hi-c/tutorial.html
 pub_year: 2018
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['other']
 image: /assets/3Dgenomebrowser.jpg

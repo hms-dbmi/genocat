@@ -25,8 +25,8 @@ access_format: [web application]
 user_documentation_availability: yes
 user_documentation: https://www.ebi.ac.uk/goldman-srv/sequencebundles/
 pub_year: 2014
-license: Creative Commons CC BY v4.0 license 
-license_form: creative commons
+license: r GNU Affero General Public License version 3
+license_form: open source
 supported_species: 
 supported_files: ['fasta']
 image: /assets/sequencebundles.png

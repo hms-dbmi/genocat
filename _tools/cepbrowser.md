@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: https://www.cepbrowser.org/cpbrowser/manual.php
 pub_year: 2013
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['notapplicable']
 image: /assets/cepbrowser.png

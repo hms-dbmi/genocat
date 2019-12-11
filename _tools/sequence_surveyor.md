@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: https://graphics.cs.wisc.edu/Vis/SequenceSurveyor/SequenceSurveyor_User.html
 pub_year: 2011
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['other']
 image: /assets/sequencesurveryor.png

@@ -26,7 +26,7 @@ user_documentation_availability: no
 user_documentation: n/a
 pub_year: 2009
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['fasta', 'bed']
 image: /assets/my5c.png

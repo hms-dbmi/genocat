@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: https://epigenomegateway.readthedocs.io/en/latest/
 pub_year: 2011
 license: unavailable
-license_form: unavailable
+license_form: open source
 supported_species: 
 supported_files: ['notapplicable']
 image: /assets/washu.png

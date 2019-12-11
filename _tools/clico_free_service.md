@@ -26,7 +26,7 @@ user_documentation_availability: no
 user_documentation: http://codoncloud.com:3000/help
 pub_year: 2015
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['txttab', 'other']
 image: /assets/clico.png

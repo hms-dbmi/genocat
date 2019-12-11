@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: https://www.uni-giessen.de/fbz/fb08/Inst/bioinformatik/software/EDGAR/documentation
 pub_year: 2016
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['other']
 image: /assets/edgarsyntenymatrix.png

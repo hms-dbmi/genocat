@@ -105,17 +105,13 @@ document.getElementById("other").onclick=function() {
 document.getElementById("open source").onclick=function() {
   click_filter("open source");
 }
-//creative commons
-document.getElementById("creative commons").onclick=function() {
-  click_filter("creative commons");
-}
 //commercial
 document.getElementById("commercial").onclick=function() {
   click_filter("commercial");
 }
 //unavailable
-document.getElementById("unavailable").onclick=function() {
-  click_filter("unavailable");
+document.getElementById("unknown").onclick=function() {
+  click_filter("unknown");
 }
 
 //linear parallel

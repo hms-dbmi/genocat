@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: https://plogo.uconn.edu/help/plogomap
 pub_year: 2013
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['fasta']
 image: /assets/plogo.png

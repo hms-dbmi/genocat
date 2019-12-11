@@ -26,7 +26,7 @@ user_documentation_availability: yes
 user_documentation: http://bioinfo.au.tsinghua.edu.cn/member/nadhir/HiC3DViewer/static/data/UserManual.pdf
 pub_year: 2017
 license: unavailable
-license_form: unavailable
+license_form: unknown
 supported_species: 
 supported_files: ['txttab', 'bed']
 image: /assets/3dviewer.png
