@@ -28,6 +28,7 @@ user_documentation: #link to user documentation
 pub_year: # paper publication year
 license: # license name
 license_form: # open source / commercial
+supported_files: #['bed', 'fasta', 'sambamcram', 'vcf', 'notapplicable', 'txttab', 'other']
 image: # url or file path to the image
 image_location: # image url
 notes:

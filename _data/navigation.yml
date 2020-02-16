@@ -14,5 +14,7 @@ primary:
     href: /search_page/
   - text: Taxonomy
     href: /taxonomy_page/
+  - text: Contribute a tool
+    href: /submission/
 
 secondary: []
