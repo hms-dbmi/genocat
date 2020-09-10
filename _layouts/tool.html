@@ -135,6 +135,9 @@ layout: page
       {% for items in  page.interconnection_type %}
          <a href="{{site.baseurl}}/attributes/interconnection_type.html" class="button layout" style="--border-color: #E69F00; --color: #E69F00;">{{ items }} interconnection</a>
       {%endfor%}
+      {% for items in  page.type %}
+         <button class="button layout" style="--border-color: #BAE4BC; --color: #BAE4BC;">Access  Format: {{ items }}</button>
+      {%endfor%}
 
     </div>
     <div>
