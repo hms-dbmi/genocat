@@ -35,7 +35,7 @@ categories: attributes
     <div class="grid-container">
       {% for post in site.tools %}
         {% for items in  post.interconnection_type %}
-          {% if items == "none" %}
+          {% if items == "no" %}
             <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
           {% endif %}
         {% endfor %}

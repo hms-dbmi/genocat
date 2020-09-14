@@ -14,26 +14,176 @@ permalink: /submission/
 <body>
 <br>
 
-GenoCAT is a crowdsourced resource. Data visualization tool developers can add their own tools to our GenoCAT or edit any errors users may come across when browsing through tool pages. Each tool is organized into markdown files and can be accessed via our Github repository.
+GenoCAT is a crowdsourced resource. Data visualization tool developers can add their own tools to GenoCAT or edit any errors users may come across when browsing through tool pages. Tool are organized into Markdown files and can be accessed via our GitHub repository. You can find the Markdown files for all tools on the website in this <a href="https://github.com/hms-dbmi/genocat/tree/master/_tools">folder</a>. <br><br>
 
-<h2>To add a new tool:</h2>
-Step 1. Fork our repository on <a href="https://github.com/hms-dbmi/genocat">Github</a>.<br>
-Step 2. Using <a href="https://github.com/hms-dbmi/genocat/blob/master/template.md">template.md</a>, create a markdown file for your tool and upload it into “_tools”<br>
-Step 3. Take a screenshot of your tool and name the file “/assets/imagename.png”<br>
-Step 4. Upload the screenshot in “assets”<br>
-Step 5. Double check and make sure the "images: " frontmatter in your markdown file has the correct path (ex. /assets/imagename.png)<br>
-Step 6. Create a new branch for your commit on Github and start a pull request to the staging branch.<br>
+To add a new tool, first fork our repository on GitHub. Using <a href="https://github.com/hms-dbmi/genocat/blob/master/template.md">template.md</a>, create a Markdown file for your tool following the instruction below and upload it into “_tools”. <br><br>
 
-<h2>To edit an existing tool:</h2>
-Step 1. Identify the tool under “_tools” on <a href="https://github.com/hms-dbmi/genocat">Github</a>.<br>
-Step 2. Edit the markdown file<br>
-Step 3. Create a new branch for this commit and start a pull request<br>
+The following describes each parameter in the template. Do not change the first parameter. It must remain ‘layout: tool’. Please follow the outlined instructions (e.g., brackets and quotations) when indicated. This allows for multiple characteristics if your tool supports multiple characteristics and should be indicated as such: [“linear”, “circular”]. If a parameter doesn’t apply for your tool, leave it blank.<br><br>
+
+title:<br>
+Provide the name of the tool.<br><br>
+
+developer_github_account:<br>
+Provide your GitHub username.<br><br>
 <br>
+paper:
+Provide a link to the tool’s paper or preprint. <br><br>
+
+paper_title:<br>
+Provide the title of the paper, in quotation marks (e.g., “Circos: an information aesthetic for comparative genomics”).<br><br>
+
+doi:<br>
+Provide the publication or preprint DOI.<br><br>
+
+browser:<br>
+Provide a link to the tool itself. This could be a website or GitHub repository.<br><br>
+
+abstract:<br>
+Provide the abstract for the tool’s paper, in quotation marks (e.g. “We created a visualization tool called Circos to facilitate the identification and analysis of similarities and differences arising from comparisons of genomes…”). <br><br>
+
+citation:<br>
+Provide the citation for the tool’s paper, in quotation marks (e.g. “Krzywinski M, Schein J, Birol I, Connors J, Gascoyne R, Horsman D, et al. Circos: an information aesthetic for comparative genomics. Genome Res. 2009;19: 1639–1645.”). <br><br>
+
+citation_count: <br>
+Provide the current number of times the paper has been cited according to Google Scholar.<br><br>
+
+<a href="http://genocat.tools/attributes/type.html">type:</a><br>
+Provide the segment/point, sparse/contiguous type of the tool, based on the following descriptions. <br><br>
+
+Segment vs. point:
+Features that only cover one nucleotide are referred to as “point” type features, while features covering more than one nucleotide are called “segment” features.<br>
+
+Sparse vs. contiguous:
+“Sparse” type feature sets contain gaps between features, while “contiguous” feature sets cover the entire genome. <br>
+
+Choose one or more types from the following list: [“segment sparse”, “point contiguous”, “point sparse”, “segment contiguous”], and use brackets and quotations (e.g., [“segment sparse”]) <br><br>
+
+<a href="http://genocat.tools/attributes/interconnection_type.html">interconnection_type:</a><br>
+Provide the interconnection type of the tool, based on the following definitions.<br><br>
+
+<a href="http://genocat.tools/attributes/interconnection_type.html#None">None:</a><br>
+No interconnection between sequences<br>
+
+<a href="http://genocat.tools/attributes/interconnection_type.html#Within">Within:</a><br>
+Interconnections that connect features within a sequence<br>
+
+<a href="http://genocat.tools/attributes/interconnection_type.html#Between">Between:</a><br>
+Interconnections that connect features between sequences <br>
+
+Choose from the following interconnection types: [“no”, “within”, “between”], and use brackets and quotations (e.g. [“within”, ‘between”]) <br><br>
+
+<a href="http://genocat.tools/attributes/layout.html">genome_layout:</a><br>
+Provide the layout of the genome, according to the following definitions. <br><br>
+
+<a href="http://genocat.tools/attributes/layout.html#Linear">Linear:</a><br>
+The genome is laid out linearly. <br>
+
+<a href="http://genocat.tools/attributes/layout.html#Circular">Circular:</a><br>
+The genome is represented as a circle. <br>
+
+<a href="http://genocat.tools/attributes/layout.html#Spatial">Spatial:</a><br>
+Spatial layouts display sequences in a 3-dimensional space.<br>
+
+<a href="http://genocat.tools/attributes/layout.html#Space%20Filling">Space-filling:</a><br>
+The space-filling curve displays a more global overview of the genome while maintaining the spatial distribution of features, for example, using a Hilbert or other space-filling curve. <br>
+
+Choose from the following interaction types: [“linear”, “circular”, “spatial”, “spacefilling”], and use brackets and double quotations (e.g. [“linear”]) <br><br>
+
+<a href="http://genocat.tools/attributes/partition.html">partition:</a><br>
+Provide the partition, according to the following definitions. <br><br>
+
+<a href="http://genocat.tools/attributes/partition.html#Contiguous">Contiguous:</a><br>
+Segments, typically individual chromosomes, of the genome are joined together end-to-end.<br>
+
+<a href="http://genocat.tools/attributes/partition.html#Segregated">Segregated:</a><br>
+Segments, typically individual chromosomes, of the genome are displayed separately.<br>
+
+Choose from the following partition types: [“contiguous”, “segregated”], and use brackets and double quotations (e.g. [“contiguous”]) <br><br>
+
+<a href="http://genocat.tools/attributes/abstraction.html">abstraction:</a><br>
+Abstraction allows for the reduction of space in order to concentrate on specific regions of the genome.<br><br>
+
+<a href="http://genocat.tools/attributes/abstraction.html#None">No:</a><br>
+Describes tools where no part of the genome is abstracted or removed.<br>
+
+<a href="http://genocat.tools/attributes/abstraction.html#Partial">Partial:</a><br>
+Describes tools where parts of the genome is abstracted or removed<br>
+
+<a href="http://genocat.tools/attributes/abstraction.html#Complete">Complete:</a><br>
+Describes tools where all of the genome is abstracted or removed<br>
+
+Choose from the following formats:  [“no”, “partial”, “complete”] and use brackets and double quotations.<br><br>
+
+arrangement:
+Different genomic arrangements can be used to better compare and visualize genomic features. <br><br>
+
+Linear parallel:
+Describes multiple linear visualizations laid in parallel<br>
+
+Linear serial:
+Describes multiple linear genomic segments laid side by side<br>
+
+Linear orthogonal:
+Describes multiple linear genomic segments laid in a 90 degree. Examples include in a heatmap fashion.<br>
+
+Circular parallel:
+Describes circular genomic regions laid in outer as and inner rings.<br>
+
+Circular serial:
+Describes circular genomic regions laid side by side<br>
+
+Choose from the following arrangement types: [“linear parallel”, “linear serial”, “linear orthogonal”, “circular parallel”, “circular serial”] and use brackets and double quotations <br><br>
+
+view:<br>
+A view describes a set of one or multiple aligned tracks. Multiple views allow for visualizations with multiple scales and foci. Choose from the following viewtypes: [“single”, “multiple”].<br><br>
+
+scale: <br>
+Single scale visualizations display a genome from a single perspective - one size, while multiple scale visualization allows for visualizing data from multiple perspectives/sizes at once. Choose from the following scale types: [“single”, “multiple”].<br><br>
+
+focus:<br>
+A single focus is similar to sliding a window across the genome. Only the region in this window can be analyzed. Multiple foci enable users to look at distinct segments of a genome in parallel and compare features that are dispersed across the genome.  Choose from the following focus types: [“single”, “multiple”].<br><br>
+
+coordinate_systems:<br>
+Tools can allow the visualization of a single coordinate system at the time or multiple simultaneously. Choose from the following coordinate systems: [“single”, “multiple”].<br><br>
+
+access_format: <br>
+Indicate how your tool  can be accessed (through a web link, software, package, etc). Choose from the following formats: [“web application”, “standalone app”, “programming library”] and use brackets and double quotations.<br><br>
+
+user_documentation_availability: <br>
+Indicate whether user documentation for your tool is provided in the following format: [“yes”, “no”]<br><br>
+
+user_documentation:<br>
+Provide a URL link to tool documentation<br><br>
+
+pub_year: <br>
+Provide your tool’s publication year<br><br>
+
+license: <br>
+Indicate your tool’s license (e.g. MIT, GPL)<br><br>
+
+license_form:<br>
+Indicate whether you tool’s licensing is open source or commercial using the following format  [“open source”, “commercial”] <br><br>
+
+supported_files: <br>
+Indicate which of the files your tool supports out of [“bed”, “fasta”, “sambamcram”, “vcf”, “notapplicable”, “txttab”, “other”]<br><br>
+
+image:<br>
+Provide a file path to the image in the following format /assets/[TOOLNAME].png<br><br>
+
+image_location: <br>
+Provide the image URL, if applicable<br><br>
+
+notes: <br>
+Any further notes necessary<br><br>
+
+
+<br>
+For more information on taxonomy parameters, visit http://genocat.tools/taxonomy_page/
 Once submitted, the pull request will be reviewed by the GenoCAT team. For questions, please contact nils@hms.harvard.edu.
 
+<br>
+Once submitted, the pull request will be reviewed by the GenoCAT team. For questions, please contact nils@hms.harvard.edu.
 <br><br>
 <a href="https://github.com/hms-dbmi/genocat" class="fa fa-github" style="font-size:36px"></a>
-
-
 </body>
 </html>
