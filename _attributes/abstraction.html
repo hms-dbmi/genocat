@@ -35,7 +35,7 @@ A way of reducing the space of a sequence in order to concentrate on specific re
 <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.abstraction == "none" %}
+        {% if post.abstraction == "no" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
       {% endfor %}
