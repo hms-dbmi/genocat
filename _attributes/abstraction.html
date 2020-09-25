@@ -50,9 +50,11 @@ A way of reducing the space of a sequence in order to concentrate on specific re
 <br><br>
 <div class="grid-container">
   {% for post in site.tools %}
-    {% if post.abstraction == "partial" %}
-      <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-    {% endif %}
+    {% for items in post.abstraction %}
+      {% if items == "partial" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+      {% endif %}
+    {% endfor %}
   {% endfor %}
 </div>
 </div>
@@ -64,8 +66,10 @@ A way of reducing the space of a sequence in order to concentrate on specific re
     <br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.abstraction == "complete" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+        {% for items in post.abstraction %}
+          {% if items == "complete" %}
+            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
 </div>
