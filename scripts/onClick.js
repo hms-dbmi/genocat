@@ -172,9 +172,24 @@ document.getElementById("between").onclick=function() {
   click_filter("between");
 }
 
-//web application
-document.getElementById("web application").onclick=function() {
-  click_filter("web application");
+//pointsparse
+document.getElementById("point sparse").onclick=function() {
+  click_filter("point sparse");
+}
+
+//point contiguous
+document.getElementById("point contiguous").onclick=function() {
+  click_filter("point contiguous");
+}
+
+//segment sparse
+document.getElementById("segment sparse").onclick=function() {
+  click_filter("segment sparse");
+}
+
+//segment contiguous
+document.getElementById("segment contiguous").onclick=function() {
+  click_filter("segment contiguous");
 }
 
 //standalone
