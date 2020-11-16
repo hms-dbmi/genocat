@@ -37,9 +37,11 @@ Eukaryotic genomes often consist of multiple chromosomes, which are distinct seq
     <br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.partition == "contiguous" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+        {% for items in post.partition %}
+          {% if items == "contiguous" %}
+            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </div>
 </div>
@@ -56,9 +58,11 @@ Eukaryotic genomes often consist of multiple chromosomes, which are distinct seq
     <br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.partition == "segregated" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+        {% for items in post.partition %}
+          {% if items == 'segregated' %}
+            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </div>
 </div>

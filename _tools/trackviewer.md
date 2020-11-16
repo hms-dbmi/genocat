@@ -10,21 +10,37 @@ abstract: "As high-throughput sequencing’s cost continues to decrease and its 
 citation: "Ou J, Zhu LJ. trackViewer: a Bioconductor package for interactive and integrative visualization of multi-omics data. Nature methods. 2019 Jun;16(6):453-4."
 citation_count: 14
 type: ['segment sparse', 'point contiguous', 'point sparse', 'segment contiguous']
+<<<<<<< HEAD
 interconnection_type: ['within']
 genome_layout: ['linear']
 partition: ['segregated']
 abstraction: ['partial']
 arrangement: ['linear parallel']
+=======
+interconnection_type: 'within'
+genome_layout: 'linear'
+partition: 'segregated'
+abstraction: 'partial'
+arrangement: 'linear parallel'
+>>>>>>> 20b540d69285574e1b8e9351eebc0914ec673356
 view: multiple
 scale: multiple
 focus: multiple
 coordinate_systems: multiple
+<<<<<<< HEAD
 access_format: [“programming library”]
+=======
+access_format: 'programming library'
+>>>>>>> 20b540d69285574e1b8e9351eebc0914ec673356
 user_documentation_availability: yes
 user_documentation: https://bioconductor.org/packages/release/bioc/vignettes/trackViewer/inst/doc/trackViewer.html
 pub_year: 2019
 license: GPL
+<<<<<<< HEAD
 license_form: open source'
+=======
+license_form: 'open source'
+>>>>>>> 20b540d69285574e1b8e9351eebc0914ec673356
 supported_files: ['bed']
 image: /assets/trackViewer.png
 image_location: https://bioconductor.org/packages/release/bioc/vignettes/trackViewer/inst/doc/trackViewer.html
