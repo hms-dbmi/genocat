@@ -1,5 +1,5 @@
 var arr = [];
-var num_categories = 11;
+var num_categories = 12;
 for (var i=0; i < num_categories; i++) {
   arr.push([]);
 }
