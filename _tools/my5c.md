@@ -9,7 +9,7 @@ browser: http://my5c.umassmed.edu/welcome/welcome.php
 abstract: None.
 citation: "Lajoie BR, van Berkum NL, Sanyal A, Dekker J. My5C: web tools for chromosome conformation capture studies. Nat Methods. nature.com; 2009;6: 690–691."
 citation_count: 84
-type: ['segment sparse']
+type: ['segment sparse', 'segment contiguous', 'point sparse', 'point contiguous']
 interconnection_type: ['within']
 genome_layout: ['linear']
 partition: ['contiguous']

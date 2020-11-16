@@ -9,7 +9,7 @@ browser: https://plogo.uconn.edu/
 abstract: "Methods for visualizing protein or nucleic acid motifs have traditionally relied upon residue frequencies to graphically scale character heights. We describe the pLogo, a motif visualization in which residue heights are scaled relative to their statistical significance. A pLogo generation tool is publicly available at http://plogo.uconn.edu/ and supports real-time conditional probability calculations and visualizations."
 citation: "O’Shea JP, Chou MF, Quader SA, Ryan JK, Church GM, Schwartz D. pLogo: a probabilistic approach to visualizing sequence motifs. Nat Methods. Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.; 2013;10: 1211."
 citation_count: 137
-type: ['point sparse']
+type: ['point contiguous']
 interconnection_type: ['no']
 genome_layout: ['linear']
 partition: ['contiguous']

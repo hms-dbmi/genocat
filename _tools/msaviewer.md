@@ -9,7 +9,7 @@ browser: http://msa.biojs.net/
 abstract: "The MSAViewer is a quick and easy visualization and analysis JavaScript component for Multiple Sequence Alignment data of any size. Core features include interactive navigation through the alignment, application of popular color schemes, sorting, selecting and filtering. The MSAViewer is ‘web ready’: written entirely in JavaScript, compatible with modern web browsers and does not require any specialized software. The MSAViewer is part of the BioJS collection of components."
 citation: "Yachdav G, Wilzbach S, Rauscher B, Sheridan R, Sillitoe I, Procter J, et al. MSAViewer: interactive JavaScript visualization of multiple sequence alignments. Bioinformatics. academic.oup.com; 2016;32: 3501–3503."
 citation_count: 71
-type: ['segment sparse']
+type: ['point contiguous']
 interconnection_type: ['between']
 genome_layout: ['linear']
 partition: ['contiguous']

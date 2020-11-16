@@ -9,7 +9,7 @@ browser: https://www.aidenlab.org/juicebox/
 abstract: "Hi-C experiments study how genomes fold in 3D, generating contact maps containing features as small as 20 bp and as large as 200 Mb. Here we introduce Juicebox, a tool for exploring Hi-C and other contact map data. Juicebox allows users to zoom in and out of Hi-C maps interactively, just as a user of Google Earth might zoom in and out of a geographic map. Maps can be compared to one another, or to 1D tracks or 2D feature sets."
 citation: "Durand NC, Robinson JT, Shamim MS, Machol I, Mesirov JP, Lander ES, et al. Juicebox Provides a Visualization System for Hi-C Contact Maps with Unlimited Zoom. Cell Syst. Elsevier; 2016;3: 99–101."
 citation_count: 189
-type: ['segment sparse', 'segment contiguous']
+type: ['segment sparse', 'segment contiguous', 'point sparse', 'point contiguous']
 interconnection_type: ['within']
 genome_layout: ['linear']
 partition: ['contiguous']

@@ -9,7 +9,7 @@ browser: http://codoncloud.com:3000/
 abstract: "We present ClicO Free Service, an online web-service based on Circos, which provides a user-friendly, interactive web-based interface with configurable features to generate Circos circular plots."
 citation: "Cheong W-H, Tan Y-C, Yap S-J, Ng K-P. ClicO FS: an interactive web-based service of Circos. Bioinformatics. academic.oup.com; 2015;31: 3685–3687."
 citation_count: 35
-type: ['segment contiguous']
+type: ['segment sparse', 'segment contiguous', 'point sparse', 'point contiguous']
 interconnection_type: ['within', 'between']
 genome_layout: ['circular']
 partition: [segregated, contiguous]

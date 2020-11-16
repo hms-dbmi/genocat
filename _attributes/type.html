@@ -34,7 +34,7 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.sparse_type == "point sparse" %}
+        {% if post.type == "point sparse" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
       {% endfor %}
@@ -50,7 +50,7 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.sparse_type == "segment sparse" %}
+        {% if post.type == "segment sparse" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
       {% endfor %}
@@ -64,7 +64,7 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.contiguous_type == "point contiguous" %}
+        {% if post.type == "point contiguous" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
       {% endfor %}
@@ -78,7 +78,7 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.contiguous_type == "segment contiguous" %}
+        {% if post.type == "segment contiguous" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
       {% endfor %}

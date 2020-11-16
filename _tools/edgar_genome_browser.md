@@ -11,10 +11,10 @@ citation: "Blom J, Kreis J, Spänig S, Juhre T, Bertelli C, Ernst C, et al. EDGA
 citation_count: 125
 type: ['segment sparse']
 interconnection_type: ['no']
-genome_layout: ['linear']
-partition: ['segregated']
+genome_layout: ['linear', 'circular']
+partition: ['segregated', 'contiguous']
 abstraction: ['no']
-arrangement: linear parallel
+arrangement: ['linear parallel', 'circular parallel']
 view: multiple
 scale: single
 focus: single
