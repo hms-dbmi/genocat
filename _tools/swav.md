@@ -15,7 +15,6 @@ genome_layout: ['linear']
 partition: ['contiguous']
 abstraction: ['partial']
 arrangement: ['linear parallel']
-<<<<<<< HEAD
 view: multiple
 scale: single
 focus: single
@@ -29,20 +28,5 @@ license_form: open source
 supported_files: ['fasta', 'other']
 image: /assets/swav.png
 image_location: http://swav.popgenetics.net/
-=======
-view: ['multiple']
-scale: ['single']
-focus: ['single']
-coordinate_systems: ['multiple']
-access_format: ["web application"]
-user_documentation_availability: 
-user_documentation: 
-pub_year: 2020
-license: "MIT Apache 2.0"
-license_form: ["open source"]
-supported_files: 
-image: 
-image_location: 
->>>>>>> 20b540d69285574e1b8e9351eebc0914ec673356
 notes: 
 ---
