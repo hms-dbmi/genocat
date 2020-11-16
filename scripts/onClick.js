@@ -71,6 +71,9 @@ function getNameIndex(name) {
   if (name == "supported_files") {
     return 10;
   }
+  if (name == "type") {
+    return 11;
+  }
 }
 
 //None
