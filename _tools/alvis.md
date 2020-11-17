@@ -1,7 +1,7 @@
 ---
-layout: tool 
+layout: tool
 title: Alvis
-developer_github_account: 
+developer_github_account:
 paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4856975/
 paper_title: "ALVIS: interactive non-aggregative visualization and explorative analysis of multiple sequence alignments"
 doi: 10.1093/nar/gkw022
@@ -28,5 +28,5 @@ license_form: open source
 supported_files: ['fasta']
 image: /assets/alvis.png
 image_location: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4856975/
-notes: 
+notes:
 ---
