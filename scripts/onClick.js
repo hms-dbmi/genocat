@@ -68,10 +68,10 @@ function getNameIndex(name) {
   if (name == "license_form") {
     return 9;
   }
-  if (name == "supported_files") {
+  if (name == "type") {
     return 10;
   }
-  if (name == "type") {
+  if (name == "supported_files") {
     return 11;
   }
 }
@@ -184,7 +184,6 @@ document.getElementById("standalone app").onclick=function() {
 document.getElementById("programming library").onclick=function() {
   click_filter("programming library");
 }
-
 
 //linear
 document.getElementById("linear").onclick=function() {
