@@ -9,7 +9,7 @@ browser: http://epigenomegateway.wustl.edu/browser/
 abstract: "None available"
 citation: "Zhou X, Maricque B, Xie M, Li D, Sundaram V, Martin EA, et al. The Human Epigenome Browser at Washington University. Nat Methods. nature.com; 2011;8: 989–990."
 citation_count: 191
-type: ['segment sparse', 'segment contiguous', 'point sparse', 'point contiguous']
+feature_type: ['segment sparse', 'segment contiguous', 'point sparse', 'point contiguous']
 interconnection_type: ['no']
 genome_layout: ['linear']
 partition: ['contiguous']

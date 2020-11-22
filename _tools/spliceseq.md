@@ -9,7 +9,7 @@ browser: https://bioinformatics.mdanderson.org/public-software/spliceseq/
 abstract: "SpliceSeq is a resource for RNA-Seq data that provides a clear view of alternative splicing and identifies potential functional changes that result from splice variation. It displays intuitive visualizations and prioritized lists of results that highlight splicing events and their biological consequences. SpliceSeq unambiguously aligns reads to gene splice graphs, facilitating accurate analysis of large, complex transcript variants that cannot be adequately represented in other formats."
 citation: "Ryan MC, Cleland J, Kim R, Wong WC, Weinstein JN. SpliceSeq: a resource for analysis and visualization of RNA-Seq data on alternative splicing and its functional impacts. Bioinformatics. academic.oup.com; 2012;28: 2385–2387."
 citation_count: 81
-type: ['segment sparse']
+feature_type: ['segment sparse']
 interconnection_type: ['no']
 genome_layout: ['linear']
 partition: ['segregated']

@@ -9,7 +9,7 @@ browser: http://magi.cs.brown.edu/
 abstract: "n/a"
 citation: "Leiserson MDM, Gramazio CC, Hu J, Wu H-T, Laidlaw DH, Raphael BJ. MAGI: visualization and collaborative annotation of genomic aberrations. Nat Methods. nature.com; 2015;12: 483–484."
 citation_count: 16
-type: ['segment sparse', 'point sparse']
+feature_type: ['segment sparse', 'point sparse']
 interconnection_type: ['no']
 genome_layout: ['linear']
 partition: ['segregated']

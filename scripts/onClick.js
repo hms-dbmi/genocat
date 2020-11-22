@@ -68,7 +68,7 @@ function getNameIndex(name) {
   if (name == "license_form") {
     return 9;
   }
-  if (name == "type") {
+  if (name == "feature_type") {
     return 10;
   }
   if (name == "supported_files") {

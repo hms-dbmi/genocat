@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Type
+title:  Feature Type
 categories: attributes
 ---
 <head>
@@ -34,7 +34,7 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.type == "point sparse" %}
+        {% if post.feature_type == "point sparse" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
       {% endfor %}
@@ -50,7 +50,7 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.type == "segment sparse" %}
+        {% if post.feature_type == "segment sparse" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
       {% endfor %}
@@ -64,7 +64,7 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.type == "point contiguous" %}
+        {% if post.feature_type == "point contiguous" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
       {% endfor %}
@@ -78,7 +78,7 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.type == "segment contiguous" %}
+        {% if post.feature_type == "segment contiguous" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
         {% endif %}
       {% endfor %}

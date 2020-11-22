@@ -9,7 +9,7 @@ browser: https://cran.r-project.org/web/packages/RIdeogram/
 abstract: "Owing to the rapid advances in DNA sequencing technologies, whole genome from more and more species are becoming available at increasing pace. For whole-genome analysis, idiograms provide a very popular, intuitive and effective way to map and visualize the genome-wide information, such as GC content, gene and repeat density, DNA methylation distribution, genomic synteny, etc. However, most available software programs and web servers are available only for a few model species, such as human, mouse and fly, or have limited application scenarios. As more and more non-model species are sequenced with chromosome-level assembly being available, tools that can generate idiograms for a broad range of species and be capable of visualizing more data types are needed to help better understanding fundamental genome characteristics."
 citation: "Hao Z, Lv D, Ge Y, Shi J, Weijers D, Yu G, Chen J. 2020. RIdeogram: drawing SVG graphics to visualize and map genome-wide data on the idiograms. PeerJ Computer Science 6:e251 https://doi.org/10.7717/peerj-cs.251"
 citation_count: 5
-type: ['segment sparse']
+feature_type: ['segment sparse']
 interconnection_type: ['no']
 genome_layout: ['linear']
 partition: ['segregated']

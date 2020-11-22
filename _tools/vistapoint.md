@@ -9,7 +9,7 @@ browser: http://pipeline.lbl.gov/cgi-bin/gateway2?selector=vistapoint
 abstract: "SUMMARY: VISTA is a program for visualizing global DNA sequence alignments of arbitrary length. It has a clean output, allowing for easy identification of similarity, and is easily configurable, enabling the visualization of alignments of various lengths at different levels of resolution. It is currently available on the web, thus allowing for easy access by all researchers. AVAILABILITY: VISTA server is available on the web at http://www-gsd.lbl.gov/vista. The source code is available upon request."
 citation: "Mayor C, Brudno M, Schwartz JR, Poliakov A, Rubin EM, Frazer KA, et al. VISTA : visualizing global DNA sequence alignments of arbitrary length. Bioinformatics. academic.oup.com; 2000;16: 1046–1047."
 citation_count: 889
-type: ['segment sparse', 'segment contiguous', 'point sparse', 'point contiguous']
+feature_type: ['segment sparse', 'segment contiguous', 'point sparse', 'point contiguous']
 interconnection_type: ['no']
 genome_layout: ['linear']
 partition: ['segregated']

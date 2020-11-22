@@ -9,7 +9,7 @@ browser: http://aidenlab.org/juicebox/
 abstract: "Contact mapping experiments such as Hi-C explore how genomes fold in 3D. Here, we introduce Juicebox.js, a cloud-based web application for exploring the resulting datasets. Like the original Juicebox application, Juicebox.js allows users to zoom in and out of such datasets using an interface similar to Google Earth. Juicebox.js also has many features designed to facilitate data reproducibility and sharing. Furthermore, Juicebox.js encodes the exact state of the browser in a shareable URL. Creating a public browser for a new Hi-C dataset does not require coding and can be accomplished in under a minute. The web app also makes it possible to create interactive figures online that can complement or replace ordinary journal figures. When combined with Juicer, this makes the entire process of data analysis transparent, insofar as every step from raw reads to published figure is publicly available as open source code."
 citation: "Robinson JT, Turner D, Durand NC, Thorvaldsdóttir H, Mesirov JP, Aiden EL. Juicebox.js Provides a Cloud-Based Visualization System for Hi-C Data. Cell Syst. Elsevier; 2018;6: 256–258.e1."
 citation_count: 17
-type: ['segment sparse', 'segment contiguous', 'point sparse', 'point contiguous']
+feature_type: ['segment sparse', 'segment contiguous', 'point sparse', 'point contiguous']
 interconnection_type: ['within']
 genome_layout: ['linear']
 partition: ['contiguous']

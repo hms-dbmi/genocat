@@ -1,7 +1,7 @@
 ---
-layout: tool
+layout: tool 
 title: genoPlotR
-developer_github_account:
+developer_github_account: 
 paper: https://academic.oup.com/bioinformatics/article/26/18/2334/208255
 paper_title: "genoPlotR: comparative gene and genome visualization in R"
 doi: 10.1093/bioinformatics/btq413
@@ -9,7 +9,7 @@ browser: http://genoplotr.r-forge.r-project.org/
 abstract: "Summary: The amount of gene and genome data obtained by next-generation sequencing technologies generates a need for comparative visualization tools. Complementing existing software for comparison and exploration of genomics data, genoPlotR automatically creates publication-grade linear maps of gene and genomes, in a highly automatic, flexible and reproducible way. Availability: genoPlotR is a platform-independent R package, available with full source code under a GPL2 license at R-Forge: http://genoplotr.r-forge.r-project.org/"
 citation: "Guy, Lionel, Jens Roat Kultima, and Siv GE Andersson. genoPlotR: comparative gene and genome visualization in R. Bioinformatics 26.18 (2010): 2334-2335."
 citation_count: 337
-type: ['segment sparse']
+feature_type: ['segment sparse']
 interconnection_type: ['between']
 genome_layout: ['linear']
 partition: ['segregated']
@@ -28,5 +28,5 @@ license_form: open source
 supported_files: ['other']
 image: /assets/genoplotr.png
 image_location: http://genoplotr.r-forge.r-project.org/screenshots.php
-notes:
+notes: 
 ---
