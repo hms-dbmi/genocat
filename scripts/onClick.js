@@ -1,5 +1,5 @@
 var arr = [];
-var num_categories = 12;
+var num_categories = 14;
 for (var i=0; i < num_categories; i++) {
   arr.push([]);
 }
@@ -116,7 +116,6 @@ document.getElementById("commercial").onclick=function() {
 document.getElementById("unknown").onclick=function() {
   click_filter("unknown");
 }
-
 //linear parallel
 document.getElementById("linear parallel").onclick=function() {
   click_filter("linear parallel");
@@ -235,21 +234,19 @@ document.getElementById("multiple-focus").onclick=function() {
   click_filter("multiple-focus");
 }
 
+
 //pointsparse
 document.getElementById("point sparse").onclick=function() {
   click_filter("point sparse");
 }
-
 //point contiguous
 document.getElementById("point contiguous").onclick=function() {
   click_filter("point contiguous");
 }
-
 //segment sparse
 document.getElementById("segment sparse").onclick=function() {
   click_filter("segment sparse");
 }
-
 //segment contiguous
 document.getElementById("segment contiguous").onclick=function() {
   click_filter("segment contiguous");

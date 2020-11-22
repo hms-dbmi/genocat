@@ -34,9 +34,11 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.feature_type == "point sparse" %}
+        {% for items in post.feature_type %}
+          {% if items == "point sparse" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </div>
 </div>
@@ -50,9 +52,11 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.feature_type == "segment sparse" %}
+        {% for items in post.feature_type %}
+          {% if items == "segment sparse" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
 </div>
 <br><br><br><br>
@@ -64,9 +68,11 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.feature_type == "point contiguous" %}
+        {% for items in post.feature_type %}
+          {% if items == "point contiguous" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
 </div>
 <br><br><br><br>
@@ -78,9 +84,11 @@ Features can be of different types. Those that only cover one nucleotide are def
     <br><br><br><br><br><br><br><br>
     <div class="grid-container">
       {% for post in site.tools %}
-        {% if post.feature_type == "segment contiguous" %}
+        {% for items in post.feature_type %}
+          {% if items == "segment contiguous" %}
           <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
 </div>
 <br><br>

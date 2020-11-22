@@ -173,7 +173,7 @@ body {
   <div class = "items">
 
 {% for post in site.tools %}
-      <div class="filterDiv {{ post.doi }} {{post.supported_files}} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.sparse_type }} {{ post.contiguous_type }} {{post.license_form}} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+      <div class="filterDiv {{ post.doi }} {{post.supported_files}} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.feature_type }} {{post.license_form}} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
         <p>
           <a href="{{ post.url | relative_url }}"><h4>   {{ post.title }}</h4></a>
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" height = "125px" class = "imag"></a>
