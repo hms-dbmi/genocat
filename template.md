@@ -9,7 +9,7 @@ browser: # link to tool
 abstract: # "insert paper abstract in quotation marks"
 citation: # "insert paper citation in quotation marks"
 citation_count: # current number of times the paper has been cited
-type: # select from the following, keeping format ["segment sparse", "point contiguous","point sparse", "segment contiguous"]
+feature_type: # select from the following, keeping format ["segment sparse", "point contiguous","point sparse", "segment contiguous"]
 interconnection_type: # ["no", "within", "between"]
 genome_layout: #["linear", "circular", "spatial", "spacefilling"]
 partition: # ["contiguous", "segregated"]
