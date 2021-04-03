@@ -3,63 +3,70 @@ layout: page
 title:  Views
 categories: attributes
 ---
-<head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  background-color: white;
-  grid-gap: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  color:black;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
-}
-</style>
-</head>
-<div>
-  <h1><a id="Single View"></a>Single View</h1>
-    <img src = "{{site.baseurl}}/assets/Single View.png" width="200" align = "left">
-    <br><br>
+<div> <!-- category start -->
+  <h2 id="Single Views">Single Views</h2>
+  <p>We characterize a view as a set of one or multiple aligned tracks,
+    with at most one two-axis track. In a single view, we cannot visualize
+    multiple scales and foci.</p>
 
-  We characterize a view as a set of one or multiple aligned tracks,
-  with at most one two-axis track. In a single view, we cannot visualize
-  multiple scales and foci.
-
-  <br><br><br><br><br><br>
-  <div class="grid-container">
+    <img src = "{{site.baseurl}}/icons/view_single.png" width="120">
+    
+    {% assign total_sv = 0 %}
     {% for post in site.tools %}
-      {% if post.view == "single" %}
-        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-      {% endif %}
-    {% endfor %}
-</div>
-<br><br>
-<div>
-  <h1><a id="Multiple Views"></a>Multiple Views</h1>
-    <img src = "{{site.baseurl}}/assets/Multiple View.png" width="200" align = "left">
-<br><br>
-  Multiple views allow for visualizations with multiple scales and foci.
-  Multiple views can be (i) independent, (ii) weakly linked, (iii) medium linked or (iv)
-  strongly linked. While independent views are not connected in
-  any way, weakly linked views are linked by brushing and linking.
-  Medium linked views share navigation, for example two views are
-  at different scales, but zooming always affects both. Strongly linked
-  views share genomic coordinates at one axis and can also share
-  tracks that are aligned to the axis.
-<br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% if post.view == "multiple" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+      {% for items in post.view %}
+        {% if items == "single" %}
+          {% assign total_sv = total_sv | plus: 1 %}
         {% endif %}
       {% endfor %}
-</div>
+    {% endfor %} 
+  <p class="total"> {{ total_sv }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.view %}
+        {% if items == "single" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+
+<div> <!-- category start -->
+  <h2 id="SMultiple Views">Multiple Views</h2>
+  <p>Multiple views allow for visualizations with multiple scales and foci.
+    Multiple views can be (i) independent, (ii) weakly linked, (iii) medium linked or (iv)
+    strongly linked. While independent views are not connected in
+    any way, weakly linked views are linked by brushing and linking.
+    Medium linked views share navigation, for example two views are
+    at different scales, but zooming always affects both. Strongly linked
+    views share genomic coordinates at one axis and can also share
+    tracks that are aligned to the axis.</p>
+
+    <img src = "{{site.baseurl}}/icons/view_multiple.png" width="120">
+
+    {% assign total_mv = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.view %}
+        {% if items == "multiple" %}
+          {% assign total_mv = total_mv | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_mv }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.view %}
+        {% if items == "multiple" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+  
+<script src="{{site.baseurl}}/scripts/attributes.js"></script>

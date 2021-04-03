@@ -3,92 +3,113 @@ layout: page
 title:  Feature Type
 categories: attributes
 ---
-<head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  background-color: white;
-  grid-gap: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  color:black;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+<p>Features can be of different types. Those that only cover one nucleotide are defined 
+  as point features while features covering more than one nucleotide are segment features. 
+  While there can be gaps between features in sparse sets, contiguous feature sets cover the entire genome.
+</p>
 
-}
-</style>
-</head>
-Features can be of different types. Those that only cover one nucleotide are defined as point features while features covering more than one nucleotide are segment features. While there can be gaps between features in sparse sets, contiguous feature sets cover the entire genome.
-<br>
-<div>
-  <h1><a id="Point Sparse"></a>Point Sparse</h1>
+<div> <!-- category start -->
+  <h2 id="Point Sparse">Point Sparse</h2>
 
-    <img src = "{{site.baseurl}}/assets/ps.png" width="200" align = "left">
-    <br><br><br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% for items in post.feature_type %}
-          {% if items == "point sparse" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-          {% endif %}
-        {% endfor %}
+    <img src = "{{site.baseurl}}/icons/pointsparse.png" width="120">
+    {% assign total_ps = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.feature_type %}
+        {% if items == "point sparse" %}
+          {% assign total_ps = total_ps | plus: 1 %}
+        {% endif %}
       {% endfor %}
-    </div>
-</div>
-<br><br><br><br>
-
-
-<div>
-  <h1><a id="Segment Sparse"></a>Segment Sparse</h1>
-
-    <img src = "{{site.baseurl}}/assets/ss.png" width="200" align = "left">
-    <br><br><br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% for items in post.feature_type %}
-          {% if items == "segment sparse" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-          {% endif %}
-        {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_ps }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.feature_type %}
+        {% if items == "point sparse" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
       {% endfor %}
-</div>
-<br><br><br><br>
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
 
-<div>
-  <h1><a id="Point Contiguous"></a>Point Contiguous</h1>
+<div> <!-- category start -->
+  <h2 id="Segment Sparse">Segment Sparse</h2>
 
-    <img src = "{{site.baseurl}}/assets/pc.png" width="200" align = "left">
-    <br><br><br><br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% for items in post.feature_type %}
-          {% if items == "point contiguous" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-          {% endif %}
-        {% endfor %}
+    <img src = "{{site.baseurl}}/icons/segmentsparse.png" width="120">
+    {% assign total_ss = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.feature_type %}
+        {% if items == "segment sparse" %}
+          {% assign total_ss = total_ss | plus: 1 %}
+        {% endif %}
       {% endfor %}
-</div>
-<br><br><br><br>
-
-<div>
-  <h1><a id="Segment Contiguous"></a>Segment Contiguous</h1>
-
-    <img src = "{{site.baseurl}}/assets/sc.png" width="200" align = "left">
-    <br><br><br><br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% for items in post.feature_type %}
-          {% if items == "segment contiguous" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-          {% endif %}
-        {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_ss }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.feature_type %}
+        {% if items == "segment sparse" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
       {% endfor %}
-</div>
-<br><br>
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+
+<div> <!-- category start -->
+  <h2 id="Point Contiguous">Point Contiguous</h2>
+
+    <img src = "{{site.baseurl}}/icons/pointcontiguous.png" width="120">
+    {% assign total_pc = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.feature_type %}
+        {% if items == "point contiguous" %}
+          {% assign total_pc = total_pc | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_pc }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.feature_type %}
+        {% if items == "point contiguous" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+
+<div> <!-- category start -->
+  <h2 id="Segment Contiguous">Segment Contiguous</h2>
+
+    <img src = "{{site.baseurl}}/icons/segmentcontiguous.png" width="120">
+    {% assign total_sc = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.feature_type %}
+        {% if items == "segment contiguous" %}
+          {% assign total_sc = total_sc | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_sc }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.feature_type %}
+        {% if items == "segment contiguous" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+  
+<script src="{{site.baseurl}}/scripts/attributes.js"></script>

@@ -1,0 +1,106 @@
+:root {
+  --geno-100: #F4F2FD;
+  --geno-200: #ECE7FF;
+  --geno-250: #D8D4E6;
+  --geno-300: #C5C2D1;
+  --geno-400: #9F9EA6;
+  --geno-500: #818087;
+  --geno-600: #7B7B9D;
+  --geno-650: #696775;
+  --geno-700: #3C3B52;
+  --geno-800: #2F2D42;
+  --geno-900: #16161D;
+
+  --cat-1: #FFFF95; /* focus */
+  --cat-2: #A0E5FF; /* scales */
+  --cat-3: #D8E7EA; /* views */
+  --cat-4: #E8AC98; /* arrangement */
+  --cat-5: #9ABBE8; /* abstraction */
+  --cat-6: #A5E0C1; /* partition */
+  --cat-7: #E8ACCD; /* layout */
+  --cat-8: #E5C679; /* interconnection */
+
+  --gray-000: #f8f9fa;
+  --gray-100: #f1f3f5;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #868e96;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+
+  --red: #fa5252;
+  --pink: #e64980;
+  --grape: #be4bdb;
+  --purple: #7950f2;
+  --indigo: #4c6ef5;
+  --blue: #228be6;
+  --cyan: #15aabf;
+  --teal: #12b886;
+  --green: #40c057;
+  --yellow: #fab005;
+  --orange: #fd7e14;
+
+  --blue-300: #74c0fc;
+  --blue-400: #4dabf7;
+  --yellow-100: #fff3bf;
+  --teal-100: #BAFFFB;
+
+  --body-font: "Recursive", sans-serif;
+  --body-font-size: calc(14px + 4 * ((100vw - 320px) / 680));
+  --body-line-height: 1.5;
+  --body-color: var(--geno-100);
+  --body-bg: var(--geno-650);
+  --page-bg: var(--geno-400);
+
+  --link-color: var(--teal-100);
+  --link-hover-color: #A5D8FF;
+
+  --heading-color: var(--geno-100);
+
+  --border-color: var(--geno-300);
+  --border-radius: .25rem;
+
+  --code-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --code-color: var(--grape);
+  --code-bg: var(--geno-300);
+
+  --spacer: 1rem;
+  --spacer-2: calc(var(--spacer) * 1.5);
+  --spacer-3: calc(var(--spacer) * 3);
+  --spacer-top: 18vw;
+}
+@media all and (min-width: 500px) {
+  :root {
+    --spacer-top: 10vw;    
+  }
+}
+
+@media all and (min-width: 860px) {
+  :root {
+    --spacer-top: 7vw;    
+  }
+}
+
+@media all and (min-width: 1400px) {
+  :root {
+    --spacer-top: 6vw;    
+  }
+}
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --body-color: var(--gray-300);
+//     --body-bg: var(--gray-800);
+
+//     --heading-color: #fff;
+
+//     --link-color: var(--blue-300);
+//     --link-hover-color: var(--blue-400);
+
+//     --border-color: rgba(255,255,255,.15);
+
+//     --code-bg: var(--gray-900);
+//   }
+// }

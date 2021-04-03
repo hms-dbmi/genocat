@@ -3,105 +3,117 @@ layout: page
 title:  Layouts
 categories: attributes
 ---
-<head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  background-color: white;
-  grid-gap: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  color:black;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  /* width: 300px; */
 
-}
-</style>
-</head>
-<div>
-  <h1><a id="Circular"></a>Circular</h1>
-    <img src = "{{site.baseurl}}/assets/circular_example.png" width="200" align = "left">
-    <br>
+<div> <!-- category start -->
+  <h2 id="Circular">Circular</h2>
+  <p>Circular layouts are mainly used (1) if the displayed sequence itself is circular, 
+    (2) to display a non-circular sequence in a space-saving way, and (3) to show interactions 
+    between different parts of the sequence(s) using a chord diagram.
+  </p>
 
-    Circular layouts are mainly used (1) if the displayed sequence itself is circular, (2) to display a non-circular sequence in a space-saving way, and (3) to show interactions between different parts of the sequence(s) using a chord diagram.
-    <br><br><br><br><br><br>
-
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% for items in  post.genome_layout %}
-          {% if items == "circular" %}
-            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-            {% endif %}
-          {% endfor %}
-      {% endfor %}
-    </div>
-
-</div>
-<br><br>
-<div>
-  <h1><a id="Linear"></a>Linear</h1>
-  <img src = "{{site.baseurl}}/assets/linear_example.png" width="200" align = "left">
-  <br><br><br>
-
-  Linear layouts are more intuitive and easy to read, but may be extremely long and require zooming and panning.
-  <br><br><br><br><br>
-  <div class="grid-container">
+    <img src = "{{site.baseurl}}/icons/layout_circular.png" width="120">
+    {% assign total_c = 0 %}
     {% for post in site.tools %}
-    {% for items in  post.genome_layout %}
-      {% if items == "linear" %}
-        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+      {% for items in post.genome_layout %}
+        {% if items == "circular" %}
+          {% assign total_c = total_c | plus: 1 %}
         {% endif %}
       {% endfor %}
-    {% endfor %}
-  </div>
-</div>
-
-<br><br>
-<div>
-  <h1><a id="Space Filling"></a>Space Filling</h1>
-  <img src = "{{site.baseurl}}/assets/spacefilling_example.png" width="200" align = "left">
-  <br>
-
-  The space-filling curve is more space efficient than a circular layout and are often used to display a global overview of the genome while maintaining the spatial distribution of features. However, space-filling curves can only show one
-  feature set, and it's hard to visually estimate the distances between two positions in a sequence.
-  <br><br><br><br><br>
-
-  <div class="grid-container">
+    {% endfor %} 
+  <p class="total"> {{ total_c }} tools</p>
+  <div class="grid-container"  style="display: none;">
     {% for post in site.tools %}
-      {% for items in  post.genome_layout %}
+      {% for items in post.genome_layout %}
+        {% if items == "circular" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+
+<div> <!-- category start -->
+  <h2 id="Linear">Linear</h2>
+  <p>Linear layouts are more intuitive and easy to read, but may be extremely long and require zooming and panning.</p>
+
+    <img src = "{{site.baseurl}}/icons/layout_linear.png" width="120">
+    {% assign total_l = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.genome_layout %}
+        {% if items == "linear" %}
+          {% assign total_l = total_l | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_l }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.genome_layout %}
+        {% if items == "linear" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+
+<div> <!-- category start -->
+  <h2 id="Space Filling">Space Filling</h2>
+  <p>The space-filling curve is more space efficient than a circular layout and is often used to display a global overview of the genome while maintaining the spatial distribution of features. However, space-filling curves can only show one
+    feature set, and it's hard to visually estimate the distances between two positions in a sequence.</p>
+
+    <img src = "{{site.baseurl}}/icons/layout_spacefilling.png" width="120">
+    {% assign total_sf = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.genome_layout %}
         {% if items == "spacefilling" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+          {% assign total_sf = total_sf | plus: 1 %}
         {% endif %}
       {% endfor %}
-    {% endfor %}
-  </div>
-</div>
-
-<br><br>
-<div>
-  <h1><a id="Spatial"></a>Spatial</h1>
-  <kbd><img src = "{{site.baseurl}}/assets/spatial_example.png" width="200" align = "left">
-  </kbd> <br><br><br>
-
-  Spatial layouts display sequences in a 3-dimensional structure.
-  <br><br><br><br><br>
-
-
-  <div class="grid-container">
+    {% endfor %} 
+  <p class="total"> {{ total_sf }} tools</p>
+  <div class="grid-container"  style="display: none;">
     {% for post in site.tools %}
-      {% for items in  post.genome_layout %}
-        {% if items == "spatial" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+      {% for items in post.genome_layout %}
+        {% if items == "spacefilling" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
         {% endif %}
       {% endfor %}
-    {% endfor %}
-  </div>
-</div>
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+
+<div> <!-- category start -->
+  <h2 id="Spatial">Spatial</h2>
+  <p>Spatial layouts display sequences in a 3-dimensional structure.</p>
+
+    <img src = "{{site.baseurl}}/icons/layout_spatial.png" width="120">
+    {% assign total_sp = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.genome_layout %}
+        {% if items == "spatial" %}
+          {% assign total_sp = total_sp | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_sp }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.genome_layout %}
+        {% if items == "spatial" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+  
+<script src="{{site.baseurl}}/scripts/attributes.js"></script>

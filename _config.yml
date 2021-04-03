@@ -1,13 +1,41 @@
-title: GenoCAT
-description: >-
-baseurl: ""
-url: ""
+# Setup
+title:               GenoCat.tools
+tagline:             'Hundreds of ways to visualize genomic data'
+description:         'A database and taxonomy for genomic visualization tools'
+url:                 ''
+baseurl:             ''
+permalink:           pretty
 github_username: hms-dbmi
 
-markdown: kramdown
-theme: uswds-jekyll
+# About/contact
+author:
+  name:              Gehlenborg Lab
+  url:               https://github.com/hms-dbmi/genocat
+  email:             nils@hms.harvard.edu
+
+# Gems
 plugins:
-  - jekyll-feed
+  - jekyll-gist
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Custom vars
+version:             1.0.0
+google_analytics_id: UA-145092297-1
+
 collections:
   tools:
       output: true

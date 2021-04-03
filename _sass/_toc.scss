@@ -1,0 +1,262 @@
+// Table of Contents
+
+#markdown-toc {
+  padding: var(--spacer-2) var(--spacer-3);
+  margin-bottom: var(--spacer-2);
+  border: solid var(--border-color);
+  border-width: 1px 0;
+
+  &::before {
+    display: block;
+    margin-left: calc(var(--spacer-3) * -1);
+    content: "Contents";
+    font-size: 85%;
+    font-weight: 500;
+  }
+}
+
+// sort and filter
+#filter, #sort {
+  display: none;
+  position: fixed;
+  z-index: 3;
+}
+#filter:target, #sort:target {
+  color: var(--geno-300);
+  display: block;
+  background: var(--geno-700);
+  top: calc(var(--spacer-top) * 1.56);
+  left: 33.5vw;
+  width: 67vw;
+  max-height: 80vh;
+  overflow-y:auto;
+
+  .button {
+    background-color: var(--geno-900);
+
+    a { color: var(--geno-200); }
+  }
+
+  label {
+    display: block;
+  }
+  input { margin-right: 0.3rem; }
+} 
+
+#filter .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(var(--body-font-size) * 10), 1fr));
+  grid-gap: 0.5rem;
+
+  h2 {
+    color: var(--geno-300);
+    font-weight: 400;
+    font-size: 85%;
+    cursor: pointer;
+    margin: 0;
+    border-bottom : 1px solid var(--geno-500);
+    line-height: 2.5rem;
+
+
+    &::after {
+      content: '+';
+      float:right;
+    }
+  }
+  h2.act::after {
+        content: '–';
+  }
+  h3 {
+    font-variation-settings: 'CASL' 1, 'CRSV' 1;
+    font-size: 90%;
+  }
+  section div {
+    display: none;
+  }
+  section div.open {
+    display: block;
+  }
+}
+@media (min-width: 500px) {
+  #filter:target, #sort:target {
+    top: var(--spacer-top);
+  }
+}
+input, textarea, select {
+  border: 0.1rem solid #DCDCDC;
+}
+
+[type=checkbox] + label, [type=radio] + label {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+[type=radio] + label::before {
+  height: 1rem;
+  width: 1rem;
+}
+
+[type=checkbox] + label::before {
+  height: 1rem;
+  line-height: 0.5rem;
+  margin-top: 0.5em;
+  width: 1rem;
+}
+
+
+.loader {
+  border: 5px solid rgba(200,200,200,0.2);
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: -10px 0;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+}
+
+.hide-loader{
+display:none;
+}
+#results {
+color: var(--geno-200);
+}
+
+#filterTags span {
+  background-color: var(--geno-300);
+  color: var(--geno-700);
+  padding: 0.25rem .5rem 0.25rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: x-small;
+  position: relative;
+  cursor: pointer;
+  margin-left: 0.6rem;
+  max-width: 90px;
+  display: inline-block;
+
+  &::after {
+    right: -0.5rem;
+    bottom: -0.5rem;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    display: flex;
+    // z-index: 11;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--geno-700);
+    border-radius: 50%;
+    color: var(--geno-250);
+    content: "×";
+    cursor: pointer;
+    font-size: .8rem;
+    opacity: 0.7;
+  }
+
+  &:hover::after {
+    opacity:1;
+  }
+}
+#sortOrder {
+  color: var(--geno-800);
+}
+// .panel .close {
+//   display: block;
+// }
+.panel .close
+.panel .close:hover::after { 
+    background-color: var(--primary-highlight);
+}
+
+.imag {
+  border-radius: 0;
+  border: 0px none;
+  max-height: 250px
+}
+.filterDiv { display: none; }
+
+.filterDiv:hover {
+  box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.2);
+}
+/* "show" class is added to filtered elements */
+.show {
+          display: block;
+        }
+/* Style the "+" button that is used to open and close the collapsible content */
+.collapsible {
+          background-color: transparent;
+          color: var(--geno-250);
+          cursor: pointer;
+          border: 2px solid var(--geno-250);
+          border-radius: 1rem;
+          font: 400 .7rem 'Recursive';
+          float: right;
+          height: 1.2rem;
+          width: 1.2rem;
+        }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+          background-color: var(--geno-250);
+          color: #444;
+        }
+.active {
+  background-color: var(--geno-800);
+  border-color: var(--geno-800);
+  color: var(--geno-200);
+}        
+
+.content {
+          text-align: left;
+          transition: all ease-in-out 0.5s;
+        }
+.button {
+          background-color: transparent;
+          // border: 2px solid none;
+          padding: 0.5px 10px;
+          font: 90% 'Recursive';
+          font-weight: 800;
+          // text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 2px 1px;
+          border-radius: 15px;
+          /* font-size: 10px; */
+        }
+.button:hover{
+      background-color: var(--geno-700);
+      }
+.button.blue { background-color: var(--indigo); }     
+
+/* button colors */
+.layout {
+          border-color: var(--border-color);
+          color: var(--color);
+        }
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(var(--body-font-size) * 16), 1fr));
+  grid-gap: 1rem;
+}
+.items > div {
+  background: var(--geno-500);
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+
+.tool_img {
+  background-color: var(--geno-100);
+  min-height: 12.5rem;
+  margin-bottom: 1rem;
+}
+a[href='https://onlinelibrary.wiley.com/doi/10.1111/cgf.13727']::after {
+  content:url('/public/Paper-titlepage.png');
+  margin: 2em;
+  float: right;
+}

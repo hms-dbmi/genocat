@@ -3,61 +3,60 @@ layout: page
 title:  Focus
 categories: attributes
 ---
-<head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  background-color: white;
-  grid-gap: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  color:black;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+<div> <!-- category start -->
+  <h2 id="Single Focus">Single Focus</h2>
+  <p>A single focus is similar to sliding a window across the
+    genome. Only the region in this window can be analyzed.</p>
 
-}
-</style>
-</head>
-<div>
-  <h1><a id="Single Focus"></a>Single Focus</h1>
-
-    <img src = "{{site.baseurl}}/assets/Single Focus.png" width="200" align = "left">
-
-    <br><br>
-    A focus is similar to sliding a window across the
-    genome. Only the region in this window can be analyzed.
-
-    <br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% if post.focus == "single" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+    <img src = "{{site.baseurl}}/icons/foci_single.png" width="120">
+    {% assign total_s = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.focus %}
+        {% if items == "single" %}
+          {% assign total_s = total_s | plus: 1 %}
         {% endif %}
       {% endfor %}
-    </div>
-</div>
-<br><br>
-<div>
-  <h1><a id="Multiple Foci"></a>Multiple Foci</h1>
-    <kbd><img src = "{{site.baseurl}}/assets/Multiple Foci.png" width="200" align = "left">
-    </kbd> <br><br>
-
-    Multiple foci enable users to look at distinct segments of a genome in parallel
-    and compare features that are dispersed across the genome.
-
-    <br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% if post.focus == "multiple" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+    {% endfor %} 
+  <p class="total"> {{ total_s }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.focus %}
+        {% if items == "single" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
         {% endif %}
       {% endfor %}
-    </div>
-</div>
+    {% endfor %}     
+  </div>    
+</div> <!-- category end -->
+
+<div> <!-- category start -->
+  <h2 id="Multiple Foci">Multiple Foci</h2>
+  <p>Multiple foci enable users to look at distinct segments of a genome in parallel
+    and compare features that are dispersed across the genome.</p>
+
+    <img src = "{{site.baseurl}}/icons/foci_multiple.png" width="120">
+    {% assign total_m = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.focus %}
+        {% if items == "multiple" %}
+          {% assign total_m = total_m | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_m }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.focus %}
+        {% if items == "multiple" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+  
+<script src="{{site.baseurl}}/scripts/attributes.js"></script>

@@ -1,0 +1,276 @@
+// Layout
+//
+// Styles for managing the structural hierarchy of the site.
+
+.container {
+  max-width: 45rem;
+  padding-left: var(--spacer-2);
+  padding-right: var(--spacer-2);
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+#status {
+  background-color: var(--geno-600);
+  font-size: 75%;
+  width: 100%;
+  position: fixed;
+  height: fit-content;
+  top: calc(var(--spacer-top) * 1.56);
+  
+  p { 
+    display: inline-block; 
+    margin-bottom: 0;
+  }
+}
+
+.main {
+  text-align: left;
+  font-weight: 300;
+}
+
+.pages {
+  max-width: 50rem;
+  margin: auto;
+}
+article {
+  display: block;
+  min-height: 85vh;
+}
+
+
+#breadcrumbs {
+  font-size: 80%;
+  font-weight:500;
+  color: var(--geno-650);
+
+  a {
+    color: var(--geno-900);
+  }
+}
+.tool {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+
+  div {
+    width: 90%;
+  }
+
+  .section {
+    padding: 0 0.5rem;
+  }
+  .labelCol {
+    color: var(--geno-200);
+    font-size: 70%;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+  }
+  td {
+    font-size: smaller;
+  }
+}
+.paper {
+  padding: 0.5rem 1rem;
+  background-color: var(--geno-300);
+  color: var(--geno-800);
+  margin-top: 2rem;
+
+    p { font-weight: 400; }
+}
+.page .row .column {
+  padding: 0 .5rem;
+
+  img { margin-bottom: .2rem; }
+
+  p { font-size: smaller; }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+  background: var(--geno-300);
+  margin-bottom: 0;
+
+  p {
+    color: var(--geno-650);
+    font-size: small;
+    margin-left: 2.4rem;
+  }
+}
+
+
+/*
+ * Sidebar
+ *
+ * The sidebar is the drawer, the item we are toggling with our handy hamburger
+ * button in the corner of the page.
+ *
+ * This particular sidebar implementation was inspired by Chris Coyier's
+ * "Offcanvas Menu with CSS Target" article, and the checkbox variation from the
+ * comments by a reader. It modifies both implementations to continue using the
+ * checkbox (no change in URL means no polluted browser history), but this uses
+ * `position` for the menu to avoid some potential content reflow issues.
+ *
+ * Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
+ */
+
+/* Style and "hide" the sidebar */
+.sidebar {
+  position: fixed;
+  top: calc(var(--spacer-top) + 1px);
+  bottom: 0;
+  left: -14rem;
+  width: 14rem;
+  visibility: hidden;
+  overflow-y: auto;
+  // font-size: .95rem; /* 15px */
+  color: rgba(255,255,255,.6);
+  background-color: var(--geno-900);
+  -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+@media (min-width: 30em) {
+  .sidebar {
+    font-size: 90%; /* 14px */
+  }
+}
+
+/* Sidebar content */
+.sidebar a {
+  font-weight: normal;
+  color: var(--geno-300);
+}
+.sidebar-item {
+  padding: 1rem;
+}
+.sidebar-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.sidebar-nav-item {
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+  white-space: nowrap;
+}
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+
+@media (min-width: 52em) {
+
+  .sidebar-item {
+    padding: 1.5rem;
+  }
+  .sidebar-nav-item {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
+.sidebar-checkbox {
+  position: absolute;
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/* Style the `label` that we use to target the `.sidebar-checkbox` */
+.sidebar-toggle {
+  position: fixed;
+  top: 9.5vw;
+  left: -0.5vw;
+  display: flex;
+  align-items: center;
+  padding: .25rem .75rem;
+  color: #505050;
+  background-color: transparent;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+.sidebar-toggle::before {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  content: "";
+  background: url("public/menu.svg") no-repeat;
+  position: sticky;
+  top: 0;
+  left: -0.6rem;
+}
+
+/* .sidebar-toggle:active,
+#sidebar-checkbox:focus ~ .sidebar-toggle,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: #fff;
+  background-color: #555;
+} */
+
+.sidebar-toggle:active::before,
+/* #sidebar-checkbox:focus ~ .sidebar-toggle::before, */
+#sidebar-checkbox:checked ~ .sidebar-toggle::before {
+  background: url("public/menu-o.svg") no-repeat;
+}
+
+@media (min-width: 30.1em) {
+  .sidebar-toggle {
+    position: fixed;
+  }
+}
+
+@media print {
+  .sidebar-toggle {
+    display: none;
+  }
+}
+
+/* Slide effect
+ *
+ * Handle the sliding effects of the sidebar and content in one spot, seperate
+ * from the default styles.
+ *
+ * As an a heads up, we don't use `transform: translate3d()` here because when
+ * mixed with `position: fixed;` for the sidebar toggle, it creates a new
+ * containing block. Put simply, the fixed sidebar toggle behaves like
+ * `position: absolute;` when transformed.
+ *
+ * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
+ */
+
+.wrap,
+.sidebar,
+.sidebar-toggle {
+  -webkit-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.wrap,
+.sidebar-toggle {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+          transition: transform .3s ease-in-out;
+}
+
+#sidebar-checkbox:checked + .sidebar {
+  z-index: 10;
+  visibility: visible;
+}
+#sidebar-checkbox:checked ~ .sidebar,
+#sidebar-checkbox:checked ~ .wrap {
+  -webkit-transform: translateX(14rem);
+      -ms-transform: translateX(14rem);
+          transform: translateX(14rem);
+}
+

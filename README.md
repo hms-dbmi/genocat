@@ -7,7 +7,7 @@ to the appropriate S3 bucket. For local development:
 ```
 $ gem install bundler
 $ bundle install
-$ jekyll serve &
+$ bundle exec jekyll serve
 ```
 Jekyll source code for [genocat.tools](http://genocat.tools/). 
 

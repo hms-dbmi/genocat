@@ -3,73 +3,97 @@ layout: page
 title:  Abstraction
 categories: attributes
 ---
-<head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  background-color: white;
-  grid-gap: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  color:black;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
-}
-</style>
-</head>
-A way of reducing the space of a sequence in order to concentrate on specific regions is abstraction. This involves replacing the entire/parts of the sequence by abstraction elements, such as symbols, while maintaining the order of the elements. For example, if we are only interested in exons, the introns can be abstracted to a gap, symbol, or completely filtered out. Therefore, non-adjacent parts of the sequence are next to each other in the visualization. We could not identify a tool applying a complete abstraction in our literature research, which would correspond to replacing both exons and introns with symbols.
-<br>
+<p>A way of reducing the space of a sequence in order to concentrate on specific regions is abstraction. 
+  This involves replacing the entire/parts of the sequence by abstraction elements, such as symbols, while 
+  maintaining the order of the elements. For example, if we are only interested in exons, the introns can 
+  be abstracted to a gap, symbol, or completely filtered out. Therefore, non-adjacent parts of the sequence 
+  are next to each other in the visualization. We could not identify a tool applying a complete abstraction 
+  in our literature research, which would correspond to replacing both exons and introns with symbols.
+</p>
 <div>
-  <h1><a id="None"></a>None</h1>
+  <h2 id="None">None</h2>
+  <p>No part of the genome are abstracted or removed with the following tools.</p>
+  <img src = "{{site.baseurl}}/icons/abstraction_none.png" width="120">
+    
 
-    <img src = "{{site.baseurl}}/assets/n.png" width="200" align = "left"><br><br>
-    No part of the genome are abstracted or removed with the following tools.
-<br><br><br><br><br>
-    <div class="grid-container">
+{% assign total_no = 0 %}
       {% for post in site.tools %}
-        {% if post.abstraction == "no" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
-      {% endfor %}
+        {% for items in post.abstraction %}
+          {% if items == "no" %}
+          {% assign total_no = total_no | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %} 
+  <p class="total"> {{ total_no }} tools</p>
+    <div class="grid-container" style="display: none;">
+      
+      {% for post in site.tools %}
+        {% for items in post.abstraction %}
+          {% if items == "no" %}
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+            <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+          </a>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}  
     </div>
 
 </div>
-<br><br><br>
-<div>
-  <h1><a id="Partial"></a>Partial</h1>
 
-    <img src = "{{site.baseurl}}/assets/p.png" width="200" align = "left">
-<br><br>
-<div class="grid-container">
-  {% for post in site.tools %}
-    {% for items in post.abstraction %}
-      {% if items == "partial" %}
-        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-      {% endif %}
+<div>
+  <h2 id="Partial">Partial</h2>
+
+    <img src = "{{site.baseurl}}/icons/abstraction_partial.png" width="120">
+  
+    {% assign total_p = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.abstraction %}
+        {% if items == "partial" %}
+        {% assign total_p = total_p | plus: 1 %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
-</div>
-</div>
-<br><br><br><br>
-<div>
-  <h1><a id="Complete"></a>Complete</h1>
 
-    <img src = "{{site.baseurl}}/assets/com.png" width="200" align = "left">
-    <br><br>
+  <p class="total"> {{ total_p }} tools</p>
+
+  <div class="grid-container" style="display: none;">
+    {% assign total_p = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.abstraction %}
+        {% if items == "partial" %}
+        {% assign total_p = total_p | plus: 1 %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>      
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+<div>
+  <h2 id="Complete">Complete</h1>
+
+    <img src = "{{site.baseurl}}/icons/abstraction_complete.png" width="120">
+    {% assign total_c = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.abstraction %}
+        {% if items == "complete" %}
+        {% assign total_c = total_c | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    <p class="total"> {{ total_c }} tools</p>
     <div class="grid-container">
       {% for post in site.tools %}
         {% for items in post.abstraction %}
           {% if items == "complete" %}
-            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+            <img class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+          </a>
           {% endif %}
         {% endfor %}
       {% endfor %}
+  </div>
 </div>
+<script src="{{site.baseurl}}/scripts/attributes.js"></script>

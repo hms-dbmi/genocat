@@ -1,213 +1,65 @@
----
-layout: default
-main:
-  class: usa-grid usa-section usa-content usa-layout-docs
----
-{{content}}
 <!DOCTYPE html>
-<html>
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145092297-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en-us">
 
-  gtag('config', 'UA-145092297-1');
-</script>
+  {% include head.html %}
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+  <body class="sidebar-overlay home">
 
-.usa-hero .usa-button {
-    color: #0071bc;
-}
+    {% include sidebar.html %}
 
+    <div class="wrapper">
+      <div class="head">
+        <header class="logo">
+          <a href="{{ site.baseurl }}/" title="Home"><img src="/public/header.svg"/></a>
+        </header>
+        <input class="aside aside-1" type="search" id="mySearch" onClick="goTo('#search')" placeholder="SEARCH" onkeyup="search()" onabort="goTo('#search')"/>
+          <aside class="aside aside-2" onClick="goTo('#sort')"><a href="/#sort">SORT</a></aside>
+          <aside class="aside aside-3" onClick="goTo('#filter')"><a href="/#filter">FILTER</a></aside>
+      </div>
+      <div id="status">
+        <p><span id="results"> </span> <span class="loader hide-loader" id="loader"></span></p>
+        <p id="filterTags"></p>
+        <p id="sortOrder">sorted by name</p>
+      </div>
+      {% include sort-and-filter.html %}
 
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-}
+      <article class="main">
+         {{ content }}
+      </article>
+      <footer class="footer">
+        <img src="{{ site.baseurl }}/assets/hms.svg" alt="Harvard Medical School" style="max-width: 10rem;">
+        <p>Gehlenborg Lab <br>
+          Department of Biomedical Informatics <br>
+          Harvard Medical School</p>
+      </footer>
+    </div>     
+    
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{{site.baseurl}}/scripts/onClick.js"></script>
+    <script src = "{{site.baseurl}}/scripts/filter.js"></script>
+    <script src="{{site.baseurl}}/scripts/search_bar.js"></script>
+    <script src="{{site.baseurl}}/scripts/sortBy.js"></script>
+    <script>
 
-/* Container needed to position the overlay. Adjust the width as needed */
-.container {
-  position: relative;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+    function goTo(place){
+      window.location = "/" + place;
+    }  
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  text-decoration: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* The overlay effect - lays on top of the container and over the image */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-/* When you mouse over the container, fade in the overlay title */
-.container:hover .overlay {
-  opacity: 1;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
-</head>
-<body>
-
-<div class="slideshow-container">
-
-<div class="mySlides fade container">
-  <img src="assets/Rondo.png" height = "400" class = "center">
-  <div class="overlay">Rondo</div>
-</div>
-
-<div class="mySlides fade container">
-  <img src="assets/Cinteny.png" height = "400" class = "center">
-  <div class="overlay">Cinteny</div>
-</div>
-
-<div class="mySlides fade container">
-  <img src="assets/HiGlass.png" height = "400" class = "center">
-  <div class="overlay">HiGlass</div>
-</div>
-
-<div class="mySlides fade container">
-  <img src="assets/CGView.png" height = "400" class = "center">
-  <div class="overlay">CGView</div>
-</div>
-
-<div class="mySlides fade container">
-  <img src="assets/NCBIGenomeBrowser.png" height = "400" class = "center">
-  <div class="overlay">NCBI Genome Browser</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-</body>
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.parentNode.nextElementSibling;
+        if (content.style.display === "none") {
+          content.style.display = "block";
+        } else {
+          content.style.display = "none";
+        }
+      });
+    }
+    </script>
+  </body>
 </html>

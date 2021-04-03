@@ -1,26 +1,3 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function filterFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
-}
-
-
 checkbox_filter([]);
 
 function checkbox_filter(tags) {
@@ -58,12 +35,10 @@ function checkbox_filter(tags) {
       j++;
     }
   }
-  document.getElementById("demo").innerHTML = num + " results";
+  document.getElementById("results").innerHTML = num + " tool" + (num != 1 ? "s" : "");
+  console.log(tags.flat());
+  updateBadges(tags.flat())
 }
-
-// var myCollection = document.getElementsByClassName("filterDiv ");
-// document.getElementById("demo").innerHTML = i + " results";
-
 
 // Show filtered elements
 function addClass(element, name) {
@@ -89,4 +64,20 @@ function removeClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
+}
+
+
+function updateBadges(filterList) {
+// console.log("Badges", filterList);
+let filterpara = document.getElementById("filterTags");
+let filters = "";
+for(let n = 0; n < filterList.length; n++) {
+    let filterTagHTML = "<span onclick='unclick(\"" + filterList[n] + "\")'>"+ filterList[n] +"</span>";
+    filters += filterTagHTML;
+  }
+  filterpara.innerHTML = filters;
+}
+
+function unclick(id) {
+  document.getElementById(id).click();
 }
