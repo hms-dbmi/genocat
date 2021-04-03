@@ -5,6 +5,7 @@ description:         'A database and taxonomy for genomic visualization tools'
 url:                 ''
 baseurl:             ''
 permalink:           pretty
+github_username: hms-dbmi
 
 # About/contact
 author:
