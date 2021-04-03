@@ -1,0 +1,47 @@
+---
+layout: home
+title: Home
+---
+
+<div class = "items">
+
+  {% for post in site.tools %}
+        <div class="filterDiv {{ post.doi }} {{post.supported_files}} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.feature_type }} {{post.license_form}} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <button class="collapsible">i</button></h3>
+  
+          <div class="content" style="display: none;">
+          <p>Cited by: {{post.citation_count}}<br>
+            Paper Publication Year: {{post.pub_year}}<br>
+            License: {{post.license_form}}</p>
+
+          <p>
+            {% for items in  post.access_format %}
+            <a href="{{ post.url | relative_url }}" class="button layout">{{ items }}</a>
+                {%endfor%}
+          <br>
+            {% for items in  post.genome_layout %}
+                <a href="{{site.baseurl}}/attributes/layout/" class="button layout" style="color: var(--cat-4);">{{ items }}</a>
+            {%endfor%}
+            {% for items in  post.view %}
+                <a href="{{site.baseurl}}/attributes/views/" class="button layout" style="color:  var(--cat-3);">{{ items }} view</a>
+            {%endfor%}
+            {% for items in  post.scale %}
+                <a href="{{site.baseurl}}/attributes/scales/" class="button layout" style="color: var(--cat-2);">{{ items }} scale</a>
+            {%endfor%}
+            {% for items in  post.focus %}
+                <a href="{{site.baseurl}}/attributes/focus/" class="button layout" style="color: var(--cat-1);">{{ items }} focus</a>
+            {%endfor%}
+          </p>
+          {%if post.user_documentation_availability %}
+          <p><a href = "{{post.user_documentation}}" target="_blank" class="button blue layout">User Documentation Available</a></p>
+          {%endif%}
+          </div>
+          <div class="tool_img">
+          <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" class = "lazyload imag"></a>
+          </div>
+        </div>
+  
+  {% endfor %}
+  
+  </div>
+

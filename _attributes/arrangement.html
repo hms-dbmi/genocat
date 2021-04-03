@@ -3,90 +3,132 @@ layout: page
 title:  Arrangement
 categories: attributes
 ---
-<head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  background-color: white;
-  grid-gap: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  color:black;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+<p>
+The different arrangements can be used to (i) visualize interconnection_type features or (ii) 
+compare two different sequences in the context of comparative genomics.
+</p>
 
-}
-</style>
-</head>
-The different arrangements can be used to (i) visualize interconnection_type features or (ii) compare two different sequence in the context of comparative genomics.
-<br><br>
-<div>
-  <h1><a id="Circular Parallel"></a>Circular Parallel</h1>
-    <img src = "{{site.baseurl}}/assets/circularll.png" width="200" align = "left">
-    <br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% if post.arrangement == "circular parallel" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
-      {% endfor %}
-</div>
-<br><br><br><br><br>
-<div>
-  <h1><a id="Circular Serial"></a>Circular Serial</h1>
-    <img src = "{{site.baseurl}}/assets/circulars.png" width="200" align = "left">
-    <br><br>
-
-    A serial circular arrangement corresponds to two sequence axes in a “half-circle” layout.
-    <br><br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% if post.arrangement == "circular serial" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
-      {% endfor %}
-</div>
-<br><br><br><br><br>
-<div>
-  <h1><a id="Linear Parallel"></a>Linear Parallel</h1>
-    <img src = "{{site.baseurl}}/assets/linearparallel.png" width="200" align = "left">
-    <br><br><br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% if post.arrangement == "linear parallel" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-        {% endif %}
-      {% endfor %}
-</div>
-<br><br><br><br><br>
-<div>
-  <h1><a id="Linear Serial"></a>Linear Serial</h1>
-    <img src = "{{site.baseurl}}/assets/linears.png" width="200" align = "left">
-    <br><br>
-
+<div> <!-- category start -->
+  <h2 id="Circular Parallel">Circular Parallel</h2>
+    <img src = "{{site.baseurl}}/icons/arrangement_circular_parallel.png" width="120">
+    {% assign total_p = 0 %}
     {% for post in site.tools %}
-      {% if post.arrangement == "linear serial" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
-      {% endif %}
-    {% endfor %}
-</div>
-<br><br><br><br><br>
-<div>
-  <h1><a id="Linear Orthogonal"></a>Linear Orthogonal</h1>
-    <img src = "{{site.baseurl}}/assets/linearo.png" width="200" align = "left">
-    <br><br>
-
+      {% for items in post.arrangement %}
+        {% if items == "circular parallel" %}
+          {% assign total_p = total_p | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_p }} tools</p>
+  <div class="grid-container"  style="display: none;">
     {% for post in site.tools %}
-      {% if post.arrangement == "linear orthogonal" %}
-        <li><a href ="{{site.baseurl}}{{ post.url}}">{{post.title}}</a></li>
-      {% endif %}
-    {% endfor %}
-</div>
-<br><br>
+      {% for items in post.arrangement %}
+        {% if items == "circular parallel" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}     
+  </div>    
+</div> <!-- category end -->
+<div> <!-- category start -->
+  <h2 id="Circular Serial">Circular Serial</h2>
+  <p>A serial circular arrangement corresponds to two sequence axes in a “half-circle” layout.</p>
+    <img src = "{{site.baseurl}}/icons/arrangement_circular_serial.png" width="120">
+    {% assign total_s = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.arrangement %}
+        {% if items == "circular parallel" %}
+          {% assign total_s = total_s | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_s }} tools</p>
+    <div class="grid-container"  style="display: none;">
+      {% for post in site.tools %}
+      {% for items in post.arrangement %}
+        {% if items == "circular serial" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+<div> <!-- category start -->
+  <h2 id="Linear Parallel">Linear Parallel</h2>
+    <img src = "{{site.baseurl}}/icons/arrangement_linear_parallel.png" width="120">
+    {% assign total_lp = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.arrangement %}
+        {% if items == "linear parallel" %}
+          {% assign total_lp = total_lp | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_lp }} tools</p>
+    <div class="grid-container"  style="display: none;">
+      {% for post in site.tools %}
+      {% for items in post.arrangement %}
+        {% if items == "linear parallel" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}      
+  </div>   
+</div> <!-- category end -->
+  
+<div> <!-- category start -->
+  <h2 id="Linear Serial">Linear Serial</h2>
+    <img src = "{{site.baseurl}}/icons/arrangement_linear_parallel.png" width="120">
+    {% assign total_ls = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.arrangement %}
+        {% if items == "linear serial" %}
+          {% assign total_ls = total_ls | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_ls }} tools</p>
+    <div class="grid-container"  style="display: none;">
+      {% for post in site.tools %}
+      {% for items in post.arrangement %}
+        {% if items == "linear serial" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+
+<div> <!-- category start -->
+  <h2 id="Linear Orthogonal">Linear Orthogonal</h2>
+    <img src = "{{site.baseurl}}/icons/arrangement_linear_orthogonal.png" width="120">
+    {% assign total_lo = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.arrangement %}
+        {% if items == "linear orthogonal" %}
+          {% assign total_lo = total_lo | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_lo }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.arrangement %}
+        {% if items == "linear orthogonal" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}   
+  </div>      
+</div> <!-- category end -->
+<script src="{{site.baseurl}}/scripts/attributes.js"></script>

@@ -3,66 +3,66 @@ layout: page
 title:  Partition
 categories: attributes
 ---
-<head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  background-color: white;
-  grid-gap: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  color:black;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+<p>Eukaryotic genomes often consist of multiple chromosomes, which are distinct sequences. 
+  However, they are often visualized as one contiguous sequence by placing them end-to-end of each other. 
+  Some visualizations, especially when comparing genomes, treat chromosomes as separate elements. 
+  While different chromosomes are the most common reason to display a sequence in separate parts, 
+  one could imagine partitioning a sequence based on other factors too, such as partitioning it in 
+  equally sized subsequences to show the entire sequence in multiple rows (similar to space-filling layouts).
+</p>
 
-}
-</style>
-</head>
-Eukaryotic genomes often consist of multiple chromosomes, which are distinct sequences. However, they are often visualized as one contiguous sequence by placing them end-to-end of each other. Some visualizations, especially when comparing genomes, treat chromosomes as separate elements. While different chromosomes are the most common reason to display a sequence in separate parts, one could imagine partitioning a sequence based on other factors too, such as partitioning it in equally sized subsequences to show the entire sequence in multiple rows (similar to space-filling layouts).
+<div> <!-- category start -->
+  <h2 id="Contiguous">Contiguous</h2>
+  <p>Segments of the genome, typically individual chromosomes, are joined together end-to-end.</p>
 
-<br><br>
-<div>
-  <h1><a id="Contiguous"></a>Contiguous</h1>
-
-    <img src = "{{site.baseurl}}/assets/c.png" width="200" align = "left">
-    <br><br>
-    Segments, typically individual chromosomes, of the genome are joined together end-to-end.
-    <br><br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% for items in post.partition %}
-          {% if items == "contiguous" %}
-            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-          {% endif %}
-        {% endfor %}
+    <img src = "{{site.baseurl}}/icons/partition_contiguous.png" width="120">
+    {% assign total_c = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.partition %}
+        {% if items == "contiguous" %}
+          {% assign total_c = total_c | plus: 1 %}
+        {% endif %}
       {% endfor %}
-    </div>
-</div>
-<br><br><br>
-
-
-<div>
-  <h1><a id="Segregated"></a>Segregated</h1>
-
-    <img src = "{{site.baseurl}}/assets/s.png" width="200" align = "left">
-    <br><br>
-
-    Segments, typically individual chromosomes, of the genome are displayed separately.
-    <br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% for items in post.partition %}
-          {% if items == 'segregated' %}
-            <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
-          {% endif %}
-        {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_c }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.partition %}
+        {% if items == "contiguous" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
       {% endfor %}
-    </div>
-</div>
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+
+<div> <!-- category start -->
+  <h2 id="Segregated">Segregated</h2>
+  <p>Segments of the genome, typically individual chromosomes, are displayed separately.</p>
+
+    <img src = "{{site.baseurl}}/icons/partition_segregated.png" width="120">
+    {% assign total_s = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.partition %}
+        {% if items == "segregated" %}
+          {% assign total_s = total_s | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %} 
+  <p class="total"> {{ total_s }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.partition %}
+        {% if items == "segregated" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+  
+<script src="{{site.baseurl}}/scripts/attributes.js"></script>

@@ -1,6 +1,10 @@
 function sortByName() {
+  var loader = document.getElementById("loader");
+  removeClass(loader, "hide-loader");
+  document.getElementById("sortOrder").innerHTML = "sorting by name";
+
   var list, i, switching, b, shouldSwitch;
-  list = document.getElementsByClassName("filterDiv");
+  list = document.getElementsByClassName("filterDiv show");
   switching = true;
   while (switching) {
     switching = false;
@@ -17,23 +21,25 @@ function sortByName() {
       switching = true;
     }
   }
+  document.getElementById("sortOrder").innerHTML = "sorted by name";
   addClass(loader, "hide-loader");
 }
 
 function sortByRecency() {
   var list, switching;
-  // document.getElementById("loader").style.display = "show";
-  list = document.getElementsByClassName("filterDiv");
+  list = document.getElementsByClassName("filterDiv show");
   switching = true;
   getPubYear(list, switching, []);
-  // document.getElementById("loader").style.display = "none";
+  document.getElementById("sortOrder").innerHTML = "sorting by year";
 }
 
 function getPubYear(b, switching, years) {
+  var loader = document.getElementById("loader");
   var i, myvar, words, j, pub_year, year;
   jQuery.get('../scholar_data.txt', function(data) {
+    removeClass(loader, "hide-loader");
     while (switching) {
-      document.getElementById("loader").style.display = "show";
+      // document.getElementById("loader").style.display = "inline-block";
       switching = false;
       for (i=0; i<(b.length); i++) {
         doi = b[i].className.split(" ")[1];
@@ -53,18 +59,21 @@ function getPubYear(b, switching, years) {
       switching = makeSwitch(years, b, switching);
     }
     addClass(loader, "hide-loader");
+    document.getElementById("sortOrder").innerHTML = "sorted by year";
   })
 }
 
 function sortByCitation() {
   var list, switching, counts;
-  list = document.getElementsByClassName("filterDiv");
+  list = document.getElementsByClassName("filterDiv show");
   switching = true;
   counts = [];
   getCiteCount(counts, list, switching);
+  document.getElementById("sortOrder").innerHTML = "sorting by citation count";
 }
 
 function getCiteCount(counts, b, switching) {
+  var loader = document.getElementById("loader");
   var myvar, words, i, citeCount, j;
   jQuery.get('../scholar_data.txt', function(data) {
     while (switching) {
@@ -88,6 +97,7 @@ function getCiteCount(counts, b, switching) {
       switching = makeSwitch(counts, b, switching);
     }
     addClass(loader, "hide-loader");
+    document.getElementById("sortOrder").innerHTML = "sorted by citation count";
   });
 }
 

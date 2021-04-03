@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body class="sidebar-overlay">
+
+    {% include sidebar.html %}
+
+    <div class="wrapper">
+      <div class="head">
+        <header class="logo">
+          <a href="{{ site.baseurl }}/" title="Home"><img src="{{ site.baseurl }}/public/header.svg"/></a>
+        </header>
+          <input class="aside aside-1" type="search" id="mySearch" onClick="goTo('#search')" placeholder="SEARCH"/>
+          <aside class="aside aside-2" onClick="goTo('#sort')"><a href="/#sort">SORT</a></aside>
+          <aside class="aside aside-3" onClick="goTo('#filter')"><a href="/#filter">FILTER</a></aside>
+      </div>
+
+      <article class="main page">
+
+        {% include breadcrumbs.html %}
+
+         {{ content }}
+      </article>
+      <footer class="footer">
+        <img src="{{ site.baseurl }}/assets/hms.svg" alt="Harvard Medical School" style="max-width: 10rem;">
+        <p>Gehlenborg Lab <br>
+          Department of Biomedical Informatics <br>
+          Harvard Medical School</p>
+      </footer>
+    </div>     
+    
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    
+    <script>
+    function goTo(place){
+      window.location = "/" + place;
+    }  
+
+    </script>
+
+  </body>
+</html>

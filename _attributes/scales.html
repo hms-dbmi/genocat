@@ -3,59 +3,63 @@ layout: page
 title:  Scales
 categories: attributes
 ---
-<head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  background-color: white;
-  grid-gap: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  color:black;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
-}
-</style>
-</head>
-<div>
-  <h1><a id="Single Scale"></a>Single Scale</h1>
-
-    <img src = "{{site.baseurl}}/assets/Single Scale.png" width="200" align = "left">
-    <br><br><br>
-    Single scale visualizations display a genome from a single perspective - one size.
+<div> <!-- category start -->
+  <h2 id="Single Scale">Single Scale</h2>
+  <p>Single scale visualizations display a genome from a single perspective - one size.
     However, some single scale visualizations provide a zooming interaction, which allows
-    the user to expand or shrink the genome view.
-    <br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% if post.scale == "single" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+    the user to expand or shrink the genome view.</p>
+
+    <img src = "{{site.baseurl}}/icons/scale_single.png" width="120">
+    {% assign total_s = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.scale %}
+        {% if items == "single" %}
+          {% assign total_s = total_s | plus: 1 %}
         {% endif %}
       {% endfor %}
-    </div>
-</div>
-<br><br>
-<div>
-  <h1><a id="Multiple Scales"></a>Multiple Scales</h1>
-    <img src = "{{site.baseurl}}/assets/Multiple Scale.png" width="200" align = "left">
-    <br><br><br>
-    A multiple scale visualization allows for visualizing data from multiple perspectives/sizes at once.
+    {% endfor %} 
+  <p class="total"> {{ total_s }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.scale %}
+        {% if items == "single" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+
+<div> <!-- category start -->
+  <h2 id="Multiple Scales">Multiple Scales</h2>
+  <p>A multiple scale visualization allows for visualizing data from multiple perspectives/sizes at once.
     This can be useful for something as large as a genome, particularly being able to view
-    individual genes as well as the geneome on a whole, as scaling would allow.
-    <br><br><br><br><br>
-    <div class="grid-container">
-      {% for post in site.tools %}
-        {% if post.scale == "multiple" %}
-          <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}">{{post.title}}<img src = "{{site.baseurl}}{{ post.image }}" height="150"></a>
+    individual genes as well as the genome on a whole, as scaling would allow.</p>
+
+    <img src = "{{site.baseurl}}/icons/scale_multiple.png" width="120">
+    {% assign total_m = 0 %}
+    {% for post in site.tools %}
+      {% for items in post.scale %}
+        {% if items == "multiple" %}
+          {% assign total_m = total_m | plus: 1 %}
         {% endif %}
       {% endfor %}
-    </div>
-</div>
+    {% endfor %} 
+  <p class="total"> {{ total_m }} tools</p>
+  <div class="grid-container"  style="display: none;">
+    {% for post in site.tools %}
+      {% for items in post.scale %}
+        {% if items == "multiple" %}
+        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
+          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
+        </a>        
+        {% endif %}
+      {% endfor %}
+    {% endfor %}    
+  </div>     
+</div> <!-- category end -->
+  
+<script src="{{site.baseurl}}/scripts/attributes.js"></script>

@@ -1,181 +1,95 @@
 ---
 layout: page
 ---
-<html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145092297-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<div class="section">
+  <img src = "{{site.baseurl}}{{ page.image }}" class = "center">
+  <small>{{page.image_location}}</small>
 
-  gtag('config', 'UA-145092297-1');
-</script>
+</div>
+<div class="tool">
+  <div class="section">
+    <h2>Methods</h2>
+    {% for items in  page.genome_layout %}
+        <a href="{{site.baseurl}}/attributes/layout/" class="button layout" style="color: var(--cat-7)">{{ items }}</a>
+    {%endfor%}
+    {% for items in  page.view %}
+        <a href="{{site.baseurl}}/attributes/views/" class="button layout" style="color: var(--cat-3)">{{ items }} view</a>
+    {%endfor%}
+    {% for items in  page.scale %}
+        <a href="{{site.baseurl}}/attributes/scales/" class="button layout" style="color: var(--cat-2)">{{ items }} scale</a>
+    {%endfor%}
+    {% for items in  page.focus %}
+        <a href="{{site.baseurl}}/attributes/focus/" class="button layout" style="color: var(--cat-1)">{{ items }} focus</a>
+    {%endfor%}
+    {% for items in  page.partition %}
+        <a href="{{site.baseurl}}/attributes/partition/" class="button layout" style="color: var(--cat-6)">{{ items }}</a>
+    {%endfor%}
+    {% for items in  page.abstraction %}
+        <a href="{{site.baseurl}}/attributes/abstraction/" class="button layout" style="color: var(--cat-5)">{{ items }} abstraction</a>
+    {%endfor%}
+    {% for items in  page.arrangement %}
+        <a href="{{site.baseurl}}/attributes/arrangement/" class="button layout" style="color: var(--cat-4)">{{ items }} arrangement</a>
+    {%endfor%}
+    {% for items in  page.interconnection_type %}
+        <a href="{{site.baseurl}}/attributes/interconnection_type/" class="button layout" style="color: var(--cat-8)">{{ items }} interconnection</a>
+    {%endfor%}
+    {% for items in  page.feature_type %}
+      <a href="{{site.baseurl}}/attributes/type/" class="button layout" style="--border-color: #013220; --color: #013220;">{{ items }} type</a>
+    {%endfor%}
+  </div>
+  <div class="section">
+    <h2>Tool</h2>
+    <table><tr>
+      <td class="labelCol">Access Format</td>
+      <td>
+        {% for items in  page.access_format %}
+        <span> {{ items }} </span>
+        {%endfor%}
+      </td>
+    </tr>
+    <tr>
+      <td class="labelCol">Supported Files</td>
+      <td>
+        {% for items in  page.supported_files %}
+        <span> {{ items }} </span>
+        {%endfor%}
+      </td>
+    </tr>
+    <tr>
+      <td class="labelCol">License</td>
+      <td>
+        {% for items in  page.license %}
+            <span> {{ items }} </span>
+        {%endfor%}
+      </td>
+    </tr>
+    <tr>
+      <td class="labelCol">Tool name</td>
+      <td><h3>{{ page.title }}</h3></td>
+    </tr>
+    <tr>
+      <td class="labelCol">Tool Link</td>
+      <td><a href="{{ page.browser }}" target="_blank">{{ page.browser }}</a></td>
+    </tr>
+    <tr>
+      <td class="labelCol">Documentation</td>
+      <td><a href="{{ page.user_documentation }}" target="_blank">{{ page.user_documentation }}</a></td>
+    </tr>
+  </table>
+  </div>
+</div>
+<div class="paper">
+  <h2>Paper</h2>
+  <h3>{{page.paper_title}}</h3>
+  <p><small>{{ page.citation }}</small>
+  
+  <br>
+  Cited by: {{page.citation_count}}</p>
+  <h4>Abstract</h4>
+  <p>
+  {{ page.abstract }}
+  </p>
+</div>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
-  <style>
-  body {
-    font-family: "Lato", sans-serif;
-  }
-  a{
-    color: black;
-  }
-  /* visited link */
-  a:visited {
-    color: black;
-  }
-  .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-          }
-  .button {
-           background-color: var(--border-color);
-           border: 2px solid var(--border-color);
-           padding: 0.5px 10px;
-           text-align: center;
-           text-decoration: none;
-           display: inline-block;
-           margin: 2px 1px;
-           border-radius: 15px;
-           color: white;
-           font-weight: normal;
-           /* font-size: 10px; */
-         }
-  .button:hover{
-        background-color: white;
-        color: black;
-        }
-  .layout {
-        border-color: var(--border-color);
-        color: white;
-        text-decoration: none;
-        }
-  .layout:visited {
-        background-color: var(--border-color);
-        color: white;
-        }
-  .layout:hover {
-        background-color: var(--border-color);
-        color: white;
-        }
-  .column {
-        float: left;
-        width: 33.33%;
-        word-wrap: break-word;
-      }
-
-      /* Clear floats after the columns */
-  .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-        @media screen and (max-height: 450px) {
-          .sidenav {padding-top: 15px;}
-          .sidenav a {font-size: 18px;}
-        }
-        /* On screens that are less than 700px wide, make the sidebar into a topbar */
-      @media screen and (max-width: 700px) {
-        .sidebar {
-          width: 100%;
-          height: auto;
-          position: relative;
-        }
-        .sidebar a {float: left;}
-        div.content {margin-left: 0;}
-      }
-      /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-      @media screen and (max-width: 400px) {
-        .sidebar a {
-          text-align: center;
-          float: none;
-        }
-      }
-}
-  </style>
-  </head>
-  <body>
-
-    <div>
-      <img src = "{{site.baseurl}}{{ page.image }}" class = "center">
-      <small>{{page.image_location}}</small>
-      <br><br>
-
-    </div>
-
-    <div>
-      <h2>Methods</h2>
-      {% for items in  page.genome_layout %}
-         <a href="{{site.baseurl}}/attributes/layout.html" class="button layout" style="--border-color: #CC79A7; --color: #CC79A7;">{{ items }}</a>
-      {%endfor%}
-      {% for items in  page.view %}
-         <a href="{{site.baseurl}}/attributes/views.html" class="button layout" style="--border-color: #A4B3B6; --color: #A4B3B6;">{{ items }} view</a>
-      {%endfor%}
-      {% for items in  page.scale %}
-         <a href="{{site.baseurl}}/attributes/scales.html" class="button layout" style="--border-color:  #56B4E9; --color:  #5680E9;">{{ items }} scale</a>
-      {%endfor%}
-      {% for items in  page.focus %}
-         <a href="{{site.baseurl}}/attributes/focus.html" class="button layout" style="--border-color: #F0E442; --color: #F0E442;">{{ items }} focus</a>
-      {%endfor%}
-      {% for items in  page.partition %}
-         <a href="{{site.baseurl}}/attributes/partition.html" class="button layout" style="--border-color: #009E73; --color: #009E73;">{{ items }}</a>
-      {%endfor%}
-      {% for items in  page.abstraction %}
-         <a href="{{site.baseurl}}/attributes/abstraction.html" class="button layout" style="--border-color: #0072B2; --color: #0072B2;">{{ items }} abstraction</a>
-      {%endfor%}
-      {% for items in  page.arrangement %}
-         <a href="{{site.baseurl}}/attributes/arrangement.html" class="button layout" style="--border-color: #D55E00; --color: #D55E00;">{{ items }} arrangement</a>
-      {%endfor%}
-      {% for items in  page.interconnection_type %}
-         <a href="{{site.baseurl}}/attributes/interconnection_type.html" class="button layout" style="--border-color: #E69F00; --color: #E69F00;">{{ items }} interconnection</a>
-      {%endfor%}
-      {% for items in  page.feature_type %}
-        <a href="{{site.baseurl}}/attributes/type.html" class="button layout" style="--border-color: #013220; --color: #013220;">{{ items }} type</a>
-      {%endfor%}
-
-    </div>
-    <div>
-      <h2>Tool</h2>
-
-          {% for items in  page.access_format %}
-              <button class="button layout" style="--border-color: #0C0032; --color: #0C0032;">Access  Format: {{ items }}</button>
-          {%endfor%}
-          {% for items in  page.supported_files %}
-              <button class="button layout" style="--border-color: #240090; --color: #240090;">Supported Files: {{ items }}</button>
-          {%endfor%}
-          {% for items in  page.license %}
-              <button class="button layout" style="--border-color: #3500D3; --color: #3500D3;">License: {{ items }}</button>
-          {%endfor%}
-
-          <div class="row">
-            <div class="column">
-              <h3>Tool: </h3> {{ page.title }}
-            </div>
-            <div class="column">
-              <h3>Tool Link: </h3> <a href="{{ page.browser }}" target="_blank">{{ page.browser }}</a>
-            </div>
-            <div class="column">
-              <h3>Documentation: </h3> <a href="{{ page.user_documentation }}" target="_blank">{{ page.user_documentation }}</a>
-            </div>
-          </div>
-    </div>
-    <div>
-      <h2>Paper</h2>
-      <h2>{{page.paper_title}}</h2>
-      <br>
-      {{ page.citation }}
-      <br><br>
-      Cited by: {{page.citation_count}}
-      <h3>Abstract</h3>
-      {{ page.abstract }}
-    </div>
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-
-</html>
