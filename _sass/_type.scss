@@ -20,6 +20,12 @@ h1.page-title, .filterDiv h3 {
   a { color: var(--geno-200); }
 }
 
+.grid-item h3 {
+  font-variation-settings: 'CASL' 1, 'CRSV' 1;
+
+  a { color: var(--geno-100); }
+}
+
 h2 {
   margin-top: 1rem;
   font-size: 1.5em;
@@ -154,4 +160,10 @@ a[href^="#fnref:"] {
     display: inline;
   }
     
+}
+h1.error {
+  position: absolute;
+  top: 10em;
+  left: 3em;
+  z-index: 100;
 }

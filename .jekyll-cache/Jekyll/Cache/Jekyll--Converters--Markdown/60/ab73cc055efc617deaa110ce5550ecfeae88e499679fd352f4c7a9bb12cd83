@@ -1,0 +1,14 @@
+I"><p>A way of reducing the space of a sequence in order to concentrate on specific regions is abstraction. 
+  This involves replacing the entire/parts of the sequence by abstraction elements, such as symbols, while 
+  maintaining the order of the elements. For example, if we are only interested in exons, the introns can 
+  be abstracted to a gap, symbol, or completely filtered out. Therefore, non-adjacent parts of the sequence 
+  are next to each other in the visualization. We could not identify a tool applying a complete abstraction 
+  in our literature research, which would correspond to replacing both exons and introns with symbols.
+</p>
+<div>
+  <h2 id="None">None</h2>
+  <p>No part of the genome are abstracted or removed with the following tools.</p>
+  <img src="/icons/abstraction_none.png" width="120" />
+    
+</div>
+:ET

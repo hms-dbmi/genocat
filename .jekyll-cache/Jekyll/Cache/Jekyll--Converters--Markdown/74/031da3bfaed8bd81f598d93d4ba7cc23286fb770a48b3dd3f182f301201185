@@ -1,0 +1,8 @@
+I"d<p>Eukaryotic genomes often consist of multiple chromosomes, which are distinct sequences. 
+  However, they are often visualized as one contiguous sequence by placing them end-to-end of each other. 
+  Some visualizations, especially when comparing genomes, treat chromosomes as separate elements. 
+  While different chromosomes are the most common reason to display a sequence in separate parts, 
+  one could imagine partitioning a sequence based on other factors too, such as partitioning it in 
+  equally sized subsequences to show the entire sequence in multiple rows (similar to space-filling layouts).
+</p>
+:ET

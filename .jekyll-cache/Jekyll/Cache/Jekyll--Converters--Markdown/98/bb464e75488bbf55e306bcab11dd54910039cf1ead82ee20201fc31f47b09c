@@ -1,0 +1,18 @@
+I"ƒ<h1 id="hundreds-of-ways-to-visualize-genomic-data">Hundreds of ways to visualize genomic data.</h1>
+
+<p>This site provides a database of genomic visualization tools. Each tool has been sorted and grouped based on various attributes, and this website has been designed to help you find what youâ€™re looking for. Our review article on genomic visualization tools (<em>Tasks, Techniques, and Tools for Genomic Data Visualization</em>) can be found <a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.13727">here.</a></p>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>GenoCAT is a crowdsourced resource. Data visualization tool developers can <a href="/submission/">add their own tools</a> to GenoCAT or edit any errors users may come across when browsing through tool pages.</p>
+
+<p><strong>Have questions or suggestions?</strong></p>
+
+<p>Feel free to <a href="https://github.com/hms-dbmi/genocat/issues/new">open an issue on GitHub</a>, <a href="https://twitter.com/ngehlenborg">ask us on Twitter</a>, or send email to <a href="mailto:nils@hms.harvard.edu">nils@hms.harvard.edu</a>.</p>
+
+<h3 id="credits">Credits</h3>
+
+<p>The paper was written by Sabrina Nusrat, Theresa Harbig, and Nils Gehlenborg. The original structure of the website was set up by Justine Shih and Claudia Meyer. The current site was designed and developed by Christian Stolte.</p>
+
+<h3 id="thanks-for-reading">Thanks for reading!</h3>
+:ET
