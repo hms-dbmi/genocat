@@ -1,0 +1,5 @@
+I"&<p>Features can be of different types. Those that only cover one nucleotide are defined 
+  as point features while features covering more than one nucleotide are segment features. 
+  While there can be gaps between features in sparse sets, contiguous feature sets cover the entire genome.
+</p>
+:ET

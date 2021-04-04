@@ -12,12 +12,12 @@ p.total.open::before {
   grid-gap: 1rem;
 }
 .grid-item {
-    background: var(--geno-500);
+    background: var(--geno-300);
   padding: 0 1rem;
   border-radius: 1rem;
 
     &:hover {
-        box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.1);
     } 
 
     h4 {

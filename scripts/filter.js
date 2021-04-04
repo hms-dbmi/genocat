@@ -36,7 +36,7 @@ function checkbox_filter(tags) {
     }
   }
   document.getElementById("results").innerHTML = num + " tool" + (num != 1 ? "s" : "");
-  console.log(tags.flat());
+  // console.log(tags.flat());
   updateBadges(tags.flat())
 }
 

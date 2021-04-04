@@ -21,13 +21,16 @@ categories: attributes
       {% endfor %}
     {% endfor %} 
   <p class="total"> {{ total_c }} tools</p>
-  <div class="grid-container"  style="display: none;">
+  <div class="items"  style="display: none;">
     {% for post in site.tools %}
       {% for items in post.genome_layout %}
         {% if items == "circular" %}
-        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
-          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
-        </a>        
+        <div class="grid-item">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <div class="tool_img">
+            <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" class = "lazyload imag"></a>
+          </div>
+        </div>         
         {% endif %}
       {% endfor %}
     {% endfor %}    
@@ -48,13 +51,16 @@ categories: attributes
       {% endfor %}
     {% endfor %} 
   <p class="total"> {{ total_l }} tools</p>
-  <div class="grid-container"  style="display: none;">
+  <div class="items"  style="display: none;">
     {% for post in site.tools %}
       {% for items in post.genome_layout %}
         {% if items == "linear" %}
-        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
-          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
-        </a>        
+        <div class="grid-item">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <div class="tool_img">
+            <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" class = "lazyload imag"></a>
+          </div>
+        </div>        
         {% endif %}
       {% endfor %}
     {% endfor %}    
@@ -76,13 +82,16 @@ categories: attributes
       {% endfor %}
     {% endfor %} 
   <p class="total"> {{ total_sf }} tools</p>
-  <div class="grid-container"  style="display: none;">
+  <div class="items"  style="display: none;">
     {% for post in site.tools %}
       {% for items in post.genome_layout %}
         {% if items == "spacefilling" %}
-        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
-          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
-        </a>        
+        <div class="grid-item">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <div class="tool_img">
+            <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" class = "lazyload imag"></a>
+          </div>
+        </div>        
         {% endif %}
       {% endfor %}
     {% endfor %}    
@@ -103,13 +112,16 @@ categories: attributes
       {% endfor %}
     {% endfor %} 
   <p class="total"> {{ total_sp }} tools</p>
-  <div class="grid-container"  style="display: none;">
+  <div class="items"  style="display: none;">
     {% for post in site.tools %}
       {% for items in post.genome_layout %}
         {% if items == "spatial" %}
-        <a class="grid-item" href ="{{site.baseurl}}{{ post.url}}"><h4>{{post.title}}</h4>
-          <img  class="lazyload" src="{{site.baseurl}}{{ post.image }}">
-        </a>        
+        <div class="grid-item">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <div class="tool_img">
+            <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" class = "lazyload imag"></a>
+          </div>
+        </div>         
         {% endif %}
       {% endfor %}
     {% endfor %}    
