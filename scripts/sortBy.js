@@ -63,14 +63,14 @@ function getPubYear(b, switching, years) {
   })
 }
 
-function sortByCitation() {
-  var list, switching, counts;
-  list = document.getElementsByClassName("filterDiv show");
-  switching = true;
-  counts = [];
-  getCiteCount(counts, list, switching);
-  document.getElementById("sortOrder").innerHTML = "sorting by citation count";
-}
+// function sortByCitation() {
+//   var list, switching, counts;
+//   list = document.getElementsByClassName("filterDiv show");
+//   switching = true;
+//   counts = [];
+//   getCiteCount(counts, list, switching);
+//   document.getElementById("sortOrder").innerHTML = "sorting by citation count";
+// }
 
 function getCiteCount(counts, b, switching) {
   var loader = document.getElementById("loader");

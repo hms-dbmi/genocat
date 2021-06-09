@@ -8,9 +8,10 @@ title: Home
   {% for post in site.tools %}
         <div class="filterDiv {{ post.doi }} {{post.supported_files}} {{ post.partition }} {{ post.abstraction }}ab {{ post.arrangement }} {{ post.feature_type }} {{post.license_form}} {{ post.interconnection_type }} {{ post.access_format }} {{ post.genome_layout }} {{ post.focus }}-focus {{post.view}}-view {{post.scale}}-scale">
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <button class="collapsible">i</button></h3>
-  
+
           <div class="content" style="display: none;">
-          <p>Cited by: {{post.citation_count}}<br>
+          <p>
+            <!-- Cited by: {{post.citation_count}}<br> -->
             Paper Publication Year: {{post.pub_year}}<br>
             License: {{post.license_form}}</p>
 
@@ -40,8 +41,7 @@ title: Home
           <a href="{{ post.url | relative_url }}"><img src = "{{site.baseurl}}{{ post.image }}" class = "lazyload imag"></a>
           </div>
         </div>
-  
-  {% endfor %}
-  
-  </div>
 
+  {% endfor %}
+
+  </div>
