@@ -4,11 +4,11 @@ for (var i=0; i < num_categories; i++) {
   arr.push([]);
 }
 
-// document.getElementById("byCitation").onclick = function() {
-//   var loader = document.getElementById("loader");
-//   removeClass(loader, "hide-loader");
-//   sortByCitation();
-// }
+document.getElementById("byCitation").onclick = function() {
+  var loader = document.getElementById("loader");
+  removeClass(loader, "hide-loader");
+  sortByCitation();
+}
 
 document.getElementById("byYear").onclick = function() {
   var loader = document.getElementById("loader");
