@@ -4,188 +4,185 @@ title: Contribute a tool
 permalink: /submission/
 ---
 <div class="contribute">
-<p>GenoCAT is a crowdsourced resource. Data visualization tool developers can add their own tools to GenoCAT or edit any errors users may come across when browsing through tool pages. Tool are organized into Markdown files and can be accessed via our GitHub repository. You can find the Markdown files for all tools on the website in this <a href="https://github.com/hms-dbmi/genocat/tree/master/_tools">folder</a>.   
+<p>GenoCAT is a crowdsourced resource. Data visualization tool developers can add their own tools to GenoCAT or edit any errors users may come across when browsing through tool pages. Tool are organized into Markdown files and can be accessed via our GitHub repository. You can find the Markdown files for all tools on the website in this <a href="https://github.com/hms-dbmi/genocat/tree/master/_tools">folder</a>.
 </p>
-<p>To add a new tool, first fork our repository on GitHub. Using <a href="https://github.com/hms-dbmi/genocat/blob/master/template.md">template.md</a>, create a Markdown file for your tool following the instruction below and upload it into “_tools”.   
+<p>To add a new tool, first fork our repository on GitHub. Using <a href="https://github.com/hms-dbmi/genocat/blob/master/public/template.md">template.md</a>, create a Markdown file for your tool following the instruction below and upload it into “_tools”.
 </p>
-<p>The following describes each parameter in the template. <b>Do not change the first parameter.</b> It must remain ‘layout: tool’.</p> 
-<p>Please follow the outlined instructions (e.g., brackets and quotations) when indicated. This allows for multiple characteristics if your tool supports multiple characteristics and should be indicated as such: [“linear”, “circular”]. If a parameter doesn’t apply for your tool, leave it blank.  
+<p>The following describes each parameter in the template. <b>Do not change the first parameter.</b> It must remain ‘layout: tool’.</p>
+<p>Please follow the outlined instructions (e.g., brackets and quotations) when indicated. This allows for multiple characteristics if your tool supports multiple characteristics and should be indicated as such: [“linear”, “circular”]. If a parameter doesn’t apply for your tool, leave it blank.
 </p>
-<h4>title:</h4> 
-<p>Provide the name of the tool.</p>  
+<h4>title:</h4>
+<p>Provide the name of the tool.</p>
 
-<h4>developer_github_account:</h4> 
+<h4>developer_github_account:</h4>
 <p>Provide your GitHub username.</p>
- 
-<h4>paper:</h4>
-<p>Provide a link to the tool’s paper or preprint.</p>   
 
-<h4>paper_title:</h4> 
-<p>Provide the title of the paper, in quotation marks (e.g., “Circos: an information aesthetic for comparative genomics”).  
+<h4>paper:</h4>
+<p>Provide a link to the tool’s paper or preprint.</p>
+
+<h4>paper_title:</h4>
+<p>Provide the title of the paper, in quotation marks (e.g., “Circos: an information aesthetic for comparative genomics”).
 </p>
-<h4>doi:</h4> 
-<p>Provide the publication or preprint DOI.  
+<h4>doi:</h4>
+<p>Provide the publication or preprint DOI.
 </p>
-<h4>browser:</h4> 
-<p>Provide a link to the tool itself. This could be a website or GitHub repository.  
+<h4>browser:</h4>
+<p>Provide a link to the tool itself. This could be a website or GitHub repository.
 </p>
-<h4>abstract:</h4> 
-<p>Provide the abstract for the tool’s paper, in quotation marks (e.g. “We created a visualization tool called Circos to facilitate the identification and analysis of similarities and differences arising from comparisons of genomes…”).   
+<h4>abstract:</h4>
+<p>Provide the abstract for the tool’s paper, in quotation marks (e.g. “We created a visualization tool called Circos to facilitate the identification and analysis of similarities and differences arising from comparisons of genomes…”).
 </p>
-<h4>citation:</h4> 
-<p>Provide the citation for the tool’s paper, in quotation marks (e.g. “Krzywinski M, Schein J, Birol I, Connors J, Gascoyne R, Horsman D, et al. Circos: an information aesthetic for comparative genomics. Genome Res. 2009;19: 1639–1645.”).   
+<h4>citation:</h4>
+<p>Provide the citation for the tool’s paper, in quotation marks (e.g. “Krzywinski M, Schein J, Birol I, Connors J, Gascoyne R, Horsman D, et al. Circos: an information aesthetic for comparative genomics. Genome Res. 2009;19: 1639–1645.”).
 </p>
-<h4>citation_count:</h4> 
-<p>Provide the current number of times the paper has been cited according to Google Scholar.  
-</p>
-<h4><a href="/attributes/type/">feature_type:</a></h4> 
-<p>Provide the segment/point, sparse/contiguous type of the tool, based on the following descriptions.   
+<h4><a href="/attributes/type/">feature_type:</a></h4>
+<p>Provide the segment/point, sparse/contiguous type of the tool, based on the following descriptions.
 </p>
 <blockquote>
     <h5>Segment vs. point:</h5>
-    <p class="run-in">Features that only cover one nucleotide are referred to as “point” type features, while features covering more than one nucleotide are called “segment” features. 
+    <p class="run-in">Features that only cover one nucleotide are referred to as “point” type features, while features covering more than one nucleotide are called “segment” features.
     </p><p class="spacer">&nbsp;</p>
     <h5>Sparse vs. contiguous:</h5>
-    <p class="run-in">“Sparse” type feature sets contain gaps between features, while “contiguous” feature sets cover the entire genome.  
+    <p class="run-in">“Sparse” type feature sets contain gaps between features, while “contiguous” feature sets cover the entire genome.
     </p>
 </blockquote>
-<p><strong>Choose one or more types from the following list:</strong> [“segment sparse”, “point contiguous”, “point sparse”, “segment contiguous”], and use brackets and quotations (e.g., [“segment sparse”])   
+<p><strong>Choose one or more types from the following list:</strong> [“segment sparse”, “point contiguous”, “point sparse”, “segment contiguous”], and use brackets and quotations (e.g., [“segment sparse”])
 </p>
-<h4><a href="/attributes/interconnection_type/">interconnection_type:</a></h4> 
-<p>Provide the interconnection type of the tool, based on the following definitions.  
+<h4><a href="/attributes/interconnection_type/">interconnection_type:</a></h4>
+<p>Provide the interconnection type of the tool, based on the following definitions.
 </p>
 <blockquote>
-    <h5><a href="/attributes/interconnection_type/#None">None:</a></h5>  
-    <p class="run-in">No interconnection between sequences 
+    <h5><a href="/attributes/interconnection_type/#None">None:</a></h5>
+    <p class="run-in">No interconnection between sequences
     </p><p class="spacer">&nbsp;</p>
-    <h5><a href="attributes/interconnection_type/#Within">Within:</a></h5> 
-    <p class="run-in">Interconnections that connect features within a sequence 
+    <h5><a href="attributes/interconnection_type/#Within">Within:</a></h5>
+    <p class="run-in">Interconnections that connect features within a sequence
     </p><p class="spacer">&nbsp;</p>
-    <h5><a href="/attributes/interconnection_type/#Between">Between:</a></h5> 
-    <p class="run-in">Interconnections that connect features between sequences  
+    <h5><a href="/attributes/interconnection_type/#Between">Between:</a></h5>
+    <p class="run-in">Interconnections that connect features between sequences
     </p>
 </blockquote>
-<p><strong>Choose from the following interconnection types:</strong> [“no”, “within”, “between”], and use brackets and quotations (e.g. [“within”, “between”])   
+<p><strong>Choose from the following interconnection types:</strong> [“no”, “within”, “between”], and use brackets and quotations (e.g. [“within”, “between”])
     </p>
-<h4><a href="/attributes/layout/">genome_layout:</a> </h4> 
+<h4><a href="/attributes/layout/">genome_layout:</a> </h4>
 <p>
-Provide the layout of the genome, according to the following definitions.   
+Provide the layout of the genome, according to the following definitions.
 </p>
 <blockquote>
-    <h5><a href="/attributes/layout/#Linear">Linear:</a> </h5> 
+    <h5><a href="/attributes/layout/#Linear">Linear:</a> </h5>
     <p class="run-in">
-    The genome is laid out linearly.  
+    The genome is laid out linearly.
     </p><p class="spacer">&nbsp;</p>
-    <h5><a href="/attributes/layout/#Circular">Circular:</a> </h5> 
+    <h5><a href="/attributes/layout/#Circular">Circular:</a> </h5>
     <p> class="run-in"
-    The genome is represented as a circle.  
+    The genome is represented as a circle.
     </p><p class="spacer">&nbsp;</p>
-    <h5><a href="http://genocat.tools/attributes/layout.html#Spatial">Spatial:</a></h5> 
-    <p class="run-in">Spatial layouts display sequences in a 3-dimensional space. 
+    <h5><a href="http://genocat.tools/attributes/layout.html#Spatial">Spatial:</a></h5>
+    <p class="run-in">Spatial layouts display sequences in a 3-dimensional space.
     </p><p class="spacer">&nbsp;</p>
-    <h5><a href="http://genocat.tools/attributes/layout.html#Space%20Filling">Space-filling:</a></h5> 
-    <p class="run-in">The space-filling curve displays a more global overview of the genome while maintaining the spatial distribution of features, for example, using a Hilbert or other space-filling curve.  
+    <h5><a href="http://genocat.tools/attributes/layout.html#Space%20Filling">Space-filling:</a></h5>
+    <p class="run-in">The space-filling curve displays a more global overview of the genome while maintaining the spatial distribution of features, for example, using a Hilbert or other space-filling curve.
     </p>
 </blockquote>
 <p><b>Choose from the following interaction types:</b> [“linear”, “circular”, “spatial”, “spacefilling”], and use brackets and double quotations (e.g. [“linear”])   </p>
 
 <h4><a href="http://genocat.tools/attributes/partition.html">partition:</a></h4>
-<p>Provide the partition, according to the following definitions.   
+<p>Provide the partition, according to the following definitions.
 </p>
 <blockquote>
-    <h5><a href="http://genocat.tools/attributes/partition.html#Contiguous">Contiguous:</a></h5> 
-    <p class="run-in">Segments, typically individual chromosomes, of the genome are joined together end-to-end. 
+    <h5><a href="http://genocat.tools/attributes/partition.html#Contiguous">Contiguous:</a></h5>
+    <p class="run-in">Segments, typically individual chromosomes, of the genome are joined together end-to-end.
     </p><p class="spacer">&nbsp;</p>
-    <h5><a href="http://genocat.tools/attributes/partition.html#Segregated">Segregated:</a></h5> 
-    <p class="run-in">Segments, typically individual chromosomes, of the genome are displayed separately. 
+    <h5><a href="http://genocat.tools/attributes/partition.html#Segregated">Segregated:</a></h5>
+    <p class="run-in">Segments, typically individual chromosomes, of the genome are displayed separately.
     </p>
 </blockquote>
-<p><strong>Choose from the following partition types:</strong> [“contiguous”, “segregated”], and use brackets and double quotations (e.g. [“contiguous”])   
+<p><strong>Choose from the following partition types:</strong> [“contiguous”, “segregated”], and use brackets and double quotations (e.g. [“contiguous”])
     </p>
-<h4><a href="http://genocat.tools/attributes/abstraction.html">abstraction:</a></h4> 
-<p>Abstraction allows for the reduction of space in order to concentrate on specific regions of the genome.  
+<h4><a href="http://genocat.tools/attributes/abstraction.html">abstraction:</a></h4>
+<p>Abstraction allows for the reduction of space in order to concentrate on specific regions of the genome.
 </p>
 <blockquote>
-    <h5><a href="http://genocat.tools/attributes/abstraction.html#None">No:</a> </h5> 
-    <p class="run-in">Describes tools where no part of the genome is abstracted or removed. 
+    <h5><a href="http://genocat.tools/attributes/abstraction.html#None">No:</a> </h5>
+    <p class="run-in">Describes tools where no part of the genome is abstracted or removed.
     </p><p class="spacer">&nbsp;</p>
     <h5><a href="http://genocat.tools/attributes/abstraction.html#Partial">Partial:</a> </h5>
-    <p class="run-in">Describes tools where parts of the genome is abstracted or removed 
+    <p class="run-in">Describes tools where parts of the genome is abstracted or removed
     </p><p class="spacer">&nbsp;</p>
-    <h5><a href="http://genocat.tools/attributes/abstraction.html#Complete">Complete:</a> </h5> 
-    <P class="run-in">Describes tools where all of the genome is abstracted or removed 
+    <h5><a href="http://genocat.tools/attributes/abstraction.html#Complete">Complete:</a> </h5>
+    <P class="run-in">Describes tools where all of the genome is abstracted or removed
     </p>
 </blockquote>
-<p><strong>Choose from the following formats:</strong>  [“no”, “partial”, “complete”] and use brackets and double quotations.  
+<p><strong>Choose from the following formats:</strong>  [“no”, “partial”, “complete”] and use brackets and double quotations.
 </p>
 <h4><a href="http://genocat.tools/attributes/arrangement.html">arrangement:</a></h4>
-<p>Different genomic arrangements can be used to better compare and visualize genomic features.</p>   
+<p>Different genomic arrangements can be used to better compare and visualize genomic features.</p>
 </p>
 <blockquote>
     <h5><a href="http://genocat.tools/attributes/arrangement.html#Linear%20Parallel">Linear parallel:</a> </h5>
-    <p class="run-in">Describes multiple linear visualizations laid in parallel 
+    <p class="run-in">Describes multiple linear visualizations laid in parallel
     </p><p class="spacer">&nbsp;</p>
-    <a href="http://genocat.tools/attributes/arrangement.html#Linear%20Serial">Linear serial:</a> 
-    <p class="run-in">Describes multiple linear genomic segments laid side by side 
+    <a href="http://genocat.tools/attributes/arrangement.html#Linear%20Serial">Linear serial:</a>
+    <p class="run-in">Describes multiple linear genomic segments laid side by side
     </p><p class="spacer">&nbsp;</p>
-    <a href="http://genocat.tools/attributes/arrangement.html#Linear%20Orthogonal">Linear orthogonal:</a> 
-    <p class="run-in">Describes multiple linear genomic segments laid in a 90 degree. Examples include in a heatmap fashion. 
+    <a href="http://genocat.tools/attributes/arrangement.html#Linear%20Orthogonal">Linear orthogonal:</a>
+    <p class="run-in">Describes multiple linear genomic segments laid in a 90 degree. Examples include in a heatmap fashion.
     </p><p class="spacer">&nbsp;</p>
-    <a href="http://genocat.tools/attributes/arrangement.html#Circular%20Parallel">Circular Parallel:</a> 
-    <p class="run-in">Describes circular genomic regions laid in outer as and inner rings. 
+    <a href="http://genocat.tools/attributes/arrangement.html#Circular%20Parallel">Circular Parallel:</a>
+    <p class="run-in">Describes circular genomic regions laid in outer as and inner rings.
     </p><p class="spacer">&nbsp;</p>
-    <a href="http://genocat.tools/attributes/arrangement.html#Circular%20Serial">Circular Serial:</a> 
-    <p class="run-in">Describes circular genomic regions laid side by side 
+    <a href="http://genocat.tools/attributes/arrangement.html#Circular%20Serial">Circular Serial:</a>
+    <p class="run-in">Describes circular genomic regions laid side by side
     </p><p class="spacer">&nbsp;</p>
-    <p><strong>Choose from the following arrangement types:</strong> [“linear parallel”, “linear serial”, “linear orthogonal”, “circular parallel”, “circular serial”] and use brackets and double quotations   
+    <p><strong>Choose from the following arrangement types:</strong> [“linear parallel”, “linear serial”, “linear orthogonal”, “circular parallel”, “circular serial”] and use brackets and double quotations
     </p>
 </blockquote>
 <h4><a href="http://genocat.tools/attributes/views.html">view:</a> </h4>
-<p>A view describes a set of one or multiple aligned tracks. Multiple views allow for visualizations with multiple scales and foci. Choose from the following viewtypes: [“single”, “multiple”].  
+<p>A view describes a set of one or multiple aligned tracks. Multiple views allow for visualizations with multiple scales and foci. Choose from the following viewtypes: [“single”, “multiple”].
 </p>
 <h4><a href="http://genocat.tools/attributes/scales.html">scale:</a> </h4>
-<p>Single scale visualizations display a genome from a single perspective - one size, while multiple scale visualization allows for visualizing data from multiple perspectives/sizes at once. Choose from the following scale types: [“single”, “multiple”].  
+<p>Single scale visualizations display a genome from a single perspective - one size, while multiple scale visualization allows for visualizing data from multiple perspectives/sizes at once. Choose from the following scale types: [“single”, “multiple”].
 </p>
 <h4><a href="http://genocat.tools/attributes/focus.html">focus:</a> </h4>
-<p>A single focus is similar to sliding a window across the genome. Only the region in this window can be analyzed. Multiple foci enable users to look at distinct segments of a genome in parallel and compare features that are dispersed across the genome.  Choose from the following focus types: [“single”, “multiple”].  
+<p>A single focus is similar to sliding a window across the genome. Only the region in this window can be analyzed. Multiple foci enable users to look at distinct segments of a genome in parallel and compare features that are dispersed across the genome.  Choose from the following focus types: [“single”, “multiple”].
 </p>
-<h4>coordinate_systems:</h4> 
-<p>Tools can allow the visualization of a single coordinate system at the time or multiple simultaneously. Choose from the following coordinate systems: [“single”, “multiple”].  
+<h4>coordinate_systems:</h4>
+<p>Tools can allow the visualization of a single coordinate system at the time or multiple simultaneously. Choose from the following coordinate systems: [“single”, “multiple”].
 </p>
-<h4>access_format:</h4>  
-<p>Indicate how your tool  can be accessed (through a web link, software, package, etc). Choose from the following formats: [“web application”, “standalone app”, “programming library”] and use brackets and double quotations.  
+<h4>access_format:</h4>
+<p>Indicate how your tool  can be accessed (through a web link, software, package, etc). Choose from the following formats: [“web application”, “standalone app”, “programming library”] and use brackets and double quotations.
 </p>
-<h4>user_documentation_availability: </h4> 
-<p>Indicate whether user documentation for your tool is provided in the following format: [“yes”, “no”]  
+<h4>user_documentation_availability: </h4>
+<p>Indicate whether user documentation for your tool is provided in the following format: [“yes”, “no”]
 </p>
 <h4>user_documentation: </h4>
-<p>Provide a URL link to tool documentation  
+<p>Provide a URL link to tool documentation
 </p>
-<h4>pub_year:</h4>  
-<p>Provide your tool’s publication year  
+<h4>pub_year:</h4>
+<p>Provide your tool’s publication year
 </p>
 <h4>license:</h4>
-<p>Indicate your tool’s license (e.g. MIT, GPL)  
+<p>Indicate your tool’s license (e.g. MIT, GPL)
 </p>
 <h4>license_form:</h4>
-<p>Indicate whether you tool’s licensing is open source or commercial using the following format  [“open source”, “commercial”]   
+<p>Indicate whether you tool’s licensing is open source or commercial using the following format  [“open source”, “commercial”]
 </p>
-<h4>supported_files:</h4>  
-<p>Indicate which of the files your tool supports out of [“bed”, “fasta”, “sambamcram”, “vcf”, “notapplicable”, “txttab”, “other”]  
+<h4>supported_files:</h4>
+<p>Indicate which of the files your tool supports out of [“bed”, “fasta”, “sambamcram”, “vcf”, “notapplicable”, “txttab”, “other”]
 </p>
-<h4>image:</h4> 
-<p>Provide a file path to the image in the following format /assets/[TOOLNAME].png  
+<h4>image:</h4>
+<p>Provide a file path to the image in the following format /assets/[TOOLNAME].png
 </p>
-<h4>image_location:</h4>  
-<p>Provide the image URL, if applicable  
+<h4>image_location:</h4>
+<p>Provide the image URL, if applicable
 </p>
-<h4>notes: </h4> 
-<p>Any further notes necessary  
+<h4>notes: </h4>
+<p>Any further notes necessary
 </p>
 
- 
+
 <p>For more information on taxonomy parameters, visit <a href="/taxonomy/">the Taxonomy page</a></p>
 <p>Once submitted, the pull request will be reviewed by the GenoCAT team. For questions, please contact <a href="mailto:nils@hms.harvard.edu">nils@hms.harvard.edu</a>.
-</p>  
+</p>
 <a href="https://github.com/hms-dbmi/genocat" class="fa fa-github" style="font-size:36px"></a>
 </div>
