@@ -63,43 +63,43 @@ function getPubYear(b, switching, years) {
   })
 }
 
-function sortByCitation() {
-  var list, switching, counts;
-  list = document.getElementsByClassName("filterDiv show");
-  switching = true;
-  counts = [];
-  getCiteCount(counts, list, switching);
-  document.getElementById("sortOrder").innerHTML = "sorting by citation count";
-}
-
-function getCiteCount(counts, b, switching) {
-  var loader = document.getElementById("loader");
-  var myvar, words, i, citeCount, j;
-  jQuery.get('../scholar_data.txt', function(data) {
-    while (switching) {
-      switching = false;
-      for (i=0; i< (b.length); i++) {
-        doi = b[i].className.split(" ")[1];
-        myvar = data;
-        words = myvar.split("\n");
-        j=0;
-        var citedby;
-        while (j<words.length) {
-          if (words[j] == "  doi: "+doi) {
-            citedby = words[j+2];
-            break;
-          }
-          j++;
-        }
-        citeCount = parseInt(citedby.substring(18, citedby.length));
-        counts[i] = citeCount;
-      }
-      switching = makeSwitch(counts, b, switching);
-    }
-    addClass(loader, "hide-loader");
-    document.getElementById("sortOrder").innerHTML = "sorted by citation count";
-  });
-}
+// function sortByCitation() {
+//   var list, switching, counts;
+//   list = document.getElementsByClassName("filterDiv show");
+//   switching = true;
+//   counts = [];
+//   getCiteCount(counts, list, switching);
+//   document.getElementById("sortOrder").innerHTML = "sorting by citation count";
+// }
+//
+// function getCiteCount(counts, b, switching) {
+//   var loader = document.getElementById("loader");
+//   var myvar, words, i, citeCount, j;
+//   jQuery.get('../scholar_data.txt', function(data) {
+//     while (switching) {
+//       switching = false;
+//       for (i=0; i< (b.length); i++) {
+//         doi = b[i].className.split(" ")[1];
+//         myvar = data;
+//         words = myvar.split("\n");
+//         j=0;
+//         var citedby;
+//         while (j<words.length) {
+//           if (words[j] == "  doi: "+doi) {
+//             citedby = words[j+2];
+//             break;
+//           }
+//           j++;
+//         }
+//         citeCount = parseInt(citedby.substring(18, citedby.length));
+//         counts[i] = citeCount;
+//       }
+//       switching = makeSwitch(counts, b, switching);
+//     }
+//     addClass(loader, "hide-loader");
+//     document.getElementById("sortOrder").innerHTML = "sorted by citation count";
+//   });
+// }
 
 function makeSwitch(counts, b, switching) {
   var shouldSwitch, i, currCount, nextCount;
